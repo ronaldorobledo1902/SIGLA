@@ -1,0 +1,4766 @@
+WEBVTT
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/9-0
+00:00:06.171 --> 00:00:12.891
+<v Vitor Hugo Campos>A gente iniciou o front somente com o
+alvo e colocou o login nele.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/6-0
+00:00:08.411 --> 00:00:08.491
+<v Ronaldo Robledo Mendes De Souza>Uh-huh.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/7-0
+00:00:08.651 --> 00:00:08.691
+<v Ronaldo Robledo Mendes De Souza>A.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/8-0
+00:00:10.331 --> 00:00:10.411
+<v Ronaldo Robledo Mendes De Souza>So.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/10-0
+00:00:14.571 --> 00:00:19.873
+<v Vitor Hugo Campos>Aí posteriormente a poucas sprints aí,
+três sprints, quatro sprints,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/10-1
+00:00:19.873 --> 00:00:25.866
+<v Vitor Hugo Campos>a gente começou a fazer o front do locus
+ainda de forma estática, só o front,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/10-2
+00:00:25.866 --> 00:00:28.171
+<v Vitor Hugo Campos>sem comunicação com o backend.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/12-0
+00:00:30.731 --> 00:00:35.745
+<v Vitor Hugo Campos>E na experiente passada a gente começou a
+implementar o terceiro front que é o</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/12-1
+00:00:35.745 --> 00:00:40.124
+<v Vitor Hugo Campos>sigla, que vai ser, vamos dizer assim,
+a primeira, o primeiro passo,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/12-2
+00:00:40.124 --> 00:00:42.091
+<v Vitor Hugo Campos>que é nele que vai ser o login.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/13-0
+00:00:43.251 --> 00:00:48.753
+<v Vitor Hugo Campos>Então a gente subiu ele já fazendo o
+login, chamando o micro serviço,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/13-1
+00:00:48.753 --> 00:00:49.931
+<v Vitor Hugo Campos>que chama a Pl.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/14-0
+00:00:51.291 --> 00:00:55.211
+<v Vitor Hugo Campos>E a partir dele você escolhe se vai para
+o alvo ou para o locus.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/15-0
+00:00:56.251 --> 00:00:57.851
+<v Vitor Hugo Campos>Por enquanto está assim.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/16-0
+00:00:59.211 --> 00:01:00.891
+<v Ronaldo Robledo Mendes De Souza>Okay. Okay.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/17-0
+00:01:00.971 --> 00:01:03.693
+<v Vitor Hugo Campos>A única responsabilidade dele,
+por enquanto,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/17-1
+00:01:03.693 --> 00:01:05.931
+<v Vitor Hugo Campos>é login e escolher o sistema que vai.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/18-0
+00:01:07.851 --> 00:01:15.131
+<v Ronaldo Robledo Mendes De Souza>Beleza, ok, sem problema, tá,
+deveio algo aqui. Que mais?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/20-0
+00:01:16.731 --> 00:01:23.021
+<v Ronaldo Robledo Mendes De Souza>Pegar aqui. Bom, era essa dúvida,
+primeiro momento que era o cadastro de</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/20-1
+00:01:23.021 --> 00:01:27.156
+<v Ronaldo Robledo Mendes De Souza>login.
+Então nós estamos é está em andamento aí</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/20-2
+00:01:27.156 --> 00:01:30.171
+<v Ronaldo Robledo Mendes De Souza>a questão do ciclo. OK, tem aqui o.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/21-0
+00:01:31.691 --> 00:01:31.731
+<v Ronaldo Robledo Mendes De Souza>O.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/22-0
+00:01:33.851 --> 00:01:36.971
+<v Ronaldo Robledo Mendes De Souza>Eu vou me aprofundar aqui a primeiro
+momento, só na parte do.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/23-0
+00:01:38.571 --> 00:01:44.091
+<v Ronaldo Robledo Mendes De Souza>Do óculos aqui está cadarço.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/24-0
+00:01:45.051 --> 00:01:47.451
+<v Ronaldo Robledo Mendes De Souza>Feliz importação de dados locus.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/25-0
+00:01:48.731 --> 00:01:49.451
+<v Ronaldo Robledo Mendes De Souza>Drocos.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/27-0
+00:01:50.331 --> 00:01:52.980
+<v Ronaldo Robledo Mendes De Souza>Certo,
+está esse sistema aqui a parte da do</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/27-1
+00:01:52.980 --> 00:01:56.171
+<v Ronaldo Robledo Mendes De Souza>sistema importação de dados oriundos do
+sistema tal.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/27-2
+00:01:56.171 --> 00:01:59.663
+<v Ronaldo Robledo Mendes De Souza>O que já foi hoje desenvolvido no sistema
+Locus, o Vitor,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/27-3
+00:01:59.663 --> 00:02:02.011
+<v Ronaldo Robledo Mendes De Souza>o que nós já temos no sistema Locus aí?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/26-0
+00:02:01.611 --> 00:02:01.651
+<v Vitor Hugo Campos>Uh</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/28-0
+00:02:02.971 --> 00:02:06.474
+<v Vitor Hugo Campos>É, se você ver os repositórios,
+alguns deles tem o nome locus, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/28-1
+00:02:06.474 --> 00:02:08.251
+<v Vitor Hugo Campos>Dá uma olhadinha aí para você ver.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/29-0
+00:02:07.371 --> 00:02:10.011
+<v Ronaldo Robledo Mendes De Souza>Uhum, tem isso, é isso que eu tava vendo.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/30-0
+00:02:10.331 --> 00:02:14.731
+<v Vitor Hugo Campos>Então vamos pegar, por exemplo,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/31-0
+00:02:16.971 --> 00:02:18.651
+<v Vitor Hugo Campos>Tem louco, tem não.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/32-0
+00:02:20.331 --> 00:02:20.691
+<v Vitor Hugo Campos>Perfect.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/33-0
+00:02:23.131 --> 00:02:24.251
+<v Vitor Hugo Campos>Now, acho que</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/35-0
+00:02:25.371 --> 00:02:32.869
+<v Vitor Hugo Campos>É, acho que o loco está mais no diagrama,
+mas todos esses que tem MS alguma coisa a</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/35-1
+00:02:32.869 --> 00:02:36.171
+<v Vitor Hugo Campos>gente meio que já está usando, então.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/34-0
+00:02:33.611 --> 00:02:33.771
+<v Ronaldo Robledo Mendes De Souza>Uh-huh.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/36-0
+00:02:37.611 --> 00:02:42.186
+<v Vitor Hugo Campos>Do que eu entendi,
+o locus é meio que a fonte de informação,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/36-1
+00:02:42.186 --> 00:02:42.411
+<v Vitor Hugo Campos>né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/37-0
+00:02:43.371 --> 00:02:45.371
+<v Vitor Hugo Campos>Então ele gera os dados.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/38-0
+00:02:48.171 --> 00:02:52.307
+<v Vitor Hugo Campos>Para ser usados no alvo para poder fazer
+as escolhas, etc.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/38-1
+00:02:52.307 --> 00:02:55.531
+<v Vitor Hugo Campos>E uma fonte de dados é esse importa
+arquivos.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/39-0
+00:02:56.491 --> 00:02:58.251
+<v Ronaldo Robledo Mendes De Souza>Import aqui just something.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/40-0
+00:02:57.331 --> 00:03:01.211
+<v Vitor Hugo Campos>Porque o pessoal lá da da Fonseca, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/41-0
+00:03:02.571 --> 00:03:06.008
+<v Vitor Hugo Campos>Eles fazem muita coisa de importação de
+arquivo, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/41-1
+00:03:06.008 --> 00:03:10.936
+<v Vitor Hugo Campos>Não tem comunicação API direta, né?
+É muito arquivo, upload de arquivo, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/41-2
+00:03:10.936 --> 00:03:14.891
+<v Vitor Hugo Campos>Então o que que a gente tem hoje nesse
+importa arquivos, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/42-0
+00:03:16.091 --> 00:03:20.331
+<v Vitor Hugo Campos>Já se o front end já se comunica com ele
+nesse.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/44-0
+00:03:19.611 --> 00:03:25.143
+<v Ronaldo Robledo Mendes De Souza>Isso aqui, só te contando aqui,
+de acordo com o esse diagrama aqui foi</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/44-1
+00:03:25.143 --> 00:03:29.427
+<v Ronaldo Robledo Mendes De Souza>criado da seguinte maneira, que o virtual,
+então aqui,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/44-2
+00:03:29.427 --> 00:03:34.491
+<v Ronaldo Robledo Mendes De Souza>temos aqui o usuário logs e importação de
+dados, correto? Então.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/43-0
+00:03:34.411 --> 00:03:34.571
+<v Vitor Hugo Campos>Okay.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/45-0
+00:03:34.811 --> 00:03:39.878
+<v Ronaldo Robledo Mendes De Souza>A gente vai ter aqui um componente,
+a tela do sistema de importação de dados.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/45-1
+00:03:39.878 --> 00:03:43.581
+<v Ronaldo Robledo Mendes De Souza>Essa importação de dados,
+nós teremos dentro dessa tela,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/45-2
+00:03:43.581 --> 00:03:47.869
+<v Ronaldo Robledo Mendes De Souza>nós teremos um histórico de importação e
+uma consulta de serviço.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/45-3
+00:03:47.869 --> 00:03:52.611
+<v Ronaldo Robledo Mendes De Souza>Então teremos aqui um histórico de
+importação e uma consulta de serviço.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/47-0
+00:03:54.971 --> 00:04:00.620
+<v Ronaldo Robledo Mendes De Souza>E é o upload do arquivo.
+Tem aqui MSMS importa arquivos,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/47-1
+00:04:00.620 --> 00:04:03.691
+<v Ronaldo Robledo Mendes De Souza>que a gente até localizou aqui.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/46-0
+00:04:04.091 --> 00:04:05.211
+<v Vitor Hugo Campos>Aqui é o microservice.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/48-0
+00:04:05.691 --> 00:04:10.802
+<v Ronaldo Robledo Mendes De Souza>Isso microsserviço de importação de
+arquivo é que ele vai fazer a seguinte</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/48-1
+00:04:10.802 --> 00:04:14.210
+<v Ronaldo Robledo Mendes De Souza>função,
+validação de arquivos e a gravação de dos</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/48-2
+00:04:14.210 --> 00:04:18.571
+<v Ronaldo Robledo Mendes De Souza>dados para validação, correto?
+Me corrija se eu estiver errado.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/49-0
+00:04:20.171 --> 00:04:24.325
+<v Vitor Hugo Campos>É, são vários, são vários,
+são vários tipos de arquivo que são</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/49-1
+00:04:24.325 --> 00:04:26.171
+<v Vitor Hugo Campos>importados, né? Não é só um.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/51-0
+00:04:26.651 --> 00:04:29.817
+<v Ronaldo Robledo Mendes De Souza>São vários, são,
+vão ser vários tipos de arquivos que vão</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/50-0
+00:04:27.491 --> 00:04:28.091
+<v Vitor Hugo Campos>Okay.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/51-1
+00:04:29.817 --> 00:04:31.291
+<v Ronaldo Robledo Mendes De Souza>ser importados, não é isso?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/52-0
+00:04:31.531 --> 00:04:35.099
+<v Vitor Hugo Campos>É cada um com uma funcionalidade,
+é pra ficar, vamos dizer assim,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/52-1
+00:04:35.099 --> 00:04:37.531
+<v Vitor Hugo Campos>o mais parecido possível com escolhas
+atual.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/53-0
+00:04:38.971 --> 00:04:44.091
+<v Vitor Hugo Campos>Que tem algumas importações e exportações
+de arquivos.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/54-0
+00:04:45.291 --> 00:04:48.658
+<v Vitor Hugo Campos>Se você quiser acessar,
+eu passo o link para você ver como está</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/54-1
+00:04:48.658 --> 00:04:49.131
+<v Vitor Hugo Campos>os tipos.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/55-0
+00:04:49.811 --> 00:04:50.331
+<v Ronaldo Robledo Mendes De Souza>Por favor.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/56-0
+00:04:51.531 --> 00:04:53.851
+<v Vitor Hugo Campos>pegar aqui o você tá na VPN</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/57-0
+00:04:57.291 --> 00:04:57.611
+<v Ronaldo Robledo Mendes De Souza>Okay.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/58-0
+00:04:58.011 --> 00:04:58.211
+<v Vitor Hugo Campos>Okay.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/59-0
+00:04:59.931 --> 00:05:03.691
+<v Vitor Hugo Campos>pegar o link aqui, vamos ver,
+vamos ver se está funcionando mesmo, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/60-0
+00:05:06.011 --> 00:05:07.131
+<v Vitor Hugo Campos>Oh, tenta acessar.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/61-0
+00:05:14.011 --> 00:05:15.451
+<v Ronaldo Robledo Mendes De Souza>Oh, we don't have the penic.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/65-0
+00:05:38.971 --> 00:05:39.211
+<v Ronaldo Robledo Mendes De Souza>Mm.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/67-0
+00:05:41.131 --> 00:05:42.571
+<v Vitor Hugo Campos>Which not does the son peray.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/66-0
+00:05:41.691 --> 00:05:41.771
+<v Ronaldo Robledo Mendes De Souza>That.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/68-0
+00:05:44.291 --> 00:05:45.291
+<v Ronaldo Robledo Mendes De Souza>Bairro não encontrado.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/69-0
+00:05:47.531 --> 00:05:48.891
+<v Vitor Hugo Campos>I acho it's okay about it.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/70-0
+00:05:52.091 --> 00:05:52.571
+<v Vitor Hugo Campos>Oh.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/71-0
+00:05:54.491 --> 00:05:57.471
+<v Vitor Hugo Campos>É,
+eu vou resumir aqui para você o porquê</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/71-1
+00:05:57.471 --> 00:05:58.251
+<v Vitor Hugo Campos>está assim.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/72-0
+00:06:00.811 --> 00:06:02.731
+<v Vitor Hugo Campos>A gente tem três frontes, certo?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/73-0
+00:06:03.091 --> 00:06:03.291
+<v Ronaldo Robledo Mendes De Souza>Aham.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/75-0
+00:06:03.851 --> 00:06:09.232
+<v Vitor Hugo Campos>A gente começou pelo alvo,
+então essa URL que eu te passei apontava</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/74-0
+00:06:06.051 --> 00:06:06.491
+<v Ronaldo Robledo Mendes De Souza>Campos.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/75-1
+00:06:09.232 --> 00:06:11.131
+<v Vitor Hugo Campos>diretamente para o alvo.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/76-0
+00:06:11.451 --> 00:06:12.051
+<v Ronaldo Robledo Mendes De Souza>Mm-hmm.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/77-0
+00:06:13.451 --> 00:06:15.611
+<v Vitor Hugo Campos>Aí a gente começou até o Locus.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/78-0
+00:06:16.251 --> 00:06:16.651
+<v Ronaldo Robledo Mendes De Souza>Go ahead.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/79-0
+00:06:16.771 --> 00:06:20.133
+<v Vitor Hugo Campos>Então, aí desde o início,
+a ideia era o quê?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/79-1
+00:06:20.133 --> 00:06:22.971
+<v Vitor Hugo Campos>Essa URL aponta para o frontend sigla.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/82-0
+00:06:24.251 --> 00:06:28.324
+<v Vitor Hugo Campos>Onde você loga,
+aí depois você escolhe alvo ou locus.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/82-1
+00:06:28.324 --> 00:06:32.472
+<v Vitor Hugo Campos>Aí quando você escolhia alvo,
+era essa url barra alvo.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/80-0
+00:06:29.251 --> 00:06:29.691
+<v Ronaldo Robledo Mendes De Souza>Go ahead.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/82-2
+00:06:32.472 --> 00:06:36.243
+<v Vitor Hugo Campos>Quando você escolhia locus,
+essa url barra locus.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/82-3
+00:06:36.243 --> 00:06:41.371
+<v Vitor Hugo Campos>Então a gente meio que está nesse
+processo de transição de url, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/81-0
+00:06:42.051 --> 00:06:42.251
+<v Ronaldo Robledo Mendes De Souza>So.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/83-0
+00:06:42.411 --> 00:06:43.211
+<v Vitor Hugo Campos>Então.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/84-0
+00:06:44.491 --> 00:06:52.149
+<v Vitor Hugo Campos>Essas configurações pra essa URL apontar
+pro repositório sistema frontend sigla tá</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/84-1
+00:06:52.149 --> 00:06:57.131
+<v Vitor Hugo Campos>na fila lá de DevOps,
+então ainda não foi finalizado.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/85-0
+00:06:58.971 --> 00:07:04.011
+<v Vitor Hugo Campos>E para apresentar para o pessoal lá,
+a gente meio que embutiu,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/85-1
+00:07:04.011 --> 00:07:08.091
+<v Vitor Hugo Campos>vamos dizer assim,
+esse front-end dentro do locus,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/85-2
+00:07:08.091 --> 00:07:12.251
+<v Vitor Hugo Campos>para a gente poder mostrar e poder
+acessar por URL.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/86-0
+00:07:13.931 --> 00:07:20.315
+<v Vitor Hugo Campos>É uma ligeira gambiarra que a gente usou
+para poder subir o front e ter algo</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/86-1
+00:07:20.315 --> 00:07:23.051
+<v Vitor Hugo Campos>testável. Aí eu vou passar aqui o</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/87-0
+00:07:24.491 --> 00:07:26.091
+<v Vitor Hugo Campos>Por onde você vai fazer o login?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/88-0
+00:07:29.371 --> 00:07:29.851
+<v Vitor Hugo Campos>Pera aí.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/89-0
+00:07:33.371 --> 00:07:36.331
+<v Vitor Hugo Campos>eu tô fora da VP,
+não falei para você entrar eu tô fora</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/90-0
+00:07:38.491 --> 00:07:38.651
+<v Vitor Hugo Campos>Bye.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/91-0
+00:07:41.931 --> 00:07:44.411
+<v Vitor Hugo Campos>é deixa eu deslogar aqui ó</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/93-0
+00:07:48.971 --> 00:07:53.700
+<v Vitor Hugo Campos>A gente meio que usou o artifício que a
+gente tinha para poder mostrar o login</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/92-0
+00:07:53.611 --> 00:07:53.771
+<v Ronaldo Robledo Mendes De Souza>Okay.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/93-1
+00:07:53.700 --> 00:07:56.334
+<v Vitor Hugo Campos>enquanto o DevOps não fazia a
+configuração.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/93-2
+00:07:56.334 --> 00:07:59.447
+<v Vitor Hugo Campos>Então essa URL que eu te passei,
+vamos dizer assim,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/93-3
+00:07:59.447 --> 00:08:03.457
+<v Vitor Hugo Campos>vai ser a URL que você logaria no sigla.
+Aí loga aí para você ver,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/93-4
+00:08:03.457 --> 00:08:05.851
+<v Vitor Hugo Campos>eu vou te passar um usuário aqui também.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/95-0
+00:08:18.091 --> 00:08:19.691
+<v Vitor Hugo Campos>Aí pega aquele usuário.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/96-0
+00:08:26.011 --> 00:08:29.211
+<v Vitor Hugo Campos>Aí a senha é a maiúsculo.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/97-0
+00:08:30.491 --> 00:08:32.971
+<v Vitor Hugo Campos>Aí você escreve alvo,
+tem que escrever alvo, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/98-0
+00:08:35.611 --> 00:08:39.851
+<v Vitor Hugo Campos>com a maiúsculo, 123 14 arroba</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/99-0
+00:08:48.811 --> 00:08:49.131
+<v Ronaldo Robledo Mendes De Souza>That.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/100-0
+00:08:49.931 --> 00:08:52.091
+<v Vitor Hugo Campos>Aí você vai ali no acessar o alvo.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/101-0
+00:08:53.291 --> 00:09:00.291
+<v Vitor Hugo Campos>Que é onde a gente iniciou,
+ali na parte de processos e importação de</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/101-1
+00:09:00.291 --> 00:09:00.891
+<v Vitor Hugo Campos>dados.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/102-0
+00:09:07.051 --> 00:09:07.531
+<v Ronaldo Robledo Mendes De Souza>Okay.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/103-0
+00:09:07.491 --> 00:09:09.131
+<v Vitor Hugo Campos>Poxa, ele não, espera aí.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/105-0
+00:09:10.091 --> 00:09:12.491
+<v Ronaldo Robledo Mendes De Souza>Aí eu teria que ir pra do Lopes,
+não é isso?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/104-0
+00:09:11.771 --> 00:09:12.051
+<v Vitor Hugo Campos>No.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/106-0
+00:09:13.931 --> 00:09:17.240
+<v Vitor Hugo Campos>Ah,
+eu acho que é questão de redirecionamento,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/106-1
+00:09:17.240 --> 00:09:20.971
+<v Vitor Hugo Campos>antes do bota a barra alvo ali,
+vai do login ali, ó.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/107-0
+00:09:27.331 --> 00:09:30.971
+<v Vitor Hugo Campos>Pera aí, tem alguma coisa?
+Vai lá em processos de importação dados.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/108-0
+00:09:36.731 --> 00:09:41.696
+<v Vitor Hugo Campos>sei o que aconteceu, mas aí ó,
+aí tem um arquivo aí, várias escolas,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/108-1
+00:09:41.696 --> 00:09:47.308
+<v Vitor Hugo Campos>é um arquivo com formato habilitados,
+é o arquivo com as pessoas que passaram</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/108-2
+00:09:47.308 --> 00:09:48.171
+<v Vitor Hugo Campos>no concurso.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/109-0
+00:09:49.371 --> 00:09:52.855
+<v Vitor Hugo Campos>Escolhas é uma busca externa que a gente
+faz no sistema da proda,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/109-1
+00:09:52.855 --> 00:09:54.491
+<v Vitor Hugo Campos>não sei se você já ouviu falar.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/111-0
+00:09:55.051 --> 00:09:57.308
+<v Ronaldo Robledo Mendes De Souza>Sim,
+mas essa essa parte aqui é toda do alvo</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/110-0
+00:09:56.251 --> 00:09:56.491
+<v Vitor Hugo Campos>Yeah.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/111-1
+00:09:57.308 --> 00:09:58.211
+<v Ronaldo Robledo Mendes De Souza>ainda, não é isso?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/112-0
+00:10:00.171 --> 00:10:00.331
+<v Vitor Hugo Campos>A.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/113-0
+00:10:00.971 --> 00:10:01.291
+<v Ronaldo Robledo Mendes De Souza>That.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/114-0
+00:10:01.971 --> 00:10:02.171
+<v Ronaldo Robledo Mendes De Souza>Fact.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/115-0
+00:10:02.331 --> 00:10:05.425
+<v Vitor Hugo Campos>A gente,
+a gente colocou dentro do frontend do</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/115-1
+00:10:05.425 --> 00:10:10.295
+<v Vitor Hugo Campos>alvo, porque era o que a gente tava,
+o que a gente combinou de fazer, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/115-2
+00:10:10.295 --> 00:10:11.611
+<v Vitor Hugo Campos>Tudo dentro do alvo.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/118-0
+00:10:12.571 --> 00:10:17.051
+<v Vitor Hugo Campos>Aí, essa área aí,
+toda ela se comunica com aquele MS em</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/116-0
+00:10:13.291 --> 00:10:13.411
+<v Ronaldo Robledo Mendes De Souza>Yes.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/118-1
+00:10:17.051 --> 00:10:18.251
+<v Vitor Hugo Campos>porta arquivos.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/120-0
+00:10:18.411 --> 00:10:20.900
+<v Ronaldo Robledo Mendes De Souza>Certo,
+mas essa parte aqui teria que estar</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/120-1
+00:10:20.900 --> 00:10:25.531
+<v Ronaldo Robledo Mendes De Souza>dentro do sistema do bloco. Seria isso?
+Você está dizendo, é isso, é o público?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/122-0
+00:10:24.891 --> 00:10:27.826
+<v Vitor Hugo Campos>Sim,
+é o que é o que eu imagino no cenário</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/121-0
+00:10:27.251 --> 00:10:27.611
+<v Ronaldo Robledo Mendes De Souza>Mhm.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/122-1
+00:10:27.826 --> 00:10:32.331
+<v Vitor Hugo Campos>final, vamos dizer assim,
+quando tudo estiver bem dividido e tal.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/123-0
+00:10:35.491 --> 00:10:36.011
+<v Ronaldo Robledo Mendes De Souza>Thank you.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/124-0
+00:10:36.491 --> 00:10:40.331
+<v Vitor Hugo Campos>Mas seria como pegar isso aí e jogar em
+alguma sessão lá?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/125-0
+00:10:47.451 --> 00:10:52.651
+<v Ronaldo Robledo Mendes De Souza>Eu vi aqui o deixa eu ver se eu localizo
+aqui o Vitor só para só para a gente ir.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/126-0
+00:10:54.571 --> 00:10:57.175
+<v Ronaldo Robledo Mendes De Souza>Eu tinha localizado aqui uma seguinte
+situação aqui,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/126-1
+00:10:57.175 --> 00:11:00.171
+<v Ronaldo Robledo Mendes De Souza>deixa eu ver se eu acho aqui novamente
+para te mostrar aqui.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/127-0
+00:11:01.531 --> 00:11:02.411
+<v Ronaldo Robledo Mendes De Souza>Ekita.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/128-0
+00:11:04.251 --> 00:11:05.051
+<v Ronaldo Robledo Mendes De Souza>Pereira key.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/129-0
+00:11:07.691 --> 00:11:09.611
+<v Ronaldo Robledo Mendes De Souza>So, a college people are put their masses.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/130-0
+00:11:13.851 --> 00:11:15.051
+<v Ronaldo Robledo Mendes De Souza>Okay.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/131-0
+00:11:20.811 --> 00:11:26.139
+<v Ronaldo Robledo Mendes De Souza>É, então a gente ficou com ficou com essa,
+é esses micro serviços aqui por alvo,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/131-1
+00:11:26.139 --> 00:11:30.677
+<v Ronaldo Robledo Mendes De Souza>processo, consumo, MS candidato,
+MS relatório, processo, convocação,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/131-2
+00:11:30.677 --> 00:11:34.162
+<v Ronaldo Robledo Mendes De Souza>comunicação,
+agenda e escolha que estariam dentro do</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/131-3
+00:11:34.162 --> 00:11:34.491
+<v Ronaldo Robledo Mendes De Souza>alvo.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/132-0
+00:11:34.731 --> 00:11:38.331
+<v Ronaldo Robledo Mendes De Souza>E na parte do locus importa arquivo e
+admins o usuário, seria isso mesmo?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/133-0
+00:11:40.891 --> 00:11:42.251
+<v Ronaldo Robledo Mendes De Souza>Confere essa informação.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/134-0
+00:11:41.771 --> 00:11:46.299
+<v Vitor Hugo Campos>É, essa é a ideia,
+só que a princípio a gente estava fazendo</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/134-1
+00:11:46.299 --> 00:11:47.931
+<v Vitor Hugo Campos>só dentro do alvo, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/136-0
+00:11:48.731 --> 00:11:52.526
+<v Ronaldo Robledo Mendes De Souza>Correto? Pois é,
+mas essa parte de importação, vamos lá,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/135-0
+00:11:50.051 --> 00:11:50.491
+<v Vitor Hugo Campos>I see.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/136-1
+00:11:52.526 --> 00:11:56.188
+<v Ronaldo Robledo Mendes De Souza>essa parte de importação de arquivo e
+admin usuário é,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/136-2
+00:11:56.188 --> 00:11:58.651
+<v Ronaldo Robledo Mendes De Souza>vocês já fizeram ela também, correto?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/137-0
+00:11:59.851 --> 00:12:00.331
+<v Vitor Hugo Campos>Sim.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/138-0
+00:12:01.051 --> 00:12:03.971
+<v Ronaldo Robledo Mendes De Souza>E hoje todo esse processo está dentro do
+alvo, não é isso?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/139-0
+00:12:04.371 --> 00:12:05.491
+<v Vitor Hugo Campos>Back to net nove.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/140-0
+00:12:05.931 --> 00:12:09.451
+<v Ronaldo Robledo Mendes De Souza>Cert, cert, cert, cert.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/141-0
+00:12:13.611 --> 00:12:14.331
+<v Ronaldo Robledo Mendes De Souza>Hey.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/142-0
+00:12:15.651 --> 00:12:16.971
+<v Ronaldo Robledo Mendes De Souza>Apositor front-change.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/143-0
+00:12:18.411 --> 00:12:20.091
+<v Ronaldo Robledo Mendes De Souza>Contém locus de alvo.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/144-0
+00:12:21.371 --> 00:12:24.971
+<v Ronaldo Robledo Mendes De Souza>Single,
+single phone change of photo repository</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/144-1
+00:12:24.971 --> 00:12:25.571
+<v Ronaldo Robledo Mendes De Souza>backend.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/145-0
+00:12:27.451 --> 00:12:30.731
+<v Ronaldo Robledo Mendes De Souza>alvo e loco se importa arquivo e admin
+usuário certo</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/146-0
+00:12:38.971 --> 00:12:39.291
+<v Ronaldo Robledo Mendes De Souza>No.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/147-0
+00:12:43.531 --> 00:12:43.571
+<v Ronaldo Robledo Mendes De Souza>A.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/148-0
+00:12:45.731 --> 00:12:46.011
+<v Ronaldo Robledo Mendes De Souza>Okay.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/149-0
+00:12:47.531 --> 00:12:47.771
+<v Ronaldo Robledo Mendes De Souza>Okay.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/150-0
+00:12:49.451 --> 00:12:52.091
+<v Ronaldo Robledo Mendes De Souza>algumas informações aqui eu já tinha
+colocado</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/151-0
+00:12:53.291 --> 00:12:53.451
+<v Ronaldo Robledo Mendes De Souza>A.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/152-0
+00:12:55.131 --> 00:12:55.371
+<v Ronaldo Robledo Mendes De Souza>Right.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/153-0
+00:12:59.051 --> 00:12:59.531
+<v Ronaldo Robledo Mendes De Souza>This.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/156-0
+00:13:02.771 --> 00:13:07.348
+<v Vitor Hugo Campos>Porque isso que a gente fez até agora do
+locus, vamos dizer assim,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/156-1
+00:13:07.348 --> 00:13:11.925
+<v Vitor Hugo Campos>que é em porta arquivo, né?
+E a ADM usuários é uma fração do que o</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/154-0
+00:13:08.251 --> 00:13:08.331
+<v Ronaldo Robledo Mendes De Souza>Uh-huh.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/156-2
+00:13:11.925 --> 00:13:13.291
+<v Vitor Hugo Campos>locus é, né? Porque.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/155-0
+00:13:13.611 --> 00:13:13.691
+<v Ronaldo Robledo Mendes De Souza>Uh-huh.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/157-0
+00:13:14.571 --> 00:13:17.779
+<v Vitor Hugo Campos>Porque o pessoal lá mostrou,
+não é o tanto de informação que eles</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/157-1
+00:13:17.779 --> 00:13:18.411
+<v Vitor Hugo Campos>manipulam lá.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/158-0
+00:13:20.491 --> 00:13:22.011
+<v Vitor Hugo Campos>Is this a day a so?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/159-0
+00:13:23.931 --> 00:13:25.371
+<v Vitor Hugo Campos>Uma fração pequena, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/161-0
+00:13:26.451 --> 00:13:28.251
+<v Vitor Hugo Campos>Do tanto de coisa que ele vai lhe dar, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/160-0
+00:13:26.691 --> 00:13:26.971
+<v Ronaldo Robledo Mendes De Souza>Bye.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/162-0
+00:13:28.811 --> 00:13:33.673
+<v Ronaldo Robledo Mendes De Souza>Deixa eu colocar uma informação aqui,
+o que a Jessica me passou, Vitor,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/162-1
+00:13:33.673 --> 00:13:38.062
+<v Ronaldo Robledo Mendes De Souza>para ver se eu vou ter uma reunião com
+ela mais tarde novamente,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/162-2
+00:13:38.062 --> 00:13:43.531
+<v Ronaldo Robledo Mendes De Souza>mas só para a gente bater o martelo aqui
+numa informação que ela me passou aqui.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/163-0
+00:13:43.691 --> 00:13:43.931
+<v Ronaldo Robledo Mendes De Souza>But it.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/164-0
+00:13:45.011 --> 00:13:46.411
+<v Ronaldo Robledo Mendes De Souza>Deixa eu abrir o documento aqui.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/165-0
+00:13:48.731 --> 00:13:51.931
+<v Ronaldo Robledo Mendes De Souza>Acho que eu podia até ter compartilhado
+esse documento com vocês aqui.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/167-0
+00:13:53.051 --> 00:13:55.994
+<v Ronaldo Robledo Mendes De Souza>Abrir ele aqui para vocês poderem dar uma
+olhada.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/166-0
+00:13:54.931 --> 00:13:55.291
+<v Vitor Hugo Campos>That's.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/167-1
+00:13:55.994 --> 00:13:58.760
+<v Ronaldo Robledo Mendes De Souza>Eu tinha passado algumas informações para
+ela,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/167-2
+00:13:58.760 --> 00:14:01.408
+<v Ronaldo Robledo Mendes De Souza>para ela poder me responder um
+questionário.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/167-3
+00:14:01.408 --> 00:14:04.291
+<v Ronaldo Robledo Mendes De Souza>E aí ela me colocou a seguinte situação
+aqui, ó.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/168-0
+00:14:06.971 --> 00:14:07.011
+<v Ronaldo Robledo Mendes De Souza>Oh.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/169-0
+00:14:08.891 --> 00:14:16.753
+<v Ronaldo Robledo Mendes De Souza>Tá questão de quem utiliza o sistema,
+usuários iniciam, existiam, tá aqui,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/169-1
+00:14:16.753 --> 00:14:24.091
+<v Ronaldo Robledo Mendes De Souza>os profissionais da divisão de gestão de
+carreira de A, vinculados ao</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/170-0
+00:14:24.131 --> 00:14:24.811
+<v Ronaldo Robledo Mendes De Souza>Cogep.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/171-0
+00:14:26.251 --> 00:14:29.981
+<v Ronaldo Robledo Mendes De Souza>É outras áreas impactadas pelo projeto
+são prodan,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/171-1
+00:14:29.981 --> 00:14:35.903
+<v Ronaldo Robledo Mendes De Souza>secretaria da gestão e jurídica, SEME,
+necessidade de acesso direto dessas áreas</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/171-2
+00:14:35.903 --> 00:14:41.753
+<v Ronaldo Robledo Mendes De Souza>ao sistema ainda precisa ser definidas.
+Eu não sei se você tem acesso ou Vitor,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/171-3
+00:14:41.753 --> 00:14:42.411
+<v Ronaldo Robledo Mendes De Souza>mas caso.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/172-0
+00:14:42.491 --> 00:14:46.656
+<v Ronaldo Robledo Mendes De Souza>Se você não tiver acesso à informação,
+tem problema não que eu vou me reunicar</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/172-1
+00:14:46.656 --> 00:14:49.186
+<v Ronaldo Robledo Mendes De Souza>mais tarde.
+Mas eu fiquei na dúvida disso aqui,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/172-2
+00:14:49.186 --> 00:14:52.665
+<v Ronaldo Robledo Mendes De Souza>os profissionais de divisão de gestão de
+sistema, carreira de cá,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/172-3
+00:14:52.665 --> 00:14:56.091
+<v Ronaldo Robledo Mendes De Souza>o que é esse de cá? Você tem?
+Você tem a informações sobre isso?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/174-0
+00:14:58.331 --> 00:15:03.082
+<v Vitor Hugo Campos>Eu estou vendo esse tema agora,
+do que a gente conversou lá com o pessoal</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/174-1
+00:15:03.082 --> 00:15:07.254
+<v Vitor Hugo Campos>da SME, nunca falaram disso aí,
+ou pelo menos não era relevante,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/174-2
+00:15:07.254 --> 00:15:11.812
+<v Vitor Hugo Campos>mas deve ser uma parte das pessoas com
+quem a gente tem conversado lá.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/173-0
+00:15:08.011 --> 00:15:08.091
+<v Ronaldo Robledo Mendes De Souza>Uh-huh.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/174-3
+00:15:11.812 --> 00:15:14.251
+<v Vitor Hugo Campos>Talvez eles sejam desse setor, só que.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/175-0
+00:15:15.131 --> 00:15:16.891
+<v Vitor Hugo Campos>Não falaram explicitamente, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/176-0
+00:15:18.251 --> 00:15:18.731
+<v Ronaldo Robledo Mendes De Souza>Okay.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/177-0
+00:15:20.331 --> 00:15:21.731
+<v Ronaldo Robledo Mendes De Souza>Outras are impacted.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/178-0
+00:15:20.651 --> 00:15:25.610
+<v Vitor Hugo Campos>Mas mesmo assim, é, mas mesmo assim,
+esse admin usuários,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/178-1
+00:15:25.610 --> 00:15:31.851
+<v Vitor Hugo Campos>ele vai ser responsável pela gestão dos
+usuários, permissionamento, etc.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/179-0
+00:15:32.411 --> 00:15:33.611
+<v Ronaldo Robledo Mendes De Souza>Uh-huh. Sing.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/180-0
+00:15:33.131 --> 00:15:35.651
+<v Vitor Hugo Campos>Então,
+muito provavelmente vamos pegar lá a</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/180-1
+00:15:35.651 --> 00:15:38.171
+<v Vitor Hugo Campos>Angela, que é a chefona lá,
+tem um usuário.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/181-0
+00:15:39.051 --> 00:15:40.091
+<v Vitor Hugo Campos>Tem um usuário de mim?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/182-0
+00:15:41.371 --> 00:15:47.931
+<v Vitor Hugo Campos>E a fulano ali do da prodam quer acessar,
+aí ela com a conta dela.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/183-0
+00:15:48.811 --> 00:15:52.625
+<v Vitor Hugo Campos>Poderia adicionar o usuário tal que teria
+permissão tal, sabe?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/183-1
+00:15:52.625 --> 00:15:55.531
+<v Vitor Hugo Campos>Pelo menos essa é a ideia,
+quem quiser acessar.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/184-0
+00:15:56.891 --> 00:16:01.974
+<v Vitor Hugo Campos>Tem que passar por alguém que tem essa
+permissão de criar acesso,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/184-1
+00:16:01.974 --> 00:16:05.131
+<v Vitor Hugo Campos>aí quem for pra gente, vamos dizer assim,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/186-0
+00:16:06.331 --> 00:16:10.399
+<v Vitor Hugo Campos>A gente não precisa nem saber,
+mas tem alguém responsável por dar essa</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/185-0
+00:16:08.291 --> 00:16:08.651
+<v Ronaldo Robledo Mendes De Souza>Mhm.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/186-1
+00:16:10.399 --> 00:16:10.971
+<v Vitor Hugo Campos>permissão.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/187-0
+00:16:12.571 --> 00:16:13.931
+<v Ronaldo Robledo Mendes De Souza>That.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/188-0
+00:16:13.051 --> 00:16:16.651
+<v Vitor Hugo Campos>A gente, a gente já,
+a gente já tem um pouco de permissões.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/189-0
+00:16:18.011 --> 00:16:23.706
+<v Vitor Hugo Campos>Que ainda vai precisar melhorar com essa
+questão de locus, que são outras coisas,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/189-1
+00:16:23.706 --> 00:16:28.011
+<v Vitor Hugo Campos>mas a gente já meio que o admin usuários
+pode lidar com isso.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/190-0
+00:16:28.731 --> 00:16:36.427
+<v Ronaldo Robledo Mendes De Souza>É porque a gente colocou aqui o seguinte,
+no login, a gente vai fazer esse sistema.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/190-1
+00:16:36.427 --> 00:16:43.116
+<v Ronaldo Robledo Mendes De Souza>O diagrama Bastos representa um jornal de
+login do sistema Alves. Então,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/190-2
+00:16:43.116 --> 00:16:45.131
+<v Ronaldo Robledo Mendes De Souza>se a gente pegar aqui.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/192-0
+00:16:45.771 --> 00:16:50.615
+<v Ronaldo Robledo Mendes De Souza>O sistema Alves Locks terá um cadastro de
+permissão de usuários no sistema Lox,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/192-1
+00:16:50.615 --> 00:16:53.824
+<v Ronaldo Robledo Mendes De Souza>o que permite restringir alguns acessos
+de usuários.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/192-2
+00:16:53.824 --> 00:16:58.850
+<v Ronaldo Robledo Mendes De Souza>Essa parte de cadastro de usuários lá no
+Lox também já está feita ou não foi feita</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/192-3
+00:16:58.850 --> 00:17:01.211
+<v Ronaldo Robledo Mendes De Souza>ainda ou só está acessando direto pelo.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/191-0
+00:17:00.411 --> 00:17:00.451
+<v Vitor Hugo Campos>O.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/193-0
+00:17:01.251 --> 00:17:02.971
+<v Ronaldo Robledo Mendes De Souza>Pelo que existe a P.O.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/196-0
+00:17:04.651 --> 00:17:09.223
+<v Vitor Hugo Campos>Não, o a gente tem,
+vamos falar aí duas etapas aí.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/196-1
+00:17:09.223 --> 00:17:13.526
+<v Vitor Hugo Campos>A primeira etapa é autenticar o cara,
+a pessoa.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/194-0
+00:17:10.171 --> 00:17:10.251
+<v Ronaldo Robledo Mendes De Souza>Uh-huh.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/196-2
+00:17:13.526 --> 00:17:17.291
+<v Vitor Hugo Campos>E isso a gente usa aquela P e o para isso.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/195-0
+00:17:18.251 --> 00:17:18.571
+<v Ronaldo Robledo Mendes De Souza>What happen?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/197-0
+00:17:18.811 --> 00:17:20.411
+<v Vitor Hugo Campos>Uma vez autenticado.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/198-0
+00:17:21.611 --> 00:17:22.291
+<v Vitor Hugo Campos>É.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/200-0
+00:17:24.011 --> 00:17:28.106
+<v Vitor Hugo Campos>Lá no MS Admin Usuários a gente tem um
+banco de dados com os usuários que vão</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/200-1
+00:17:28.106 --> 00:17:29.051
+<v Vitor Hugo Campos>acessar o sistema.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/199-0
+00:17:28.171 --> 00:17:28.531
+<v Ronaldo Robledo Mendes De Souza>Mhm.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/202-0
+00:17:30.251 --> 00:17:34.286
+<v Vitor Hugo Campos>Aí quando o cara faz o login,
+igual que você fez o login agora, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/201-0
+00:17:33.851 --> 00:17:34.251
+<v Ronaldo Robledo Mendes De Souza>Yes.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/202-1
+00:17:34.286 --> 00:17:35.531
+<v Vitor Hugo Campos>A gente pega esse RF.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/203-0
+00:17:36.651 --> 00:17:40.456
+<v Vitor Hugo Campos>Verifica, esse usuário existe no MS Admin?
+Existe.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/203-1
+00:17:40.456 --> 00:17:43.291
+<v Vitor Hugo Campos>Vou tentar autenticar ele lá na APIEO.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/204-0
+00:17:44.571 --> 00:17:45.931
+<v Vitor Hugo Campos>Autêntico na PEO.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/205-0
+00:17:47.371 --> 00:17:53.676
+<v Vitor Hugo Campos>Aí a gente considera esse usuário logado
+e com isso a gente consegue ter acesso às</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/205-1
+00:17:53.676 --> 00:17:54.891
+<v Vitor Hugo Campos>permissões dele.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/206-0
+00:17:56.411 --> 00:18:00.071
+<v Vitor Hugo Campos>Então,
+cada página ali pode ser bem flexível.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/206-1
+00:18:00.071 --> 00:18:04.845
+<v Vitor Hugo Campos>Cada página do alvo ali você acessou a
+importação de dados,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/206-2
+00:18:04.845 --> 00:18:10.971
+<v Vitor Hugo Campos>mas tem diversas páginas ali. Então,
+cada página ali pode ter uma permissão.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/207-0
+00:18:12.411 --> 00:18:15.771
+<v Vitor Hugo Campos>de visualização, de edição, etc.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/208-0
+00:18:17.491 --> 00:18:20.418
+<v Vitor Hugo Campos>Então,
+uma vez que o usuário está autenticado,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/208-1
+00:18:20.418 --> 00:18:24.091
+<v Vitor Hugo Campos>essas permissões ficam do nosso lado,
+no MSAdmin usuários.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/209-0
+00:18:24.611 --> 00:18:27.205
+<v Ronaldo Robledo Mendes De Souza>Correto?
+Então aí no caso você está vendo aí minha</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/209-1
+00:18:27.205 --> 00:18:27.611
+<v Ronaldo Robledo Mendes De Souza>tela aí?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/210-0
+00:18:28.451 --> 00:18:29.611
+<v Vitor Hugo Campos>Você não está compartilhando.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/211-0
+00:18:30.251 --> 00:18:30.971
+<v Ronaldo Robledo Mendes De Souza>Oh, no, wash.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/212-0
+00:18:31.611 --> 00:18:32.171
+<v Vitor Hugo Campos>Oh, parou.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/213-0
+00:18:34.091 --> 00:18:38.222
+<v Vitor Hugo Campos>Aí, com a entrada do locus,
+aí a gente vai ter que adicionar algumas</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/213-1
+00:18:38.222 --> 00:18:43.012
+<v Vitor Hugo Campos>coisas de permissão que o usuário vai
+poder acessar, ou o locus ou o alvo, etc.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/213-2
+00:18:43.012 --> 00:18:43.371
+<v Vitor Hugo Campos>Então.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/214-0
+00:18:43.531 --> 00:18:45.491
+<v Ronaldo Robledo Mendes De Souza>Seria no caso igual esse desenho aqui,
+não é isso?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/216-0
+00:18:47.011 --> 00:18:52.176
+<v Ronaldo Robledo Mendes De Souza>Então nós temos a base do ciclo aqui,
+faço, faço a autenticação lá no na APIO,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/216-1
+00:18:52.176 --> 00:18:55.248
+<v Ronaldo Robledo Mendes De Souza>certo?
+E gravamos na nossa base do ciclo aqui,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/215-0
+00:18:53.971 --> 00:18:54.411
+<v Vitor Hugo Campos>So.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/216-2
+00:18:55.248 --> 00:18:55.771
+<v Ronaldo Robledo Mendes De Souza>correto?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/217-0
+00:18:57.291 --> 00:18:58.011
+<v Vitor Hugo Campos>That mapley.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/218-0
+00:18:59.531 --> 00:19:04.411
+<v Vitor Hugo Campos>Aí na nossa base do sigla que fica as
+informações de permissões daquele usuário.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/219-0
+00:19:04.891 --> 00:19:08.811
+<v Ronaldo Robledo Mendes De Souza>correto correto é isso mesmo então beleza</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/220-0
+00:19:14.891 --> 00:19:15.131
+<v Ronaldo Robledo Mendes De Souza>Yeah.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/221-0
+00:19:19.931 --> 00:19:24.731
+<v Ronaldo Robledo Mendes De Souza>Queria validar com você o Vitor,
+alguns componentes aqui.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/222-0
+00:19:25.691 --> 00:19:29.211
+<v Ronaldo Robledo Mendes De Souza>algumas funcionalidades que já foram
+executadas, tá?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/223-0
+00:19:29.771 --> 00:19:30.091
+<v Vitor Hugo Campos>Yeah.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/224-0
+00:19:30.491 --> 00:19:31.091
+<v Ronaldo Robledo Mendes De Souza>The show.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/225-0
+00:19:35.211 --> 00:19:36.171
+<v Ronaldo Robledo Mendes De Souza>Só pegar aqui.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/226-0
+00:19:45.131 --> 00:19:45.811
+<v Ronaldo Robledo Mendes De Souza>Santos.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/227-0
+00:19:48.371 --> 00:19:50.797
+<v Ronaldo Robledo Mendes De Souza>Para Jessica entrar aqui,
+mas ela não podia,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/227-1
+00:19:50.797 --> 00:19:54.571
+<v Ronaldo Robledo Mendes De Souza>mas depois eu vou ter uma reunião com ela
+e eu vou validar isso aqui.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/228-0
+00:20:19.011 --> 00:20:19.211
+<v Vitor Hugo Campos>So.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/229-0
+00:20:19.331 --> 00:20:19.451
+<v Vitor Hugo Campos>Yeah.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/230-0
+00:20:20.091 --> 00:20:22.171
+<v Ronaldo Robledo Mendes De Souza>Cadastro de concursos e cargos.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/232-0
+00:20:25.771 --> 00:20:30.468
+<v Vitor Hugo Campos>Isso é isso,
+são 2 partes também se cadastram esses</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/231-0
+00:20:30.091 --> 00:20:30.451
+<v Ronaldo Robledo Mendes De Souza>Mhm.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/232-1
+00:20:30.468 --> 00:20:31.371
+<v Vitor Hugo Campos>concursos.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/233-0
+00:20:32.651 --> 00:20:33.051
+<v Ronaldo Robledo Mendes De Souza>Yes.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/235-0
+00:20:32.651 --> 00:20:35.211
+<v Vitor Hugo Campos>É, eles são cadastrados.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/236-0
+00:20:36.411 --> 00:20:39.281
+<v Vitor Hugo Campos>Não sei como o pessoal de da ICMA falou
+não.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/236-1
+00:20:39.281 --> 00:20:42.087
+<v Vitor Hugo Campos>Quando a gente precisa de um concurso
+novo,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/236-2
+00:20:42.087 --> 00:20:45.211
+<v Vitor Hugo Campos>a gente pede para alguém e esse alguém
+cadastra.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/237-0
+00:20:45.851 --> 00:20:46.851
+<v Ronaldo Robledo Mendes De Souza>EA.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/239-0
+00:20:46.371 --> 00:20:50.902
+<v Vitor Hugo Campos>Com as informações básicas do concurso,
+porque parece que o concurso tem um</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/239-1
+00:20:50.902 --> 00:20:55.611
+<v Vitor Hugo Campos>código específico, alguma coisa assim, só.
+E uma vez cadastrado esse concurso.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/238-0
+00:20:52.251 --> 00:20:52.731
+<v Ronaldo Robledo Mendes De Souza>Go ahead.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/241-0
+00:20:56.611 --> 00:21:00.849
+<v Vitor Hugo Campos>Vamos botar aí na APIEO, certo?
+No banco de dados do e o,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/241-1
+00:21:00.849 --> 00:21:05.451
+<v Vitor Hugo Campos>alguém cadastrou o concurso e associou
+cargos àquele concurso.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/240-0
+00:21:00.931 --> 00:21:01.331
+<v Ronaldo Robledo Mendes De Souza>Mhm.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/242-0
+00:21:06.731 --> 00:21:12.995
+<v Vitor Hugo Campos>Aquela mesma API que eu te passei o link,
+a gente também busca lá informações de</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/242-1
+00:21:12.995 --> 00:21:13.691
+<v Vitor Hugo Campos>concurso.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/243-0
+00:21:16.571 --> 00:21:18.011
+<v Vitor Hugo Campos>Então qual é a ideia, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/244-0
+00:21:17.291 --> 00:21:18.571
+<v Ronaldo Robledo Mendes De Souza>Você fala aqui, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/246-0
+00:21:19.451 --> 00:21:21.713
+<v Vitor Hugo Campos>Não,
+aquela API lá que eu passei com a</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/245-0
+00:21:21.291 --> 00:21:21.931
+<v Ronaldo Robledo Mendes De Souza>Ah, tá.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/246-1
+00:21:21.713 --> 00:21:24.091
+<v Vitor Hugo Campos>documentação lá, essa é minha integração.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/247-0
+00:21:24.571 --> 00:21:25.531
+<v Ronaldo Robledo Mendes De Souza>Go ahead.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/248-0
+00:21:25.851 --> 00:21:31.090
+<v Vitor Hugo Campos>Esse é um outro ponto.
+Foi desenvolvido esse endpoint de busca</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/248-1
+00:21:31.090 --> 00:21:32.171
+<v Vitor Hugo Campos>de concursos.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/249-0
+00:21:34.251 --> 00:21:35.371
+<v Vitor Hugo Campos>Em dezembro.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/250-0
+00:21:37.051 --> 00:21:40.997
+<v Vitor Hugo Campos>Eles subiram para homolog,
+a gente validou tal,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/250-1
+00:21:40.997 --> 00:21:46.832
+<v Vitor Hugo Campos>a gente conseguia consultar.
+Depois eles tiraram esse endpoint daquela</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/250-2
+00:21:46.832 --> 00:21:49.051
+<v Vitor Hugo Campos>API, essa minha integração.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/251-0
+00:21:50.411 --> 00:21:51.931
+<v Vitor Hugo Campos>e precisam colocar de volta</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/252-0
+00:21:53.371 --> 00:21:56.651
+<v Vitor Hugo Campos>Mas essa é a ideia.
+Alguém cadastra concurso lá?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/253-0
+00:21:57.931 --> 00:22:03.017
+<v Vitor Hugo Campos>A gente busca essa informação através
+daquele SMA integração API.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/253-1
+00:22:03.017 --> 00:22:08.411
+<v Vitor Hugo Campos>Aí a gente traz para o nosso banco de
+dados esses concursos e cargos.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/254-0
+00:22:10.891 --> 00:22:13.371
+<v Vitor Hugo Campos>Aí só tem alguns dados que vem de lá.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/255-0
+00:22:14.651 --> 00:22:22.030
+<v Vitor Hugo Campos>Aí o pessoal da SME pediu para adicionar
+algumas informações que são relevantes</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/255-1
+00:22:22.030 --> 00:22:22.491
+<v Vitor Hugo Campos>para.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/256-0
+00:22:23.451 --> 00:22:27.085
+<v Vitor Hugo Campos>O sigla,
+não necessariamente lá para o e o. Então,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/256-1
+00:22:27.085 --> 00:22:32.998
+<v Vitor Hugo Campos>uma vez que a gente busca os concursos e
+cargos e traz para o nosso banco de dados</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/256-2
+00:22:32.998 --> 00:22:36.418
+<v Vitor Hugo Campos>aqui,
+a pessoa edita esses concursos e adiciona</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/256-3
+00:22:36.418 --> 00:22:37.771
+<v Vitor Hugo Campos>outras informações.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/258-0
+00:22:38.931 --> 00:22:42.998
+<v Vitor Hugo Campos>Se você quiser acessar lá no alvo,
+você pode até ver.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/258-1
+00:22:42.998 --> 00:22:48.195
+<v Vitor Hugo Campos>Eu posso até te falar o que que vem.
+Vai ali em gerenciar concursos,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/257-0
+00:22:44.731 --> 00:22:45.371
+<v Ronaldo Robledo Mendes De Souza>We fall aqui.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/258-2
+00:22:48.195 --> 00:22:49.851
+<v Vitor Hugo Campos>cadastro de concursos.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/259-0
+00:22:52.011 --> 00:22:56.494
+<v Vitor Hugo Campos>Então ó, desce,
+vai descendo aí pra até a última página,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/259-1
+00:22:56.494 --> 00:23:01.291
+<v Vitor Hugo Campos>vai descendo aí que deve ter,
+pode ir até a página seis ali.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/260-0
+00:23:06.891 --> 00:23:10.971
+<v Vitor Hugo Campos>Eu acho que algum desses concursos aí que
+são mais antigos,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/260-1
+00:23:10.971 --> 00:23:13.691
+<v Vitor Hugo Campos>a gente trouxe lá do SMA integração API.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/261-0
+00:23:15.371 --> 00:23:16.331
+<v Vitor Hugo Campos>Aí quando a gente.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/262-0
+00:23:18.571 --> 00:23:21.579
+<v Vitor Hugo Campos>Adicionou essa parte de cadastro de
+concursos,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/262-1
+00:23:21.579 --> 00:23:26.507
+<v Vitor Hugo Campos>a gente deu a opção de adicionar Campos.
+Então, se você clicar em editar aí,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/262-2
+00:23:26.507 --> 00:23:29.451
+<v Vitor Hugo Campos>clica aí nesse qualquer um desses últimos
+aí.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/263-0
+00:23:31.771 --> 00:23:33.051
+<v Vitor Hugo Campos>Pode clicar em editar.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/264-0
+00:23:34.171 --> 00:23:39.863
+<v Vitor Hugo Campos>Então, o que que vinha para a gente, né?
+O que que vem lá da da integração API, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/264-1
+00:23:39.863 --> 00:23:40.811
+<v Vitor Hugo Campos>Vem os cargos.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/265-0
+00:23:42.331 --> 00:23:45.851
+<v Vitor Hugo Campos>O nome do concurso e esse processo SEI.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/266-0
+00:23:48.171 --> 00:23:54.124
+<v Vitor Hugo Campos>Aí toda todas essas outras informações da
+página 2 e 3 também são coisas que não</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/266-1
+00:23:54.124 --> 00:24:00.150
+<v Vitor Hugo Campos>existem e elas pediram para adicionar um
+incremento para adicionar informações ao</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/266-2
+00:24:00.150 --> 00:24:00.811
+<v Vitor Hugo Campos>concurso.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/267-0
+00:24:02.171 --> 00:24:06.082
+<v Vitor Hugo Campos>Duas etapas,
+a gente busca os dados base dos concursos</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/267-1
+00:24:06.082 --> 00:24:09.851
+<v Vitor Hugo Campos>e do nosso lado aqui,
+esses dados são incrementados.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/268-0
+00:24:11.531 --> 00:24:15.544
+<v Ronaldo Robledo Mendes De Souza>Entendi, entendi, entendi. Bom,
+então assim, mas resumidamente falando,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/268-1
+00:24:15.544 --> 00:24:18.331
+<v Ronaldo Robledo Mendes De Souza>esse cadastro de concurso já está feito,
+correto?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/269-0
+00:24:19.131 --> 00:24:20.091
+<v Vitor Hugo Campos>Sim, it's a perfect.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/271-0
+00:24:20.651 --> 00:24:23.698
+<v Ronaldo Robledo Mendes De Souza>Porque é, quais eram os componentes aqui?
+Oh, é,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/271-1
+00:24:23.698 --> 00:24:28.796
+<v Ronaldo Robledo Mendes De Souza>deixa eu só validar uma coisa com você,
+falou que essa informação ela está dentro</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/271-2
+00:24:28.796 --> 00:24:31.531
+<v Ronaldo Robledo Mendes De Souza>dessa API do MS processo concurso,
+confere?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/270-0
+00:24:31.771 --> 00:24:32.811
+<v Vitor Hugo Campos>Same, same.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/272-0
+00:24:34.491 --> 00:24:38.518
+<v Ronaldo Robledo Mendes De Souza>Então a gente teria cadastro, alteração,
+exclusão, visualização,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/272-1
+00:24:38.518 --> 00:24:42.731
+<v Ronaldo Robledo Mendes De Souza>inserir todas essas funcionalidades aqui
+dentro dessa API. Confere?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/273-0
+00:24:43.891 --> 00:24:44.171
+<v Vitor Hugo Campos>Sim.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/274-0
+00:24:45.371 --> 00:24:50.011
+<v Ronaldo Robledo Mendes De Souza>OK, OK, OK, OK, tá tranquilo, Pedro?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/275-0
+00:24:51.051 --> 00:24:52.731
+<v Ronaldo Robledo Mendes De Souza>Here, you see, a gear aqui up.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/276-0
+00:24:54.811 --> 00:24:58.331
+<v Ronaldo Robledo Mendes De Souza>Mas essa funcionalidade de escolha de
+vagas e unidades escolares.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/277-0
+00:25:00.251 --> 00:25:01.531
+<v Vitor Hugo Campos>Também, já tem.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/278-0
+00:25:01.131 --> 00:25:06.731
+<v Ronaldo Robledo Mendes De Souza>tá bem tá só MS escolha beleza</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/280-0
+00:25:07.611 --> 00:25:11.531
+<v Vitor Hugo Campos>Yeah, so about I think that.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/279-0
+00:25:07.771 --> 00:25:11.131
+<v Ronaldo Robledo Mendes De Souza>Essa parte aqui,
+essa parte aqui vai falar.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/282-0
+00:25:12.971 --> 00:25:17.151
+<v Ronaldo Robledo Mendes De Souza>É a minha dúvida, essa parte aqui,
+ela está dentro, essa parte,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/281-0
+00:25:13.131 --> 00:25:14.731
+<v Vitor Hugo Campos>Vou fazer uma, tá?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/282-1
+00:25:17.151 --> 00:25:19.371
+<v Ronaldo Robledo Mendes De Souza>ela faz parte do alvo ou do locus?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/283-0
+00:25:20.731 --> 00:25:21.291
+<v Vitor Hugo Campos>the world.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/284-0
+00:25:21.851 --> 00:25:22.091
+<v Ronaldo Robledo Mendes De Souza>Hello!</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/285-0
+00:25:23.291 --> 00:25:25.371
+<v Vitor Hugo Campos>É só pra resumir isso aí, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/286-0
+00:25:27.051 --> 00:25:33.030
+<v Vitor Hugo Campos>A escolha, o que que é a escolha né?
+É a pessoa que passou no concurso dizer</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/286-1
+00:25:33.030 --> 00:25:38.776
+<v Vitor Hugo Campos>eu quero trabalhar em tal lugar.
+Eu passei nesse concurso para esse cargo</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/286-2
+00:25:38.776 --> 00:25:41.571
+<v Vitor Hugo Campos>e eu quero trabalhar em algum lugar.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/287-0
+00:25:42.051 --> 00:25:42.171
+<v Vitor Hugo Campos>Right.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/288-0
+00:25:43.611 --> 00:25:47.451
+<v Vitor Hugo Campos>Então,
+a gente importa as vagas que estão</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/288-1
+00:25:47.451 --> 00:25:50.011
+<v Vitor Hugo Campos>disponíveis nas escolas, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/289-0
+00:25:51.531 --> 00:25:56.491
+<v Vitor Hugo Campos>A gente importa a lista de pessoas que
+passaram no concurso, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/291-0
+00:25:58.891 --> 00:26:04.989
+<v Vitor Hugo Campos>E aí o pessoal da SME cria uma convocação
+que pode ter passado 5000 pessoas né só</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/291-1
+00:26:04.989 --> 00:26:09.451
+<v Vitor Hugo Campos>que aí você não chama 5000 de uma vez né
+você tem etapas né</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/290-0
+00:26:06.411 --> 00:26:06.771
+<v Ronaldo Robledo Mendes De Souza>Mhm.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/292-0
+00:26:10.651 --> 00:26:12.971
+<v Vitor Hugo Campos>Aí você coloca 100 pessoas.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/293-0
+00:26:14.251 --> 00:26:15.931
+<v Vitor Hugo Campos>Aí essa convocação.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/294-0
+00:26:18.131 --> 00:26:23.451
+<v Vitor Hugo Campos>A pessoa recebe até um e-mail,
+você foi convocado pra poder escolher.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/295-0
+00:26:24.491 --> 00:26:27.541
+<v Vitor Hugo Campos>Então,
+essas 100 pessoas que foram convocadas</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/295-1
+00:26:27.541 --> 00:26:31.851
+<v Vitor Hugo Campos>podem fazer a escolha de onde quer
+trabalhar. Em resumo, é isso.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/296-0
+00:26:33.131 --> 00:26:34.011
+<v Vitor Hugo Campos>A escolha, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/297-0
+00:26:36.011 --> 00:26:37.571
+<v Ronaldo Robledo Mendes De Souza>Thank you. Thank you.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/298-0
+00:26:40.251 --> 00:26:41.131
+<v Ronaldo Robledo Mendes De Souza>escolha</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/299-0
+00:26:41.611 --> 00:26:46.129
+<v Vitor Hugo Campos>Por isso que se chama escolhas o outro,
+que é para você escolher onde quer</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/299-1
+00:26:46.129 --> 00:26:46.731
+<v Vitor Hugo Campos>trabalhar.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/300-0
+00:26:48.331 --> 00:26:48.651
+<v Ronaldo Robledo Mendes De Souza>Yeah.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/301-0
+00:26:48.491 --> 00:26:49.491
+<v Vitor Hugo Campos>That's nice.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/302-0
+00:26:49.931 --> 00:26:54.171
+<v Ronaldo Robledo Mendes De Souza>Cadastro de usado do sistema gente acabou
+de falar né cadastro</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/303-0
+00:26:53.611 --> 00:27:00.731
+<v Vitor Hugo Campos>É, a gente não adiciona usuários, é,
+vamos dizer assim, não é all, a gente só.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/304-0
+00:27:03.291 --> 00:27:04.491
+<v Ronaldo Robledo Mendes De Souza>Válido lá, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/305-0
+00:27:03.531 --> 00:27:10.337
+<v Vitor Hugo Campos>Consulta é porque a gente fez uma carga
+no banco de dados do MS Admin usuários</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/305-1
+00:27:10.337 --> 00:27:13.611
+<v Vitor Hugo Campos>com alguns usuários que eles passaram.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/306-0
+00:27:15.291 --> 00:27:18.249
+<v Vitor Hugo Campos>É,
+e todos os usuários que eles passaram já</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/306-1
+00:27:18.249 --> 00:27:21.610
+<v Vitor Hugo Campos>tem conta lá no e o, né? Então todos eles.
+Agora,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/306-2
+00:27:21.610 --> 00:27:24.769
+<v Vitor Hugo Campos>se virar alguma pessoa nova para
+trabalhar lá,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/306-3
+00:27:24.769 --> 00:27:28.331
+<v Vitor Hugo Campos>a gente não tem capacidade de adicionar
+essa pessoa.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/307-0
+00:27:29.211 --> 00:27:33.046
+<v Vitor Hugo Campos>Não é O, vamos dizer assim.
+A gente ainda não está fazendo isso e nem</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/307-1
+00:27:33.046 --> 00:27:34.251
+<v Vitor Hugo Campos>sabe se vai fazer, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/308-0
+00:27:35.611 --> 00:27:38.091
+<v Ronaldo Robledo Mendes De Souza>Ah, tá, porque uma das, uma, uma das.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/310-0
+00:27:36.011 --> 00:27:41.569
+<v Vitor Hugo Campos>O nosso cadastrar usuário a gente
+cadastra no sigla. Vamos dizer,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/310-1
+00:27:41.569 --> 00:27:47.885
+<v Vitor Hugo Campos>você trabalhava lá no ICME em algum
+sistema lá que você tinha um login já.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/310-2
+00:27:47.885 --> 00:27:52.011
+<v Vitor Hugo Campos>Aí você foi transferido para trabalhar no
+sigla.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/309-0
+00:27:48.571 --> 00:27:48.651
+<v Ronaldo Robledo Mendes De Souza>Uh-huh.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/312-0
+00:27:53.371 --> 00:27:57.147
+<v Vitor Hugo Campos>Você existe lá no EOL,
+mas você não existe no sigla, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/312-1
+00:27:57.147 --> 00:28:01.651
+<v Vitor Hugo Campos>Então a gente cadastra você no sigla,
+mas não cadastra você no EOL.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/311-0
+00:27:57.531 --> 00:27:57.771
+<v Ronaldo Robledo Mendes De Souza>Mm.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/313-0
+00:28:01.931 --> 00:28:05.847
+<v Ronaldo Robledo Mendes De Souza>Entendi, entendi.
+Para uma das premissas é para mim</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/313-1
+00:28:05.847 --> 00:28:10.289
+<v Ronaldo Robledo Mendes De Souza>cadastrar no sigla,
+eu tenho que ter é ter cadastro no el,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/313-2
+00:28:10.289 --> 00:28:10.891
+<v Ronaldo Robledo Mendes De Souza>correto?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/314-0
+00:28:11.451 --> 00:28:16.874
+<v Vitor Hugo Campos>É porque tem um lugar lá que aí você bota
+o RF, que é o ID, o username, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/314-1
+00:28:16.874 --> 00:28:19.371
+<v Vitor Hugo Campos>A gente busca lá no e o, vê se tem.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/315-0
+00:28:20.531 --> 00:28:24.228
+<v Vitor Hugo Campos>Se tiver,
+aí a gente pega que ele tem e-mail,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/315-1
+00:28:24.228 --> 00:28:29.371
+<v Vitor Hugo Campos>tem nome e algumas outras coisas só.
+Aí cadastrar não é ou não.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/317-0
+00:28:31.691 --> 00:28:37.091
+<v Ronaldo Robledo Mendes De Souza>OK, importação de dados,
+logo aqui acho que aqui é a fase mais</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/317-1
+00:28:37.091 --> 00:28:41.463
+<v Ronaldo Robledo Mendes De Souza>importante para a gente estar verificando
+o mesmo.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/317-2
+00:28:41.463 --> 00:28:46.091
+<v Ronaldo Robledo Mendes De Souza>Essa parte de importação de dados do do
+lócus, certo?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/318-0
+00:28:46.491 --> 00:28:49.448
+<v Ronaldo Robledo Mendes De Souza>É,
+ela já está totalmente conclusa hoje ou</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/318-1
+00:28:49.448 --> 00:28:50.891
+<v Ronaldo Robledo Mendes De Souza>está aí em andamento?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/322-0
+00:28:52.571 --> 00:28:57.892
+<v Vitor Hugo Campos>Já está feita todas as importações e
+exportações que eles também usam, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/319-0
+00:28:54.251 --> 00:28:54.571
+<v Ronaldo Robledo Mendes De Souza>Yeah, that.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/322-1
+00:28:57.892 --> 00:29:03.355
+<v Vitor Hugo Campos>Porque tem muita, vamos dizer assim,
+a integração de sistema deles é através</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/320-0
+00:28:59.051 --> 00:28:59.411
+<v Ronaldo Robledo Mendes De Souza>Mhm.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/321-0
+00:29:03.291 --> 00:29:03.331
+<v Ronaldo Robledo Mendes De Souza>O.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/322-2
+00:29:03.355 --> 00:29:07.044
+<v Vitor Hugo Campos>de arquivo, né?
+Ele vai lá no tipo SigPack que é um</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/322-3
+00:29:07.044 --> 00:29:07.611
+<v Vitor Hugo Campos>sistema.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/323-0
+00:29:08.171 --> 00:29:14.386
+<v Vitor Hugo Campos>Ele gera um arquivo lá que importa o
+sigla. Aí tem essas informações,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/323-1
+00:29:14.386 --> 00:29:20.068
+<v Vitor Hugo Campos>aí depois a gente pode exportar algo do
+sigla para importar lá.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/323-2
+00:29:20.068 --> 00:29:22.731
+<v Vitor Hugo Campos>É tudo integração via arquivo.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/324-0
+00:29:23.131 --> 00:29:24.011
+<v Vitor Hugo Campos>Nah request, no.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/325-0
+00:29:25.051 --> 00:29:25.691
+<v Ronaldo Robledo Mendes De Souza>Dock Dition.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/326-0
+00:29:25.051 --> 00:29:26.011
+<v Vitor Hugo Campos>A gente tem.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/327-0
+00:29:27.451 --> 00:29:28.491
+<v Vitor Hugo Campos>A gente tem.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/329-0
+00:29:29.931 --> 00:29:34.367
+<v Vitor Hugo Campos>Aquela sessão que você viu na importação
+vagas tem um layout específico,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/328-0
+00:29:32.731 --> 00:29:32.811
+<v Ronaldo Robledo Mendes De Souza>Uh-huh.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/329-1
+00:29:34.367 --> 00:29:38.863
+<v Vitor Hugo Campos>que a gente valida o layout do arquivo,
+vê se está vendo todos os campos,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/329-2
+00:29:38.863 --> 00:29:39.531
+<v Vitor Hugo Campos>as colunas.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/330-0
+00:29:41.051 --> 00:29:47.051
+<v Vitor Hugo Campos>É aí tem do dos candidatos também,
+a gente valida a estrutura do arquivo, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/331-0
+00:29:49.211 --> 00:29:54.085
+<v Vitor Hugo Campos>Tem a terceira importação,
+isso se baseando pelo escolhas atual, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/331-1
+00:29:54.085 --> 00:29:57.051
+<v Vitor Hugo Campos>A gente fez quase igual, né? O que é hoje?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/332-0
+00:29:58.171 --> 00:30:01.736
+<v Vitor Hugo Campos>A gente tem uma importação que não é
+através de arquivo.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/332-1
+00:30:01.736 --> 00:30:05.176
+<v Vitor Hugo Campos>A gente vai buscar informação lá no
+sistema da PRODAM.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/332-2
+00:30:05.176 --> 00:30:08.491
+<v Vitor Hugo Campos>É uma outra importação que não é através
+de arquivo.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/333-0
+00:30:09.851 --> 00:30:13.251
+<v Vitor Hugo Campos>E tem a última lá,
+que é a importação SIGPAC,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/333-1
+00:30:13.251 --> 00:30:16.651
+<v Vitor Hugo Campos>que é o outro sistema lá que gera
+informação.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/334-0
+00:30:18.051 --> 00:30:20.891
+<v Vitor Hugo Campos>Então tudo isso aí já tá feito.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/335-0
+00:30:22.691 --> 00:30:24.491
+<v Ronaldo Robledo Mendes De Souza>Okay, beleza.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/336-0
+00:30:24.651 --> 00:30:28.965
+<v Vitor Hugo Campos>Igual a gente também salva o histórico de
+importação, sabe? Se deu erro,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/336-1
+00:30:28.965 --> 00:30:29.851
+<v Vitor Hugo Campos>se deu sucesso.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/337-0
+00:30:32.331 --> 00:30:32.811
+<v Ronaldo Robledo Mendes De Souza>Okay.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/338-0
+00:30:32.571 --> 00:30:34.571
+<v Vitor Hugo Campos>E a gente também.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/339-0
+00:30:35.531 --> 00:30:39.344
+<v Vitor Hugo Campos>Além de importar,
+a gente gera arquivos com as informações</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/339-1
+00:30:39.344 --> 00:30:40.571
+<v Vitor Hugo Campos>que a gente já tem.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/342-0
+00:30:43.051 --> 00:30:44.731
+<v Vitor Hugo Campos>Igualzinho o que eu escolhas hoje.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/341-0
+00:30:43.331 --> 00:30:43.691
+<v Ronaldo Robledo Mendes De Souza>That's.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/343-0
+00:30:46.811 --> 00:30:47.291
+<v Ronaldo Robledo Mendes De Souza>Is a</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/344-0
+00:30:46.811 --> 00:30:50.851
+<v Vitor Hugo Campos>Até então né,
+do que a gente já apresentou e do que</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/344-1
+00:30:50.851 --> 00:30:52.171
+<v Vitor Hugo Campos>elas já testaram.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/345-0
+00:30:53.131 --> 00:30:55.771
+<v Vitor Hugo Campos>A princípio está completa essa parte, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/346-0
+00:30:57.611 --> 00:30:58.091
+<v Ronaldo Robledo Mendes De Souza>Okay.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/347-0
+00:30:59.691 --> 00:31:01.451
+<v Ronaldo Robledo Mendes De Souza>So it is up.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/348-0
+00:31:03.411 --> 00:31:04.411
+<v Ronaldo Robledo Mendes De Souza>Votação.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/351-0
+00:31:03.931 --> 00:31:08.479
+<v Vitor Hugo Campos>Quem está se comunicando com o importa
+arquivo ainda é o alvo, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/351-1
+00:31:08.479 --> 00:31:10.651
+<v Vitor Hugo Campos>Posteriormente deve ser o locus.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/350-0
+00:31:09.091 --> 00:31:09.171
+<v Ronaldo Robledo Mendes De Souza>That.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/354-0
+00:31:13.131 --> 00:31:15.891
+<v Ronaldo Robledo Mendes De Souza>Tá,
+então as funcionalidades hoje estão todas</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/354-1
+00:31:15.891 --> 00:31:19.131
+<v Ronaldo Robledo Mendes De Souza>dentro do está se comunicando todas com é
+o alvo, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/352-0
+00:31:17.291 --> 00:31:17.611
+<v Vitor Hugo Campos>Well</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/353-0
+00:31:19.851 --> 00:31:20.171
+<v Vitor Hugo Campos>Okay.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/355-0
+00:31:20.571 --> 00:31:21.051
+<v Ronaldo Robledo Mendes De Souza>Okay.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/356-0
+00:31:24.731 --> 00:31:30.891
+<v Ronaldo Robledo Mendes De Souza>Tem alguma coisa que o front-end do Lopes
+já tá fazendo ou o Vitor ainda não?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/357-0
+00:31:29.371 --> 00:31:32.331
+<v Vitor Hugo Campos>Não, não é todo estado.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/358-0
+00:31:33.371 --> 00:31:34.091
+<v Ronaldo Robledo Mendes De Souza>A do station.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/359-0
+00:31:34.571 --> 00:31:40.764
+<v Vitor Hugo Campos>É porque o locus que o Guilherme está
+fazendo o protótipo e que está validando</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/359-1
+00:31:40.764 --> 00:31:42.331
+<v Vitor Hugo Campos>com o pessoal de lá.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/360-0
+00:31:43.491 --> 00:31:47.510
+<v Vitor Hugo Campos>Não é necessariamente essas coisas que a
+gente passou aí que, em tese,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/360-1
+00:31:47.510 --> 00:31:48.811
+<v Vitor Hugo Campos>tem que estar no locus.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/361-0
+00:31:49.531 --> 00:31:49.691
+<v Ronaldo Robledo Mendes De Souza>Oh.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/362-0
+00:31:50.171 --> 00:31:52.091
+<v Vitor Hugo Campos>São as coisas que vem.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/363-0
+00:31:53.531 --> 00:31:53.931
+<v Vitor Hugo Campos>Boss.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/364-0
+00:31:56.251 --> 00:31:59.771
+<v Vitor Hugo Campos>Escolha do candidato e quando ele começa
+a trabalhar, vamos dizer assim.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/365-0
+00:32:01.371 --> 00:32:03.051
+<v Vitor Hugo Campos>Essa parte de do alvo.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/366-0
+00:32:04.331 --> 00:32:07.451
+<v Vitor Hugo Campos>É enquanto o cara não está empregado.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/367-0
+00:32:08.971 --> 00:32:11.931
+<v Vitor Hugo Campos>Quando o cara assume o cargo dele.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/368-0
+00:32:12.971 --> 00:32:19.556
+<v Vitor Hugo Campos>aí é o que a gente tá é o que eu entendo
+né que a gente tá fazendo lócus agora</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/368-1
+00:32:19.556 --> 00:32:25.641
+<v Vitor Hugo Campos>quando o cara começa a trabalhar que aí
+são outras informações do do dos</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/368-2
+00:32:25.641 --> 00:32:26.891
+<v Vitor Hugo Campos>funcionários né</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/370-0
+00:32:29.771 --> 00:32:32.656
+<v Vitor Hugo Campos>Mas se a gente for seguir essa ideia
+inicial,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/369-0
+00:32:29.931 --> 00:32:30.251
+<v Ronaldo Robledo Mendes De Souza>Sure.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/370-1
+00:32:32.656 --> 00:32:36.731
+<v Vitor Hugo Campos>essa parte de importação de arquivos tem
+que estar no locus, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/372-0
+00:32:37.851 --> 00:32:42.091
+<v Vitor Hugo Campos>Essa parte de usuários tem que estar no
+locus, que por enquanto está no alvo.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/371-0
+00:32:38.091 --> 00:32:38.331
+<v Ronaldo Robledo Mendes De Souza>Okay.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/373-0
+00:32:43.171 --> 00:32:46.171
+<v Vitor Hugo Campos>Mas pelo menos já tá funcionando, então.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/374-0
+00:32:55.851 --> 00:33:00.331
+<v Ronaldo Robledo Mendes De Souza>É porque a forma que a Jessica tinha
+separado é o seguinte aqui.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/375-0
+00:33:01.851 --> 00:33:05.883
+<v Ronaldo Robledo Mendes De Souza>O sistema importa periodicamente os dados
+do EOL e do SIGPEC.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/375-1
+00:33:05.883 --> 00:33:09.719
+<v Ronaldo Robledo Mendes De Souza>O sistema confronta as informações e
+sinaliza divergência.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/375-2
+00:33:09.719 --> 00:33:14.856
+<v Ronaldo Robledo Mendes De Souza>O analista da de cá consulta do servidor.
+Esse aqui eu vou ter que checar esse</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/375-3
+00:33:14.856 --> 00:33:17.131
+<v Ronaldo Robledo Mendes De Souza>passo a passo que ela colocou aqui.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/376-0
+00:33:17.331 --> 00:33:22.778
+<v Ronaldo Robledo Mendes De Souza>Registro corrige lotação e movimentação,
+o sistema grava a alteração no histórico</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/376-1
+00:33:22.778 --> 00:33:24.771
+<v Ronaldo Robledo Mendes De Souza>preservando a versão anterior.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/377-0
+00:33:25.771 --> 00:33:26.771
+<v Ronaldo Robledo Mendes De Souza>Go spread.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/378-0
+00:33:26.091 --> 00:33:29.031
+<v Vitor Hugo Campos>Isso aí,
+isso aí já é mais relacionado ao locus,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/378-1
+00:33:29.031 --> 00:33:29.211
+<v Vitor Hugo Campos>né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/379-0
+00:33:29.371 --> 00:33:31.482
+<v Ronaldo Robledo Mendes De Souza>Isso,
+tudo isso que eu estou falando é do lócus,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/379-1
+00:33:31.482 --> 00:33:31.611
+<v Ronaldo Robledo Mendes De Souza>tá?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/380-0
+00:33:32.011 --> 00:33:32.571
+<v Vitor Hugo Campos>Data.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/381-0
+00:33:32.891 --> 00:33:36.664
+<v Ronaldo Robledo Mendes De Souza>O sistema grava alteração,
+não estou preservando a versão anterior.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/381-1
+00:33:36.664 --> 00:33:40.160
+<v Ronaldo Robledo Mendes De Souza>Essas informações que eu estou lendo aqui
+para mim está muito,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/381-2
+00:33:40.160 --> 00:33:43.322
+<v Ronaldo Robledo Mendes De Souza>como eu não estou aprofundado no sistema,
+me fala Vitor,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/381-3
+00:33:43.322 --> 00:33:46.651
+<v Ronaldo Robledo Mendes De Souza>você tem conhecimento dela hoje?
+Já funcionando no sistema?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/383-0
+00:33:47.371 --> 00:33:49.802
+<v Vitor Hugo Campos>Não,
+tudo sair do locus não existe nada</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/383-1
+00:33:49.802 --> 00:33:52.171
+<v Vitor Hugo Campos>dinâmico hoje, é só front, só estático.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/382-0
+00:33:50.891 --> 00:33:51.091
+<v Ronaldo Robledo Mendes De Souza>It.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/384-0
+00:33:53.931 --> 00:33:58.145
+<v Ronaldo Robledo Mendes De Souza>O analista ou gestor gera relatórios
+sobre o quadro funcional para a tomada de</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/384-1
+00:33:58.145 --> 00:33:58.571
+<v Ronaldo Robledo Mendes De Souza>decisão.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/385-0
+00:33:59.691 --> 00:34:01.451
+<v Vitor Hugo Campos>É isso aí é o que vai ter ainda, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/386-0
+00:34:01.931 --> 00:34:05.777
+<v Ronaldo Robledo Mendes De Souza>Sim, em caso de revisão, auditoria,
+consulta-se o histórico da versão do</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/386-1
+00:34:05.777 --> 00:34:06.251
+<v Ronaldo Robledo Mendes De Souza>registro.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/387-0
+00:34:07.051 --> 00:34:11.463
+<v Vitor Hugo Campos>Eu posso até te mostrar um exemplo aqui
+pra gente tentar ter uma ideia de como</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/387-1
+00:34:11.463 --> 00:34:14.312
+<v Vitor Hugo Campos>vai ser.
+Vai naquela URL lá do alvo e coloca barra</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/387-2
+00:34:14.312 --> 00:34:15.931
+<v Vitor Hugo Campos>locus ao invés do barra alvo.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/388-0
+00:34:17.451 --> 00:34:18.011
+<v Vitor Hugo Campos>Alia.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/389-0
+00:34:20.211 --> 00:34:21.451
+<v Vitor Hugo Campos>Para botar barra locus.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/390-0
+00:34:24.651 --> 00:34:25.051
+<v Ronaldo Robledo Mendes De Souza>Go ahead.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/391-0
+00:34:25.611 --> 00:34:29.291
+<v Vitor Hugo Campos>Que vamos, vamos pegar, por exemplo.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/392-0
+00:34:32.091 --> 00:34:32.131
+<v Vitor Hugo Campos>Oh.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/393-0
+00:34:33.611 --> 00:34:38.727
+<v Vitor Hugo Campos>A escola hoje, certo que a unidade escola,
+a escola, a mesma coisa, sabe? OE,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/393-1
+00:34:38.727 --> 00:34:40.891
+<v Vitor Hugo Campos>se você ver, tudo sai escola, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/394-0
+00:34:42.811 --> 00:34:45.961
+<v Vitor Hugo Campos>Então,
+essa parte de gestão aí ele mostra um</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/394-1
+00:34:45.961 --> 00:34:48.411
+<v Vitor Hugo Campos>resumo das informações das escolas.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/395-0
+00:34:50.011 --> 00:34:54.811
+<v Vitor Hugo Campos>Aí quem tá trabalhando, se tem vaga ainda,
+só me resumo a isso aí, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/396-0
+00:34:55.611 --> 00:34:56.651
+<v Ronaldo Robledo Mendes De Souza>Uh-huh, sing.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/397-0
+00:34:56.491 --> 00:35:02.091
+<v Vitor Hugo Campos>Então, hoje, do jeito que está hoje,
+que informações a gente tem da escola?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/398-0
+00:35:03.131 --> 00:35:05.211
+<v Vitor Hugo Campos>A gente consegue descobrir.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/399-0
+00:35:06.651 --> 00:35:09.771
+<v Vitor Hugo Campos>Quem escolheu aquela escola para
+trabalhar?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/400-0
+00:35:10.891 --> 00:35:15.291
+<v Vitor Hugo Campos>Certo? Em tese,
+é alguém que está trabalhando lá, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/401-0
+00:35:16.571 --> 00:35:19.851
+<v Vitor Hugo Campos>Esse, por exemplo,
+é a informação que a gente tem da escola.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/402-0
+00:35:21.051 --> 00:35:22.411
+<v Vitor Hugo Campos>Essa página aí</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/403-0
+00:35:23.611 --> 00:35:28.411
+<v Vitor Hugo Campos>Ela tem um monte de informações a mais,
+né? Ó, se você descer aí, ó.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/405-0
+00:35:32.091 --> 00:35:34.559
+<v Vitor Hugo Campos>É ali,
+tem diretoria ali nesse segundo</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/405-1
+00:35:34.559 --> 00:35:37.785
+<v Vitor Hugo Campos>formulário aí.
+Cargo a gente tem como descobrir os</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/404-0
+00:35:36.011 --> 00:35:36.091
+<v Ronaldo Robledo Mendes De Souza>Uh-huh.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/405-2
+00:35:37.785 --> 00:35:41.960
+<v Vitor Hugo Campos>cargos que daquela escola.
+Estrutura hierárquica a gente não tem.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/405-3
+00:35:41.960 --> 00:35:47.211
+<v Vitor Hugo Campos>Código de lotação deve ser o código EOL.
+A gente tem. Tipo de unidade a gente tem.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/406-0
+00:35:48.011 --> 00:35:53.852
+<v Vitor Hugo Campos>a escolas municipalizadas a gente não não
+tem por enquanto ano da municipalização</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/406-1
+00:35:53.852 --> 00:35:59.052
+<v Vitor Hugo Campos>não tem então todas essas outras
+informações hoje a gente não tem que de</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/406-2
+00:35:59.052 --> 00:36:03.611
+<v Vitor Hugo Campos>acordo com essa página e do que foi
+validado com elas lá da CME</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/407-0
+00:36:04.411 --> 00:36:07.051
+<v Vitor Hugo Campos>A gente precisa salvar essa informação em
+algum lugar, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/408-0
+00:36:10.011 --> 00:36:10.491
+<v Ronaldo Robledo Mendes De Souza>Go ahead.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/409-0
+00:36:10.091 --> 00:36:13.131
+<v Vitor Hugo Campos>Esse é o primeiro ponto onde a gente vai
+salvar essa informação.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/410-0
+00:36:15.451 --> 00:36:18.091
+<v Vitor Hugo Campos>Aí você desce ali, desce,
+desce um pouco ali, oh.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/411-0
+00:36:18.571 --> 00:36:20.571
+<v Ronaldo Robledo Mendes De Souza>Esse aqui, como você falou,
+tá tudo estático, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/412-0
+00:36:20.971 --> 00:36:22.171
+<v Vitor Hugo Campos>Perto de estático aí.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/414-0
+00:36:23.331 --> 00:36:29.170
+<v Vitor Hugo Campos>Então, muita informação do que está aí,
+a gente precisa adicionar nas escolas.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/414-1
+00:36:29.170 --> 00:36:34.565
+<v Vitor Hugo Campos>Clica numa escola aí, numa linha.
+Eu acho que vai para outra página. Aí,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/413-0
+00:36:33.291 --> 00:36:34.051
+<v Ronaldo Robledo Mendes De Souza>So, Falkey.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/414-2
+00:36:34.565 --> 00:36:35.451
+<v Vitor Hugo Campos>pode clicar.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/415-0
+00:36:37.771 --> 00:36:44.047
+<v Vitor Hugo Campos>Aí a gente tem, vamos dizer assim,
+as matérias daquela escola e quem está</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/415-1
+00:36:44.047 --> 00:36:49.051
+<v Vitor Hugo Campos>trabalhando, se tem vaga, se tem afastado,
+gente afastada.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/416-0
+00:36:50.011 --> 00:36:54.928
+<v Vitor Hugo Campos>Então hoje, com o alvo hoje,
+do que a gente fez até hoje,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/416-1
+00:36:54.928 --> 00:36:57.131
+<v Vitor Hugo Campos>isso aí a gente não salva.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/417-0
+00:36:57.731 --> 00:36:58.091
+<v Ronaldo Robledo Mendes De Souza>Mhm.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/418-0
+00:37:00.611 --> 00:37:01.051
+<v Ronaldo Robledo Mendes De Souza>Thank you.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/419-0
+00:37:00.691 --> 00:37:05.147
+<v Vitor Hugo Campos>Então a gente tem que ver como a gente
+vai fazer para salvar isso, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/419-1
+00:37:05.147 --> 00:37:07.531
+<v Vitor Hugo Campos>Aí o outro ponto, vai ali em cadastro.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/420-0
+00:37:10.331 --> 00:37:11.691
+<v Vitor Hugo Campos>É atualização.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/421-0
+00:37:14.011 --> 00:37:15.931
+<v Vitor Hugo Campos>O registro funcional ali, oh.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/423-0
+00:37:19.371 --> 00:37:21.931
+<v Vitor Hugo Campos>mais para baixo ali é único que tá
+clicável aí</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/422-0
+00:37:21.051 --> 00:37:21.211
+<v Ronaldo Robledo Mendes De Souza>Okay.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/424-0
+00:37:23.291 --> 00:37:27.696
+<v Vitor Hugo Campos>é digita aí Gabriel acho que é Gabriel
+que tá aí vai digitando aí Gabriel ele</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/424-1
+00:37:27.696 --> 00:37:29.051
+<v Vitor Hugo Campos>vai auto completar ali ó</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/425-0
+00:37:30.291 --> 00:37:32.411
+<v Vitor Hugo Campos>Pode selecionar o primeiro aí,
+por exemplo.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/426-0
+00:37:33.931 --> 00:37:38.324
+<v Vitor Hugo Campos>Então, esse cara aí,
+todas essas pessoas aí vieram através de</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/426-1
+00:37:38.324 --> 00:37:43.851
+<v Vitor Hugo Campos>uma importação de arquivo de habilitados,
+né? Que é aquela tela que você viu.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/427-0
+00:37:46.171 --> 00:37:51.616
+<v Vitor Hugo Campos>Então a gente salva muito,
+ali já tem muita informação da pessoa, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/427-1
+00:37:51.616 --> 00:37:55.894
+<v Vitor Hugo Campos>O RF já tem, o CPF já tem, o cargo,
+o código do cargo,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/427-2
+00:37:55.894 --> 00:38:00.171
+<v Vitor Hugo Campos>aí esses dados funcionais, ó,
+clica ali para expandir.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/428-0
+00:38:03.531 --> 00:38:07.371
+<v Vitor Hugo Campos>segundo aí eh esse CL vínculo</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/429-0
+00:38:08.971 --> 00:38:09.011
+<v Vitor Hugo Campos>Uh</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/430-0
+00:38:09.931 --> 00:38:13.071
+<v Vitor Hugo Campos>Situação funcional do cargo,
+isso a gente não salva.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/430-1
+00:38:13.071 --> 00:38:17.100
+<v Vitor Hugo Campos>A gente teria que adicionar algumas
+informações para aquela pessoa.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/430-2
+00:38:17.100 --> 00:38:20.891
+<v Vitor Hugo Campos>Aí a atividade tem informação aí que a
+gente não está salvando.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/431-0
+00:38:22.211 --> 00:38:28.477
+<v Vitor Hugo Campos>Então, muita coisa que tem aí,
+a gente vai precisar adicionar,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/431-1
+00:38:28.477 --> 00:38:33.051
+<v Vitor Hugo Campos>seja na escola, seja no candidato,
+na pessoa.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/432-0
+00:38:33.931 --> 00:38:36.069
+<v Ronaldo Robledo Mendes De Souza>Pois é,
+mas essas informações que você está me</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/432-1
+00:38:36.069 --> 00:38:38.344
+<v Ronaldo Robledo Mendes De Souza>apresentando aqui, o Vitor, é,
+volto a perguntar,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/432-2
+00:38:38.344 --> 00:38:40.891
+<v Ronaldo Robledo Mendes De Souza>elas são todas estáticas ou estão vindo
+de algum lugar?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/433-0
+00:38:41.851 --> 00:38:43.371
+<v Vitor Hugo Campos>Aí está tudo estático.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/434-0
+00:38:43.891 --> 00:38:44.251
+<v Ronaldo Robledo Mendes De Souza>Mhm.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/435-0
+00:38:44.571 --> 00:38:48.971
+<v Vitor Hugo Campos>a gente a gente tá primeiro fazendo o
+front né porque ficou essa dúvida né</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/436-0
+00:38:50.171 --> 00:38:53.531
+<v Vitor Hugo Campos>É dessa questão da arquitetura aí.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/437-0
+00:38:54.811 --> 00:38:55.931
+<v Vitor Hugo Campos>Tem os candidatos.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/438-0
+00:38:56.971 --> 00:39:00.421
+<v Vitor Hugo Campos>A gente tem um micro serviços que tem os
+candidatos,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/438-1
+00:39:00.421 --> 00:39:05.172
+<v Vitor Hugo Campos>aí a gente vai buscar a informação de lá
+mesmo, tá? A gente busca de lá,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/438-2
+00:39:05.172 --> 00:39:08.622
+<v Vitor Hugo Campos>só que essas informações a mais que a
+gente não tem,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/438-3
+00:39:08.622 --> 00:39:11.811
+<v Vitor Hugo Campos>a gente vai salvar no micro serviços
+candidatos.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/439-0
+00:39:12.891 --> 00:39:14.251
+<v Vitor Hugo Campos>Aí é o questionamento, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/440-0
+00:39:16.211 --> 00:39:19.057
+<v Vitor Hugo Campos>Porque como a gente não tinha essa
+informação,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/440-1
+00:39:19.057 --> 00:39:23.233
+<v Vitor Hugo Campos>se a gente ia usar os mesmos micro
+serviços, adicionando informação,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/440-2
+00:39:23.233 --> 00:39:27.653
+<v Vitor Hugo Campos>se ia precisar de algum outro micro
+serviço para ter outras informações,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/440-3
+00:39:27.653 --> 00:39:29.771
+<v Vitor Hugo Campos>então como a gente ainda não tinha.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/441-0
+00:39:30.811 --> 00:39:35.435
+<v Vitor Hugo Campos>Essas respostas a gente decidiu fazer
+estático que é para entregar algo que</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/441-1
+00:39:35.435 --> 00:39:38.416
+<v Vitor Hugo Campos>elas poderiam ver. Não,
+eles estão fazendo aqui,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/441-2
+00:39:38.416 --> 00:39:41.944
+<v Vitor Hugo Campos>estão evoluindo e tal,
+mas por enquanto tudo isso aí está</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/441-3
+00:39:41.944 --> 00:39:42.491
+<v Vitor Hugo Campos>estático.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/442-0
+00:39:43.611 --> 00:39:48.900
+<v Vitor Hugo Campos>Mas até então, do que a gente desenvolveu,
+algumas coisas a gente tem como buscar</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/442-1
+00:39:48.900 --> 00:39:49.931
+<v Vitor Hugo Campos>essa informação.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/443-0
+00:39:50.971 --> 00:39:52.971
+<v Vitor Hugo Campos>Algumas informações das escolas.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/444-0
+00:39:54.331 --> 00:39:56.251
+<v Vitor Hugo Campos>Algumas informações dos candidatos.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/445-0
+00:39:57.251 --> 00:40:01.291
+<v Vitor Hugo Campos>Então tudo isso a gente tem algo né,
+mas não tem tudo.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/446-0
+00:40:03.691 --> 00:40:03.771
+<v Ronaldo Robledo Mendes De Souza>So.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/447-0
+00:40:04.491 --> 00:40:07.851
+<v Vitor Hugo Campos>aí esse resto aí de informação que é a
+dúvida né</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/448-0
+00:40:09.051 --> 00:40:11.334
+<v Vitor Hugo Campos>É,
+vamos adicionar os Campos lá no micro</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/448-1
+00:40:11.334 --> 00:40:16.011
+<v Vitor Hugo Campos>serviço candidatos que está relacionado a
+candidato, não está não sei o que, então.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/449-0
+00:40:17.211 --> 00:40:20.251
+<v Vitor Hugo Campos>Mas tudo sair dentro do locus,
+aí é tudo estado agora, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/450-0
+00:40:21.531 --> 00:40:22.491
+<v Vitor Hugo Campos>Está estático, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/451-0
+00:40:24.891 --> 00:40:25.131
+<v Ronaldo Robledo Mendes De Souza>Yeah.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/452-0
+00:40:28.171 --> 00:40:28.731
+<v Ronaldo Robledo Mendes De Souza>Port a song.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/453-0
+00:40:30.891 --> 00:40:32.411
+<v Ronaldo Robledo Mendes De Souza>Agendamento e convocação.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/456-0
+00:40:34.331 --> 00:40:39.956
+<v Vitor Hugo Campos>Também toda essa parte de convocação que
+para ter uma convocação tem que ter</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/456-1
+00:40:39.956 --> 00:40:44.411
+<v Vitor Hugo Campos>importação de arquivos,
+então a importação está funcionando.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/455-0
+00:40:41.811 --> 00:40:42.171
+<v Ronaldo Robledo Mendes De Souza>Mhm.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/458-0
+00:40:45.891 --> 00:40:50.319
+<v Vitor Hugo Campos>Para ter a convocação,
+a gente tem que convocar os candidatos.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/458-1
+00:40:50.319 --> 00:40:56.012
+<v Vitor Hugo Campos>A gente já está importando os candidatos,
+já tem uma regra lá de convocação, só.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/458-2
+00:40:56.012 --> 00:40:58.331
+<v Vitor Hugo Campos>A gente já está seguindo a regra.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/459-0
+00:40:59.211 --> 00:41:03.283
+<v Vitor Hugo Campos>Aí a terceira etapa é criar agenda para
+as convocações, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/459-1
+00:41:03.283 --> 00:41:08.712
+<v Vitor Hugo Campos>Porque se você vai convocar 500 pessoas,
+você não vai pedir para as 500 pessoas</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/459-2
+00:41:08.712 --> 00:41:11.291
+<v Vitor Hugo Campos>virem na mesma hora, né? No mesmo dia.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/460-0
+00:41:12.411 --> 00:41:15.854
+<v Vitor Hugo Campos>Aí você cria as agendas para grupos de
+pessoas, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/460-1
+00:41:15.854 --> 00:41:18.171
+<v Vitor Hugo Campos>Isso aí também já está funcionando.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/461-0
+00:41:22.291 --> 00:41:24.091
+<v Vitor Hugo Campos>Então essa parte de agendamento</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/462-0
+00:41:25.611 --> 00:41:26.891
+<v Vitor Hugo Campos>Já, já fez.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/463-0
+00:41:27.891 --> 00:41:28.571
+<v Ronaldo Robledo Mendes De Souza>Okay.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/464-0
+00:41:28.491 --> 00:41:32.491
+<v Vitor Hugo Campos>Essa parte de convocação que tá alinhada
+com agenda também, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/465-0
+00:41:34.171 --> 00:41:34.971
+<v Ronaldo Robledo Mendes De Souza>Candidatos.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/466-0
+00:41:36.051 --> 00:41:38.366
+<v Vitor Hugo Campos>Também,
+que é onde a gente guarda a informação</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/466-1
+00:41:38.366 --> 00:41:41.075
+<v Vitor Hugo Campos>dos candidatos,
+quando a gente importa o arquivo lá de</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/466-2
+00:41:41.075 --> 00:41:43.291
+<v Vitor Hugo Campos>habilitados,
+que é aquela tela que você viu.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/468-0
+00:41:44.651 --> 00:41:50.836
+<v Vitor Hugo Campos>Que a gente traz os dados pessoais do
+candidato e os dados do candidato daquele</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/467-0
+00:41:45.131 --> 00:41:45.331
+<v Ronaldo Robledo Mendes De Souza>Okay.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/468-1
+00:41:50.836 --> 00:41:51.531
+<v Vitor Hugo Campos>concurso.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/469-0
+00:41:53.411 --> 00:41:56.331
+<v Vitor Hugo Campos>Porque o mesmo candidato pode estar em
+mais de um concurso, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/471-0
+00:41:58.251 --> 00:41:58.851
+<v Ronaldo Robledo Mendes De Souza>Thank you.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/470-0
+00:41:58.811 --> 00:41:59.131
+<v Vitor Hugo Campos>So.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/472-0
+00:42:01.691 --> 00:42:05.226
+<v Ronaldo Robledo Mendes De Souza>Entendi seguinte, o Vitor,
+vou fazer o seguinte,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/472-1
+00:42:05.226 --> 00:42:09.627
+<v Ronaldo Robledo Mendes De Souza>eu entendi já é o que já está feito,
+o que você se importou.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/472-2
+00:42:09.627 --> 00:42:13.811
+<v Ronaldo Robledo Mendes De Souza>Eu queria discutir a respeito da de umas
+novas APIs aqui,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/472-3
+00:42:13.811 --> 00:42:17.851
+<v Ronaldo Robledo Mendes De Souza>mas eu vejo que eu vou ter que verificar
+com a Jessica.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/473-0
+00:42:18.931 --> 00:42:23.175
+<v Ronaldo Robledo Mendes De Souza>para ela desnichar melhor esse documento
+que ela me mandou aqui,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/473-1
+00:42:23.175 --> 00:42:26.701
+<v Ronaldo Robledo Mendes De Souza>porque ficou um pouco superficial com as
+informações.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/473-2
+00:42:26.701 --> 00:42:29.051
+<v Ronaldo Robledo Mendes De Souza>Deixa eu só parar aqui um pouquinho.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/475-0
+00:42:29.611 --> 00:42:34.011
+<v Vitor Hugo Campos>É porque esse locus é complicado, viu?
+Rapaz</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/474-0
+00:42:31.931 --> 00:42:32.331
+<v Ronaldo Robledo Mendes De Souza>É.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/476-0
+00:42:34.251 --> 00:42:39.225
+<v Ronaldo Robledo Mendes De Souza>eu tô vendo eu vou ter que destrinchar a
+gente vai ter que destrinchar melhor</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/476-1
+00:42:39.225 --> 00:42:44.134
+<v Ronaldo Robledo Mendes De Souza>algumas informações que ela me passou
+aqui porque ficou algumas dúvidas aqui</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/476-2
+00:42:44.134 --> 00:42:48.725
+<v Ronaldo Robledo Mendes De Souza>nesse documento que ela me passou né
+então não chegou a mapear serviços</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/476-3
+00:42:48.725 --> 00:42:51.211
+<v Ronaldo Robledo Mendes De Souza>detalhados que precisam ser feitos aqui</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/477-0
+00:42:51.851 --> 00:42:56.147
+<v Ronaldo Robledo Mendes De Souza>É o que está pronto e o que não está.
+Então ficou uma lacuna aqui para mim</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/477-1
+00:42:56.147 --> 00:43:00.785
+<v Ronaldo Robledo Mendes De Souza>nessa resposta dela aqui eu coloquei aqui.
+Existe uma jornada de usar uma piada?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/477-2
+00:43:00.785 --> 00:43:05.367
+<v Ronaldo Robledo Mendes De Souza>Não existe descrever da mesma forma.
+Então essa resposta dela ficou uma lacuna.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/477-3
+00:43:05.367 --> 00:43:07.371
+<v Ronaldo Robledo Mendes De Souza>O que está pronto e o que não está.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/478-0
+00:43:07.931 --> 00:43:12.205
+<v Ronaldo Robledo Mendes De Souza>Não é?
+Então eu vou ter que mapear esse serviço</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/478-1
+00:43:12.205 --> 00:43:16.746
+<v Ronaldo Robledo Mendes De Souza>dela melhor aqui é para mim poder entrar.
+Eu a tá.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/478-2
+00:43:16.746 --> 00:43:23.691
+<v Ronaldo Robledo Mendes De Souza>Isso aqui foi uma pergunta necessária.
+Existe APIs disponíveis? É necessário.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/479-0
+00:43:24.011 --> 00:43:28.952
+<v Ronaldo Robledo Mendes De Souza>É confirmar com a com a com a responsável
+pela a forma de disponibilização dos</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/479-1
+00:43:28.952 --> 00:43:32.892
+<v Ronaldo Robledo Mendes De Souza>dados. API acessa o banco view aqui,
+vou outros mecanismos. É,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/479-2
+00:43:32.892 --> 00:43:37.520
+<v Ronaldo Robledo Mendes De Souza>eu tinha colocado isso aqui é com o
+objetivo de saber se a gente já está,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/479-3
+00:43:37.520 --> 00:43:38.771
+<v Ronaldo Robledo Mendes De Souza>já estava acessando.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/481-0
+00:43:39.411 --> 00:43:43.127
+<v Ronaldo Robledo Mendes De Souza>Porque essa parte da importação dos dados
+eu pensei que não estava sendo feita</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/481-1
+00:43:43.127 --> 00:43:45.761
+<v Ronaldo Robledo Mendes De Souza>ainda ou Vitor,
+mas como você me explanou aí que ela já</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/481-2
+00:43:45.761 --> 00:43:48.395
+<v Ronaldo Robledo Mendes De Souza>está sendo feita,
+então a gente já está acessando dados</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/481-3
+00:43:48.395 --> 00:43:50.700
+<v Ronaldo Robledo Mendes De Souza>para fazer essa importação de dados,
+não é isso?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/481-4
+00:43:50.700 --> 00:43:54.134
+<v Ronaldo Robledo Mendes De Souza>Já está acessando sistemas externos para
+fazer essa importação de dados,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/480-0
+00:43:51.291 --> 00:43:51.771
+<v Vitor Hugo Campos>Seeing.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/481-5
+00:43:54.134 --> 00:43:54.651
+<v Ronaldo Robledo Mendes De Souza>não é isso?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/483-0
+00:43:55.531 --> 00:43:59.327
+<v Vitor Hugo Campos>A grande maioria ali é a importação de
+arquivo,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/482-0
+00:43:59.171 --> 00:43:59.531
+<v Ronaldo Robledo Mendes De Souza>Mhm.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/483-1
+00:43:59.327 --> 00:44:02.411
+<v Vitor Hugo Campos>que é a integração que é possível hoje.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/485-0
+00:44:05.611 --> 00:44:10.511
+<v Vitor Hugo Campos>Uma delas que a gente vai buscar
+informação lá no sistema do PRODAM,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/485-1
+00:44:10.511 --> 00:44:14.346
+<v Vitor Hugo Campos>mas é a única coisa que a gente busca via
+requisição.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/485-2
+00:44:14.346 --> 00:44:18.891
+<v Vitor Hugo Campos>Todo o resto é alimentado via arquivo,
+pelo menos por enquanto.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/484-0
+00:44:17.411 --> 00:44:17.531
+<v Ronaldo Robledo Mendes De Souza>But</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/486-0
+00:44:19.451 --> 00:44:23.595
+<v Ronaldo Robledo Mendes De Souza>Entendi esses arquivos,
+mas eu busco essa informação aqui,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/486-1
+00:44:23.595 --> 00:44:29.143
+<v Ronaldo Robledo Mendes De Souza>eu busco essa informação, pode deixar.
+Eu vou fazer o seguinte, Vitor, eu vou,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/486-2
+00:44:29.143 --> 00:44:32.655
+<v Ronaldo Robledo Mendes De Souza>a sua explicação aqui foi,
+me abriu uma luz aqui,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/486-3
+00:44:32.655 --> 00:44:37.571
+<v Ronaldo Robledo Mendes De Souza>me abriu algumas dúvidas aqui que eu vou
+ter que sanar com a Jessica.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/487-0
+00:44:38.011 --> 00:44:40.680
+<v Ronaldo Robledo Mendes De Souza>Eu vou ver se ela consegue conversar
+comigo hoje.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/487-1
+00:44:40.680 --> 00:44:44.523
+<v Ronaldo Robledo Mendes De Souza>Eu anotei algumas dúvidas aqui,
+principalmente nessa questão do passo a</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/487-2
+00:44:44.523 --> 00:44:47.139
+<v Ronaldo Robledo Mendes De Souza>passo.
+Então eu já verifiquei o que está pronto,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/487-3
+00:44:47.139 --> 00:44:51.356
+<v Ronaldo Robledo Mendes De Souza>já consegui visualizar o que está pronto
+e vou visualizar com ela esse passo a</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/487-4
+00:44:51.356 --> 00:44:53.971
+<v Ronaldo Robledo Mendes De Souza>passo que ela colocou aqui,
+que ela me forneceu.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/489-0
+00:44:54.411 --> 00:44:59.559
+<v Ronaldo Robledo Mendes De Souza>né e visualizar com ela as
+funcionalidades do que que falta igual a</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/489-1
+00:44:59.559 --> 00:45:05.691
+<v Ronaldo Robledo Mendes De Souza>gente colocou aqui ó igual a gente tinha
+acho que eu parei de compartilhar aí né</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/488-0
+00:45:06.571 --> 00:45:06.971
+<v Vitor Hugo Campos>Auto.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/490-0
+00:45:07.411 --> 00:45:08.571
+<v Ronaldo Robledo Mendes De Souza>Deixa eu compartilhar de novo</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/491-0
+00:45:11.211 --> 00:45:12.731
+<v Ronaldo Robledo Mendes De Souza>Pode ser mais específico?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/492-0
+00:45:13.851 --> 00:45:14.171
+<v Ronaldo Robledo Mendes De Souza>Thank you.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/493-0
+00:45:16.651 --> 00:45:19.252
+<v Ronaldo Robledo Mendes De Souza>Então,
+a gente tinha aqui um conjunto de</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/493-1
+00:45:19.252 --> 00:45:22.994
+<v Ronaldo Robledo Mendes De Souza>funcionalidades que precisavam ser feitos,
+correto? Então,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/493-2
+00:45:22.994 --> 00:45:27.561
+<v Ronaldo Robledo Mendes De Souza>nós temos aqui o conjunto de
+funcionalidades que precisavam ser feitos,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/493-3
+00:45:27.561 --> 00:45:31.748
+<v Ronaldo Robledo Mendes De Souza>a gente precisa implementar esse conjunto
+de funcionalidade dela,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/493-4
+00:45:31.748 --> 00:45:36.251
+<v Ronaldo Robledo Mendes De Souza>implementar para a gente dar andamento no
+que ainda precisa ser feito.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/494-0
+00:45:36.651 --> 00:45:40.547
+<v Ronaldo Robledo Mendes De Souza>E é isso que eu preciso sanar essa dúvida
+com ela,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/494-1
+00:45:40.547 --> 00:45:46.122
+<v Ronaldo Robledo Mendes De Souza>dessa documentação que ela mandou que
+para mim ficou bem de baixo nível,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/494-2
+00:45:46.122 --> 00:45:51.927
+<v Ronaldo Robledo Mendes De Souza>que precisou subir isso aqui de alto
+nível para a gente poder mapear melhor</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/494-3
+00:45:51.927 --> 00:45:53.531
+<v Ronaldo Robledo Mendes De Souza>esses processos aqui.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/495-0
+00:45:55.851 --> 00:46:00.407
+<v Ronaldo Robledo Mendes De Souza>igual ela colocou Quais são os processos
+de negócio que serão suportados lotação e</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/495-1
+00:46:00.407 --> 00:46:04.633
+<v Ronaldo Robledo Mendes De Souza>alocação de servidores nas unidades né
+então eu preciso essas duas respostas</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/495-2
+00:46:04.633 --> 00:46:08.859
+<v Ronaldo Robledo Mendes De Souza>aqui ó eu preciso somar com elas e
+definir esses processos de funcionalidade</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/495-3
+00:46:08.859 --> 00:46:10.011
+<v Ronaldo Robledo Mendes De Souza>que precisa ser feito</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/496-0
+00:46:10.331 --> 00:46:14.393
+<v Ronaldo Robledo Mendes De Souza>Definindo esses processos,
+eu consigo definir as APIs,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/496-1
+00:46:14.393 --> 00:46:18.971
+<v Ronaldo Robledo Mendes De Souza>em qual os APIs a gente vai utilizar a
+cada situação, beleza?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/497-0
+00:46:19.931 --> 00:46:23.691
+<v Vitor Hugo Campos>Beleza, se precisar me chamar,
+você me chama lá que eu apareço.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/499-0
+00:46:22.731 --> 00:46:27.027
+<v Ronaldo Robledo Mendes De Souza>não com certeza com certeza talvez a
+gente vai precisar de colocar lá na</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/498-0
+00:46:25.691 --> 00:46:25.731
+<v Pedro Azevedo Junior>Oh.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/499-1
+00:46:27.027 --> 00:46:31.794
+<v Ronaldo Robledo Mendes De Souza>reunião para é talvez ela vai ter dúvida
+em alguma questão técnica lá né E aí eu</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/499-2
+00:46:31.794 --> 00:46:32.971
+<v Ronaldo Robledo Mendes De Souza>te eu te dou o grito</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/501-0
+00:46:33.771 --> 00:46:37.013
+<v Pedro Azevedo Junior>O Robledo,
+só para checar aqui a conversinha de teve</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/500-0
+00:46:34.891 --> 00:46:35.291
+<v Vitor Hugo Campos>Beleza.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/501-1
+00:46:37.013 --> 00:46:39.826
+<v Pedro Azevedo Junior>mais cedo.
+Eu acho que não passamos por tudo,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/501-2
+00:46:39.826 --> 00:46:44.718
+<v Pedro Azevedo Junior>mas as coisas que eu notei aqui só para
+só para confirmar se tinha umas dúvidas</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/501-3
+00:46:44.718 --> 00:46:48.571
+<v Pedro Azevedo Junior>que você tirou que eu levantou que eu não
+sabia. A resposta é.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/504-0
+00:46:48.651 --> 00:46:51.443
+<v Pedro Azevedo Junior>Da na respondo do locus,
+você perguntou se era aquela parte de</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/504-1
+00:46:51.443 --> 00:46:53.836
+<v Pedro Azevedo Junior>importação,
+exportação de arquivo que você mostrou no</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/504-2
+00:46:53.836 --> 00:46:56.318
+<v Pedro Azevedo Junior>diagrama. Bom, acho que você é.
+Eu não soube responder,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/504-3
+00:46:56.318 --> 00:46:57.691
+<v Pedro Azevedo Junior>mas acho que o Vitor respondeu.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/503-0
+00:46:58.011 --> 00:46:58.891
+<v Ronaldo Robledo Mendes De Souza>Sim.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/505-0
+00:46:59.691 --> 00:47:03.451
+<v Pedro Azevedo Junior>E se tinha perguntado alguma coisa a
+respeito do prodam também?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/508-0
+00:47:04.011 --> 00:47:07.178
+<v Ronaldo Robledo Mendes De Souza>É, não ficou muito,
+ficou claro aqui para mim,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/508-1
+00:47:07.178 --> 00:47:12.300
+<v Ronaldo Robledo Mendes De Souza>o Pedro só te cortando, ficou claro assim,
+é as funcionalidades que estavam</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/506-0
+00:47:08.251 --> 00:47:08.411
+<v Pedro Azevedo Junior>Okay.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/508-2
+00:47:12.300 --> 00:47:16.477
+<v Ronaldo Robledo Mendes De Souza>registradas para ser para serem feitas
+foram feitas, correto?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/507-0
+00:47:15.131 --> 00:47:15.491
+<v Pedro Azevedo Junior>Mhm.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/508-3
+00:47:16.477 --> 00:47:21.531
+<v Ronaldo Robledo Mendes De Souza>Só que o que que eu entendi é tinha sido
+desenvolvido tudo dentro do alvo.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/509-0
+00:47:21.931 --> 00:47:27.973
+<v Ronaldo Robledo Mendes De Souza>Do front-end dual é chamado, tinha sido,
+foi feito tudo desenvolvido dentro do</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/509-1
+00:47:27.973 --> 00:47:32.025
+<v Ronaldo Robledo Mendes De Souza>sistema dual,
+e agora vocês criaram o front tanto do</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/509-2
+00:47:32.025 --> 00:47:36.843
+<v Ronaldo Robledo Mendes De Souza>locus como do sigla,
+que vai ser responsável por acessar essas</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/509-3
+00:47:36.843 --> 00:47:37.531
+<v Ronaldo Robledo Mendes De Souza>2 partes.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/511-0
+00:47:37.931 --> 00:47:41.120
+<v Ronaldo Robledo Mendes De Souza>E aí,
+as coisas que estão dentro do locus estão</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/511-1
+00:47:41.120 --> 00:47:45.239
+<v Ronaldo Robledo Mendes De Souza>estáticas, correto?
+As coisas que estão dentro do locus estão</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/510-0
+00:47:42.891 --> 00:47:43.291
+<v Pedro Azevedo Junior>Mhm.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/511-2
+00:47:45.239 --> 00:47:50.620
+<v Ronaldo Robledo Mendes De Souza>estáticas e precisamos é disponibilizar
+aonde que elas serão armazenadas. Vitor,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/511-3
+00:47:50.620 --> 00:47:53.211
+<v Ronaldo Robledo Mendes De Souza>vai me corrigindo se eu estiver errado.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/512-0
+00:47:53.611 --> 00:47:59.239
+<v Ronaldo Robledo Mendes De Souza>Então a gente precisa disponibilizar
+primeiro aonde que elas serão armazenadas,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/512-1
+00:47:59.239 --> 00:48:02.687
+<v Ronaldo Robledo Mendes De Souza>uma vez que as funcionalidades já estão
+criadas,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/512-2
+00:48:02.687 --> 00:48:08.385
+<v Ronaldo Robledo Mendes De Souza>mas precisamos verificar agora onde que
+elas serão armazenadas e verificar o que</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/512-3
+00:48:08.385 --> 00:48:11.691
+<v Ronaldo Robledo Mendes De Souza>que ainda falta ser adicionado no sistema
+Lox.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/513-0
+00:48:12.011 --> 00:48:17.444
+<v Ronaldo Robledo Mendes De Souza>Quais são as outras funcionalidades que
+vão precisar ser adicionadas no sistema</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/513-1
+00:48:17.444 --> 00:48:22.198
+<v Ronaldo Robledo Mendes De Souza>Lux? A respeito do program,
+eu coloquei era para mim saber se a gente</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/513-2
+00:48:22.198 --> 00:48:25.866
+<v Ronaldo Robledo Mendes De Souza>já estava obtendo os dados que precisa na
+importação.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/513-3
+00:48:25.866 --> 00:48:30.891
+<v Ronaldo Robledo Mendes De Souza>E o Vitor me colocou e claro que essas
+importações já estão sendo feitas.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/514-0
+00:48:31.211 --> 00:48:35.462
+<v Ronaldo Robledo Mendes De Souza>Eu vou checar com a com a com a Jessica
+se tem mais alguma importação que</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/514-1
+00:48:35.462 --> 00:48:39.195
+<v Ronaldo Robledo Mendes De Souza>precisará ser feita ou não,
+então para isso eu preciso checar as</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/514-2
+00:48:39.195 --> 00:48:42.411
+<v Ronaldo Robledo Mendes De Souza>funcionalidades e aquele mapeamento que
+ela colocou lá.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/515-0
+00:48:43.691 --> 00:48:45.451
+<v Pedro Azevedo Junior>Ah, no, perfect, perfect.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/516-0
+00:48:45.531 --> 00:48:49.521
+<v Ronaldo Robledo Mendes De Souza>Beleza, então assim é, eu vou pegar aqui,
+aproveitar que minha tela está</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/516-1
+00:48:49.521 --> 00:48:53.018
+<v Ronaldo Robledo Mendes De Souza>compartilhando ainda,
+então essa documentação que ela me enviou</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/516-2
+00:48:53.018 --> 00:48:53.291
+<v Ronaldo Robledo Mendes De Souza>aqui.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/517-0
+00:48:54.651 --> 00:48:57.821
+<v Ronaldo Robledo Mendes De Souza>É conforme está na tela aí,
+eu tinha colocado aqui.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/517-1
+00:48:57.821 --> 00:49:02.514
+<v Ronaldo Robledo Mendes De Souza>Quais são os processos de negócios que
+são suportados e qual que é a jornada</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/517-2
+00:49:02.514 --> 00:49:06.964
+<v Ronaldo Robledo Mendes De Souza>mapeada? Então ela colocou aqui,
+não há uma jornada formalmente mapeada.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/517-3
+00:49:06.964 --> 00:49:10.804
+<v Ronaldo Robledo Mendes De Souza>Proposta sequencial,
+o sistema importa periodicamente os dados</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/517-4
+00:49:10.804 --> 00:49:11.291
+<v Ronaldo Robledo Mendes De Souza>do real.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/518-0
+00:49:11.691 --> 00:49:15.441
+<v Ronaldo Robledo Mendes De Souza>E do sig pack.
+Fiquei na dúvida desse sig pack aqui. Oh,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/518-1
+00:49:15.441 --> 00:49:18.599
+<v Ronaldo Robledo Mendes De Souza>não é?
+Eu fiquei na dúvida desse sig pack aqui,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/518-2
+00:49:18.599 --> 00:49:19.651
+<v Ronaldo Robledo Mendes De Souza>então eu vou só.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/519-0
+00:49:18.971 --> 00:49:23.931
+<v Vitor Hugo Campos>É um, é um outro, é um outro sistema aí,
+tem vários, tem prodance, gpecker, sabe?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/520-0
+00:49:25.371 --> 00:49:28.022
+<v Ronaldo Robledo Mendes De Souza>Pois é,
+mas esse do sing pack já está sendo</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/520-1
+00:49:28.022 --> 00:49:30.491
+<v Ronaldo Robledo Mendes De Souza>importado também, o Vitor está, não está?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/522-0
+00:49:28.811 --> 00:49:35.648
+<v Vitor Hugo Campos>Sim, se você ver, é acessa lá o site,
+aí você vê, tem uma aba lá, sig pack, é,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/522-1
+00:49:35.648 --> 00:49:38.331
+<v Vitor Hugo Campos>bota aí barra alvo, barra alvo.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/521-0
+00:49:35.931 --> 00:49:39.691
+<v Ronaldo Robledo Mendes De Souza>do Alves do Alves do Alves né Deixa eu
+voltar lá no Alves</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/523-0
+00:49:47.771 --> 00:49:49.611
+<v Vitor Hugo Campos>Processos, importação de dados.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/524-0
+00:49:52.331 --> 00:49:52.811
+<v Ronaldo Robledo Mendes De Souza>Yes.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/525-0
+00:49:53.051 --> 00:49:54.331
+<v Vitor Hugo Campos>A lot to get back.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/526-0
+00:49:54.571 --> 00:49:55.531
+<v Ronaldo Robledo Mendes De Souza>Is.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/529-0
+00:49:55.531 --> 00:50:00.499
+<v Vitor Hugo Campos>Isso é exatamente o que é feito no
+escolhas hoje a gente fez igualzinho,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/527-0
+00:49:59.331 --> 00:49:59.931
+<v Ronaldo Robledo Mendes De Souza>Mm-hmm.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/529-1
+00:50:00.499 --> 00:50:06.011
+<v Vitor Hugo Campos>só é o mesmo arquivo, o mesmo layout,
+a mesma coluna, a gente deixou tudo igual.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/528-0
+00:50:02.491 --> 00:50:03.051
+<v Ronaldo Robledo Mendes De Souza>Believe.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/530-0
+00:50:07.171 --> 00:50:11.251
+<v Ronaldo Robledo Mendes De Souza>Beleza,
+então justamente é isso que eu vou fazer</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/530-1
+00:50:11.251 --> 00:50:14.331
+<v Ronaldo Robledo Mendes De Souza>com ela. É bateu a validação aqui, é.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/531-0
+00:50:15.531 --> 00:50:17.251
+<v Ronaldo Robledo Mendes De Souza>Quer ver botando aqui no documento?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/532-0
+00:50:16.491 --> 00:50:20.091
+<v Vitor Hugo Campos>agora é o que eu</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/533-0
+00:50:22.331 --> 00:50:28.571
+<v Vitor Hugo Campos>O futuro, vamos pensar no futuro, né?
+O que que eu acho que vai ser o ideal, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/534-0
+00:50:29.771 --> 00:50:35.487
+<v Vitor Hugo Campos>Todas essas importações, algumas delas,
+tipo importação de vagas,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/534-1
+00:50:35.487 --> 00:50:41.635
+<v Vitor Hugo Campos>o que é importação de vagas?
+É uma lista com as escolas e com as vagas</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/534-2
+00:50:41.635 --> 00:50:45.705
+<v Vitor Hugo Campos>das escolas.
+Essa escola aqui tem 5 vagas para</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/534-3
+00:50:45.705 --> 00:50:46.571
+<v Vitor Hugo Campos>preencher.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/535-0
+00:50:46.891 --> 00:50:47.611
+<v Vitor Hugo Campos>Cargo tal.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/537-0
+00:50:48.891 --> 00:50:56.716
+<v Vitor Hugo Campos>Tá, tem nesse arquivo. O locus,
+uma das funcionalidades dele vai ser</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/537-1
+00:50:56.716 --> 00:51:00.571
+<v Vitor Hugo Campos>manter as informações das escolas.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/538-0
+00:51:02.011 --> 00:51:07.803
+<v Vitor Hugo Campos>Tipo nome, quem está trabalhando,
+quantas vagas tem? É quem foi afastado,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/538-1
+00:51:07.803 --> 00:51:09.211
+<v Vitor Hugo Campos>quem se aposentou?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/539-0
+00:51:10.171 --> 00:51:14.491
+<v Vitor Hugo Campos>Então, o próprio locus,
+o que eu imagino que vai ser,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/539-1
+00:51:14.491 --> 00:51:20.731
+<v Vitor Hugo Campos>ele vai já ter informações suficientes
+para a gente não precisar fazer aquela</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/539-2
+00:51:20.731 --> 00:51:22.331
+<v Vitor Hugo Campos>importação de vagas.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/540-0
+00:51:23.451 --> 00:51:26.571
+<v Vitor Hugo Campos>Porque a importação de vagas é o que é um
+resumo dizendo.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/541-0
+00:51:27.651 --> 00:51:29.291
+<v Vitor Hugo Campos>Quais vagas as escolas tem, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/542-0
+00:51:30.251 --> 00:51:36.593
+<v Vitor Hugo Campos>Se o lócus vai ter as informações de
+todas as escolas, quem está trabalhando,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/542-1
+00:51:36.593 --> 00:51:42.852
+<v Vitor Hugo Campos>quem se aposentou, quantas vagas tem,
+então meio que a gente vai buscar essa</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/542-2
+00:51:42.852 --> 00:51:45.291
+<v Vitor Hugo Campos>informação internamente, sabe?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/543-0
+00:51:45.451 --> 00:51:46.491
+<v Vitor Hugo Campos>Sem precisar.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/544-0
+00:51:47.451 --> 00:51:49.771
+<v Vitor Hugo Campos>De algumas importações,
+é o que eu imagino.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/545-0
+00:51:53.131 --> 00:51:53.771
+<v Ronaldo Robledo Mendes De Souza>Entendi.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/546-0
+00:51:54.211 --> 00:52:00.891
+<v Vitor Hugo Campos>Porque hoje é igual tu fala, pera aí,
+rapaz, eu tô acostumado a falar, pera aí.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/547-0
+00:52:01.571 --> 00:52:01.931
+<v Ronaldo Robledo Mendes De Souza>Hmm.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/548-0
+00:52:03.291 --> 00:52:08.468
+<v Vitor Hugo Campos>Muitas das integrações hoje é via arquivo,
+que não é o formato ideal.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/548-1
+00:52:08.468 --> 00:52:14.311
+<v Vitor Hugo Campos>O ideal seria a gente buscar na fonte,
+só que essa fonte hoje, uma das fontes,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/548-2
+00:52:14.311 --> 00:52:17.491
+<v Vitor Hugo Campos>é um monte de arquivo access que o
+pessoal</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/549-0
+00:52:23.291 --> 00:52:25.611
+<v Vitor Hugo Campos>Não existe uma API para buscar isso.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/551-0
+00:52:26.411 --> 00:52:30.571
+<v Ronaldo Robledo Mendes De Souza>é hoje hoje essas importações que a gente
+tá fazendo é tudo de arquivo né Vitor</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/550-0
+00:52:26.891 --> 00:52:27.571
+<v Vitor Hugo Campos>Okay.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/554-0
+00:52:31.131 --> 00:52:34.315
+<v Vitor Hugo Campos>A maioria é arquivo,
+uma delas que a gente vai buscar</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/554-1
+00:52:34.315 --> 00:52:37.794
+<v Vitor Hugo Campos>informação no sistema da PRODAM,
+mas o resto é de arquivo.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/552-0
+00:52:36.531 --> 00:52:36.891
+<v Ronaldo Robledo Mendes De Souza>Mhm.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/554-2
+00:52:37.794 --> 00:52:41.273
+<v Vitor Hugo Campos>É arquivo entrando, arquivo saindo, sabe?
+Aí o sistema lá,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/553-0
+00:52:38.251 --> 00:52:38.731
+<v Ronaldo Robledo Mendes De Souza>Go ahead.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/554-3
+00:52:41.273 --> 00:52:45.047
+<v Vitor Hugo Campos>um arquivo vai para o outro lado,
+daí um arquivo não sei o que,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/554-4
+00:52:45.047 --> 00:52:45.931
+<v Vitor Hugo Campos>é tudo arquivo.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/555-0
+00:52:46.971 --> 00:52:49.919
+<v Vitor Hugo Campos>Então,
+o que eu imagino com esse locus no futuro</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/555-1
+00:52:49.919 --> 00:52:54.069
+<v Vitor Hugo Campos>vai ser diminuir esses arquivos, né?
+A gente já vai ter a informação</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/555-2
+00:52:54.069 --> 00:52:54.971
+<v Vitor Hugo Campos>necessária, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/556-0
+00:52:57.931 --> 00:52:58.531
+<v Ronaldo Robledo Mendes De Souza>Thank you.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/557-0
+00:52:58.411 --> 00:53:01.211
+<v Vitor Hugo Campos>mais mais para frente né Vamos com calma
+né</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/560-0
+00:53:02.491 --> 00:53:10.090
+<v Ronaldo Robledo Mendes De Souza>Tá, é o Vitor, é esses arquivos, é,
+eles só são gerados, é quando alguém pede,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/560-1
+00:53:10.090 --> 00:53:15.092
+<v Ronaldo Robledo Mendes De Souza>você sabe,
+é quando alguém pede ou já é um processo</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/560-2
+00:53:15.092 --> 00:53:18.651
+<v Ronaldo Robledo Mendes De Souza>que existe sozinho, tipo assim, todo.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/559-0
+00:53:15.371 --> 00:53:16.171
+<v Vitor Hugo Campos>No, no.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/561-0
+00:53:18.971 --> 00:53:22.062
+<v Ronaldo Robledo Mendes De Souza>Todo é um certo período,
+pessoa tem que ir lá e gerar esse arquivo</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/561-1
+00:53:22.062 --> 00:53:23.491
+<v Ronaldo Robledo Mendes De Souza>e importar para cá, não é isso?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/562-0
+00:53:24.491 --> 00:53:28.606
+<v Vitor Hugo Campos>É mais ou menos assim,
+o pessoal já sabe como funciona. Aí,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/562-1
+00:53:28.606 --> 00:53:31.691
+<v Vitor Hugo Campos>por exemplo,
+tem o resultado de um concurso,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/562-2
+00:53:31.691 --> 00:53:36.011
+<v Vitor Hugo Campos>aí alguém manda esse arquivo para eles
+com a lista de pessoas.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/563-0
+00:53:37.291 --> 00:53:42.536
+<v Vitor Hugo Campos>Aí vai ter uma convocação nova,
+eu vou convocar 100 pessoas.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/563-1
+00:53:42.536 --> 00:53:48.811
+<v Vitor Hugo Campos>Aí eles vão e geram um arquivo de vagas
+pra preencher essas 100 pessoas.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/564-0
+00:53:50.251 --> 00:53:54.491
+<v Vitor Hugo Campos>a medida né quando precisa eles não gera
+não sei como mas ele gera</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/565-0
+00:53:58.731 --> 00:53:58.971
+<v Ronaldo Robledo Mendes De Souza>Band.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/566-0
+00:54:00.091 --> 00:54:03.358
+<v Vitor Hugo Campos>Acredito que é esse sistema,
+que é o locus dele atual deles,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/566-1
+00:54:03.358 --> 00:54:06.571
+<v Vitor Hugo Campos>que é um Monte de arquivo access que tem
+informação que só.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/567-0
+00:54:08.171 --> 00:54:11.760
+<v Vitor Hugo Campos>De alguma forma,
+eu imagino que eles acessando esse access</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/567-1
+00:54:11.760 --> 00:54:14.254
+<v Vitor Hugo Campos>lá,
+eles geram algumas coisas e importam</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/567-2
+00:54:14.254 --> 00:54:15.531
+<v Vitor Hugo Campos>também outras coisas.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/568-0
+00:54:15.771 --> 00:54:18.251
+<v Ronaldo Robledo Mendes De Souza>É, ele colocou aqui arquivo CSB.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/569-0
+00:54:19.851 --> 00:54:23.051
+<v Vitor Hugo Campos>É, tem CSV, TXT.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/570-0
+00:54:26.651 --> 00:54:30.171
+<v Vitor Hugo Campos>Aí eu imagino que com o novo locus, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/571-0
+00:54:32.091 --> 00:54:34.451
+<v Vitor Hugo Campos>Essa questão de importação vai diminuir.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/572-0
+00:54:36.331 --> 00:54:40.705
+<v Ronaldo Robledo Mendes De Souza>o importador daqui contará como a tela
+para cadastro Leal posicional daquilo</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/572-1
+00:54:40.705 --> 00:54:45.080
+<v Ronaldo Robledo Mendes De Souza>poderá informar saúde de Aquelas você é
+informado por exemplo nome de Aquilo</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/572-2
+00:54:45.080 --> 00:54:49.283
+<v Ronaldo Robledo Mendes De Souza>contará como a tela para importação que
+se comunicará comigo que ser vida</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/572-3
+00:54:49.283 --> 00:54:49.851
+<v Ronaldo Robledo Mendes De Souza>importação</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/573-0
+00:54:52.171 --> 00:54:56.184
+<v Ronaldo Robledo Mendes De Souza>Mestre em porta arquivos,
+porta arquivos CSV, válida layout,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/573-1
+00:54:56.184 --> 00:54:58.091
+<v Ronaldo Robledo Mendes De Souza>grava dados, cadastra layout.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/574-0
+00:54:59.371 --> 00:55:02.746
+<v Ronaldo Robledo Mendes De Souza>Você fala que esse processo aqui que
+poderia ser melhorado é isso,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/574-1
+00:55:02.746 --> 00:55:03.451
+<v Ronaldo Robledo Mendes De Souza>não é o Vitor?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/575-0
+00:55:04.411 --> 00:55:06.091
+<v Vitor Hugo Campos>É o que eu acho que vai acontecer.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/577-0
+00:55:07.251 --> 00:55:09.975
+<v Vitor Hugo Campos>Porque o locus deles não se comunica com
+ninguém,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/577-1
+00:55:09.975 --> 00:55:12.535
+<v Vitor Hugo Campos>a única comunicação dele é através de
+arquivo.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/577-2
+00:55:12.535 --> 00:55:16.348
+<v Vitor Hugo Campos>Aí fica entrando no arquivo e sai no
+arquivo. Então como a gente vai,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/576-0
+00:55:13.051 --> 00:55:13.411
+<v Ronaldo Robledo Mendes De Souza>Mhm.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/577-3
+00:55:16.348 --> 00:55:18.091
+<v Vitor Hugo Campos>vamos dizer assim, ter um locus?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/578-0
+00:55:19.691 --> 00:55:22.731
+<v Vitor Hugo Campos>Que vai ser acessado via requisição, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/579-0
+00:55:24.411 --> 00:55:29.863
+<v Vitor Hugo Campos>Então, com isso, vamos dizer,
+o importa arquivos de alguma forma vai,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/579-1
+00:55:29.863 --> 00:55:34.692
+<v Vitor Hugo Campos>não sei se seria importa arquivos,
+mas a gente vai conseguir,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/579-2
+00:55:34.692 --> 00:55:39.131
+<v Vitor Hugo Campos>através de requisições internas,
+descobrir quais escolas</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/580-0
+00:55:39.291 --> 00:55:42.850
+<v Vitor Hugo Campos>Tem vagas,
+ao invés de alguém ter que upar o arquivo</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/580-1
+00:55:42.850 --> 00:55:43.051
+<v Vitor Hugo Campos>só.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/581-0
+00:55:43.451 --> 00:55:46.763
+<v Ronaldo Robledo Mendes De Souza>Ah, tá, você fala, por exemplo,
+um acesso direto a uma base de dados</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/581-1
+00:55:46.763 --> 00:55:47.291
+<v Ronaldo Robledo Mendes De Souza>específica?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/582-0
+00:55:49.131 --> 00:55:53.765
+<v Vitor Hugo Campos>Não somente uma base específica,
+mas que seja vários microsserviços,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/582-1
+00:55:53.765 --> 00:55:57.526
+<v Vitor Hugo Campos>mas do nosso lado, né?
+A gente tem como descobrir essas</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/582-2
+00:55:57.526 --> 00:55:58.331
+<v Vitor Hugo Campos>informações.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/583-0
+00:55:59.451 --> 00:56:02.636
+<v Vitor Hugo Campos>Ao invés de depender de alguém,
+upar um arquivo,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/583-1
+00:56:02.636 --> 00:56:04.651
+<v Vitor Hugo Campos>só a gente vai direto na fonte.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/584-0
+00:56:03.051 --> 00:56:07.197
+<v Ronaldo Robledo Mendes De Souza>É a ideia.
+A ideia poderia ser também o Vitor,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/584-1
+00:56:07.197 --> 00:56:14.077
+<v Ronaldo Robledo Mendes De Souza>como já existe no sistema de alguns
+sistemas, aqui tá vaga na creche, ser up,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/584-2
+00:56:14.077 --> 00:56:19.281
+<v Ronaldo Robledo Mendes De Souza>alguns sistemas.
+Existe uma importação de dados através do</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/584-3
+00:56:19.281 --> 00:56:20.251
+<v Ronaldo Robledo Mendes De Souza>sistema do.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/585-0
+00:56:20.891 --> 00:56:25.879
+<v Ronaldo Robledo Mendes De Souza>Como é que é o nome? Airflow, não é isso?
+Existe uma importação de dados através do</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/585-1
+00:56:25.879 --> 00:56:29.264
+<v Ronaldo Robledo Mendes De Souza>sistema Airflow,
+que ela é executada uma vez a cada dia.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/585-2
+00:56:29.264 --> 00:56:33.005
+<v Ronaldo Robledo Mendes De Souza>O que esse sistema faz?
+Ele acessa a base de dados que a gente</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/585-3
+00:56:33.005 --> 00:56:36.211
+<v Ronaldo Robledo Mendes De Souza>necessita, por exemplo,
+ou vou te dar o exemplo do So</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/586-0
+00:56:37.051 --> 00:56:42.918
+<v Ronaldo Robledo Mendes De Souza>Ele acessa a base de dados do PRODAM ou
+do ou do ou de outro qualquer.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/586-1
+00:56:42.918 --> 00:56:48.866
+<v Ronaldo Robledo Mendes De Souza>Ele acessa essa base de dados,
+ele gera a importação necessária que ele</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/586-2
+00:56:48.866 --> 00:56:52.171
+<v Ronaldo Robledo Mendes De Souza>precisa. Por exemplo, você configura lá.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/588-0
+00:56:52.571 --> 00:56:57.401
+<v Ronaldo Robledo Mendes De Souza>É para gerar importação de cadastro de
+usuário de não sei o que de não sei o que</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/588-1
+00:56:57.401 --> 00:57:01.097
+<v Ronaldo Robledo Mendes De Souza>você precisa, certo?
+E aí é e ele importa para base de dados.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/587-0
+00:56:58.691 --> 00:56:58.811
+<v Vitor Hugo Campos>Yeah.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/588-2
+00:57:01.097 --> 00:57:04.734
+<v Ronaldo Robledo Mendes De Souza>Nossa, por exemplo,
+importaria para base de dados sigla, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/588-3
+00:57:04.734 --> 00:57:08.251
+<v Ronaldo Robledo Mendes De Souza>Então ele faz essa execução de tempo
+inteiro, por exemplo.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/590-0
+00:57:08.491 --> 00:57:12.032
+<v Ronaldo Robledo Mendes De Souza>Do será, quando se escola,
+ele faz essa execução, por exemplo,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/590-1
+00:57:12.032 --> 00:57:15.068
+<v Ronaldo Robledo Mendes De Souza>uma vez a semana,
+uma vez a cada 10 dias ou todo dia,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/590-2
+00:57:15.068 --> 00:57:18.552
+<v Ronaldo Robledo Mendes De Souza>depende, entendeu?
+Da informação que você precisa atualizada.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/589-0
+00:57:18.531 --> 00:57:18.891
+<v Vitor Hugo Campos>So.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/590-3
+00:57:18.552 --> 00:57:21.756
+<v Ronaldo Robledo Mendes De Souza>Então o sistema do Airflow já fica
+responsável por isso,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/590-4
+00:57:21.756 --> 00:57:25.803
+<v Ronaldo Robledo Mendes De Souza>não precisa ficar gerando arquivo,
+importando arquivo, gerando arquivo,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/590-5
+00:57:25.803 --> 00:57:28.051
+<v Ronaldo Robledo Mendes De Souza>importando arquivo, entendeu? O sistema.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/591-0
+00:57:28.131 --> 00:57:34.796
+<v Ronaldo Robledo Mendes De Souza>O sistema do airflow já faz isso,
+então você configura lá as tags para ela</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/591-1
+00:57:34.796 --> 00:57:40.661
+<v Ronaldo Robledo Mendes De Souza>fazer essa importação.
+Então a importação acontece em background,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/591-2
+00:57:40.661 --> 00:57:43.771
+<v Ronaldo Robledo Mendes De Souza>a gente nem fica sabendo, entendeu?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/592-0
+00:57:44.811 --> 00:57:48.171
+<v Vitor Hugo Campos>É mais ou menos isso que eu imagino que a
+gente bater, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/594-0
+00:57:48.891 --> 00:57:52.244
+<v Ronaldo Robledo Mendes De Souza>Pois é, por que?
+Por que ele foi trabalhado dessa maneira</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/593-0
+00:57:49.691 --> 00:57:51.371
+<v Vitor Hugo Campos>A tirar dependência de arquivo.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/594-1
+00:57:52.244 --> 00:57:54.615
+<v Ronaldo Robledo Mendes De Souza>aqui?
+Por que foi essa ideia de importar</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/594-2
+00:57:54.615 --> 00:57:56.811
+<v Ronaldo Robledo Mendes De Souza>através de arquivos? Você sabe, Vitor?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/595-0
+00:57:57.051 --> 00:57:59.451
+<v Vitor Hugo Campos>É porque é como é feito.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/596-0
+00:58:00.571 --> 00:58:01.531
+<v Vitor Hugo Campos>E.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/597-0
+00:58:02.811 --> 00:58:07.598
+<v Vitor Hugo Campos>Do que eu percebi,
+a ideia inicial era fazer um novo</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/597-1
+00:58:07.598 --> 00:58:11.211
+<v Vitor Hugo Campos>escolhas muito semelhante ao que é hoje.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/598-0
+00:58:12.971 --> 00:58:16.331
+<v Vitor Hugo Campos>Porque seria mais fácil para eles, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/599-0
+00:58:18.891 --> 00:58:20.651
+<v Vitor Hugo Campos>Você manter mesmo que.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/600-0
+00:58:22.011 --> 00:58:25.336
+<v Vitor Hugo Campos>Tanto assim, o Denis, o Denis,
+outro dev aqui da equipe,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/600-1
+00:58:25.336 --> 00:58:29.244
+<v Vitor Hugo Campos>ele tem acesso ao escolhas.
+Ele mostrou várias vezes para a gente,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/600-2
+00:58:29.244 --> 00:58:32.160
+<v Vitor Hugo Campos>então a gente ia sempre comparando.
+Deixa eu ver.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/600-3
+00:58:32.160 --> 00:58:36.651
+<v Vitor Hugo Campos>Essa parte aqui está muito parecida com o
+escolhas atual, então a gente foi.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/601-0
+00:58:37.371 --> 00:58:41.481
+<v Vitor Hugo Campos>Fazendo para ficar algo muito semelhante
+ao que é hoje.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/601-1
+00:58:41.481 --> 00:58:45.371
+<v Vitor Hugo Campos>E o que é hoje é importação e exportação
+de arquivo.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/603-0
+00:58:46.011 --> 00:58:51.925
+<v Ronaldo Robledo Mendes De Souza>Pois é, mas quando você fala ele,
+você fala o pessoal do time da do SME,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/602-0
+00:58:50.411 --> 00:58:51.451
+<v Vitor Hugo Campos>That's Mira</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/603-1
+00:58:51.925 --> 00:58:52.411
+<v Ronaldo Robledo Mendes De Souza>não é?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/605-0
+00:58:52.651 --> 00:58:57.691
+<v Vitor Hugo Campos>É, que é mais costume, né? Não,
+a gente faz assim.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/604-0
+00:58:56.051 --> 00:58:56.411
+<v Ronaldo Robledo Mendes De Souza>Mhm.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/606-0
+00:58:58.731 --> 00:59:03.359
+<v Vitor Hugo Campos>É feito desse jeito até agora,
+então vamos fazer desse jeito também,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/606-1
+00:59:03.359 --> 00:59:05.371
+<v Vitor Hugo Campos>só que melhorando onde dá, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/607-0
+00:59:06.411 --> 00:59:10.442
+<v Ronaldo Robledo Mendes De Souza>Tranquilo, não.
+Essa informação sua é importante, Vitor,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/607-1
+00:59:10.442 --> 00:59:15.109
+<v Ronaldo Robledo Mendes De Souza>até mesmo para a gente trocar essa ideia
+com a Jessica, entendeu?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/607-2
+00:59:15.109 --> 00:59:19.988
+<v Ronaldo Robledo Mendes De Souza>Verificar se isso pode ser é,
+se essa ideia pode ser é implementada,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/607-3
+00:59:19.988 --> 00:59:22.251
+<v Ronaldo Robledo Mendes De Souza>é depois a gente utilizar essas.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/608-0
+00:59:22.491 --> 00:59:27.788
+<v Ronaldo Robledo Mendes De Souza>Importações de arquivos através de
+serviços é executados em background,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/608-1
+00:59:27.788 --> 00:59:32.864
+<v Ronaldo Robledo Mendes De Souza>através serviços executados
+automaticamente pelo pela Flow ou alguma</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/608-2
+00:59:32.864 --> 00:59:35.291
+<v Ronaldo Robledo Mendes De Souza>outra ETL de importação de dados.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/609-0
+00:59:37.371 --> 00:59:40.251
+<v Vitor Hugo Campos>Eu acho que não vai chegar a ser tão
+complexo.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/610-0
+00:59:41.851 --> 00:59:45.691
+<v Vitor Hugo Campos>Porque toda essa,
+esse que você tava vendo ali do locus, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/611-0
+00:59:46.331 --> 00:59:46.411
+<v Ronaldo Robledo Mendes De Souza>Uh-huh.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/612-0
+00:59:46.891 --> 00:59:50.159
+<v Vitor Hugo Campos>É meio que vai ficar do nosso lado,
+eu imagino,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/612-1
+00:59:50.159 --> 00:59:54.651
+<v Vitor Hugo Campos>vai precisar um micro serviço aqui com
+informação nova, tal, mas.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/613-0
+00:59:56.411 --> 01:00:00.768
+<v Vitor Hugo Campos>Porque muitas das informações ali,
+vamos pegar, por exemplo,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/613-1
+01:00:00.768 --> 01:00:04.267
+<v Vitor Hugo Campos>importação de vagas,
+não é feito periodicamente,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/613-2
+01:00:04.267 --> 01:00:09.337
+<v Vitor Hugo Campos>é quando tem uma convocação e uma
+convocação é só quando tem concurso,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/613-3
+01:00:09.337 --> 01:00:11.051
+<v Vitor Hugo Campos>então é algo esporádico.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/614-0
+01:00:11.611 --> 01:00:13.211
+<v Vitor Hugo Campos>Não é algo que é feito todo dia.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/615-0
+01:00:14.171 --> 01:00:14.251
+<v Ronaldo Robledo Mendes De Souza>Uh-huh.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/616-0
+01:00:15.531 --> 01:00:18.931
+<v Vitor Hugo Campos>aí mas mais para frente a gente vai vai
+vendo isso né</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/617-0
+01:00:20.251 --> 01:00:26.162
+<v Vitor Hugo Campos>Mas essa é a evolução que eu imagino, né?
+Depender cada vez menos de importação de</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/617-1
+01:00:26.162 --> 01:00:26.731
+<v Vitor Hugo Campos>arquivo.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/618-0
+01:00:27.611 --> 01:00:32.811
+<v Ronaldo Robledo Mendes De Souza>É porque não é porque isso já é,
+já é antigo, né O Vitor?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/619-0
+01:00:34.011 --> 01:00:39.931
+<v Vitor Hugo Campos>É porque o locus não é o sistema externo,
+é um access lá que os cara usam aí.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/620-0
+01:00:41.451 --> 01:00:42.651
+<v Vitor Hugo Campos>Essa história de</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/623-0
+01:00:44.731 --> 01:00:48.483
+<v Vitor Hugo Campos>Arquivo pra cá, arquivo pra lá,
+que é o jeito que é a gambiarra que</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/622-0
+01:00:46.811 --> 01:00:47.411
+<v Ronaldo Robledo Mendes De Souza>Mm-hmm.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/623-1
+01:00:48.483 --> 01:00:49.531
+<v Vitor Hugo Campos>fizeram, né? Então.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/625-0
+01:00:50.411 --> 01:00:56.423
+<v Ronaldo Robledo Mendes De Souza>Ah, tá, entendi. Eles é,
+eles ainda usa access lá no sistema deles</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/625-1
+01:00:56.423 --> 01:00:57.051
+<v Ronaldo Robledo Mendes De Souza>lá, né?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/626-0
+01:00:57.611 --> 01:01:02.011
+<v Vitor Hugo Campos>É o locus deles, é um monte de Axes.
+Rapaz, é triste, viu?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/627-0
+01:01:03.291 --> 01:01:06.331
+<v Vitor Hugo Campos>É triste o negócio. E é muito complexo.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/629-0
+01:01:05.291 --> 01:01:08.274
+<v Ronaldo Robledo Mendes De Souza>Saquei, saquei.
+Então por isso que eles trabalham com</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/629-1
+01:01:08.274 --> 01:01:09.931
+<v Ronaldo Robledo Mendes De Souza>importação de arquivo. Saquei.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/628-0
+01:01:10.251 --> 01:01:10.411
+<v Vitor Hugo Campos>Uh</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/630-0
+01:01:11.491 --> 01:01:16.002
+<v Ronaldo Robledo Mendes De Souza>Ok não tranquilo Vitor agradeço aí mais
+uma vez eu vou registrar essas</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/630-1
+01:01:16.002 --> 01:01:21.084
+<v Ronaldo Robledo Mendes De Souza>informações que aqui que você me passou
+vou colocar na documentação e é bom que</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/630-2
+01:01:21.084 --> 01:01:25.913
+<v Ronaldo Robledo Mendes De Souza>eu já vou direto no conjunto da obra aqui
+com a Jessica para a gente ver as</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/630-3
+01:01:25.913 --> 01:01:30.931
+<v Ronaldo Robledo Mendes De Souza>funcionalidades que estão faltando eu já
+eu já consegui criar uma documentação</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/631-0
+01:01:30.931 --> 01:01:35.448
+<v Ronaldo Robledo Mendes De Souza>documentação aqui e com essas informações
+sempre passou vou complementar as</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/631-1
+01:01:35.448 --> 01:01:40.441
+<v Ronaldo Robledo Mendes De Souza>informações do que que já tá pronto né eu
+vou criar toda a documentação do locus do</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/631-2
+01:01:40.441 --> 01:01:45.255
+<v Ronaldo Robledo Mendes De Souza>que que já tá pronto né E aí já partindo
+porque que falta e a gente definindo as</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/631-3
+01:01:45.255 --> 01:01:47.691
+<v Ronaldo Robledo Mendes De Souza>funcionalidades definindo as APIs aqui tá</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/632-0
+01:01:47.931 --> 01:01:52.373
+<v Ronaldo Robledo Mendes De Souza>Eu queria discutir com você justamente
+era a questão das APIs,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/632-1
+01:01:52.373 --> 01:01:58.013
+<v Ronaldo Robledo Mendes De Souza>mas ficou faltando algumas informações
+mais claras aqui para mim entrar no foco</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/632-2
+01:01:58.013 --> 01:02:02.455
+<v Ronaldo Robledo Mendes De Souza>da das funcionalidades.
+O que vai ficar em cada micro serviço?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/632-3
+01:02:02.455 --> 01:02:03.371
+<v Ronaldo Robledo Mendes De Souza>Então eu vou.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/633-0
+01:02:03.531 --> 01:02:07.436
+<v Ronaldo Robledo Mendes De Souza>Ter essa reunião novamente com a Jessica,
+capaz, se ela tiver alguma dúvida,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/633-1
+01:02:07.436 --> 01:02:09.211
+<v Ronaldo Robledo Mendes De Souza>é capaz de eu te chamar lá, beleza?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/634-0
+01:02:10.051 --> 01:02:10.651
+<v Vitor Hugo Campos>Beleza.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/635-0
+01:02:12.651 --> 01:02:14.091
+<v Ronaldo Robledo Mendes De Souza>Pedro, quer colocar mais alguma coisa?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/636-0
+01:02:14.731 --> 01:02:19.931
+<v Pedro Azevedo Junior>No, no, I don't say small to this. No,
+I said that, actually, my my.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/639-0
+01:02:19.771 --> 01:02:22.223
+<v Ronaldo Robledo Mendes De Souza>Oh, pessoal,
+com certeza a gente vai ter mais uma</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/639-1
+01:02:22.223 --> 01:02:25.214
+<v Ronaldo Robledo Mendes De Souza>reunião amanhã, está?
+Depois que eu conversar com a Jessica,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/637-0
+01:02:23.611 --> 01:02:24.011
+<v Pedro Azevedo Junior>Ah, é?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/639-2
+01:02:25.214 --> 01:02:27.567
+<v Ronaldo Robledo Mendes De Souza>está?
+Com certeza a gente vai precisar ter mais</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/638-0
+01:02:25.691 --> 01:02:26.091
+<v Pedro Azevedo Junior>Ah, tá.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/639-3
+01:02:27.567 --> 01:02:30.166
+<v Ronaldo Robledo Mendes De Souza>uma reunião.
+É assim que eu conversar com a Jessica,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/639-4
+01:02:30.166 --> 01:02:30.411
+<v Ronaldo Robledo Mendes De Souza>está?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/640-0
+01:02:31.131 --> 01:02:33.540
+<v Pedro Azevedo Junior>É, não, isso eu perguntar mesmo,
+os próximos passos,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/641-0
+01:02:33.451 --> 01:02:36.809
+<v Ronaldo Robledo Mendes De Souza>Isso não, eu vou, eu vou,
+eu vou conversar com a Jessica,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/640-1
+01:02:33.540 --> 01:02:35.131
+<v Pedro Azevedo Junior>então conversar com a Jessica hoje.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/641-1
+01:02:36.809 --> 01:02:41.440
+<v Ronaldo Robledo Mendes De Souza>se der ela ficou de conversar comigo hoje,
+se der, eu já converso com ela hoje,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/641-2
+01:02:41.440 --> 01:02:45.839
+<v Ronaldo Robledo Mendes De Souza>a gente consegue definir aí é alguns
+pontos de funcionalidades que faltam é</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/641-3
+01:02:45.839 --> 01:02:47.691
+<v Ronaldo Robledo Mendes De Souza>definindo essas funcionalidades.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/642-0
+01:02:47.851 --> 01:02:54.879
+<v Ronaldo Robledo Mendes De Souza>É, eu vou pedir para ela.
+É verificar se tem um desenho já dessas</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/642-1
+01:02:54.879 --> 01:03:01.694
+<v Ronaldo Robledo Mendes De Souza>telas é do que falta, não é?
+Se já tem um desenho dessas telas,</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/642-2
+01:03:01.694 --> 01:03:02.971
+<v Ronaldo Robledo Mendes De Souza>o que falta?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/643-0
+01:03:03.371 --> 01:03:06.251
+<v Ronaldo Robledo Mendes De Souza>Tem um ex que faz isso aqui, ou Pedro?
+Tem, não tem?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/644-0
+01:03:06.651 --> 01:03:07.371
+<v Pedro Azevedo Junior>Thank you Guilherme.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/645-0
+01:03:07.851 --> 01:03:10.426
+<v Ronaldo Robledo Mendes De Souza>Isso,
+eu vou verificar com ela se já tem o X</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/645-1
+01:03:10.426 --> 01:03:13.402
+<v Ronaldo Robledo Mendes De Souza>dessas telas,
+as funcionalidades que falta e aí com</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/645-2
+01:03:13.402 --> 01:03:17.293
+<v Ronaldo Robledo Mendes De Souza>essas telas e o que falta,
+a gente consegue definir os endpoints aí</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/645-3
+01:03:17.293 --> 01:03:21.470
+<v Ronaldo Robledo Mendes De Souza>pra gente colocar e ver também essa
+questão da base de dados junto com o</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/645-4
+01:03:21.470 --> 01:03:24.331
+<v Ronaldo Robledo Mendes De Souza>Vitor que colocou que ele falou que está
+tudo em.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/646-0
+01:03:24.731 --> 01:03:28.411
+<v Ronaldo Robledo Mendes De Souza>Em é, está tudo estático lá no código,
+não é?</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/646-1
+01:03:28.411 --> 01:03:34.331
+<v Ronaldo Robledo Mendes De Souza>Então a gente precisa definir também.
+É o responsável por salvar isso aí.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/647-0
+01:03:35.331 --> 01:03:38.251
+<v Pedro Azevedo Junior>tá perfeito perfeito não combinado então
+beleza</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/648-0
+01:03:36.491 --> 01:03:39.451
+<v Ronaldo Robledo Mendes De Souza>Beleza? Então tá joia! Valeu pessoal!</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/650-0
+01:03:39.851 --> 01:03:41.811
+<v Pedro Azevedo Junior>Valeu pessoal, valeu obrigado Vitor valeu</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/649-0
+01:03:40.811 --> 01:03:41.411
+<v Ronaldo Robledo Mendes De Souza>Um abraço.</v>
+
+c6954045-c7d7-43a8-9c73-a477aa2f6c26/653-0
+01:03:43.291 --> 01:03:43.691
+<v Vitor Hugo Campos>Well there.</v>
