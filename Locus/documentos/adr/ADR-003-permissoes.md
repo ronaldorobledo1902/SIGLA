@@ -14,7 +14,7 @@
 
 ## Contexto
 
-A wiki determina que **o cadastro de permissões de ALVO e LOCUS fica no LOCUS** (cadastrar, consultar, alterar e excluir usuários e permissões). O MS-AdminUsuarios hoje só tem grupos do ALVO (Admin, Convocador, Visualizador, SuperAdmin, inicial). O PO sugere três perfis mínimos para o LOCUS e acesso restrito ao mínimo necessário para outras áreas. As rotas LOCUS do frontend não possuem guarda de autenticação.
+**O cadastro de permissões de ALVO e LOCUS fica no LOCUS** (cadastrar, consultar, alterar e excluir usuários e permissões). O MS-AdminUsuarios hoje só tem grupos do ALVO (Admin, Convocador, Visualizador, SuperAdmin, inicial). O PO sugere três perfis mínimos para o LOCUS e acesso restrito ao mínimo necessário para outras áreas. As rotas LOCUS do frontend não possuem guarda de autenticação.
 
 ## Decisão
 
@@ -46,7 +46,7 @@ A wiki determina que **o cadastro de permissões de ALVO e LOCUS fica no LOCUS**
 
 | Alternativa | Motivo de não adoção |
 |-------------|----------------------|
-| Permissões dentro do MS-Locus | Duplicaria o cadastro de usuários e contraria a wiki |
+| Permissões dentro do MS-Locus | Duplicaria o cadastro de usuários e contraria o dono único das permissões |
 | Papéis no Keycloak | Depende do estudo SME-COTIC; pode ser migração futura |
 
 ## Referências

@@ -1,0 +1,721 @@
+[1] Vitor Hugo Campos: A gente iniciou o front somente com o alvo e colocou o login nele.
+
+[2] Ronaldo Robledo Mendes De Souza: Uh-huh. A. So.
+
+[3] Vitor Hugo Campos: Aí posteriormente a poucas sprints aí, três sprints, quatro sprints, a gente começou a fazer o front do locus ainda de forma estática, só o front, sem comunicação com o backend. E na experiente passada a gente começou a implementar o terceiro front que é o sigla, que vai ser, vamos dizer assim, a primeira, o primeiro passo, que é nele que vai ser o login. Então a gente subiu ele já fazendo o login, chamando o micro serviço, que chama a Pl. E a partir dele você escolhe se vai para o alvo ou para o locus. Por enquanto está assim.
+
+[4] Ronaldo Robledo Mendes De Souza: Okay. Okay.
+
+[5] Vitor Hugo Campos: A única responsabilidade dele, por enquanto, é login e escolher o sistema que vai.
+
+[6] Ronaldo Robledo Mendes De Souza: Beleza, ok, sem problema, tá, deveio algo aqui. Que mais? Pegar aqui. Bom, era essa dúvida, primeiro momento que era o cadastro de login. Então nós estamos é está em andamento aí a questão do ciclo. OK, tem aqui o. O. Eu vou me aprofundar aqui a primeiro momento, só na parte do. Do óculos aqui está cadarço. Feliz importação de dados locus. Drocos. Certo, está esse sistema aqui a parte da do sistema importação de dados oriundos do sistema tal. O que já foi hoje desenvolvido no sistema Locus, o Vitor, o que nós já temos no sistema Locus aí?
+
+[7] Vitor Hugo Campos: Uh É, se você ver os repositórios, alguns deles tem o nome locus, né? Dá uma olhadinha aí para você ver.
+
+[8] Ronaldo Robledo Mendes De Souza: Uhum, tem isso, é isso que eu tava vendo.
+
+[9] Vitor Hugo Campos: Então vamos pegar, por exemplo, Tem louco, tem não. Perfect. Now, acho que É, acho que o loco está mais no diagrama, mas todos esses que tem MS alguma coisa a gente meio que já está usando, então.
+
+[10] Ronaldo Robledo Mendes De Souza: Uh-huh.
+
+[11] Vitor Hugo Campos: Do que eu entendi, o locus é meio que a fonte de informação, né? Então ele gera os dados. Para ser usados no alvo para poder fazer as escolhas, etc. E uma fonte de dados é esse importa arquivos.
+
+[12] Ronaldo Robledo Mendes De Souza: Import aqui just something.
+
+[13] Vitor Hugo Campos: Porque o pessoal lá da da Fonseca, né? Eles fazem muita coisa de importação de arquivo, né? Não tem comunicação API direta, né? É muito arquivo, upload de arquivo, né? Então o que que a gente tem hoje nesse importa arquivos, né? Já se o front end já se comunica com ele nesse.
+
+[14] Ronaldo Robledo Mendes De Souza: Isso aqui, só te contando aqui, de acordo com o esse diagrama aqui foi criado da seguinte maneira, que o virtual, então aqui, temos aqui o usuário logs e importação de dados, correto? Então.
+
+[15] Vitor Hugo Campos: Okay.
+
+[16] Ronaldo Robledo Mendes De Souza: A gente vai ter aqui um componente, a tela do sistema de importação de dados. Essa importação de dados, nós teremos dentro dessa tela, nós teremos um histórico de importação e uma consulta de serviço. Então teremos aqui um histórico de importação e uma consulta de serviço. E é o upload do arquivo. Tem aqui MSMS importa arquivos, que a gente até localizou aqui.
+
+[17] Vitor Hugo Campos: Aqui é o microservice.
+
+[18] Ronaldo Robledo Mendes De Souza: Isso microsserviço de importação de arquivo é que ele vai fazer a seguinte função, validação de arquivos e a gravação de dos dados para validação, correto? Me corrija se eu estiver errado.
+
+[19] Vitor Hugo Campos: É, são vários, são vários, são vários tipos de arquivo que são importados, né? Não é só um.
+
+[20] Ronaldo Robledo Mendes De Souza: São vários, são, vão ser vários tipos de arquivos que vão
+
+[21] Vitor Hugo Campos: Okay.
+
+[22] Ronaldo Robledo Mendes De Souza: ser importados, não é isso?
+
+[23] Vitor Hugo Campos: É cada um com uma funcionalidade, é pra ficar, vamos dizer assim, o mais parecido possível com escolhas atual. Que tem algumas importações e exportações de arquivos. Se você quiser acessar, eu passo o link para você ver como está os tipos.
+
+[24] Ronaldo Robledo Mendes De Souza: Por favor.
+
+[25] Vitor Hugo Campos: pegar aqui o você tá na VPN
+
+[26] Ronaldo Robledo Mendes De Souza: Okay.
+
+[27] Vitor Hugo Campos: Okay. pegar o link aqui, vamos ver, vamos ver se está funcionando mesmo, né? Oh, tenta acessar.
+
+[28] Ronaldo Robledo Mendes De Souza: Oh, we don't have the penic. Mm.
+
+[29] Vitor Hugo Campos: Which not does the son peray.
+
+[30] Ronaldo Robledo Mendes De Souza: That. Bairro não encontrado.
+
+[31] Vitor Hugo Campos: I acho it's okay about it. Oh. É, eu vou resumir aqui para você o porquê está assim. A gente tem três frontes, certo?
+
+[32] Ronaldo Robledo Mendes De Souza: Aham.
+
+[33] Vitor Hugo Campos: A gente começou pelo alvo, então essa URL que eu te passei apontava
+
+[34] Ronaldo Robledo Mendes De Souza: Campos.
+
+[35] Vitor Hugo Campos: diretamente para o alvo.
+
+[36] Ronaldo Robledo Mendes De Souza: Mm-hmm.
+
+[37] Vitor Hugo Campos: Aí a gente começou até o Locus.
+
+[38] Ronaldo Robledo Mendes De Souza: Go ahead.
+
+[39] Vitor Hugo Campos: Então, aí desde o início, a ideia era o quê? Essa URL aponta para o frontend sigla. Onde você loga, aí depois você escolhe alvo ou locus. Aí quando você escolhia alvo, era essa url barra alvo.
+
+[40] Ronaldo Robledo Mendes De Souza: Go ahead.
+
+[41] Vitor Hugo Campos: Quando você escolhia locus, essa url barra locus. Então a gente meio que está nesse processo de transição de url, né?
+
+[42] Ronaldo Robledo Mendes De Souza: So.
+
+[43] Vitor Hugo Campos: Então. Essas configurações pra essa URL apontar pro repositório sistema frontend sigla tá na fila lá de DevOps, então ainda não foi finalizado. E para apresentar para o pessoal lá, a gente meio que embutiu, vamos dizer assim, esse front-end dentro do locus, para a gente poder mostrar e poder acessar por URL. É uma ligeira gambiarra que a gente usou para poder subir o front e ter algo testável. Aí eu vou passar aqui o Por onde você vai fazer o login? Pera aí. eu tô fora da VP, não falei para você entrar eu tô fora Bye. é deixa eu deslogar aqui ó A gente meio que usou o artifício que a gente tinha para poder mostrar o login
+
+[44] Ronaldo Robledo Mendes De Souza: Okay.
+
+[45] Vitor Hugo Campos: enquanto o DevOps não fazia a configuração. Então essa URL que eu te passei, vamos dizer assim, vai ser a URL que você logaria no sigla. Aí loga aí para você ver, eu vou te passar um usuário aqui também. Aí pega aquele usuário. Aí a senha é a maiúsculo. Aí você escreve alvo, tem que escrever alvo, né? com a maiúsculo, 123 14 arroba
+
+[46] Ronaldo Robledo Mendes De Souza: That.
+
+[47] Vitor Hugo Campos: Aí você vai ali no acessar o alvo. Que é onde a gente iniciou, ali na parte de processos e importação de dados.
+
+[48] Ronaldo Robledo Mendes De Souza: Okay.
+
+[49] Vitor Hugo Campos: Poxa, ele não, espera aí.
+
+[50] Ronaldo Robledo Mendes De Souza: Aí eu teria que ir pra do Lopes, não é isso?
+
+[51] Vitor Hugo Campos: No. Ah, eu acho que é questão de redirecionamento, antes do bota a barra alvo ali, vai do login ali, ó. Pera aí, tem alguma coisa? Vai lá em processos de importação dados. sei o que aconteceu, mas aí ó, aí tem um arquivo aí, várias escolas, é um arquivo com formato habilitados, é o arquivo com as pessoas que passaram no concurso. Escolhas é uma busca externa que a gente faz no sistema da proda, não sei se você já ouviu falar.
+
+[52] Ronaldo Robledo Mendes De Souza: Sim, mas essa essa parte aqui é toda do alvo
+
+[53] Vitor Hugo Campos: Yeah.
+
+[54] Ronaldo Robledo Mendes De Souza: ainda, não é isso?
+
+[55] Vitor Hugo Campos: A.
+
+[56] Ronaldo Robledo Mendes De Souza: That. Fact.
+
+[57] Vitor Hugo Campos: A gente, a gente colocou dentro do frontend do alvo, porque era o que a gente tava, o que a gente combinou de fazer, né? Tudo dentro do alvo. Aí, essa área aí, toda ela se comunica com aquele MS em
+
+[58] Ronaldo Robledo Mendes De Souza: Yes.
+
+[59] Vitor Hugo Campos: porta arquivos.
+
+[60] Ronaldo Robledo Mendes De Souza: Certo, mas essa parte aqui teria que estar dentro do sistema do bloco. Seria isso? Você está dizendo, é isso, é o público?
+
+[61] Vitor Hugo Campos: Sim, é o que é o que eu imagino no cenário
+
+[62] Ronaldo Robledo Mendes De Souza: Mhm.
+
+[63] Vitor Hugo Campos: final, vamos dizer assim, quando tudo estiver bem dividido e tal.
+
+[64] Ronaldo Robledo Mendes De Souza: Thank you.
+
+[65] Vitor Hugo Campos: Mas seria como pegar isso aí e jogar em alguma sessão lá?
+
+[66] Ronaldo Robledo Mendes De Souza: Eu vi aqui o deixa eu ver se eu localizo aqui o Vitor só para só para a gente ir. Eu tinha localizado aqui uma seguinte situação aqui, deixa eu ver se eu acho aqui novamente para te mostrar aqui. Ekita. Pereira key. So, a college people are put their masses. Okay. É, então a gente ficou com ficou com essa, é esses micro serviços aqui por alvo, processo, consumo, MS candidato, MS relatório, processo, convocação, comunicação, agenda e escolha que estariam dentro do alvo. E na parte do locus importa arquivo e admins o usuário, seria isso mesmo? Confere essa informação.
+
+[67] Vitor Hugo Campos: É, essa é a ideia, só que a princípio a gente estava fazendo só dentro do alvo, né?
+
+[68] Ronaldo Robledo Mendes De Souza: Correto? Pois é, mas essa parte de importação, vamos lá,
+
+[69] Vitor Hugo Campos: I see.
+
+[70] Ronaldo Robledo Mendes De Souza: essa parte de importação de arquivo e admin usuário é, vocês já fizeram ela também, correto?
+
+[71] Vitor Hugo Campos: Sim.
+
+[72] Ronaldo Robledo Mendes De Souza: E hoje todo esse processo está dentro do alvo, não é isso?
+
+[73] Vitor Hugo Campos: Back to net nove.
+
+[74] Ronaldo Robledo Mendes De Souza: Cert, cert, cert, cert. Hey. Apositor front-change. Contém locus de alvo. Single, single phone change of photo repository backend. alvo e loco se importa arquivo e admin usuário certo No. A. Okay. Okay. algumas informações aqui eu já tinha colocado A. Right. This.
+
+[75] Vitor Hugo Campos: Porque isso que a gente fez até agora do locus, vamos dizer assim, que é em porta arquivo, né? E a ADM usuários é uma fração do que o
+
+[76] Ronaldo Robledo Mendes De Souza: Uh-huh.
+
+[77] Vitor Hugo Campos: locus é, né? Porque.
+
+[78] Ronaldo Robledo Mendes De Souza: Uh-huh.
+
+[79] Vitor Hugo Campos: Porque o pessoal lá mostrou, não é o tanto de informação que eles manipulam lá. Is this a day a so? Uma fração pequena, né? Do tanto de coisa que ele vai lhe dar, né?
+
+[80] Ronaldo Robledo Mendes De Souza: Bye. Deixa eu colocar uma informação aqui, o que a Jessica me passou, Vitor, para ver se eu vou ter uma reunião com ela mais tarde novamente, mas só para a gente bater o martelo aqui numa informação que ela me passou aqui. But it. Deixa eu abrir o documento aqui. Acho que eu podia até ter compartilhado esse documento com vocês aqui. Abrir ele aqui para vocês poderem dar uma olhada.
+
+[81] Vitor Hugo Campos: That's.
+
+[82] Ronaldo Robledo Mendes De Souza: Eu tinha passado algumas informações para ela, para ela poder me responder um questionário. E aí ela me colocou a seguinte situação aqui, ó. Oh. Tá questão de quem utiliza o sistema, usuários iniciam, existiam, tá aqui, os profissionais da divisão de gestão de carreira de A, vinculados ao Cogep. É outras áreas impactadas pelo projeto são prodan, secretaria da gestão e jurídica, SEME, necessidade de acesso direto dessas áreas ao sistema ainda precisa ser definidas. Eu não sei se você tem acesso ou Vitor, mas caso. Se você não tiver acesso à informação, tem problema não que eu vou me reunicar mais tarde. Mas eu fiquei na dúvida disso aqui, os profissionais de divisão de gestão de sistema, carreira de cá, o que é esse de cá? Você tem? Você tem a informações sobre isso?
+
+[83] Vitor Hugo Campos: Eu estou vendo esse tema agora, do que a gente conversou lá com o pessoal da SME, nunca falaram disso aí, ou pelo menos não era relevante, mas deve ser uma parte das pessoas com quem a gente tem conversado lá.
+
+[84] Ronaldo Robledo Mendes De Souza: Uh-huh.
+
+[85] Vitor Hugo Campos: Talvez eles sejam desse setor, só que. Não falaram explicitamente, né?
+
+[86] Ronaldo Robledo Mendes De Souza: Okay. Outras are impacted.
+
+[87] Vitor Hugo Campos: Mas mesmo assim, é, mas mesmo assim, esse admin usuários, ele vai ser responsável pela gestão dos usuários, permissionamento, etc.
+
+[88] Ronaldo Robledo Mendes De Souza: Uh-huh. Sing.
+
+[89] Vitor Hugo Campos: Então, muito provavelmente vamos pegar lá a Angela, que é a chefona lá, tem um usuário. Tem um usuário de mim? E a fulano ali do da prodam quer acessar, aí ela com a conta dela. Poderia adicionar o usuário tal que teria permissão tal, sabe? Pelo menos essa é a ideia, quem quiser acessar. Tem que passar por alguém que tem essa permissão de criar acesso, aí quem for pra gente, vamos dizer assim, A gente não precisa nem saber, mas tem alguém responsável por dar essa
+
+[90] Ronaldo Robledo Mendes De Souza: Mhm.
+
+[91] Vitor Hugo Campos: permissão.
+
+[92] Ronaldo Robledo Mendes De Souza: That.
+
+[93] Vitor Hugo Campos: A gente, a gente já, a gente já tem um pouco de permissões. Que ainda vai precisar melhorar com essa questão de locus, que são outras coisas, mas a gente já meio que o admin usuários pode lidar com isso.
+
+[94] Ronaldo Robledo Mendes De Souza: É porque a gente colocou aqui o seguinte, no login, a gente vai fazer esse sistema. O diagrama Bastos representa um jornal de login do sistema Alves. Então, se a gente pegar aqui. O sistema Alves Locks terá um cadastro de permissão de usuários no sistema Lox, o que permite restringir alguns acessos de usuários. Essa parte de cadastro de usuários lá no Lox também já está feita ou não foi feita ainda ou só está acessando direto pelo.
+
+[95] Vitor Hugo Campos: O.
+
+[96] Ronaldo Robledo Mendes De Souza: Pelo que existe a P.O.
+
+[97] Vitor Hugo Campos: Não, o a gente tem, vamos falar aí duas etapas aí. A primeira etapa é autenticar o cara, a pessoa.
+
+[98] Ronaldo Robledo Mendes De Souza: Uh-huh.
+
+[99] Vitor Hugo Campos: E isso a gente usa aquela P e o para isso.
+
+[100] Ronaldo Robledo Mendes De Souza: What happen?
+
+[101] Vitor Hugo Campos: Uma vez autenticado. É. Lá no MS Admin Usuários a gente tem um banco de dados com os usuários que vão acessar o sistema.
+
+[102] Ronaldo Robledo Mendes De Souza: Mhm.
+
+[103] Vitor Hugo Campos: Aí quando o cara faz o login, igual que você fez o login agora, né?
+
+[104] Ronaldo Robledo Mendes De Souza: Yes.
+
+[105] Vitor Hugo Campos: A gente pega esse RF. Verifica, esse usuário existe no MS Admin? Existe. Vou tentar autenticar ele lá na APIEO. Autêntico na PEO. Aí a gente considera esse usuário logado e com isso a gente consegue ter acesso às permissões dele. Então, cada página ali pode ser bem flexível. Cada página do alvo ali você acessou a importação de dados, mas tem diversas páginas ali. Então, cada página ali pode ter uma permissão. de visualização, de edição, etc. Então, uma vez que o usuário está autenticado, essas permissões ficam do nosso lado, no MSAdmin usuários.
+
+[106] Ronaldo Robledo Mendes De Souza: Correto? Então aí no caso você está vendo aí minha tela aí?
+
+[107] Vitor Hugo Campos: Você não está compartilhando.
+
+[108] Ronaldo Robledo Mendes De Souza: Oh, no, wash.
+
+[109] Vitor Hugo Campos: Oh, parou. Aí, com a entrada do locus, aí a gente vai ter que adicionar algumas coisas de permissão que o usuário vai poder acessar, ou o locus ou o alvo, etc. Então.
+
+[110] Ronaldo Robledo Mendes De Souza: Seria no caso igual esse desenho aqui, não é isso? Então nós temos a base do ciclo aqui, faço, faço a autenticação lá no na APIO, certo? E gravamos na nossa base do ciclo aqui,
+
+[111] Vitor Hugo Campos: So.
+
+[112] Ronaldo Robledo Mendes De Souza: correto?
+
+[113] Vitor Hugo Campos: That mapley. Aí na nossa base do sigla que fica as informações de permissões daquele usuário.
+
+[114] Ronaldo Robledo Mendes De Souza: correto correto é isso mesmo então beleza Yeah. Queria validar com você o Vitor, alguns componentes aqui. algumas funcionalidades que já foram executadas, tá?
+
+[115] Vitor Hugo Campos: Yeah.
+
+[116] Ronaldo Robledo Mendes De Souza: The show. Só pegar aqui. Santos. Para Jessica entrar aqui, mas ela não podia, mas depois eu vou ter uma reunião com ela e eu vou validar isso aqui.
+
+[117] Vitor Hugo Campos: So. Yeah.
+
+[118] Ronaldo Robledo Mendes De Souza: Cadastro de concursos e cargos.
+
+[119] Vitor Hugo Campos: Isso é isso, são 2 partes também se cadastram esses
+
+[120] Ronaldo Robledo Mendes De Souza: Mhm.
+
+[121] Vitor Hugo Campos: concursos.
+
+[122] Ronaldo Robledo Mendes De Souza: Yes.
+
+[123] Vitor Hugo Campos: É, eles são cadastrados. Não sei como o pessoal de da ICMA falou não. Quando a gente precisa de um concurso novo, a gente pede para alguém e esse alguém cadastra.
+
+[124] Ronaldo Robledo Mendes De Souza: EA.
+
+[125] Vitor Hugo Campos: Com as informações básicas do concurso, porque parece que o concurso tem um código específico, alguma coisa assim, só. E uma vez cadastrado esse concurso.
+
+[126] Ronaldo Robledo Mendes De Souza: Go ahead.
+
+[127] Vitor Hugo Campos: Vamos botar aí na APIEO, certo? No banco de dados do e o, alguém cadastrou o concurso e associou cargos àquele concurso.
+
+[128] Ronaldo Robledo Mendes De Souza: Mhm.
+
+[129] Vitor Hugo Campos: Aquela mesma API que eu te passei o link, a gente também busca lá informações de concurso. Então qual é a ideia, né?
+
+[130] Ronaldo Robledo Mendes De Souza: Você fala aqui, né?
+
+[131] Vitor Hugo Campos: Não, aquela API lá que eu passei com a
+
+[132] Ronaldo Robledo Mendes De Souza: Ah, tá.
+
+[133] Vitor Hugo Campos: documentação lá, essa é minha integração.
+
+[134] Ronaldo Robledo Mendes De Souza: Go ahead.
+
+[135] Vitor Hugo Campos: Esse é um outro ponto. Foi desenvolvido esse endpoint de busca de concursos. Em dezembro. Eles subiram para homolog, a gente validou tal, a gente conseguia consultar. Depois eles tiraram esse endpoint daquela API, essa minha integração. e precisam colocar de volta Mas essa é a ideia. Alguém cadastra concurso lá? A gente busca essa informação através daquele SMA integração API. Aí a gente traz para o nosso banco de dados esses concursos e cargos. Aí só tem alguns dados que vem de lá. Aí o pessoal da SME pediu para adicionar algumas informações que são relevantes para. O sigla, não necessariamente lá para o e o. Então, uma vez que a gente busca os concursos e cargos e traz para o nosso banco de dados aqui, a pessoa edita esses concursos e adiciona outras informações. Se você quiser acessar lá no alvo, você pode até ver. Eu posso até te falar o que que vem. Vai ali em gerenciar concursos,
+
+[136] Ronaldo Robledo Mendes De Souza: We fall aqui.
+
+[137] Vitor Hugo Campos: cadastro de concursos. Então ó, desce, vai descendo aí pra até a última página, vai descendo aí que deve ter, pode ir até a página seis ali. Eu acho que algum desses concursos aí que são mais antigos, a gente trouxe lá do SMA integração API. Aí quando a gente. Adicionou essa parte de cadastro de concursos, a gente deu a opção de adicionar Campos. Então, se você clicar em editar aí, clica aí nesse qualquer um desses últimos aí. Pode clicar em editar. Então, o que que vinha para a gente, né? O que que vem lá da da integração API, né? Vem os cargos. O nome do concurso e esse processo SEI. Aí toda todas essas outras informações da página 2 e 3 também são coisas que não existem e elas pediram para adicionar um incremento para adicionar informações ao concurso. Duas etapas, a gente busca os dados base dos concursos e do nosso lado aqui, esses dados são incrementados.
+
+[138] Ronaldo Robledo Mendes De Souza: Entendi, entendi, entendi. Bom, então assim, mas resumidamente falando, esse cadastro de concurso já está feito, correto?
+
+[139] Vitor Hugo Campos: Sim, it's a perfect.
+
+[140] Ronaldo Robledo Mendes De Souza: Porque é, quais eram os componentes aqui? Oh, é, deixa eu só validar uma coisa com você, falou que essa informação ela está dentro dessa API do MS processo concurso, confere?
+
+[141] Vitor Hugo Campos: Same, same.
+
+[142] Ronaldo Robledo Mendes De Souza: Então a gente teria cadastro, alteração, exclusão, visualização, inserir todas essas funcionalidades aqui dentro dessa API. Confere?
+
+[143] Vitor Hugo Campos: Sim.
+
+[144] Ronaldo Robledo Mendes De Souza: OK, OK, OK, OK, tá tranquilo, Pedro? Here, you see, a gear aqui up. Mas essa funcionalidade de escolha de vagas e unidades escolares.
+
+[145] Vitor Hugo Campos: Também, já tem.
+
+[146] Ronaldo Robledo Mendes De Souza: tá bem tá só MS escolha beleza
+
+[147] Vitor Hugo Campos: Yeah, so about I think that.
+
+[148] Ronaldo Robledo Mendes De Souza: Essa parte aqui, essa parte aqui vai falar. É a minha dúvida, essa parte aqui, ela está dentro, essa parte,
+
+[149] Vitor Hugo Campos: Vou fazer uma, tá?
+
+[150] Ronaldo Robledo Mendes De Souza: ela faz parte do alvo ou do locus?
+
+[151] Vitor Hugo Campos: the world.
+
+[152] Ronaldo Robledo Mendes De Souza: Hello!
+
+[153] Vitor Hugo Campos: É só pra resumir isso aí, né? A escolha, o que que é a escolha né? É a pessoa que passou no concurso dizer eu quero trabalhar em tal lugar. Eu passei nesse concurso para esse cargo e eu quero trabalhar em algum lugar. Right. Então, a gente importa as vagas que estão disponíveis nas escolas, né? A gente importa a lista de pessoas que passaram no concurso, né? E aí o pessoal da SME cria uma convocação que pode ter passado 5000 pessoas né só que aí você não chama 5000 de uma vez né você tem etapas né
+
+[154] Ronaldo Robledo Mendes De Souza: Mhm.
+
+[155] Vitor Hugo Campos: Aí você coloca 100 pessoas. Aí essa convocação. A pessoa recebe até um e-mail, você foi convocado pra poder escolher. Então, essas 100 pessoas que foram convocadas podem fazer a escolha de onde quer trabalhar. Em resumo, é isso. A escolha, né?
+
+[156] Ronaldo Robledo Mendes De Souza: Thank you. Thank you. escolha
+
+[157] Vitor Hugo Campos: Por isso que se chama escolhas o outro, que é para você escolher onde quer trabalhar.
+
+[158] Ronaldo Robledo Mendes De Souza: Yeah.
+
+[159] Vitor Hugo Campos: That's nice.
+
+[160] Ronaldo Robledo Mendes De Souza: Cadastro de usado do sistema gente acabou de falar né cadastro
+
+[161] Vitor Hugo Campos: É, a gente não adiciona usuários, é, vamos dizer assim, não é all, a gente só.
+
+[162] Ronaldo Robledo Mendes De Souza: Válido lá, né?
+
+[163] Vitor Hugo Campos: Consulta é porque a gente fez uma carga no banco de dados do MS Admin usuários com alguns usuários que eles passaram. É, e todos os usuários que eles passaram já tem conta lá no e o, né? Então todos eles. Agora, se virar alguma pessoa nova para trabalhar lá, a gente não tem capacidade de adicionar essa pessoa. Não é O, vamos dizer assim. A gente ainda não está fazendo isso e nem sabe se vai fazer, né?
+
+[164] Ronaldo Robledo Mendes De Souza: Ah, tá, porque uma das, uma, uma das.
+
+[165] Vitor Hugo Campos: O nosso cadastrar usuário a gente cadastra no sigla. Vamos dizer, você trabalhava lá no ICME em algum sistema lá que você tinha um login já. Aí você foi transferido para trabalhar no sigla.
+
+[166] Ronaldo Robledo Mendes De Souza: Uh-huh.
+
+[167] Vitor Hugo Campos: Você existe lá no EOL, mas você não existe no sigla, né? Então a gente cadastra você no sigla, mas não cadastra você no EOL.
+
+[168] Ronaldo Robledo Mendes De Souza: Mm. Entendi, entendi. Para uma das premissas é para mim cadastrar no sigla, eu tenho que ter é ter cadastro no el, correto?
+
+[169] Vitor Hugo Campos: É porque tem um lugar lá que aí você bota o RF, que é o ID, o username, né? A gente busca lá no e o, vê se tem. Se tiver, aí a gente pega que ele tem e-mail, tem nome e algumas outras coisas só. Aí cadastrar não é ou não.
+
+[170] Ronaldo Robledo Mendes De Souza: OK, importação de dados, logo aqui acho que aqui é a fase mais importante para a gente estar verificando o mesmo. Essa parte de importação de dados do do lócus, certo? É, ela já está totalmente conclusa hoje ou está aí em andamento?
+
+[171] Vitor Hugo Campos: Já está feita todas as importações e exportações que eles também usam, né?
+
+[172] Ronaldo Robledo Mendes De Souza: Yeah, that.
+
+[173] Vitor Hugo Campos: Porque tem muita, vamos dizer assim, a integração de sistema deles é através
+
+[174] Ronaldo Robledo Mendes De Souza: Mhm. O.
+
+[175] Vitor Hugo Campos: de arquivo, né? Ele vai lá no tipo SigPack que é um sistema. Ele gera um arquivo lá que importa o sigla. Aí tem essas informações, aí depois a gente pode exportar algo do sigla para importar lá. É tudo integração via arquivo. Nah request, no.
+
+[176] Ronaldo Robledo Mendes De Souza: Dock Dition.
+
+[177] Vitor Hugo Campos: A gente tem. A gente tem. Aquela sessão que você viu na importação vagas tem um layout específico,
+
+[178] Ronaldo Robledo Mendes De Souza: Uh-huh.
+
+[179] Vitor Hugo Campos: que a gente valida o layout do arquivo, vê se está vendo todos os campos, as colunas. É aí tem do dos candidatos também, a gente valida a estrutura do arquivo, né? Tem a terceira importação, isso se baseando pelo escolhas atual, né? A gente fez quase igual, né? O que é hoje? A gente tem uma importação que não é através de arquivo. A gente vai buscar informação lá no sistema da PRODAM. É uma outra importação que não é através de arquivo. E tem a última lá, que é a importação SIGPAC, que é o outro sistema lá que gera informação. Então tudo isso aí já tá feito.
+
+[180] Ronaldo Robledo Mendes De Souza: Okay, beleza.
+
+[181] Vitor Hugo Campos: Igual a gente também salva o histórico de importação, sabe? Se deu erro, se deu sucesso.
+
+[182] Ronaldo Robledo Mendes De Souza: Okay.
+
+[183] Vitor Hugo Campos: E a gente também. Além de importar, a gente gera arquivos com as informações que a gente já tem. Igualzinho o que eu escolhas hoje.
+
+[184] Ronaldo Robledo Mendes De Souza: That's. Is a
+
+[185] Vitor Hugo Campos: Até então né, do que a gente já apresentou e do que elas já testaram. A princípio está completa essa parte, né?
+
+[186] Ronaldo Robledo Mendes De Souza: Okay. So it is up. Votação.
+
+[187] Vitor Hugo Campos: Quem está se comunicando com o importa arquivo ainda é o alvo, né? Posteriormente deve ser o locus.
+
+[188] Ronaldo Robledo Mendes De Souza: That. Tá, então as funcionalidades hoje estão todas dentro do está se comunicando todas com é o alvo, né?
+
+[189] Vitor Hugo Campos: Well Okay.
+
+[190] Ronaldo Robledo Mendes De Souza: Okay. Tem alguma coisa que o front-end do Lopes já tá fazendo ou o Vitor ainda não?
+
+[191] Vitor Hugo Campos: Não, não é todo estado.
+
+[192] Ronaldo Robledo Mendes De Souza: A do station.
+
+[193] Vitor Hugo Campos: É porque o locus que o Guilherme está fazendo o protótipo e que está validando com o pessoal de lá. Não é necessariamente essas coisas que a gente passou aí que, em tese, tem que estar no locus.
+
+[194] Ronaldo Robledo Mendes De Souza: Oh.
+
+[195] Vitor Hugo Campos: São as coisas que vem. Boss. Escolha do candidato e quando ele começa a trabalhar, vamos dizer assim. Essa parte de do alvo. É enquanto o cara não está empregado. Quando o cara assume o cargo dele. aí é o que a gente tá é o que eu entendo né que a gente tá fazendo lócus agora quando o cara começa a trabalhar que aí são outras informações do do dos funcionários né Mas se a gente for seguir essa ideia inicial,
+
+[196] Ronaldo Robledo Mendes De Souza: Sure.
+
+[197] Vitor Hugo Campos: essa parte de importação de arquivos tem que estar no locus, né? Essa parte de usuários tem que estar no locus, que por enquanto está no alvo.
+
+[198] Ronaldo Robledo Mendes De Souza: Okay.
+
+[199] Vitor Hugo Campos: Mas pelo menos já tá funcionando, então.
+
+[200] Ronaldo Robledo Mendes De Souza: É porque a forma que a Jessica tinha separado é o seguinte aqui. O sistema importa periodicamente os dados do EOL e do SIGPEC. O sistema confronta as informações e sinaliza divergência. O analista da de cá consulta do servidor. Esse aqui eu vou ter que checar esse passo a passo que ela colocou aqui. Registro corrige lotação e movimentação, o sistema grava a alteração no histórico preservando a versão anterior. Go spread.
+
+[201] Vitor Hugo Campos: Isso aí, isso aí já é mais relacionado ao locus, né?
+
+[202] Ronaldo Robledo Mendes De Souza: Isso, tudo isso que eu estou falando é do lócus, tá?
+
+[203] Vitor Hugo Campos: Data.
+
+[204] Ronaldo Robledo Mendes De Souza: O sistema grava alteração, não estou preservando a versão anterior. Essas informações que eu estou lendo aqui para mim está muito, como eu não estou aprofundado no sistema, me fala Vitor, você tem conhecimento dela hoje? Já funcionando no sistema?
+
+[205] Vitor Hugo Campos: Não, tudo sair do locus não existe nada dinâmico hoje, é só front, só estático.
+
+[206] Ronaldo Robledo Mendes De Souza: It. O analista ou gestor gera relatórios sobre o quadro funcional para a tomada de decisão.
+
+[207] Vitor Hugo Campos: É isso aí é o que vai ter ainda, né?
+
+[208] Ronaldo Robledo Mendes De Souza: Sim, em caso de revisão, auditoria, consulta-se o histórico da versão do registro.
+
+[209] Vitor Hugo Campos: Eu posso até te mostrar um exemplo aqui pra gente tentar ter uma ideia de como vai ser. Vai naquela URL lá do alvo e coloca barra locus ao invés do barra alvo. Alia. Para botar barra locus.
+
+[210] Ronaldo Robledo Mendes De Souza: Go ahead.
+
+[211] Vitor Hugo Campos: Que vamos, vamos pegar, por exemplo. Oh. A escola hoje, certo que a unidade escola, a escola, a mesma coisa, sabe? OE, se você ver, tudo sai escola, né? Então, essa parte de gestão aí ele mostra um resumo das informações das escolas. Aí quem tá trabalhando, se tem vaga ainda, só me resumo a isso aí, né?
+
+[212] Ronaldo Robledo Mendes De Souza: Uh-huh, sing.
+
+[213] Vitor Hugo Campos: Então, hoje, do jeito que está hoje, que informações a gente tem da escola? A gente consegue descobrir. Quem escolheu aquela escola para trabalhar? Certo? Em tese, é alguém que está trabalhando lá, né? Esse, por exemplo, é a informação que a gente tem da escola. Essa página aí Ela tem um monte de informações a mais, né? Ó, se você descer aí, ó. É ali, tem diretoria ali nesse segundo formulário aí. Cargo a gente tem como descobrir os
+
+[214] Ronaldo Robledo Mendes De Souza: Uh-huh.
+
+[215] Vitor Hugo Campos: cargos que daquela escola. Estrutura hierárquica a gente não tem. Código de lotação deve ser o código EOL. A gente tem. Tipo de unidade a gente tem. a escolas municipalizadas a gente não não tem por enquanto ano da municipalização não tem então todas essas outras informações hoje a gente não tem que de acordo com essa página e do que foi validado com elas lá da CME A gente precisa salvar essa informação em algum lugar, né?
+
+[216] Ronaldo Robledo Mendes De Souza: Go ahead.
+
+[217] Vitor Hugo Campos: Esse é o primeiro ponto onde a gente vai salvar essa informação. Aí você desce ali, desce, desce um pouco ali, oh.
+
+[218] Ronaldo Robledo Mendes De Souza: Esse aqui, como você falou, tá tudo estático, né?
+
+[219] Vitor Hugo Campos: Perto de estático aí. Então, muita informação do que está aí, a gente precisa adicionar nas escolas. Clica numa escola aí, numa linha. Eu acho que vai para outra página. Aí,
+
+[220] Ronaldo Robledo Mendes De Souza: So, Falkey.
+
+[221] Vitor Hugo Campos: pode clicar. Aí a gente tem, vamos dizer assim, as matérias daquela escola e quem está trabalhando, se tem vaga, se tem afastado, gente afastada. Então hoje, com o alvo hoje, do que a gente fez até hoje, isso aí a gente não salva.
+
+[222] Ronaldo Robledo Mendes De Souza: Mhm. Thank you.
+
+[223] Vitor Hugo Campos: Então a gente tem que ver como a gente vai fazer para salvar isso, né? Aí o outro ponto, vai ali em cadastro. É atualização. O registro funcional ali, oh. mais para baixo ali é único que tá clicável aí
+
+[224] Ronaldo Robledo Mendes De Souza: Okay.
+
+[225] Vitor Hugo Campos: é digita aí Gabriel acho que é Gabriel que tá aí vai digitando aí Gabriel ele vai auto completar ali ó Pode selecionar o primeiro aí, por exemplo. Então, esse cara aí, todas essas pessoas aí vieram através de uma importação de arquivo de habilitados, né? Que é aquela tela que você viu. Então a gente salva muito, ali já tem muita informação da pessoa, né? O RF já tem, o CPF já tem, o cargo, o código do cargo, aí esses dados funcionais, ó, clica ali para expandir. segundo aí eh esse CL vínculo Uh Situação funcional do cargo, isso a gente não salva. A gente teria que adicionar algumas informações para aquela pessoa. Aí a atividade tem informação aí que a gente não está salvando. Então, muita coisa que tem aí, a gente vai precisar adicionar, seja na escola, seja no candidato, na pessoa.
+
+[226] Ronaldo Robledo Mendes De Souza: Pois é, mas essas informações que você está me apresentando aqui, o Vitor, é, volto a perguntar, elas são todas estáticas ou estão vindo de algum lugar?
+
+[227] Vitor Hugo Campos: Aí está tudo estático.
+
+[228] Ronaldo Robledo Mendes De Souza: Mhm.
+
+[229] Vitor Hugo Campos: a gente a gente tá primeiro fazendo o front né porque ficou essa dúvida né É dessa questão da arquitetura aí. Tem os candidatos. A gente tem um micro serviços que tem os candidatos, aí a gente vai buscar a informação de lá mesmo, tá? A gente busca de lá, só que essas informações a mais que a gente não tem, a gente vai salvar no micro serviços candidatos. Aí é o questionamento, né? Porque como a gente não tinha essa informação, se a gente ia usar os mesmos micro serviços, adicionando informação, se ia precisar de algum outro micro serviço para ter outras informações, então como a gente ainda não tinha. Essas respostas a gente decidiu fazer estático que é para entregar algo que elas poderiam ver. Não, eles estão fazendo aqui, estão evoluindo e tal, mas por enquanto tudo isso aí está estático. Mas até então, do que a gente desenvolveu, algumas coisas a gente tem como buscar essa informação. Algumas informações das escolas. Algumas informações dos candidatos. Então tudo isso a gente tem algo né, mas não tem tudo.
+
+[230] Ronaldo Robledo Mendes De Souza: So.
+
+[231] Vitor Hugo Campos: aí esse resto aí de informação que é a dúvida né É, vamos adicionar os Campos lá no micro serviço candidatos que está relacionado a candidato, não está não sei o que, então. Mas tudo sair dentro do locus, aí é tudo estado agora, né? Está estático, né?
+
+[232] Ronaldo Robledo Mendes De Souza: Yeah. Port a song. Agendamento e convocação.
+
+[233] Vitor Hugo Campos: Também toda essa parte de convocação que para ter uma convocação tem que ter importação de arquivos, então a importação está funcionando.
+
+[234] Ronaldo Robledo Mendes De Souza: Mhm.
+
+[235] Vitor Hugo Campos: Para ter a convocação, a gente tem que convocar os candidatos. A gente já está importando os candidatos, já tem uma regra lá de convocação, só. A gente já está seguindo a regra. Aí a terceira etapa é criar agenda para as convocações, né? Porque se você vai convocar 500 pessoas, você não vai pedir para as 500 pessoas virem na mesma hora, né? No mesmo dia. Aí você cria as agendas para grupos de pessoas, né? Isso aí também já está funcionando. Então essa parte de agendamento Já, já fez.
+
+[236] Ronaldo Robledo Mendes De Souza: Okay.
+
+[237] Vitor Hugo Campos: Essa parte de convocação que tá alinhada com agenda também, né?
+
+[238] Ronaldo Robledo Mendes De Souza: Candidatos.
+
+[239] Vitor Hugo Campos: Também, que é onde a gente guarda a informação dos candidatos, quando a gente importa o arquivo lá de habilitados, que é aquela tela que você viu. Que a gente traz os dados pessoais do candidato e os dados do candidato daquele
+
+[240] Ronaldo Robledo Mendes De Souza: Okay.
+
+[241] Vitor Hugo Campos: concurso. Porque o mesmo candidato pode estar em mais de um concurso, né?
+
+[242] Ronaldo Robledo Mendes De Souza: Thank you.
+
+[243] Vitor Hugo Campos: So.
+
+[244] Ronaldo Robledo Mendes De Souza: Entendi seguinte, o Vitor, vou fazer o seguinte, eu entendi já é o que já está feito, o que você se importou. Eu queria discutir a respeito da de umas novas APIs aqui, mas eu vejo que eu vou ter que verificar com a Jessica. para ela desnichar melhor esse documento que ela me mandou aqui, porque ficou um pouco superficial com as informações. Deixa eu só parar aqui um pouquinho.
+
+[245] Vitor Hugo Campos: É porque esse locus é complicado, viu? Rapaz
+
+[246] Ronaldo Robledo Mendes De Souza: É. eu tô vendo eu vou ter que destrinchar a gente vai ter que destrinchar melhor algumas informações que ela me passou aqui porque ficou algumas dúvidas aqui nesse documento que ela me passou né então não chegou a mapear serviços detalhados que precisam ser feitos aqui É o que está pronto e o que não está. Então ficou uma lacuna aqui para mim nessa resposta dela aqui eu coloquei aqui. Existe uma jornada de usar uma piada? Não existe descrever da mesma forma. Então essa resposta dela ficou uma lacuna. O que está pronto e o que não está. Não é? Então eu vou ter que mapear esse serviço dela melhor aqui é para mim poder entrar. Eu a tá. Isso aqui foi uma pergunta necessária. Existe APIs disponíveis? É necessário. É confirmar com a com a com a responsável pela a forma de disponibilização dos dados. API acessa o banco view aqui, vou outros mecanismos. É, eu tinha colocado isso aqui é com o objetivo de saber se a gente já está, já estava acessando. Porque essa parte da importação dos dados eu pensei que não estava sendo feita ainda ou Vitor, mas como você me explanou aí que ela já está sendo feita, então a gente já está acessando dados para fazer essa importação de dados, não é isso? Já está acessando sistemas externos para fazer essa importação de dados,
+
+[247] Vitor Hugo Campos: Seeing.
+
+[248] Ronaldo Robledo Mendes De Souza: não é isso?
+
+[249] Vitor Hugo Campos: A grande maioria ali é a importação de arquivo,
+
+[250] Ronaldo Robledo Mendes De Souza: Mhm.
+
+[251] Vitor Hugo Campos: que é a integração que é possível hoje. Uma delas que a gente vai buscar informação lá no sistema do PRODAM, mas é a única coisa que a gente busca via requisição. Todo o resto é alimentado via arquivo, pelo menos por enquanto.
+
+[252] Ronaldo Robledo Mendes De Souza: But Entendi esses arquivos, mas eu busco essa informação aqui, eu busco essa informação, pode deixar. Eu vou fazer o seguinte, Vitor, eu vou, a sua explicação aqui foi, me abriu uma luz aqui, me abriu algumas dúvidas aqui que eu vou ter que sanar com a Jessica. Eu vou ver se ela consegue conversar comigo hoje. Eu anotei algumas dúvidas aqui, principalmente nessa questão do passo a passo. Então eu já verifiquei o que está pronto, já consegui visualizar o que está pronto e vou visualizar com ela esse passo a passo que ela colocou aqui, que ela me forneceu. né e visualizar com ela as funcionalidades do que que falta igual a gente colocou aqui ó igual a gente tinha acho que eu parei de compartilhar aí né
+
+[253] Vitor Hugo Campos: Auto.
+
+[254] Ronaldo Robledo Mendes De Souza: Deixa eu compartilhar de novo Pode ser mais específico? Thank you. Então, a gente tinha aqui um conjunto de funcionalidades que precisavam ser feitos, correto? Então, nós temos aqui o conjunto de funcionalidades que precisavam ser feitos, a gente precisa implementar esse conjunto de funcionalidade dela, implementar para a gente dar andamento no que ainda precisa ser feito. E é isso que eu preciso sanar essa dúvida com ela, dessa documentação que ela mandou que para mim ficou bem de baixo nível, que precisou subir isso aqui de alto nível para a gente poder mapear melhor esses processos aqui. igual ela colocou Quais são os processos de negócio que serão suportados lotação e alocação de servidores nas unidades né então eu preciso essas duas respostas aqui ó eu preciso somar com elas e definir esses processos de funcionalidade que precisa ser feito Definindo esses processos, eu consigo definir as APIs, em qual os APIs a gente vai utilizar a cada situação, beleza?
+
+[255] Vitor Hugo Campos: Beleza, se precisar me chamar, você me chama lá que eu apareço.
+
+[256] Ronaldo Robledo Mendes De Souza: não com certeza com certeza talvez a gente vai precisar de colocar lá na
+
+[257] Pedro Azevedo Junior: Oh.
+
+[258] Ronaldo Robledo Mendes De Souza: reunião para é talvez ela vai ter dúvida em alguma questão técnica lá né E aí eu te eu te dou o grito
+
+[259] Pedro Azevedo Junior: O Robledo, só para checar aqui a conversinha de teve
+
+[260] Vitor Hugo Campos: Beleza.
+
+[261] Pedro Azevedo Junior: mais cedo. Eu acho que não passamos por tudo, mas as coisas que eu notei aqui só para só para confirmar se tinha umas dúvidas que você tirou que eu levantou que eu não sabia. A resposta é. Da na respondo do locus, você perguntou se era aquela parte de importação, exportação de arquivo que você mostrou no diagrama. Bom, acho que você é. Eu não soube responder, mas acho que o Vitor respondeu.
+
+[262] Ronaldo Robledo Mendes De Souza: Sim.
+
+[263] Pedro Azevedo Junior: E se tinha perguntado alguma coisa a respeito do prodam também?
+
+[264] Ronaldo Robledo Mendes De Souza: É, não ficou muito, ficou claro aqui para mim, o Pedro só te cortando, ficou claro assim, é as funcionalidades que estavam
+
+[265] Pedro Azevedo Junior: Okay.
+
+[266] Ronaldo Robledo Mendes De Souza: registradas para ser para serem feitas foram feitas, correto?
+
+[267] Pedro Azevedo Junior: Mhm.
+
+[268] Ronaldo Robledo Mendes De Souza: Só que o que que eu entendi é tinha sido desenvolvido tudo dentro do alvo. Do front-end dual é chamado, tinha sido, foi feito tudo desenvolvido dentro do sistema dual, e agora vocês criaram o front tanto do locus como do sigla, que vai ser responsável por acessar essas 2 partes. E aí, as coisas que estão dentro do locus estão estáticas, correto? As coisas que estão dentro do locus estão
+
+[269] Pedro Azevedo Junior: Mhm.
+
+[270] Ronaldo Robledo Mendes De Souza: estáticas e precisamos é disponibilizar aonde que elas serão armazenadas. Vitor, vai me corrigindo se eu estiver errado. Então a gente precisa disponibilizar primeiro aonde que elas serão armazenadas, uma vez que as funcionalidades já estão criadas, mas precisamos verificar agora onde que elas serão armazenadas e verificar o que que ainda falta ser adicionado no sistema Lox. Quais são as outras funcionalidades que vão precisar ser adicionadas no sistema Lux? A respeito do program, eu coloquei era para mim saber se a gente já estava obtendo os dados que precisa na importação. E o Vitor me colocou e claro que essas importações já estão sendo feitas. Eu vou checar com a com a com a Jessica se tem mais alguma importação que precisará ser feita ou não, então para isso eu preciso checar as funcionalidades e aquele mapeamento que ela colocou lá.
+
+[271] Pedro Azevedo Junior: Ah, no, perfect, perfect.
+
+[272] Ronaldo Robledo Mendes De Souza: Beleza, então assim é, eu vou pegar aqui, aproveitar que minha tela está compartilhando ainda, então essa documentação que ela me enviou aqui. É conforme está na tela aí, eu tinha colocado aqui. Quais são os processos de negócios que são suportados e qual que é a jornada mapeada? Então ela colocou aqui, não há uma jornada formalmente mapeada. Proposta sequencial, o sistema importa periodicamente os dados do real. E do sig pack. Fiquei na dúvida desse sig pack aqui. Oh, não é? Eu fiquei na dúvida desse sig pack aqui, então eu vou só.
+
+[273] Vitor Hugo Campos: É um, é um outro, é um outro sistema aí, tem vários, tem prodance, gpecker, sabe?
+
+[274] Ronaldo Robledo Mendes De Souza: Pois é, mas esse do sing pack já está sendo importado também, o Vitor está, não está?
+
+[275] Vitor Hugo Campos: Sim, se você ver, é acessa lá o site, aí você vê, tem uma aba lá, sig pack, é, bota aí barra alvo, barra alvo.
+
+[276] Ronaldo Robledo Mendes De Souza: do Alves do Alves do Alves né Deixa eu voltar lá no Alves
+
+[277] Vitor Hugo Campos: Processos, importação de dados.
+
+[278] Ronaldo Robledo Mendes De Souza: Yes.
+
+[279] Vitor Hugo Campos: A lot to get back.
+
+[280] Ronaldo Robledo Mendes De Souza: Is.
+
+[281] Vitor Hugo Campos: Isso é exatamente o que é feito no escolhas hoje a gente fez igualzinho,
+
+[282] Ronaldo Robledo Mendes De Souza: Mm-hmm.
+
+[283] Vitor Hugo Campos: só é o mesmo arquivo, o mesmo layout, a mesma coluna, a gente deixou tudo igual.
+
+[284] Ronaldo Robledo Mendes De Souza: Believe. Beleza, então justamente é isso que eu vou fazer com ela. É bateu a validação aqui, é. Quer ver botando aqui no documento?
+
+[285] Vitor Hugo Campos: agora é o que eu O futuro, vamos pensar no futuro, né? O que que eu acho que vai ser o ideal, né? Todas essas importações, algumas delas, tipo importação de vagas, o que é importação de vagas? É uma lista com as escolas e com as vagas das escolas. Essa escola aqui tem 5 vagas para preencher. Cargo tal. Tá, tem nesse arquivo. O locus, uma das funcionalidades dele vai ser manter as informações das escolas. Tipo nome, quem está trabalhando, quantas vagas tem? É quem foi afastado, quem se aposentou? Então, o próprio locus, o que eu imagino que vai ser, ele vai já ter informações suficientes para a gente não precisar fazer aquela importação de vagas. Porque a importação de vagas é o que é um resumo dizendo. Quais vagas as escolas tem, né? Se o lócus vai ter as informações de todas as escolas, quem está trabalhando, quem se aposentou, quantas vagas tem, então meio que a gente vai buscar essa informação internamente, sabe? Sem precisar. De algumas importações, é o que eu imagino.
+
+[286] Ronaldo Robledo Mendes De Souza: Entendi.
+
+[287] Vitor Hugo Campos: Porque hoje é igual tu fala, pera aí, rapaz, eu tô acostumado a falar, pera aí.
+
+[288] Ronaldo Robledo Mendes De Souza: Hmm.
+
+[289] Vitor Hugo Campos: Muitas das integrações hoje é via arquivo, que não é o formato ideal. O ideal seria a gente buscar na fonte, só que essa fonte hoje, uma das fontes, é um monte de arquivo access que o pessoal Não existe uma API para buscar isso.
+
+[290] Ronaldo Robledo Mendes De Souza: é hoje hoje essas importações que a gente tá fazendo é tudo de arquivo né Vitor
+
+[291] Vitor Hugo Campos: Okay. A maioria é arquivo, uma delas que a gente vai buscar informação no sistema da PRODAM, mas o resto é de arquivo.
+
+[292] Ronaldo Robledo Mendes De Souza: Mhm.
+
+[293] Vitor Hugo Campos: É arquivo entrando, arquivo saindo, sabe? Aí o sistema lá,
+
+[294] Ronaldo Robledo Mendes De Souza: Go ahead.
+
+[295] Vitor Hugo Campos: um arquivo vai para o outro lado, daí um arquivo não sei o que, é tudo arquivo. Então, o que eu imagino com esse locus no futuro vai ser diminuir esses arquivos, né? A gente já vai ter a informação necessária, né?
+
+[296] Ronaldo Robledo Mendes De Souza: Thank you.
+
+[297] Vitor Hugo Campos: mais mais para frente né Vamos com calma né
+
+[298] Ronaldo Robledo Mendes De Souza: Tá, é o Vitor, é esses arquivos, é, eles só são gerados, é quando alguém pede, você sabe, é quando alguém pede ou já é um processo que existe sozinho, tipo assim, todo.
+
+[299] Vitor Hugo Campos: No, no.
+
+[300] Ronaldo Robledo Mendes De Souza: Todo é um certo período, pessoa tem que ir lá e gerar esse arquivo e importar para cá, não é isso?
+
+[301] Vitor Hugo Campos: É mais ou menos assim, o pessoal já sabe como funciona. Aí, por exemplo, tem o resultado de um concurso, aí alguém manda esse arquivo para eles com a lista de pessoas. Aí vai ter uma convocação nova, eu vou convocar 100 pessoas. Aí eles vão e geram um arquivo de vagas pra preencher essas 100 pessoas. a medida né quando precisa eles não gera não sei como mas ele gera
+
+[302] Ronaldo Robledo Mendes De Souza: Band.
+
+[303] Vitor Hugo Campos: Acredito que é esse sistema, que é o locus dele atual deles, que é um Monte de arquivo access que tem informação que só. De alguma forma, eu imagino que eles acessando esse access lá, eles geram algumas coisas e importam também outras coisas.
+
+[304] Ronaldo Robledo Mendes De Souza: É, ele colocou aqui arquivo CSB.
+
+[305] Vitor Hugo Campos: É, tem CSV, TXT. Aí eu imagino que com o novo locus, né? Essa questão de importação vai diminuir.
+
+[306] Ronaldo Robledo Mendes De Souza: o importador daqui contará como a tela para cadastro Leal posicional daquilo poderá informar saúde de Aquelas você é informado por exemplo nome de Aquilo contará como a tela para importação que se comunicará comigo que ser vida importação Mestre em porta arquivos, porta arquivos CSV, válida layout, grava dados, cadastra layout. Você fala que esse processo aqui que poderia ser melhorado é isso, não é o Vitor?
+
+[307] Vitor Hugo Campos: É o que eu acho que vai acontecer. Porque o locus deles não se comunica com ninguém, a única comunicação dele é através de arquivo. Aí fica entrando no arquivo e sai no arquivo. Então como a gente vai,
+
+[308] Ronaldo Robledo Mendes De Souza: Mhm.
+
+[309] Vitor Hugo Campos: vamos dizer assim, ter um locus? Que vai ser acessado via requisição, né? Então, com isso, vamos dizer, o importa arquivos de alguma forma vai, não sei se seria importa arquivos, mas a gente vai conseguir, através de requisições internas, descobrir quais escolas Tem vagas, ao invés de alguém ter que upar o arquivo só.
+
+[310] Ronaldo Robledo Mendes De Souza: Ah, tá, você fala, por exemplo, um acesso direto a uma base de dados específica?
+
+[311] Vitor Hugo Campos: Não somente uma base específica, mas que seja vários microsserviços, mas do nosso lado, né? A gente tem como descobrir essas informações. Ao invés de depender de alguém, upar um arquivo, só a gente vai direto na fonte.
+
+[312] Ronaldo Robledo Mendes De Souza: É a ideia. A ideia poderia ser também o Vitor, como já existe no sistema de alguns sistemas, aqui tá vaga na creche, ser up, alguns sistemas. Existe uma importação de dados através do sistema do. Como é que é o nome? Airflow, não é isso? Existe uma importação de dados através do sistema Airflow, que ela é executada uma vez a cada dia. O que esse sistema faz? Ele acessa a base de dados que a gente necessita, por exemplo, ou vou te dar o exemplo do So Ele acessa a base de dados do PRODAM ou do ou do ou de outro qualquer. Ele acessa essa base de dados, ele gera a importação necessária que ele precisa. Por exemplo, você configura lá. É para gerar importação de cadastro de usuário de não sei o que de não sei o que você precisa, certo? E aí é e ele importa para base de dados.
+
+[313] Vitor Hugo Campos: Yeah.
+
+[314] Ronaldo Robledo Mendes De Souza: Nossa, por exemplo, importaria para base de dados sigla, né? Então ele faz essa execução de tempo inteiro, por exemplo. Do será, quando se escola, ele faz essa execução, por exemplo, uma vez a semana, uma vez a cada 10 dias ou todo dia, depende, entendeu? Da informação que você precisa atualizada.
+
+[315] Vitor Hugo Campos: So.
+
+[316] Ronaldo Robledo Mendes De Souza: Então o sistema do Airflow já fica responsável por isso, não precisa ficar gerando arquivo, importando arquivo, gerando arquivo, importando arquivo, entendeu? O sistema. O sistema do airflow já faz isso, então você configura lá as tags para ela fazer essa importação. Então a importação acontece em background, a gente nem fica sabendo, entendeu?
+
+[317] Vitor Hugo Campos: É mais ou menos isso que eu imagino que a gente bater, né?
+
+[318] Ronaldo Robledo Mendes De Souza: Pois é, por que? Por que ele foi trabalhado dessa maneira
+
+[319] Vitor Hugo Campos: A tirar dependência de arquivo.
+
+[320] Ronaldo Robledo Mendes De Souza: aqui? Por que foi essa ideia de importar através de arquivos? Você sabe, Vitor?
+
+[321] Vitor Hugo Campos: É porque é como é feito. E. Do que eu percebi, a ideia inicial era fazer um novo escolhas muito semelhante ao que é hoje. Porque seria mais fácil para eles, né? Você manter mesmo que. Tanto assim, o Denis, o Denis, outro dev aqui da equipe, ele tem acesso ao escolhas. Ele mostrou várias vezes para a gente, então a gente ia sempre comparando. Deixa eu ver. Essa parte aqui está muito parecida com o escolhas atual, então a gente foi. Fazendo para ficar algo muito semelhante ao que é hoje. E o que é hoje é importação e exportação de arquivo.
+
+[322] Ronaldo Robledo Mendes De Souza: Pois é, mas quando você fala ele, você fala o pessoal do time da do SME,
+
+[323] Vitor Hugo Campos: That's Mira
+
+[324] Ronaldo Robledo Mendes De Souza: não é?
+
+[325] Vitor Hugo Campos: É, que é mais costume, né? Não, a gente faz assim.
+
+[326] Ronaldo Robledo Mendes De Souza: Mhm.
+
+[327] Vitor Hugo Campos: É feito desse jeito até agora, então vamos fazer desse jeito também, só que melhorando onde dá, né?
+
+[328] Ronaldo Robledo Mendes De Souza: Tranquilo, não. Essa informação sua é importante, Vitor, até mesmo para a gente trocar essa ideia com a Jessica, entendeu? Verificar se isso pode ser é, se essa ideia pode ser é implementada, é depois a gente utilizar essas. Importações de arquivos através de serviços é executados em background, através serviços executados automaticamente pelo pela Flow ou alguma outra ETL de importação de dados.
+
+[329] Vitor Hugo Campos: Eu acho que não vai chegar a ser tão complexo. Porque toda essa, esse que você tava vendo ali do locus, né?
+
+[330] Ronaldo Robledo Mendes De Souza: Uh-huh.
+
+[331] Vitor Hugo Campos: É meio que vai ficar do nosso lado, eu imagino, vai precisar um micro serviço aqui com informação nova, tal, mas. Porque muitas das informações ali, vamos pegar, por exemplo, importação de vagas, não é feito periodicamente, é quando tem uma convocação e uma convocação é só quando tem concurso, então é algo esporádico. Não é algo que é feito todo dia.
+
+[332] Ronaldo Robledo Mendes De Souza: Uh-huh.
+
+[333] Vitor Hugo Campos: aí mas mais para frente a gente vai vai vendo isso né Mas essa é a evolução que eu imagino, né? Depender cada vez menos de importação de arquivo.
+
+[334] Ronaldo Robledo Mendes De Souza: É porque não é porque isso já é, já é antigo, né O Vitor?
+
+[335] Vitor Hugo Campos: É porque o locus não é o sistema externo, é um access lá que os cara usam aí. Essa história de Arquivo pra cá, arquivo pra lá, que é o jeito que é a gambiarra que
+
+[336] Ronaldo Robledo Mendes De Souza: Mm-hmm.
+
+[337] Vitor Hugo Campos: fizeram, né? Então.
+
+[338] Ronaldo Robledo Mendes De Souza: Ah, tá, entendi. Eles é, eles ainda usa access lá no sistema deles lá, né?
+
+[339] Vitor Hugo Campos: É o locus deles, é um monte de Axes. Rapaz, é triste, viu? É triste o negócio. E é muito complexo.
+
+[340] Ronaldo Robledo Mendes De Souza: Saquei, saquei. Então por isso que eles trabalham com importação de arquivo. Saquei.
+
+[341] Vitor Hugo Campos: Uh
+
+[342] Ronaldo Robledo Mendes De Souza: Ok não tranquilo Vitor agradeço aí mais uma vez eu vou registrar essas informações que aqui que você me passou vou colocar na documentação e é bom que eu já vou direto no conjunto da obra aqui com a Jessica para a gente ver as funcionalidades que estão faltando eu já eu já consegui criar uma documentação documentação aqui e com essas informações sempre passou vou complementar as informações do que que já tá pronto né eu vou criar toda a documentação do locus do que que já tá pronto né E aí já partindo porque que falta e a gente definindo as funcionalidades definindo as APIs aqui tá Eu queria discutir com você justamente era a questão das APIs, mas ficou faltando algumas informações mais claras aqui para mim entrar no foco da das funcionalidades. O que vai ficar em cada micro serviço? Então eu vou. Ter essa reunião novamente com a Jessica, capaz, se ela tiver alguma dúvida, é capaz de eu te chamar lá, beleza?
+
+[343] Vitor Hugo Campos: Beleza.
+
+[344] Ronaldo Robledo Mendes De Souza: Pedro, quer colocar mais alguma coisa?
+
+[345] Pedro Azevedo Junior: No, no, I don't say small to this. No, I said that, actually, my my.
+
+[346] Ronaldo Robledo Mendes De Souza: Oh, pessoal, com certeza a gente vai ter mais uma reunião amanhã, está? Depois que eu conversar com a Jessica,
+
+[347] Pedro Azevedo Junior: Ah, é?
+
+[348] Ronaldo Robledo Mendes De Souza: está? Com certeza a gente vai precisar ter mais
+
+[349] Pedro Azevedo Junior: Ah, tá.
+
+[350] Ronaldo Robledo Mendes De Souza: uma reunião. É assim que eu conversar com a Jessica, está?
+
+[351] Pedro Azevedo Junior: É, não, isso eu perguntar mesmo, os próximos passos,
+
+[352] Ronaldo Robledo Mendes De Souza: Isso não, eu vou, eu vou, eu vou conversar com a Jessica,
+
+[353] Pedro Azevedo Junior: então conversar com a Jessica hoje.
+
+[354] Ronaldo Robledo Mendes De Souza: se der ela ficou de conversar comigo hoje, se der, eu já converso com ela hoje, a gente consegue definir aí é alguns pontos de funcionalidades que faltam é definindo essas funcionalidades. É, eu vou pedir para ela. É verificar se tem um desenho já dessas telas é do que falta, não é? Se já tem um desenho dessas telas, o que falta? Tem um ex que faz isso aqui, ou Pedro? Tem, não tem?
+
+[355] Pedro Azevedo Junior: Thank you Guilherme.
+
+[356] Ronaldo Robledo Mendes De Souza: Isso, eu vou verificar com ela se já tem o X dessas telas, as funcionalidades que falta e aí com essas telas e o que falta, a gente consegue definir os endpoints aí pra gente colocar e ver também essa questão da base de dados junto com o Vitor que colocou que ele falou que está tudo em. Em é, está tudo estático lá no código, não é? Então a gente precisa definir também. É o responsável por salvar isso aí.
+
+[357] Pedro Azevedo Junior: tá perfeito perfeito não combinado então beleza
+
+[358] Ronaldo Robledo Mendes De Souza: Beleza? Então tá joia! Valeu pessoal!
+
+[359] Pedro Azevedo Junior: Valeu pessoal, valeu obrigado Vitor valeu
+
+[360] Ronaldo Robledo Mendes De Souza: Um abraço.
+
+[361] Vitor Hugo Campos: Well there.

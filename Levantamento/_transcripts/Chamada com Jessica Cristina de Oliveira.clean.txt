@@ -1,0 +1,509 @@
+[1] Jessica Cristina de Oliveira: Agora nesse banco que é maior, não nesse banco, é o que ela chama de banco, eu fico falando banco também. Nesse módulo agora que é um pouco maior, os outros vão meio que se repetir. Porque, querendo ou não, eles têm 14 módulos, tá? 14 módulos assim de É, como eu posso falar, são 14 módulos de Ai, nossa, me fugiu a palavra. De organização mesmo ali, de servidores, de unidades e tudo. Então é meio que separado ali por matérias, né? Então não é matérias, é por módulos mesmo. Módulos seria o quê? A turma, o turno, por exemplo, esse mede 2, aí eles têm o mede 1. Então é esses módulos, são 14 módulos. Se a gente fazer esse primeiro, os outros praticamente vão seguir esse mesmo fluxo ali de controle.
+
+[2] Ronaldo Robledo Mendes De Souza: Tá, tá, mas deixa eu te perguntar, essa primeira funcionalidade aí,
+
+[3] Jessica Cristina de Oliveira: Aqui oh. Uh-huh.
+
+[4] Ronaldo Robledo Mendes De Souza: gestão de dados dos servidores, ativos, bancaceados, efetivos, comissionados,
+
+[5] Jessica Cristina de Oliveira: Mhm.
+
+[6] Ronaldo Robledo Mendes De Souza: contratados e admitidos, certo? Essa tela que você mostrou aí, ela faz parte de algum desses itens aí?
+
+[7] Jessica Cristina de Oliveira: Faz essa tela que eu te mostrei, esse daqui é o item.
+
+[8] Ronaldo Robledo Mendes De Souza: Mhm.
+
+[9] Jessica Cristina de Oliveira: Deixa eu ver que eu estava te mostrando. Eu vou ter que compartilhar todas minhas telas. Se eu ficar mudando de tela para cá e para lá, você não vai ver tela, tá?
+
+[10] Ronaldo Robledo Mendes De Souza: Okay.
+
+[11] Jessica Cristina de Oliveira: Nesse daqui, espera aí, deixa eu ver aqui no box. Gestão de dados,
+
+[12] Ronaldo Robledo Mendes De Souza: Mm.
+
+[13] Jessica Cristina de Oliveira: servidores ativos vacanciados. Esses efetivos ainda a gente não fez e tal, mas esse daqui é o ativo. E o vacanciado é esse daqui que eu tinha te mostrado também, que a gente tem como reativar o perfil. Esse a gente já tem esses 2, esse daqui os meninos estão desenvolvendo nessa sprint, o outro eles já desenvolveram. S2 sprints não que a gente está desenvolvendo, então tem sim. Tem tanto dessa atualização por RE funcional, que é esse que eu te falei, que é uma pessoa ativa ali no banco que está atuando na unidade, seja qual for a unidade, seja um cargo sobreposto ou o cargo base dela. E tem esse vacaseado aqui que ela está de licença por algum motivo, que é onde gera uma vaga para a unidade. Então sim, temos essas 2 aqui, esses, essas 2 primeiras que a gente já começou.
+
+[14] Ronaldo Robledo Mendes De Souza: Mm-hmm.
+
+[15] Jessica Cristina de Oliveira: aí o resto todo ainda a gente não tem nada
+
+[16] Ronaldo Robledo Mendes De Souza: Set.
+
+[17] Jessica Cristina de Oliveira: Aí aqui também consigo quebrar. Hello. Aí você falou se existia aqui também, eu já quebrei aqui, eu vou tirar aqui. Um. Well, deixa, no, no. Não aqui, aqui. A. That request. Tá, enfim, é, deixa eu voltar aqui, eu também, alterando. Nessa aqui, o sistema importa periodicamente os dados do e o e do Sigpack. A gente precisa fazer essa atualização. Não vou falar tanto do Sigpack, porque o Sigpack a gente sabe que é mais, tem mais restrições. A gente sabe, entende isso, mas o EOA gente precisa fazer essa. Esse cheque, por que acontece? Pode ser que dentro do nosso sistema do locus a gente inclua uma informação, porque a gente tem uma pressa. Eu preciso alterar o nome do servidor. porque ele entrou com pedido de alteração do nome social dele e a gente precisa, a gente viu que no EOL esse nome não foi alterado ainda, mas a gente tem que fazer essa alteração com uma maior urgência, porque a gente precisa fazer alguma atualização aqui no cadastro dele, então a gente precisa fazer essas. depara ali meio que entre o e o e o nosso sistema para a gente ver qual a informação que está correta. E se atualizar o e o, a gente tem que trazer do e o para o nosso sistema. Pelo menos uma vez por dia a gente vai precisar fazer essa atualização, né? Bater assim, ó. verificar se no EOL foi atualizado alguma coisa para fazer essa atualização também no nosso sistema. Aí o sistema confronta as informações e sinaliza divergência. É isso que eu te falei. Caso eu bato no EOL e veja que o nome de um servidor meu está de um jeito, no EOL está no outro, qual que é o correto? A gente tem que fazer essa verificação. Mas aí a gente também tem que ver também a possibilidades, não é? Técnicas também, né? Então isso é um desejo, mas tem que ver as possibilidades técnicas também. Olha, registrar o corrigir a anotação e movimentação. O sistema deve gravar alteração no histórico que a gente vai gerar histórico lá. Para ver quem que fez a atualização, quem alterou os dados, quais são os dados que foram alterados. Tem que preservar a versão anterior, como eu te falei.
+
+[18] Ronaldo Robledo Mendes De Souza: vamos vamos fazer o seguinte então Jessica é porque as informações que você tá passando elas estão ficando muito solta correto vamos fazer o seguinte vamos falando de funcionalidade por funcionalidade Então porque aí eu consigo criar o mapeamento da das apis de cada funcionalidade entendeu
+
+[19] Jessica Cristina de Oliveira: Mhm. O.
+
+[20] Ronaldo Robledo Mendes De Souza: É porque a forma como você está me passando, eu não estou conseguindo amarrar o que é o que é a cada funcionalidade, certo? Então vamos fazer o seguinte, é a primeira funcionalidade que você colocou foi aquela lá em cima, não é isso? É volta lá um pouquinho, por gentileza.
+
+[21] Jessica Cristina de Oliveira: Mas aí eu vou, eu vou entrar numa questão com você. Aí a gente vai chegar num ponto que eu também não vou conseguir te falar que que
+
+[22] Ronaldo Robledo Mendes De Souza: Uh-huh.
+
+[23] Jessica Cristina de Oliveira: é a funcionalidade, porque eu não tenho todo o sistema já em mente. Eu não tenho todo o sistema que eu vou desenvolver. É igual eu te falei, a gente vai conversando e a gente vai fazendo essa, esse levantamento, esse refinamento de negócio com as PO. A gente tem algo macro. O que eu estou te passando é o que eu entendo do sistema como macro. Eu não consigo te passar, tipo,
+
+[24] Ronaldo Robledo Mendes De Souza: Uh-huh.
+
+[25] Jessica Cristina de Oliveira: a gente vai ter essa tela aqui, essa tela eu tenho assim. A gente vai fazer busca por RF, que é uma busca por RF. Aí eu vou sentar com a minha cliente, vou conversar com ela, a tela da busca do RF. A gente tem essa ponta, esse ponto, esse ponto, que é esse campo, que você precisa, que você tem hoje, que você não precisa usar hoje. Então eu fazendo isso, eu não vou conseguir te passar uma coisa micro, eu consigo te passar algo bem mais macro assim, entendeu? Então, tipo assim, eu posso falar pra você o que a gente tem hoje, eu vou saber te responder o que foi feito até hoje, até esse ponto. Daqui pra frente eu não consigo te passar.
+
+[26] Ronaldo Robledo Mendes De Souza: Certo. Pois é, mas a PO não te passou ainda quais são as funcionalidades que o sistema precisa ter, não de todas?
+
+[27] Jessica Cristina de Oliveira: Não, porque, tipo isso, a gente vai conversando no decorrer do desenvolvimento do sistema. Como assim que você está querendo todas as funcionalidades? Você está esperando que eu tenha tipo todas as funcionalidades que serão feitas no decorrer do desenvolvimento do seu sistema todo?
+
+[28] Ronaldo Robledo Mendes De Souza: Sim, é até mesmo para mim conseguir fazer o mapeamento das APIs, porque eu verifiquei que algumas APIs já foram criadas, correto? Já foram criadas as APIs. Eu verifiquei aqui, deixa eu só compartilhar com você um
+
+[29] Jessica Cristina de Oliveira: Uh-huh.
+
+[30] Ronaldo Robledo Mendes De Souza: momentinho, Jessica, deixa eu só roubar essa tela aqui, tá?
+
+[31] Jessica Cristina de Oliveira: How much better?
+
+[32] Ronaldo Robledo Mendes De Souza: Okay. Bora lá! Deixa eu compartilhar aqui com você o seguinte. Então aqui, na arquitetura que foi construída anteriormente até o presente momento, a gente criou essas funcionalidades aqui, cadastro de concursos, escolha de vaga, cadastro de usuário de Sistemas, importação de dados. Cada funcionalidade dessa aqui está descrito o que que o sistema e como que o sistema ia funcionar. Está vendo, então, cadastro de concursos e cargos.
+
+[33] Jessica Cristina de Oliveira: Então, mas você vê que isso aí é algo bem macro.
+
+[34] Ronaldo Robledo Mendes De Souza: Sim. Então eu preciso saber quais são as próximas funcionalidades e colocar a questão magro do que ela vai fazer, entendeu? Pode ser magro mesmo. É por isso que eu falei para você, vamos.
+
+[35] Jessica Cristina de Oliveira: Então, por isso que por isso que eu te perguntei para você se pode ser algo macro, porque se não for algo macro,
+
+[36] Ronaldo Robledo Mendes De Souza: Não, nesse primeiro momento pode ser macro sim,
+
+[37] Jessica Cristina de Oliveira: eu não tenho como te passar cada funcionalidade.
+
+[38] Ronaldo Robledo Mendes De Souza: não tem como, porque quando for para entrar dentro de, por exemplo, vamos desenhar a tela agora, vai desenhar, aí sim,
+
+[39] Jessica Cristina de Oliveira: That.
+
+[40] Ronaldo Robledo Mendes De Souza: aí tem uma próxima etapa a ser seguido, mas a primeiro momento vai ser macro mesmo, por exemplo. Igual eu só estou te dando um exemplo aqui, quando eu fui,
+
+[41] Jessica Cristina de Oliveira: É isso que eu estava te perguntando, porque é igual eu te falei.
+
+[42] Ronaldo Robledo Mendes De Souza: quando eu fui desenhar, quando eu fui desenhar o cadastro de concurso e carros, o que cadastro de concurso e carro tem que fazer? Então, usuário acessa o sistema, usuário insere os dados do processo seletivo, então ele vai fazer isso porque eu consigo determinar o que a API ela tem. tem que fazer nesse exato momento aqui né então por exemplo na importação de dados do bloco né é o que que a importação faz né é macro né E aí Eu determino o que que api vai fazer lá dentro né ela tem que importar os dados assim assim assim
+
+[43] Jessica Cristina de Oliveira: Mhm.
+
+[44] Ronaldo Robledo Mendes De Souza: assado Então. Uh-huh. Uh-huh. Mhm.
+
+[45] Jessica Cristina de Oliveira: O que é daqui pra frente é coisas que micro, tá? Eu vou conversando com as minhas PO's. Olha, a gente tem então coisas macro,
+
+[46] Ronaldo Robledo Mendes De Souza: Correto.
+
+[47] Jessica Cristina de Oliveira: como eu estou te explicando aqui do sistema, eu consigo te passar que essa.
+
+[48] Ronaldo Robledo Mendes De Souza: Uh-huh.
+
+[49] Jessica Cristina de Oliveira: esse controle de unidades e de servidores. Agora, o que dentro do controle de cada telinha, eu não consigo te passar o que seria o controle de cada tela. Mas eu posso fazer um levantamento aqui.
+
+[50] Ronaldo Robledo Mendes De Souza: Sim, mas você consegue me informar o que cada tela ela tem que fazer? Macro, o que que cada funcionalidade ela tem que fazer? Você consegue?
+
+[51] Jessica Cristina de Oliveira: Eu posso, eu posso te abrir o meu sistema e fazer isso para você e te passar.
+
+[52] Ronaldo Robledo Mendes De Souza: Sim, sem problema, sem problema, entendeu? Porque assim eu preciso saber, pode ser macro, tá? O que cada sistema vai fazer, por exemplo,
+
+[53] Jessica Cristina de Oliveira: É micro, não consigo.
+
+[54] Ronaldo Robledo Mendes De Souza: ele tem que cadastrar os dados, igual você me mostrou aí, abre novamente aí, por gentileza. Deixa eu só recapitular com você o para a gente é voltar na página lá, Jessica, compartilha de novo sua tela do documento aí, por gentileza.
+
+[55] Jessica Cristina de Oliveira: E qual documento você quer?
+
+[56] Ronaldo Robledo Mendes De Souza: Você estava separando por tópicos?
+
+[57] Jessica Cristina de Oliveira: Tá, pera aí que eu vou compartilhar minha tela toda, aí já pega.
+
+[58] Ronaldo Robledo Mendes De Souza: Isso porque a primeira coisa que eu preciso fazer aqui é o que que precisa ser feito, né? Quais são os tópicos que precisa ser feito? Aí você colocou ali, né? Pelo que eu entendi, certo, volta lá no documento. Isso o que que precisa ser feito?
+
+[59] Jessica Cristina de Oliveira: Aqui, aham aqui, gestão de dados de servidor ativo, balanceado, efetivo, comissionado. Então, o que você quer aqui nesse gestão? Você quer, por exemplo, assim, ai, então o cadastro.
+
+[60] Ronaldo Robledo Mendes De Souza: Isso.
+
+[61] Jessica Cristina de Oliveira: De usuário, vamos supor, isso que você está querendo.
+
+[62] Ronaldo Robledo Mendes De Souza: Aham, justamente cadastro de usuário, por exemplo, o que é gestão de dados de servidores ativos vivenciados? O que essa funcionalidade vai fazer? Porque você colocou assim, gestão de dados, servidores vivenciados, efetivos comissionados. E contratados e admitido. Isso aí é o quê? É um cadastro que ele vai fazer isso? É essa minha pergunta. É uma tela que ele vai fazer isso aí, é isso?
+
+[63] Jessica Cristina de Oliveira: É uma tela e essa tela que eu te mostrei, que eu te expliquei.
+
+[64] Ronaldo Robledo Mendes De Souza: Isso, a atualização de registros é funcional, correto? E essa tela ela vai fazer, ela vai fazer basicamente o quê? O que essa tela vai fazer?
+
+[65] Jessica Cristina de Oliveira: Então, como eu te expliquei anteriormente, a gente vai acessar os dados desses
+
+[66] Ronaldo Robledo Mendes De Souza: Uh-huh.
+
+[67] Jessica Cristina de Oliveira: usuários, a gestão da unidade, então o que a gente consegue ver os modos, as anotações, quem são as pessoas afastadas de uma unidade específica, as vagas, as educações e tudo. Aqui eu vou poder pesquisar o RF ou o nome, pesquisar o servidor que está ativo no banco, então.
+
+[68] Ronaldo Robledo Mendes De Souza: Então assim, então eu já tenho um cadastro correto, certo? A primeiro momento eu tenho um cadastro,
+
+[69] Jessica Cristina de Oliveira: Uh-huh.
+
+[70] Ronaldo Robledo Mendes De Souza: eu tenho uma funcionalidade de cadastro, eu tenho uma funcionalidade de pesquisa, correto?
+
+[71] Jessica Cristina de Oliveira: So.
+
+[72] Ronaldo Robledo Mendes De Souza: né não é isso então eu vou ter que cadastrar essa tela ela vai ter que
+
+[73] Jessica Cristina de Oliveira: Peace.
+
+[74] Ronaldo Robledo Mendes De Souza: cadastrar ela vai ter cadastrar o quê informações referente ao registro funcional não é isso do do Servidor não é isso
+
+[75] Jessica Cristina de Oliveira: Jose Vito. Nesse caso aqui do servidor ativo.
+
+[76] Ronaldo Robledo Mendes De Souza: Isso, então assim, você pode colocar lá primeira tela, o que precisa ser feito? Cadastro do registro funcional dos servidores ativos, certo? Então você vai colocar lá a segunda funcionalidade, eu vou ter que essa tela vai ter que ter pesquisa, essa tela vai ter que ter uma pesquisa dentro dela assim, então vai ter que ter uma funcionalidade. Pesquisa, pesquisar o quê? O que é que eu preciso pesquisar para trazer de dentro dessa tela, né? Vai ter alguma?
+
+[77] Jessica Cristina de Oliveira: Aí eu já tô, aí eu já tô sendo bem micro, né?
+
+[78] Ronaldo Robledo Mendes De Souza: Aí vai ter que ter uma pesquisa, entendeu?
+
+[79] Jessica Cristina de Oliveira: Mas aí vai ser uma informação mais micro, se eu te trazer que cada tela vai ser pesquisada. Por exemplo, nesse contexto que eu conversei com a minha cliente, eu sei o que eu vou precisar pesquisar,
+
+[80] Ronaldo Robledo Mendes De Souza: Aham, certo.
+
+[81] Jessica Cristina de Oliveira: que é o servidor. Mas aí se eu entrar numa tela que, vamos supor que eu. Posso pesquisar? Unidades, então eu vou colocar bem macro assim unidades, eu não vou trazer o que são essas unidades ou não, porque aí eu não vou, por exemplo, aqui a gente já sabe o que a gente vai trazer aqui, por exemplo, a atividade, eu já sei quais são as atividades.
+
+[82] Ronaldo Robledo Mendes De Souza: Mhm.
+
+[83] Jessica Cristina de Oliveira: Tipo de ocupação, isso é uma coisa mais informação micro, tipo assim, tipo de vaga ocupada, definitiva, precária, ocupada.
+
+[84] Ronaldo Robledo Mendes De Souza: Mm-hmm.
+
+[85] Jessica Cristina de Oliveira: Isso eu vou sentar com a minha cliente, eu vou falar, tá, mas e esse campo aqui de tipo de vaga ocupada, que é? Você pode me explicar quem que é esse campo que ele faz?
+
+[86] Ronaldo Robledo Mendes De Souza: Não, não, não, não precisa, não precisa chegar, chegar,
+
+[87] Jessica Cristina de Oliveira: O que ele tem que trazer?
+
+[88] Ronaldo Robledo Mendes De Souza: chegar a esse nível, tá? Então vamos fazer o seguinte, primeira funcionalidade, cadastro, como é que vai ser o nome dessa tela aí? Cadastro de?
+
+[89] Jessica Cristina de Oliveira: Não vai secar. Essa daqui é pesquisa, é por é registro funcional. A gente vai pesquisar o servidor que já está lá no sistema.
+
+[90] Ronaldo Robledo Mendes De Souza: Então precisa ter uma então precisa ter uma funcionalidade de pesquisa de
+
+[91] Jessica Cristina de Oliveira: Here.
+
+[92] Ronaldo Robledo Mendes De Souza: registro funcional, não é isso?
+
+[93] Jessica Cristina de Oliveira: Isso.
+
+[94] Ronaldo Robledo Mendes De Souza: Isso, então é isso que a gente vai colocar lá, entendeu? Então, primeira funcionalidade, precisa criar uma pesquisa de registro funcional. É uma funcionalidade que a gente precisa colocar lá. Por que eu preciso definir isso? É. Para mim, colocar os tópicos lá dentro, o Jessica, até mesmo para o pessoal saber quais são os próximos passos, entendeu? Dentro da documentação, né? Então eu preciso colocar isso lá dentro
+
+[95] Jessica Cristina de Oliveira: Yes.
+
+[96] Ronaldo Robledo Mendes De Souza: lá, né? E até mesmo definir, por exemplo. Em qual API que eu vou utilizar isso aí? Qual é a API que eu vou precisar utilizar isso aí? Então eu vou precisar dessa informação. Essas informações eu preciso até para me colocar no documento de arquitetura. Eu não sei se eu não sei.
+
+[97] Jessica Cristina de Oliveira: Tá, eu queria ter acesso.
+
+[98] Ronaldo Robledo Mendes De Souza: Esse documento aqui que eu estava te mostrando.
+
+[99] Jessica Cristina de Oliveira: Eu que aí esse documento seu pra eu entender um pouco melhor o que que é que cê.
+
+[100] Ronaldo Robledo Mendes De Souza: A deixa, deixa.
+
+[101] Jessica Cristina de Oliveira: Tá me pedindo porque, querendo ou não, eu estou entendendo que você está me
+
+[102] Ronaldo Robledo Mendes De Souza: A.
+
+[103] Jessica Cristina de Oliveira: pedindo algumas coisas macro, mas eu também não sei até onde eu consigo
+
+[104] Ronaldo Robledo Mendes De Souza: Aha.
+
+[105] Jessica Cristina de Oliveira: te entregar todo, porque tipo assim, nessa documentação do alvo, por exemplo, o que acontece? A gente sabia que a gente ia fazer.
+
+[106] Ronaldo Robledo Mendes De Souza: Said, uh-huh.
+
+[107] Jessica Cristina de Oliveira: A escolha do candidato, a convocação que a gente vai fazer, a convocação do candidato, a escolha do candidato, gerar relatório e fazer a importação.
+
+[108] Ronaldo Robledo Mendes De Souza: Go ahead.
+
+[109] Jessica Cristina de Oliveira: A gente sabia que a gente ia fazer isso, mas dentro de uma convocação a gente tem a agenda, a gente tem várias outras coisas dentro da convocação. Se você está me pedindo algum macro, eu vou te trazer, a gente vai ter. uma pesquisa de RF do servidor.
+
+[110] Ronaldo Robledo Mendes De Souza: Isso.
+
+[111] Jessica Cristina de Oliveira: Se tiver detalhes lá dentro Aí a gente vai já diminuindo, a gente vai deixando de estar no macro, vai já diminuindo nas coisas. Então eu tenho que entender o que você está me pedindo para eu tentar trazer para você o mais destrinchado que eu consigo te entregar.
+
+[112] Ronaldo Robledo Mendes De Souza: Okay. É, deixa eu te mostrar aqui, tá vendo na tela aqui?
+
+[113] Jessica Cristina de Oliveira: Uh-.
+
+[114] Ronaldo Robledo Mendes De Souza: Convocação de candidato, então assim, é fluxo de convocação de candidatos, né? Então eu preciso uma descrição do que que essa funcionalidade vai fazer. O que que essa funcionalidade fluxo de de convocação de funcionalidade vai fazer? O que que o que eu preciso de uma descrição do que ela vai ser feita? Entendeu? Pode ser macro? Pode, mas eu preciso da descrição do fluxo. É realizada a importação dos dados, consulta, entendeu? do Sistemas em tela. No Sistemas alvo é realizada a consulta de candidatos, habilitada para os candidatos, podendo reordenar a posição. É então listar da parte de barras para UE. É realizada também uma extração das laudas. Rodas Então eu preciso saber essa tela aí que você criou aí eu preciso saber o que que essa tela faz qual que é a responsabilidade dela entendeu certo porque é sabendo que essa tela faz é eu consigo é determinar componentes que vão utilizar ela né Então, por exemplo, depois eu posso me reunir com você, com o que você me passou, o que essa tela vai fazer? Ela vai essa tela, ela vai cadastrar fulano, essa tela, ela vai pesquisar tal situação, essa tela, ela tem que gravar tal dado e mandar tal dado para o banco de dados, essa tela. Ela vai ter que pesquisar nessa tela, eu vou ter que pesquisar isso e isso, essa tela ela vai ter que gravar essas informações e essa tela, a regra de negócio, eu não posso deixar fazer isso, eu não posso deixar fazer aquilo. Entendeu? Então é, eu preciso dessas informações para mim poder criar aqui, entendeu? A documentação EA documentação da arquitetura. Então assim, pode ser macro, então eu preciso saber o que essa tela faz macro mesmo, entendeu? Não precisa descer a. A tão é subir a tão alto nível, até mesmo para mim, para mim poder criar ela aqui dentro. Então assim me detalha macro, macro é macro. O que cada funcionalidade sua vai fazer? Por exemplo, nós tivemos aqui a situação de provocação de dados. A importação de dados do Lopes aqui, o que a tela faz? Então ela vai ter que fazer isso e isso. Então eu vou ter que saber o que essa tela faz para mim poder até gerar aqui igual aqui. Vou te mostrar aqui para mim poder saber aqui, o que o usuário isso aqui eu vou ter que sentar com você e vou fazer igual, por exemplo, quem vai ser o usuário que vai mexer nessa tela, então eu vou ter que colocar lá o que eu vou ter que desenhar, eu vou ter conseguir desenhar. Entendeu? Por exemplo, importação de dados lá na tela importação de dados. Eu sei que alguém vai entrar e importar os dados, vai gerar arquivos XYZ e vai sair tal. Então, por exemplo, se eu for pegar com você aqui, eu vou pegar aqui, deixa eu só pegar aqui, só para te mostrar a ideia.
+
+[115] Jessica Cristina de Oliveira: Aham, eu fiz isso com risco pro alvo.
+
+[116] Ronaldo Robledo Mendes De Souza: So. Pois é, então se eu pegar aqui ó, deixa eu pegar aqui Então eu vou pegar aqui a um usuário, não é? Vou pegar um usuário e aí eu vou pegar aqui. Vou pegar aqui, ver se eu pego aqui, aqui, eu vou pegar aqui e vou pegar um diagrama de contexto aqui, pegar aqui. Uh, moment. tentar fazer um aqui rapidinho né? Vou colocar o nome Esse nome aí, a tela, a tela, o nome da tela que você falou é tela XYXYX, não é? Vou aplicar aqui e dentro dessa tela. Não é? Ela vai ser o quê? Eu vou ter que criar um componente que vai ser. Vai ter que fazer o quê? Eu vou ter que. Eu vou ter que API, ela vai fazer o quê? Eu vou ter que cadastrar alguma coisa nessa API, então eu vou colocar aqui cadastro de tal situação, né? Então eu vou ter que cadastrar isso aqui, eu vou ter que gravar na base de dados, né? Então eu vou ter que criar uma base de dados aqui.
+
+[117] Jessica Cristina de Oliveira: Mhm.
+
+[118] Ronaldo Robledo Mendes De Souza: Para mim gravar essas informações, então, e aí eu vou criando o que o fluxo dessa aplicação vai fazer? Então, assim, cada funcionalidade dessa aí, Jessica, eu vou ter que sentar com você. E desenhar o que cada funcionalidade vai fazer, passo a passo, entendeu? Então,
+
+[119] Jessica Cristina de Oliveira: Mhm.
+
+[120] Ronaldo Robledo Mendes De Souza: por exemplo, é aqui nessa funcionalidade, vai ser qual API, por exemplo, eu vou colocar aqui, vai ser na API, é. Vou colocar aqui, vai ser na MS, é ver qual da. Importação de dados, deixa eu ver quais são as APIs que nós temos aqui, que vai ser responsável por isso. Aí eu vou ter que chamar o Vitor para a gente discutir em qual API que vai ser responsável por fazer essas informações hoje, né? Então nós temos MS escolha, processo de recurso, agenda, convocação, Prontente, o que que está dentro do Lopes hoje? Então vamos criar uma, nós vamos precisar criar uma API logo, certo? O que que vai ser a responsabilidade de cada API dessa aqui é um processo um pouco mais chato, mas precisa ser feito.
+
+[121] Jessica Cristina de Oliveira: H. Essa arquitetura, então, vai demorar bem um tempo para ser feita.
+
+[122] Ronaldo Robledo Mendes De Souza: Então é. É poor. É por isso que eu precisava. É por isso que eu preciso a primeiro momento agora a gente definir o que aqui dentro dessa documentação. Essa documentação que você passou ótimo. Eu já consegui criar uma boa parte da documentação aqui. Mas o que eu preciso criar dentro dela agora? A gente precisa partir para as funcionalidades. né Quais são as funcionalidades que nós vamos fazer né a primeira tela essa tela aí então beleza eu vou eu vou destrinchar essa tela aí né para desenhar ela que o diagrama de contexto dela vou destrinchar essa tela segunda funcionalidade é igual nós temos aqui como eu já te dei o exemplo segunda funcionalidade Cadê aqui voltando ao exemplo que eu tinha aqui a é agendamento é convocação de candidatos né O que convocação de candidato vai ter que fazer vai ter que fazer isso isso igual esse fluxo aqui ó ó essa aqui é a descrição do fluxo tá vendo
+
+[123] Jessica Cristina de Oliveira: Mhm.
+
+[124] Ronaldo Robledo Mendes De Souza: ó é realizada a importação dos dados concurso e tal em tela do sistema ao Então ela está da parte de vaga, tal, tal, tal. E aí, depois dessa descrição que essa tela faz, você pode ver que é macro, não tem nada de negócio. E aí eu vou sentar, entendeu? Com você e com o Vitor, e aí eu vou te desenhar o diagrama de
+
+[125] Jessica Cristina de Oliveira: Vulto. So.
+
+[126] Ronaldo Robledo Mendes De Souza: contexto dela. Entendeu? Desenhado o diagrama de contexto,
+
+[127] Jessica Cristina de Oliveira: Mhm.
+
+[128] Ronaldo Robledo Mendes De Souza: eu consigo desenhar os componentes dela, entendeu? Eu o Vitor consegue desenhar os componentes, mas então eu preciso disso.
+
+[129] Jessica Cristina de Oliveira: O.
+
+[130] Ronaldo Robledo Mendes De Souza: Esse segundo momento agora, quais são as funcionalidades que você já tem em mãos? né quais são as funcionalidades que você já tem mãos e aí descrever o que que cada funcionalidade dessa fase o máximo que você você puder descrever aí o Jessica o máximo que você puder descrever de cada funcionalidade o que que essa funcionalidade vai fazer Entendeu? Fica fácil depois para a gente desenhar o os organogramas. Eu assim, eu consegui me fazer entender.
+
+[131] Jessica Cristina de Oliveira: Mm-hmm. Deu pra entender? Eu vou fazer
+
+[132] Ronaldo Robledo Mendes De Souza: Eu posso, eu posso. Eu não sei quem faz essa liberação aqui dessa tela aqui, mas eu acho que eu consigo importar isso aqui para PDF para você. Se você quiser, eu consigo gerar isso aqui em PDF para você ter como um exemplo. Então assim, isso, então assim, é muito simples.
+
+[133] Jessica Cristina de Oliveira: Eu quero que você me.
+
+[134] Ronaldo Robledo Mendes De Souza: você vai colocar listar as funcionalidades né YZX tal a b c d f g funcionalidade primeiro funcionalidade aí você vai descrever ela usuário vai ter que cadastrar né XYZ do tal é é
+
+[135] Jessica Cristina de Oliveira: Tá, me passa então essa, então me passa essa documentação é que eu
+
+[136] Ronaldo Robledo Mendes De Souza: Mm-hmm.
+
+[137] Jessica Cristina de Oliveira: vou tentar trazer essas informações aí mais. eu consegui aí
+
+[138] Ronaldo Robledo Mendes De Souza: Isso porque você me trazendo isso. E aí eu vou sentar com você, talvez é, vai ter. Você vai ter que participar também. Eu vou sentar com você e vou sentar com o Vitor. E aí eu vou fazer o diagrama. Talvez alguns eu já consiga fazer. Sem precisar da participação de vocês, entendeu? Só lendo a documentação, mas com outros eu vou, com certeza eu vou precisar. E aí eu te passo. Então assim, é, eu vou te passar os dados. Então assim, a parte mais que você tem que se preocupar é a descrição do fluxo, tá? Aqui a descrição do fluxo, como que vai funcionar o fluxo de cada funcionalidade? Eu preciso saber para mim poder desenhar o diagrama.
+
+[139] Jessica Cristina de Oliveira: A.
+
+[140] Ronaldo Robledo Mendes De Souza: Tudo bem?
+
+[141] Jessica Cristina de Oliveira: Tá bom?
+
+[142] Ronaldo Robledo Mendes De Souza: Eu acho que eu consigo gerar isso aqui em PDF e aí eu te mando, eu vou gerar aqui,
+
+[143] Jessica Cristina de Oliveira: Tá.
+
+[144] Ronaldo Robledo Mendes De Souza: aí eu te mando, porque eu não sei quem faz a liberação desses acessos aqui. Eu vou até perguntar pra oi?
+
+[145] Jessica Cristina de Oliveira: É, eu pedi a Carol, eu ou isso.
+
+[146] Ronaldo Robledo Mendes De Souza: Eu vou perguntar para cá, eu vou perguntar se a Carol ou isso
+
+[147] Jessica Cristina de Oliveira: So.
+
+[148] Ronaldo Robledo Mendes De Souza: consegue, e aí?
+
+[149] Jessica Cristina de Oliveira: Porque eu acho que o risco fez é o risco que. Fez essa documentação aí?
+
+[150] Ronaldo Robledo Mendes De Souza: Well, his face.
+
+[151] Jessica Cristina de Oliveira: Mm.
+
+[152] Ronaldo Robledo Mendes De Souza: Beleza, beleza, eu vou, eu vou ver se o Risso consegue liberar, então eu te passo.
+
+[153] Jessica Cristina de Oliveira: Tá bom, aí cê me manda, por favor, porque aí eu vou tentar fazer. O mais rápido possível, tá? Mas aí final de.
+
+[154] Ronaldo Robledo Mendes De Souza: Essa documentação, o Jessica, foi até importante. Eu não sabia que tinha sido isso ser feito. Essa documentação, o que você passou para ele de informação, você lembra?
+
+[155] Jessica Cristina de Oliveira: A gente conversou, ele que foi criando isso daí,
+
+[156] Ronaldo Robledo Mendes De Souza: Tá.
+
+[157] Jessica Cristina de Oliveira: a gente foi alinhando, a gente tentou com as PO's e foi conversando.
+
+[158] Ronaldo Robledo Mendes De Souza: BA
+
+[159] Jessica Cristina de Oliveira: Porque é igual, é igual, é igual eu te falei. Por mais que a gente vai chegar no micro em algum momento, mais no início do projeto eu sei o macro, então eu pego aquele macro,
+
+[160] Ronaldo Robledo Mendes De Souza: Uh-huh.
+
+[161] Jessica Cristina de Oliveira: a gente vai fazer importação de arquivos. Beleza, eu sei que vai, a gente vai ter que importar arquivos do eol. Quando a gente for desenvolver essa tela do. É importação do arquivos do eol. Eu vou chegar pra minha cliente e falar, tá, vamos conversar sobre essa tela de importação do arquivo que a gente vai ter. Então claro que a gente sabe que a gente
+
+[162] Ronaldo Robledo Mendes De Souza: Uh-huh.
+
+[163] Jessica Cristina de Oliveira: vai ter que importar um arquivo ali dentro. Jessica,
+
+[164] Ronaldo Robledo Mendes De Souza: Sim.
+
+[165] Jessica Cristina de Oliveira: mas eu queria que eu definisse o nome desse arquivo aqui. Eu queria que eu tivesse um histórico de arquivos.
+
+[166] Ronaldo Robledo Mendes De Souza: Mhm.
+
+[167] Jessica Cristina de Oliveira: É que toda vez que eu subir um arquivo, vai ter o histórico do passado, vai ter se gerou erros, se nos gerou, vai ter quem foi a pessoa. Então aí a gente dentro desse importar arquivos. A gente vai quebrando em partes as coisas. Aí eu vou dar entrada aqui. Eu tenho uma parte desse fund med dois, eu tenho um módulo dele, eu vou entrar e vou tentar fazer o maior levantamento possível desse módulo,
+
+[168] Ronaldo Robledo Mendes De Souza: Mm.
+
+[169] Jessica Cristina de Oliveira: desse único módulo. Por que acontece? A gente sabendo desse módulo, a gente vai meio que replicar para os outros, não vai mudar tanto. Esse é o módulo maior. Então a gente tendo mais informações dele, eu consigo te trazer mais informações, mas eu não consigo te trazer dos outros todos, entendeu? Aí a gente vai conversando e vai.
+
+[170] Ronaldo Robledo Mendes De Souza: It.
+
+[171] Jessica Cristina de Oliveira: Alinhando tudo e eu posso validar também tecapol,
+
+[172] Ronaldo Robledo Mendes De Souza: Mhm.
+
+[173] Jessica Cristina de Oliveira: a gente pode sentar com APOL e ver se faz sentido ou não.
+
+[174] Ronaldo Robledo Mendes De Souza: Não tranquilo o Jessica assim, a primeira, a primeiro momento aqui é igual eu te falei. O objetivo é sabermos quais são as funcionalidades que nós já temos pendentes e mapeadas. É, eu tenho SSS, então beleza, a gente vai colocar o que a gente tem. Não adianta tentar ir buscar o que já não tem, então a gente vai colocar o que já tem. Só que eu preciso uma descrição do fluxo de cada de cada funcionalidade dessa para mim justamente criar isso aqui, entendeu? Criar o diagrama de contexto aqui. É caso você queira, é, eu estou te passando isso. É caso você queira buscar essa informação. Agora, se você quiser marcar uma reunião para a gente com a PO, para a gente é obter essas informações juntas. Pode ser também. Só que aí eu acho que a gente vai ter muitas reuniões para fazer. Não é para destrinchar e descrever cada fluxo, não.
+
+[175] Jessica Cristina de Oliveira: Você está falando da gente fazer algo, pegar todo o fluxo que eu defini para você, eu sentar com a P. O e destrinchar com ela?
+
+[176] Ronaldo Robledo Mendes De Souza: Não, eu falo assim, é, por exemplo, de todas essas funcionalidades que você é, apontou aí para mim no documento. Eu falei assim, caso você queira, é que a gente já reúna junto com a PO para ela passar o fluxo para a gente. E a gente foi escrevendo e já fazendo, é uma opção, só que eu acho que vai demorar mais. É fazer isso para cada,
+
+[177] Jessica Cristina de Oliveira: Muito mais.
+
+[178] Ronaldo Robledo Mendes De Souza: para cada funcionalidade, em vez de simplesmente você tentar
+
+[179] Jessica Cristina de Oliveira: Okay.
+
+[180] Ronaldo Robledo Mendes De Souza: digitar cada fluxo desse aí, não? O que você acha melhor?
+
+[181] Jessica Cristina de Oliveira: Eu vou tentar fazer pelo módulo aqui.
+
+[182] Ronaldo Robledo Mendes De Souza: Uh-huh.
+
+[183] Jessica Cristina de Oliveira: É, do fluxo. Se eu vejo que está dando muito trabalho, alguma coisa assim, aí eu posso tentar fazer outra questão. O negócio é que a gente já está com esse pedido de arquitetura, tem uns já um mês e alguma coisa e a gente com isso que eu estou percebendo, a gente vai levar mais um tempo, né? É para fazer, fazer esse levantamento, porque quando você me mandou o documento, eu respondi tudo que estava me perguntando. Não estava esse Jessica,
+
+[184] Ronaldo Robledo Mendes De Souza: Sing.
+
+[185] Jessica Cristina de Oliveira: me descreva ou não me foi falado Jessica, a gente precisa desse, desse, desse, desse ponto. Então agora você.
+
+[186] Ronaldo Robledo Mendes De Souza: Uh-huh.
+
+[187] Jessica Cristina de Oliveira: Trazendo isso, isso vai me apertar muito e muitas questões, tanto do sistema, porque a gente está desenvolvendo protótipo e acaba que nosso back end a gente precisa da arquitetura feita e eu vou ter que parar para fazer isso e eu também estou com outros projetos, então isso vai levar um tempo, então eu vou tentar. Eu fazer por mim o mais rápido possível que eu mais consigo, porque aí se a gente for para depender de cliente, a gente depende da agenda deles, do momento deles. E é uma coisa bem puxado, né? Porque eu lembro quando a gente fez isso com isso, a gente tinha reuniões.
+
+[188] Ronaldo Robledo Mendes De Souza: Yes.
+
+[189] Jessica Cristina de Oliveira: Praticamente duas vezes ao dia e uma dela a gente envolvia a cliente e o outro era entre a gente de equipe. E isso levou quase um mês fazendo e não
+
+[190] Ronaldo Robledo Mendes De Souza: Mm-hmm. É justamente eu estou.
+
+[191] Jessica Cristina de Oliveira: temos tanto prazo assim.
+
+[192] Ronaldo Robledo Mendes De Souza: É porque na parte de arquitetura, infelizmente a gente não tem como é fugir disso. O que você pode fazer também? O Jessica, eu vou te dar é uma dica, caso você queira, tá? É se você, eu uso muita IA nesse caso, tá? Se você quiser, é fazer uma reunião comigo a cada
+
+[193] Jessica Cristina de Oliveira: Mhm.
+
+[194] Ronaldo Robledo Mendes De Souza: funcionalidade dessa e explicar e explicar o que cada funcionalidade faz verbalmente, eu boto na transcrição, não é? E aí eu pego a sua transcrição. Com a sua transcrição do que você vai me explicar cada funcionalidade, eu consigo gerar o que eu quero, entendeu? Talvez seja até melhor e mais rápido. Então a gente pode fazer uma reunião e aí você vai me explicar, descrever o que cada funcionalidade faz. Né? E aí, com essa descrição eu consigo, eu consigo agilizar o processo. O que você prefere?
+
+[195] Jessica Cristina de Oliveira: Deixa eu tentar, deixa eu sentar aqui, tipo, o negócio que essa semana é uma semana corrida pra mim é uma semana também que vai ser, a gente vai ter só 4 dias, né? Mas deixa eu sentar primeiro,
+
+[196] Ronaldo Robledo Mendes De Souza: Uh-huh.
+
+[197] Jessica Cristina de Oliveira: levantar esse banco aqui do sistema que eu tenho.
+
+[198] Ronaldo Robledo Mendes De Souza: Uh-huh.
+
+[199] Jessica Cristina de Oliveira: Trazer o máximo de coisas. Aí se você falar, Jessica, a gente precisa sentar e conversar e alinhando. Aí a gente vai destrinchando mais. Mas deixa eu tentar, me manda,
+
+[200] Ronaldo Robledo Mendes De Souza: Tudo bem.
+
+[201] Jessica Cristina de Oliveira: me manda esses exemplos, porque eu confesso que é um pouco mais puxado para mim, porque eu passar muito tempo em reunião. Porque, querendo ou não, eu tenho reuniões com o PO. Eu tenho nessa semana que eu estou cheio de reuniões de treinamento, é com os PO's ali, e eu tenho alinhamento com o PO, eu tenho organização do board, porque eu tenho springs, então.
+
+[202] Ronaldo Robledo Mendes De Souza: Okay. É, eu estou te dando essa segunda.
+
+[203] Jessica Cristina de Oliveira: É, eu prefiro sentar de um tempo em tempo outro, eu pegar e sentar e fazendo, porque aí com você eu vou precisar sentar, passar algumas horas conversando. Eu comigo, eu tenho um espacinho de 10 minutos, eu consigo sentar e fazer isso. Eu tenho um espacinho de 30 minutos, eu consigo sentar e fazer isso. Então eu acho que deixa eu primeiro tentar fazer aqui por mim. Aí a gente vê que a gente faz se falar, Jessica, não tá? Ou se eu ver que não tá funcionando de mim mesma, aí eu te chamo.
+
+[204] Ronaldo Robledo Mendes De Souza: É a minha, a minha sugestão da referente a gente fazer a reunião de gravação, Jessica é justamente isso, entendeu? Por exemplo, porque ou você mesmo pode fazer aí, entendeu? Você abre uma tela aí é no próprio Teams. E aí você grava o que o que cada é tem. Eu tenho outras pios que fazem isso, tá? Ela abre a tela no teams, aí ela grava, entendeu?
+
+[205] Jessica Cristina de Oliveira: Oh.
+
+[206] Ronaldo Robledo Mendes De Souza: Explicando detalhadamente o que cada tela vai fazer, certo? E aí ela me manda o vídeo e a transcrição, e com esse vídeo e a transcrição de. Cada funcionalidade eu consigo gerar a documentação, em vez de ela ficar só escrevendo, que dá muito trabalho,
+
+[207] Jessica Cristina de Oliveira: Uhum, tá?
+
+[208] Ronaldo Robledo Mendes De Souza: então ela explica no vídeo o que cada tela e cada funcionalidade faz,
+
+[209] Jessica Cristina de Oliveira: Mhm.
+
+[210] Ronaldo Robledo Mendes De Souza: e aí eu pego essa transcrição, bota aí a para gerar o que eu preciso, entendeu?
+
+[211] Jessica Cristina de Oliveira: Tá mhm.
+
+[212] Ronaldo Robledo Mendes De Souza: então é uma é uma ideia que eu tô te dando porque eu já faço isso com alguns pios né então elas fazem isso para mim elas elas Pereira funcionalidade YX e aí elas gravam né e explica direitinho o que que cada tela vai fazer e qualquer e que cada funcionalidade vai fazer É regra de negócio, é se tem que gravar no banco de dados ou não, explica direitinho. E aí aquela transcrição,
+
+[213] Jessica Cristina de Oliveira: Okay.
+
+[214] Ronaldo Robledo Mendes De Souza: eu Gero a documentação que eu preciso.
+
+[215] Jessica Cristina de Oliveira: Tá bom, aham, eu vou, eu vou ver aqui qual que vai ser.
+
+[216] Ronaldo Robledo Mendes De Souza: Está bom, é uma ideia, é uma ideia que eu estou te dando, porque eu acho que até agiliza seu seu trabalho.
+
+[217] Jessica Cristina de Oliveira: Sim, eu vou ver qual é a melhor forma que eu consigo trabalhar aqui e.
+
+[218] Ronaldo Robledo Mendes De Souza: Mhm.
+
+[219] Jessica Cristina de Oliveira: Aí se eu falar não está fluindo, não está seguindo, aí eu posso, aí eu venho e falo com você. Mas aí se eu ver que,
+
+[220] Ronaldo Robledo Mendes De Souza: Tudo bem, sem problema.
+
+[221] Jessica Cristina de Oliveira: porque aí talvez eu conseguindo sentar em algum momento e fazer esse levantamento aqui, aí eu consigo talvez transcrever ou jogar também, ver alguma coisa aqui e trazer para você um pouco mais detalhado. Mas eu preciso que você me mande o seu exemplo. exemplo também para eu conseguir entender o que você está me pedindo aqui para não trazer porque tipo nessa documentação que você me mandou você me perguntou sobre funcionalidades mas ali você fala funcionalidades Tá eu vou te trazer a
+
+[222] Ronaldo Robledo Mendes De Souza: Isso. Okay.
+
+[223] Jessica Cristina de Oliveira: funcionalidade eu te trouxe mas não é o que você precisa Então talvez ali na
+
+[224] Ronaldo Robledo Mendes De Souza: É porque.
+
+[225] Jessica Cristina de Oliveira: documentação precisaria falar não traga sua funcionalidade e o fluxo Essa funcionalidade é.
+
+[226] Ronaldo Robledo Mendes De Souza: Isso é porque é porque assim é, eu assim, não é o caso, tá? Já eu é porque tem os outros. Eu já tô acostumado com outras pior aqui.
+
+[227] Jessica Cristina de Oliveira: Uh-huh.
+
+[228] Ronaldo Robledo Mendes De Souza: Quando eu pego outro, ela já sabe, já manda o fluxo, né? E aí eu foi erro meu, tá? Eu esqueci de te passar isso porque era
+
+[229] Jessica Cristina de Oliveira: Na. No.
+
+[230] Ronaldo Robledo Mendes De Souza: pra. Colocar a funcionalidade e o fluxo detalhado daquela funcionalidade, não é?
+
+[231] Jessica Cristina de Oliveira: Sim, é aham. É porque eu levando em consideração o que
+
+[232] Ronaldo Robledo Mendes De Souza: Então eu.
+
+[233] Jessica Cristina de Oliveira: eu estou lendo o documento, você me pediu a funcionalidade. Então eu realmente trouxe ali que é banco dos nativos, ativo e tal. Então essas são as funcionalidades. Mas eu entendo assim, faz sentido. É só porque, tipo assim. Quem já trabalha com você já sabe que você vai pedir um fluxo. Eu,
+
+[234] Ronaldo Robledo Mendes De Souza: Is.
+
+[235] Jessica Cristina de Oliveira: como é a primeira vez, eu não saberia. Eu não sabia que você estava me pedindo um fluxo. Eu falei, tá, ele está me pedindo. É a funcionalidade, é essas funcionalidades.
+
+[236] Ronaldo Robledo Mendes De Souza: Tranquilo.
+
+[237] Jessica Cristina de Oliveira: Aí então a gente valida assim, a gente vê e tudo certinho para ver como que a gente faz. Mas aí eu vou tentar nesse primeiro momento fazer algo aqui para aí depois a gente já ir alinhando eu e você, porque aí eu acho que vai render mais nosso trabalho do que a gente sentar e passar algumas horas em reunião. Principalmente que toda hora alguém vem, fala comigo, precisa chamar e tudo,
+
+[238] Ronaldo Robledo Mendes De Souza: C C.
+
+[239] Jessica Cristina de Oliveira: então acaba que me pega um pouco ficar muito tempo em chamadas.
+
+[240] Ronaldo Robledo Mendes De Souza: É por. Isso, é por isso que eu te dei a ideia de você fazer a gravação no Teams, explicando, porque você só vai explicar, mostrar,
+
+[241] Jessica Cristina de Oliveira: Uh-huh.
+
+[242] Ronaldo Robledo Mendes De Souza: se tiver que mostrar alguma coisa, vai explicar, e se não tiver que mostrar nada, você só fala a explicação da funcionalidade tal, e aí você fala o que você tem para explicar sobre a funcionalidade. Com essa transcrição que você vai me passar, eu consigo é dar andamento aqui, caso depois queira finalizar, eu refinar o diagrama de contexto, aí eu marco uma reunião depois, entendeu? Só para refinar o diagrama de contexto,
+
+[243] Jessica Cristina de Oliveira: Tá, tá bom, aham, tá bom, então a gente faz assim então.
+
+[244] Ronaldo Robledo Mendes De Souza: está bom? OK, então beleza, Jessica, eu vou ver se eu consigo ou liberar ou te mandar isso aqui, está bom?
+
+[245] Jessica Cristina de Oliveira: Tá, por favor, aí, se não, pelo menos me manda assim uns 23 fluxos aí que você acha importante para eu ter isso em mente e fazer já mais da forma que você precisa.
+
+[246] Ronaldo Robledo Mendes De Souza: Tá eu vou correr atrás de liberar aqui para você assim beleza
+
+[247] Jessica Cristina de Oliveira: Tá bom, então deixa eu ver. Eu acho que eu pedi, porque hoje o Pedro me mandou isso mais cedo. Jessica, o Robledo me mandou isso, essa documentação e coisa. Aí eu entrei pra ver o que que era. Aí eu falei Ixi, não tenho permissão. Deixa eu até pedir de novo aqui a permissão pra ver. Eu não lembro se eu Se eu pedir ou não pedir, eu acho que eu pedi quase 100% de certeza que eu pedi, porque eu lembro que eu cliquei lá, eu falei, mas eu não tenho essa informação. Eu falei com ele. Deixa eu ver aqui. Aham, só que meu, não tem o request. Eu cliquei aqui e eu mandei mesmo. Já tinha mandado, mas eu mandei de novo. Aí, se alguém tiver como me liberar, vai ser melhor ainda. O
+
+[248] Ronaldo Robledo Mendes De Souza: Está, eu vou correr atrás disso aqui, eu vou correr atrás disso aqui e já eu te informo.
+
+[249] Jessica Cristina de Oliveira: Tá bom, eu vou até só deixa eu verificar uma coisa aqui antes de você ir e pode ser uma coisa minha também. Eu não estou prestando atenção, deixa eu ver aqui overview, o Wiki. Deixa eu só ver se eu tenho a. Visão geral. Questão de negócio. diagramas documento deixa eu ver se eu tenho essa decisão de arquitetura Ação da biblioteca, não sei o que é isso. É jornada. Visão front-end. Talvez eu tenha, mas eu tenho só as imagens. É, eu preciso que você me Me mande mais detalhado.
+
+[250] Ronaldo Robledo Mendes De Souza: Você não tem a jornada inteira, não é?
+
+[251] Jessica Cristina de Oliveira: Quer ver? Eu vou te mostrar aqui o que eu tenho e
+
+[252] Ronaldo Robledo Mendes De Souza: Yeah.
+
+[253] Jessica Cristina de Oliveira: eu acho que não é o que você precisa.
+
+[254] Ronaldo Robledo Mendes De Souza: Deixa eu ver.
+
+[255] Jessica Cristina de Oliveira: Quer ver? Deixa eu ver aqui. sigla login aqui ó

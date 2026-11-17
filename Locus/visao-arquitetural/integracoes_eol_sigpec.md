@@ -43,7 +43,7 @@ A forma de disponibilização (API, acesso a banco/view, arquivo, SFTP (SSH File
 
 ## 4. Fluxo SIGPEC
 
-1. SEGES gera arquivo TXT/CSV (hoje **manual**, conforme wiki).
+1. SEGES gera arquivo TXT/CSV (hoje **manual**).
 2. Operador faz upload na tela de importação do LOCUS com o layout cadastrado.
 3. Segue os passos 3 a 6 do fluxo EOL.
 4. Automação (SFTP/API) fica como evolução, quando a SEGES disponibilizar.
@@ -82,3 +82,7 @@ A forma de disponibilização (API, acesso a banco/view, arquivo, SFTP (SSH File
 2. SIGPEC pode ser disponibilizado via SFTP/API? Qual layout oficial?
 3. Qual fonte prevalece em cada campo (EOL × SIGPEC × LOCUS)?
 4. Quanto tempo os arquivos importados devem ser mantidos?
+
+## Referências
+
+- Wiki SIGLA — Jornadas › Importação de dados LOCUS

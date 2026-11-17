@@ -6,7 +6,7 @@
 | **Menu / rota** | Integração; telas de importação e layouts (a criar) |
 | **Perfis** | Administrador (layouts), Operador DICAR (upload, divergências) |
 | **MVP** | Sim |
-| **Fluxo informado por** | Questionário do PO (jornada sequencial) + wiki (Importação de dados LOCUS) |
+| **Fluxo informado por** | Questionário do PO (jornada sequencial) |
 | **ADRs relacionadas** | ADR-004, ADR-005, ADR-007, ADR-008 |
 
 ---
@@ -50,3 +50,7 @@ Ver [Integrações EOL / SIGPEC — §5](../../visao-arquitetural/integracoes_eo
 - Mecanismo PRODAM e SIGPEC (API, view, arquivo, SFTP)
 - Precedência de campos entre EOL, SIGPEC e LOCUS
 - Retenção dos arquivos importados
+
+## Referências
+
+- Wiki SIGLA — Jornadas › Importação de dados LOCUS

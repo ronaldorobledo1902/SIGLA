@@ -5,7 +5,7 @@
 | ---------------- | ------------------------------------------------- |
 | **Status**       | Accepted (as-is)                                  |
 | **Data**         | 2026-10-27                                        |
-| **Decisores**    | Arquitetura SIGLA (wiki ADR-01) / Levantamento LOCUS |
+| **Decisores**    | Arquitetura SIGLA / Levantamento LOCUS |
 | **Sistema**      | LOCUS (todos os MS)                               |
 | **Relacionadas** | ADR-004, ADR-007                                  |
 
@@ -14,7 +14,7 @@
 
 ## Contexto
 
-A wiki SIGLA registrou no ADR-01 a escolha de Django em vez de FastAPI para os microsserviços. Todos os MS existentes (AdminUsuarios, ImportaArquivos e os do ALVO) seguem Django 5.2.5, DRF 3.15, SimpleJWT, drf-spectacular, django-auditlog, elastic-apm, python-json-logger e a biblioteca comum `sigla-sdk` (tag `1.1.1`), em Python 3.12 / Docker.
+O ADR-01 registrou a escolha de Django em vez de FastAPI para os microsserviços. Todos os MS existentes (AdminUsuarios, ImportaArquivos e os do ALVO) seguem Django 5.2.5, DRF 3.15, SimpleJWT, drf-spectacular, django-auditlog, elastic-apm, python-json-logger e a biblioteca comum `sigla-sdk` (tag `1.1.1`), em Python 3.12 / Docker.
 
 ## Decisão
 
@@ -38,7 +38,7 @@ A wiki SIGLA registrou no ADR-01 a escolha de Django em vez de FastAPI para os m
 
 | Alternativa | Motivo de não adoção |
 |-------------|----------------------|
-| FastAPI | Rejeitado no ADR-01 da wiki (menos baterias incluídas: admin, ORM, auth) |
+| FastAPI | Rejeitado no ADR-01 (menos baterias incluídas: admin, ORM, auth) |
 | Node/NestJS | Fora do padrão do SIGLA |
 
 ## Referências

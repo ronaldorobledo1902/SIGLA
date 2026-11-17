@@ -50,7 +50,7 @@ Operador → LOCUS SPA → MS-Locus API (JWT) → Services de domínio → write
 |---------|-----------|
 | LOCUS SPA | Telas de UE, servidor e atualização |
 | MS-Locus (TO-BE) | Regras, persistência, histórico |
-| PostgreSQL SIGLA | Write model LOCUS + read model |
+| Base Sigla Escrita e Base Sigla Leitura | Write model do LOCUS na Escrita; read model na Leitura |
 | MS-ImportaArquivos | Abastece dados oficiais (EOL/SIGPEC) |
 
 ---

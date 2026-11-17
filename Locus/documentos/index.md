@@ -1,6 +1,6 @@
 # Documentos
 
-Documentos de apoio do **LOCUS (Lotação e Controle Unificado de Servidores)**, incluindo ADRs (Architecture Decision Records — registros de decisão arquitetural), glossário de termos de negócio e anexos da wiki SIGLA.
+Documentos de apoio do **LOCUS (Lotação e Controle Unificado de Servidores)**, incluindo ADRs (Architecture Decision Records — registros de decisão arquitetural), glossário de termos de negócio e anexos.
 
 ```{toctree}
 :maxdepth: 2

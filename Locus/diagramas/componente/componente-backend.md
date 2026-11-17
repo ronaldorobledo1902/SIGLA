@@ -82,7 +82,7 @@ Os backends do LOCUS seguem o padrão dos MS SIGLA: `api` → `serializers` → 
 4. **CORS explícito** e `JWT_SIGNING_KEY` dedicada; não usar `CORS_ALLOW_ALL_ORIGINS`.
 5. **Segredos** fora do Git; `env.example` só com placeholders.
 6. **Health checks** `/health/live` e `/health/ready`.
-7. **Cobertura ≥ 80%** (wiki).
+7. **Cobertura ≥ 80%**.
 
 ---
 
@@ -99,3 +99,7 @@ Os backends do LOCUS seguem o padrão dos MS SIGLA: `api` → `serializers` → 
 | ADR-007 | Celery + Redis |
 | ADR-008 | Histórico e versões |
 | ADR-011 | Relatórios assíncronos |
+
+## Referências
+
+- Wiki Azure DevOps *COTIC - DevOps › SIGLA › Visão Arquitetural* — cobertura mínima de testes de 80%

@@ -23,7 +23,7 @@ Substitui sistemas descontinuados que não recebem mais atualizações de legisl
 | **Identidade e permissões** | `SME-SIGLA-MS-AdminUsuarios` — Django 5.2 / DRF (Django REST Framework), CoreSSO via API SME Integração, JWT (JSON Web Token) | Existente (perfis ALVO) |
 | **Importação de dados** | `SME-SIGLA-MS-ImportaArquivos` — Django / DRF + Celery, layouts posicionais, PRODAM, SIGPEC | Existente (uso ALVO), **reaproveitado** pelo LOCUS |
 | **Domínio LOCUS** | **MS-Locus** — Django / DRF + Celery + `sigla-sdk` | **Planejado (TO-BE)** |
-| **Dados** | PostgreSQL SIGLA (escrita / leitura — CQRS (Command Query Responsibility Segregation)), Redis (broker Celery) | Existente / leitura planejada |
+| **Dados** | Base de Dados SIGLA (BASE SIGLA): **Base Sigla Escrita** e **Base Sigla Leitura** (PostgreSQL, CQRS (Command Query Responsibility Segregation)); Redis (broker Celery) | Escrita existente / leitura do LOCUS planejada |
 | **Runtime** | Kubernetes (Rancher), Ingress Nginx como API Gateway, Jenkins + Registry SME | A confirmar com Infra Ágil |
 
 ## Premissas importantes
@@ -40,7 +40,7 @@ Substitui sistemas descontinuados que não recebem mais atualizações de legisl
 |-------|----------|
 | [Visão de negócio](visao-negocio/index.md) | Personas, jornadas, escopo, funcionalidades pendentes e riscos |
 | [Visão arquitetural](visao-arquitetural/index.md) | Documento arquitetural, questões consolidadas e integrações EOL / SIGPEC |
-| [Documentos / ADRs (Architecture Decision Records)](documentos/index.md) | Decisões arquiteturais, glossário e anexos da wiki |
+| [Documentos / ADRs (Architecture Decision Records)](documentos/index.md) | Decisões arquiteturais, glossário e anexos |
 | [Diagramas C4 (Context, Containers, Components, Code)](diagramas/index.md) | Contexto (C1), containers (C2), componentes (C3) e fluxos |
 | [Segurança](seguranca/index.md) | Recomendações prioritárias e matriz de risco |
 

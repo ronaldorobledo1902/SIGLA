@@ -17,7 +17,7 @@ funcionalidades-pendentes
 
 ## 1. Propósito deste documento
 
-Consolidar a **visão de negócio** do LOCUS com base no questionário respondido pelo PO (Product Owner) (`Levantamento/Questionário_PO_LOCUS_respondido.docx`), na wiki de arquitetura do SIGLA (Azure DevOps — *Visão Arquitetural*), no frontend LOCUS em construção (`SME-SIGLA-LOCUS-Frontend`) e nos microsserviços SIGLA já existentes.
+Consolidar a **visão de negócio** do LOCUS com base no questionário respondido pelo PO (Product Owner) (`Levantamento/Questionário_PO_LOCUS_respondido.docx`), no frontend LOCUS em construção (`SME-SIGLA-LOCUS-Frontend`) e nos microsserviços SIGLA já existentes.
 
 O LOCUS **não é portal público** e **não é acessado pelos servidores** cujos dados gerencia: é uma ferramenta interna da DICAR.
 
@@ -147,11 +147,11 @@ Operador filtra unidades por DRE, tipo e características → abre o detalhe →
 
 ### Jornada D — Importação de arquivo
 
-Administrador cadastra o **layout posicional** (txt/csv, posição e tamanho de cada campo) → operador faz upload → o MS-ImportaArquivos valida contra o layout e registra erros → dados válidos seguem para a base SIGLA → histórico de importações disponível.
+Administrador cadastra o **layout posicional** (txt/csv, posição e tamanho de cada campo) → operador faz upload → o MS-ImportaArquivos valida contra o layout e registra erros → dados válidos seguem para a **Base Sigla Escrita** → histórico de importações disponível.
 
 ### Jornada E — Usuários e permissões 
 
-Administrador acessa o LOCUS → cadastra/consulta usuário (dados do CoreSSO/EOL) → atribui acessos de ALVO e LOCUS → o backend grava na base de escrita SIGLA.
+Administrador acessa o LOCUS → cadastra/consulta usuário (dados do CoreSSO/EOL) → atribui acessos de ALVO e LOCUS → o backend grava na **Base Sigla Escrita**.
 
 ---
 
@@ -226,5 +226,12 @@ KPIs não foram definidos formalmente; propostos pelo PO:
 | Correções e lançamentos manuais           | Redução mensurável frente ao sistema atual                        |
 | Tempo de geração de relatórios gerenciais | Consultas ≤ 3 s; relatórios pesados entregues de forma assíncrona |
 | Disponibilidade em horário comercial      | 99,5%                                                             |
+
+---
+
+## Referências
+
+- Questionário do PO LOCUS — `Levantamento/Questionário_PO_LOCUS_respondido.docx`
+- Wiki Azure DevOps *COTIC - DevOps › SIGLA › Visão Arquitetural*
 
 

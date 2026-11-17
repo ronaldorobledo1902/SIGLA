@@ -7,5 +7,6 @@ Documentação técnica do **LOCUS (Lotação e Controle Unificado de Servidores
 :caption: Conteúdo
 
 documento_arquitetural_sistema
+proposta-fundamental-ii-medio
 integracoes_eol_sigpec
 ```

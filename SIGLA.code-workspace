@@ -1,0 +1,50 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../SIGLA/SME-SIGLA-ALVO-Frontend"
+		},
+		{
+			"path": "../../SIGLA/SME-SIGLA-LOCUS-Frontend"
+		},
+		{
+			"path": "../../SIGLA/SME-SIGLA-MS-AdminUsuarios"
+		},
+		{
+			"path": "../../SIGLA/SME-SIGLA-MS-ImportaArquivos"
+		},
+		{
+			"path": "../../SIGLA/SME-SIGLA-SDK-Microsservico"
+		},
+		{
+			"path": "../../SIGLA/SME-SIGLA-MS-Relatorios"
+		},
+		{
+			"path": "../../SIGLA/SME-SIGLA-MS-Candidatos"
+		},
+		{
+			"path": "../../SIGLA/SME-SIGLA-MS-Escolha"
+		},
+		{
+			"path": "../../SIGLA/SME-SIGLA-MS-ProcessosConvocacao"
+		},
+		{
+			"path": "../../SIGLA/SME-SIGLA-MS-ProcessosConcursos"
+		},
+		{
+			"path": "../../SIGLA/SME-SIGLA-MS-Agenda"
+		},
+		{
+			"path": "../../SIGLA/SME-SIGLA-MS-Convocacao"
+		},
+		{
+			"path": "../../SIGLA/SME-SIGLA-Frontend"
+		},
+		{
+			"path": "../../SIGLA/SME-Sigla"
+		}
+	],
+	"settings": {}
+}

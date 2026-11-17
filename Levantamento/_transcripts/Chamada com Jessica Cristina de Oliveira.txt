@@ -1,0 +1,2013 @@
+﻿a9518a07-8e6f-4b7e-9773-b76198346cad/5-0
+<v Jessica Cristina de Oliveira>Agora nesse banco que é maior,
+não nesse banco,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/5-1
+<v Jessica Cristina de Oliveira>é o que ela chama de banco,
+eu fico falando banco também.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/5-2
+<v Jessica Cristina de Oliveira>Nesse módulo agora que é um pouco maior,
+os outros vão meio que se repetir.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/6-0
+<v Jessica Cristina de Oliveira>Porque, querendo ou não,
+eles têm 14 módulos, tá?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/6-1
+<v Jessica Cristina de Oliveira>14 módulos assim de</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/7-0
+<v Jessica Cristina de Oliveira>É, como eu posso falar,
+são 14 módulos de Ai, nossa,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/7-1
+<v Jessica Cristina de Oliveira>me fugiu a palavra.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/9-0
+<v Jessica Cristina de Oliveira>De organização mesmo ali, de servidores,
+de unidades e tudo.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/9-1
+<v Jessica Cristina de Oliveira>Então é meio que separado ali por
+matérias, né? Então não é matérias,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/9-2
+<v Jessica Cristina de Oliveira>é por módulos mesmo. Módulos seria o quê?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/10-0
+<v Jessica Cristina de Oliveira>A turma, o turno, por exemplo,
+esse mede 2, aí eles têm o mede 1.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/10-1
+<v Jessica Cristina de Oliveira>Então é esses módulos, são 14 módulos.
+Se a gente fazer esse primeiro,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/10-2
+<v Jessica Cristina de Oliveira>os outros praticamente vão seguir esse
+mesmo fluxo ali de controle.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/14-0
+<v Ronaldo Robledo Mendes De Souza>Tá, tá, mas deixa eu te perguntar,
+essa primeira funcionalidade aí,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/11-0
+<v Jessica Cristina de Oliveira>Aqui oh.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/12-0
+<v Jessica Cristina de Oliveira>Uh-huh.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/14-1
+<v Ronaldo Robledo Mendes De Souza>gestão de dados dos servidores, ativos,
+bancaceados, efetivos, comissionados,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/13-0
+<v Jessica Cristina de Oliveira>Mhm.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/14-2
+<v Ronaldo Robledo Mendes De Souza>contratados e admitidos, certo?
+Essa tela que você mostrou aí,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/14-3
+<v Ronaldo Robledo Mendes De Souza>ela faz parte de algum desses itens aí?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/18-0
+<v Jessica Cristina de Oliveira>Faz essa tela que eu te mostrei,
+esse daqui é o item.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/15-0
+<v Ronaldo Robledo Mendes De Souza>Mhm.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/18-1
+<v Jessica Cristina de Oliveira>Deixa eu ver que eu estava te mostrando.
+Eu vou ter que compartilhar todas minhas</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/18-2
+<v Jessica Cristina de Oliveira>telas.
+Se eu ficar mudando de tela para cá e</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/18-3
+<v Jessica Cristina de Oliveira>para lá, você não vai ver tela, tá?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/16-0
+<v Ronaldo Robledo Mendes De Souza>Okay.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/19-0
+<v Jessica Cristina de Oliveira>Nesse daqui, espera aí,
+deixa eu ver aqui no box. Gestão de dados,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/17-0
+<v Ronaldo Robledo Mendes De Souza>Mm.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/19-1
+<v Jessica Cristina de Oliveira>servidores ativos vacanciados.
+Esses efetivos ainda a gente não fez e</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/19-2
+<v Jessica Cristina de Oliveira>tal, mas esse daqui é o ativo.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/20-0
+<v Jessica Cristina de Oliveira>E o vacanciado é esse daqui que eu tinha
+te mostrado também,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/20-1
+<v Jessica Cristina de Oliveira>que a gente tem como reativar o perfil.
+Esse a gente já tem esses 2,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/20-2
+<v Jessica Cristina de Oliveira>esse daqui os meninos estão desenvolvendo
+nessa sprint,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/20-3
+<v Jessica Cristina de Oliveira>o outro eles já desenvolveram.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/21-0
+<v Jessica Cristina de Oliveira>S2 sprints não que a gente está
+desenvolvendo, então tem sim.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/21-1
+<v Jessica Cristina de Oliveira>Tem tanto dessa atualização por RE
+funcional, que é esse que eu te falei,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/21-2
+<v Jessica Cristina de Oliveira>que é uma pessoa ativa ali no banco que
+está atuando na unidade,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/21-3
+<v Jessica Cristina de Oliveira>seja qual for a unidade,
+seja um cargo sobreposto ou o cargo base</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/21-4
+<v Jessica Cristina de Oliveira>dela.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/23-0
+<v Jessica Cristina de Oliveira>E tem esse vacaseado aqui que ela está de
+licença por algum motivo,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/23-1
+<v Jessica Cristina de Oliveira>que é onde gera uma vaga para a unidade.
+Então sim, temos essas 2 aqui, esses,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/23-2
+<v Jessica Cristina de Oliveira>essas 2 primeiras que a gente já começou.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/22-0
+<v Ronaldo Robledo Mendes De Souza>Mm-hmm.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/24-0
+<v Jessica Cristina de Oliveira>aí o resto todo ainda a gente não tem nada</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/25-0
+<v Ronaldo Robledo Mendes De Souza>Set.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/26-0
+<v Jessica Cristina de Oliveira>Aí aqui também consigo quebrar.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/29-0
+<v Jessica Cristina de Oliveira>Hello.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/30-0
+<v Jessica Cristina de Oliveira>Aí você falou se existia aqui também,
+eu já quebrei aqui, eu vou tirar aqui.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/31-0
+<v Jessica Cristina de Oliveira>Um.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/32-0
+<v Jessica Cristina de Oliveira>Well, deixa, no, no.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/36-0
+<v Jessica Cristina de Oliveira>Não aqui, aqui.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/37-0
+<v Jessica Cristina de Oliveira>A.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/38-0
+<v Jessica Cristina de Oliveira>That request.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/39-0
+<v Jessica Cristina de Oliveira>Tá, enfim, é, deixa eu voltar aqui,
+eu também, alterando.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/40-0
+<v Jessica Cristina de Oliveira>Nessa aqui,
+o sistema importa periodicamente os dados</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/40-1
+<v Jessica Cristina de Oliveira>do e o e do Sigpack.
+A gente precisa fazer essa atualização.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/40-2
+<v Jessica Cristina de Oliveira>Não vou falar tanto do Sigpack,
+porque o Sigpack a gente sabe que é mais,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/40-3
+<v Jessica Cristina de Oliveira>tem mais restrições. A gente sabe,
+entende isso,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/40-4
+<v Jessica Cristina de Oliveira>mas o EOA gente precisa fazer essa.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/41-0
+<v Jessica Cristina de Oliveira>Esse cheque, por que acontece?
+Pode ser que dentro do nosso sistema do</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/41-1
+<v Jessica Cristina de Oliveira>locus a gente inclua uma informação,
+porque a gente tem uma pressa.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/41-2
+<v Jessica Cristina de Oliveira>Eu preciso alterar o nome do servidor.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/42-0
+<v Jessica Cristina de Oliveira>porque ele entrou com pedido de alteração
+do nome social dele e a gente precisa,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/42-1
+<v Jessica Cristina de Oliveira>a gente viu que no EOL esse nome não foi
+alterado ainda,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/42-2
+<v Jessica Cristina de Oliveira>mas a gente tem que fazer essa alteração
+com uma maior urgência,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/42-3
+<v Jessica Cristina de Oliveira>porque a gente precisa fazer alguma
+atualização aqui no cadastro dele,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/42-4
+<v Jessica Cristina de Oliveira>então a gente precisa fazer essas.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/43-0
+<v Jessica Cristina de Oliveira>depara ali meio que entre o e o e o nosso
+sistema para a gente ver qual a</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/43-1
+<v Jessica Cristina de Oliveira>informação que está correta.
+E se atualizar o e o,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/43-2
+<v Jessica Cristina de Oliveira>a gente tem que trazer do e o para o
+nosso sistema.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/43-3
+<v Jessica Cristina de Oliveira>Pelo menos uma vez por dia a gente vai
+precisar fazer essa atualização, né?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/43-4
+<v Jessica Cristina de Oliveira>Bater assim, ó.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/44-0
+<v Jessica Cristina de Oliveira>verificar se no EOL foi atualizado alguma
+coisa para fazer essa atualização também</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/44-1
+<v Jessica Cristina de Oliveira>no nosso sistema.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/45-0
+<v Jessica Cristina de Oliveira>Aí o sistema confronta as informações e
+sinaliza divergência.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/45-1
+<v Jessica Cristina de Oliveira>É isso que eu te falei.
+Caso eu bato no EOL e veja que o nome de</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/45-2
+<v Jessica Cristina de Oliveira>um servidor meu está de um jeito,
+no EOL está no outro,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/45-3
+<v Jessica Cristina de Oliveira>qual que é o correto?
+A gente tem que fazer essa verificação.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/46-0
+<v Jessica Cristina de Oliveira>Mas aí a gente também tem que ver também
+a possibilidades, não é?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/47-0
+<v Jessica Cristina de Oliveira>Técnicas também, né?
+Então isso é um desejo,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/47-1
+<v Jessica Cristina de Oliveira>mas tem que ver as possibilidades
+técnicas também. Olha,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/47-2
+<v Jessica Cristina de Oliveira>registrar o corrigir a anotação e
+movimentação.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/47-3
+<v Jessica Cristina de Oliveira>O sistema deve gravar alteração no
+histórico que a gente vai gerar histórico</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/47-4
+<v Jessica Cristina de Oliveira>lá.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/48-0
+<v Jessica Cristina de Oliveira>Para ver quem que fez a atualização,
+quem alterou os dados,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/48-1
+<v Jessica Cristina de Oliveira>quais são os dados que foram alterados.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/49-0
+<v Jessica Cristina de Oliveira>Tem que preservar a versão anterior,
+como eu te falei.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/52-0
+<v Ronaldo Robledo Mendes De Souza>vamos vamos fazer o seguinte então
+Jessica é porque as informações que você</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/52-1
+<v Ronaldo Robledo Mendes De Souza>tá passando elas estão ficando muito
+solta correto vamos fazer o seguinte</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/52-2
+<v Ronaldo Robledo Mendes De Souza>vamos falando de funcionalidade por
+funcionalidade Então porque aí eu consigo</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/52-3
+<v Ronaldo Robledo Mendes De Souza>criar o mapeamento da das apis de cada
+funcionalidade entendeu</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/50-0
+<v Jessica Cristina de Oliveira>Mhm.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/51-0
+<v Jessica Cristina de Oliveira>O.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/54-0
+<v Ronaldo Robledo Mendes De Souza>É porque a forma como você está me
+passando,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/54-1
+<v Ronaldo Robledo Mendes De Souza>eu não estou conseguindo amarrar o que é
+o que é a cada funcionalidade, certo?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/54-2
+<v Ronaldo Robledo Mendes De Souza>Então vamos fazer o seguinte,
+é a primeira funcionalidade que você</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/54-3
+<v Ronaldo Robledo Mendes De Souza>colocou foi aquela lá em cima, não é isso?
+É volta lá um pouquinho, por gentileza.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/56-0
+<v Jessica Cristina de Oliveira>Mas aí eu vou,
+eu vou entrar numa questão com você.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/56-1
+<v Jessica Cristina de Oliveira>Aí a gente vai chegar num ponto que eu
+também não vou conseguir te falar que que</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/55-0
+<v Ronaldo Robledo Mendes De Souza>Uh-huh.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/56-2
+<v Jessica Cristina de Oliveira>é a funcionalidade,
+porque eu não tenho todo o sistema já em</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/56-3
+<v Jessica Cristina de Oliveira>mente.
+Eu não tenho todo o sistema que eu vou</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/56-4
+<v Jessica Cristina de Oliveira>desenvolver.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/58-0
+<v Jessica Cristina de Oliveira>É igual eu te falei,
+a gente vai conversando e a gente vai</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/58-1
+<v Jessica Cristina de Oliveira>fazendo essa, esse levantamento,
+esse refinamento de negócio com as PO.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/58-2
+<v Jessica Cristina de Oliveira>A gente tem algo macro.
+O que eu estou te passando é o que eu</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/58-3
+<v Jessica Cristina de Oliveira>entendo do sistema como macro.
+Eu não consigo te passar, tipo,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/57-0
+<v Ronaldo Robledo Mendes De Souza>Uh-huh.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/58-4
+<v Jessica Cristina de Oliveira>a gente vai ter essa tela aqui,
+essa tela eu tenho assim.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/59-0
+<v Jessica Cristina de Oliveira>A gente vai fazer busca por RF,
+que é uma busca por RF.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/59-1
+<v Jessica Cristina de Oliveira>Aí eu vou sentar com a minha cliente,
+vou conversar com ela,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/59-2
+<v Jessica Cristina de Oliveira>a tela da busca do RF.
+A gente tem essa ponta, esse ponto,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/59-3
+<v Jessica Cristina de Oliveira>esse ponto, que é esse campo,
+que você precisa, que você tem hoje,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/59-4
+<v Jessica Cristina de Oliveira>que você não precisa usar hoje.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/61-0
+<v Jessica Cristina de Oliveira>Então eu fazendo isso,
+eu não vou conseguir te passar uma coisa</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/61-1
+<v Jessica Cristina de Oliveira>micro,
+eu consigo te passar algo bem mais macro</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/61-2
+<v Jessica Cristina de Oliveira>assim, entendeu? Então, tipo assim,
+eu posso falar pra você o que a gente tem</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/61-3
+<v Jessica Cristina de Oliveira>hoje,
+eu vou saber te responder o que foi feito</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/61-4
+<v Jessica Cristina de Oliveira>até hoje, até esse ponto.
+Daqui pra frente eu não consigo te passar.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/60-0
+<v Ronaldo Robledo Mendes De Souza>Certo.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/62-0
+<v Ronaldo Robledo Mendes De Souza>Pois é,
+mas a PO não te passou ainda quais são as</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/62-1
+<v Ronaldo Robledo Mendes De Souza>funcionalidades que o sistema precisa ter,
+não de todas?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/63-0
+<v Jessica Cristina de Oliveira>Não, porque, tipo isso,
+a gente vai conversando no decorrer do</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/63-1
+<v Jessica Cristina de Oliveira>desenvolvimento do sistema.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/64-0
+<v Jessica Cristina de Oliveira>Como assim que você está querendo todas
+as funcionalidades?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/64-1
+<v Jessica Cristina de Oliveira>Você está esperando que eu tenha tipo
+todas as funcionalidades que serão feitas</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/64-2
+<v Jessica Cristina de Oliveira>no decorrer do desenvolvimento do seu
+sistema todo?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/66-0
+<v Ronaldo Robledo Mendes De Souza>Sim,
+é até mesmo para mim conseguir fazer o</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/66-1
+<v Ronaldo Robledo Mendes De Souza>mapeamento das APIs,
+porque eu verifiquei que algumas APIs já</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/66-2
+<v Ronaldo Robledo Mendes De Souza>foram criadas, correto?
+Já foram criadas as APIs.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/66-3
+<v Ronaldo Robledo Mendes De Souza>Eu verifiquei aqui,
+deixa eu só compartilhar com você um</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/65-0
+<v Jessica Cristina de Oliveira>Uh-huh.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/66-4
+<v Ronaldo Robledo Mendes De Souza>momentinho, Jessica,
+deixa eu só roubar essa tela aqui, tá?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/67-0
+<v Jessica Cristina de Oliveira>How much better?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/68-0
+<v Ronaldo Robledo Mendes De Souza>Okay.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/69-0
+<v Ronaldo Robledo Mendes De Souza>Bora lá!</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/70-0
+<v Ronaldo Robledo Mendes De Souza>Deixa eu compartilhar aqui com você o
+seguinte.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/71-0
+<v Ronaldo Robledo Mendes De Souza>Então aqui,
+na arquitetura que foi construída</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/71-1
+<v Ronaldo Robledo Mendes De Souza>anteriormente até o presente momento,
+a gente criou essas funcionalidades aqui,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/71-2
+<v Ronaldo Robledo Mendes De Souza>cadastro de concursos, escolha de vaga,
+cadastro de usuário de Sistemas,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/71-3
+<v Ronaldo Robledo Mendes De Souza>importação de dados.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/72-0
+<v Ronaldo Robledo Mendes De Souza>Cada funcionalidade dessa aqui está
+descrito o que que o sistema e como que o</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/72-1
+<v Ronaldo Robledo Mendes De Souza>sistema ia funcionar. Está vendo, então,
+cadastro de concursos e cargos.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/73-0
+<v Jessica Cristina de Oliveira>Então,
+mas você vê que isso aí é algo bem macro.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/74-0
+<v Ronaldo Robledo Mendes De Souza>Sim.
+Então eu preciso saber quais são as</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/74-1
+<v Ronaldo Robledo Mendes De Souza>próximas funcionalidades e colocar a
+questão magro do que ela vai fazer,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/74-2
+<v Ronaldo Robledo Mendes De Souza>entendeu? Pode ser magro mesmo.
+É por isso que eu falei para você, vamos.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/75-0
+<v Jessica Cristina de Oliveira>Então,
+por isso que por isso que eu te perguntei</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/75-1
+<v Jessica Cristina de Oliveira>para você se pode ser algo macro,
+porque se não for algo macro,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/77-0
+<v Ronaldo Robledo Mendes De Souza>Não,
+nesse primeiro momento pode ser macro sim,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/75-2
+<v Jessica Cristina de Oliveira>eu não tenho como te passar cada
+funcionalidade.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/77-1
+<v Ronaldo Robledo Mendes De Souza>não tem como,
+porque quando for para entrar dentro de,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/77-2
+<v Ronaldo Robledo Mendes De Souza>por exemplo, vamos desenhar a tela agora,
+vai desenhar, aí sim,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/76-0
+<v Jessica Cristina de Oliveira>That.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/77-3
+<v Ronaldo Robledo Mendes De Souza>aí tem uma próxima etapa a ser seguido,
+mas a primeiro momento vai ser macro</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/77-4
+<v Ronaldo Robledo Mendes De Souza>mesmo, por exemplo.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/79-0
+<v Ronaldo Robledo Mendes De Souza>Igual eu só estou te dando um exemplo
+aqui, quando eu fui,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/78-0
+<v Jessica Cristina de Oliveira>É isso que eu estava te perguntando,
+porque é igual eu te falei.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/79-1
+<v Ronaldo Robledo Mendes De Souza>quando eu fui desenhar,
+quando eu fui desenhar o cadastro de</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/79-2
+<v Ronaldo Robledo Mendes De Souza>concurso e carros,
+o que cadastro de concurso e carro tem</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/79-3
+<v Ronaldo Robledo Mendes De Souza>que fazer? Então,
+usuário acessa o sistema,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/79-4
+<v Ronaldo Robledo Mendes De Souza>usuário insere os dados do processo
+seletivo,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/79-5
+<v Ronaldo Robledo Mendes De Souza>então ele vai fazer isso porque eu
+consigo determinar o que a API ela tem.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/81-0
+<v Ronaldo Robledo Mendes De Souza>tem que fazer nesse exato momento aqui né
+então por exemplo na importação de dados</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/81-1
+<v Ronaldo Robledo Mendes De Souza>do bloco né é o que que a importação faz
+né é macro né E aí Eu determino o que que</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/81-2
+<v Ronaldo Robledo Mendes De Souza>api vai fazer lá dentro né ela tem que
+importar os dados assim assim assim</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/80-0
+<v Jessica Cristina de Oliveira>Mhm.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/81-3
+<v Ronaldo Robledo Mendes De Souza>assado</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/82-0
+<v Ronaldo Robledo Mendes De Souza>Então.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/83-0
+<v Ronaldo Robledo Mendes De Souza>Uh-huh.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/84-0
+<v Ronaldo Robledo Mendes De Souza>Uh-huh.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/85-0
+<v Ronaldo Robledo Mendes De Souza>Mhm.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/88-0
+<v Jessica Cristina de Oliveira>O que é daqui pra frente é coisas que
+micro, tá?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/88-1
+<v Jessica Cristina de Oliveira>Eu vou conversando com as minhas PO's.
+Olha, a gente tem então coisas macro,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/86-0
+<v Ronaldo Robledo Mendes De Souza>Correto.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/88-2
+<v Jessica Cristina de Oliveira>como eu estou te explicando aqui do
+sistema, eu consigo te passar que essa.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/87-0
+<v Ronaldo Robledo Mendes De Souza>Uh-huh.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/90-0
+<v Jessica Cristina de Oliveira>esse controle de unidades e de servidores.
+Agora,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/90-1
+<v Jessica Cristina de Oliveira>o que dentro do controle de cada telinha,
+eu não consigo te passar o que seria o</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/90-2
+<v Jessica Cristina de Oliveira>controle de cada tela.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/91-0
+<v Jessica Cristina de Oliveira>Mas eu posso fazer um levantamento aqui.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/92-0
+<v Ronaldo Robledo Mendes De Souza>Sim,
+mas você consegue me informar o que cada</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/92-1
+<v Ronaldo Robledo Mendes De Souza>tela ela tem que fazer?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/93-0
+<v Ronaldo Robledo Mendes De Souza>Macro,
+o que que cada funcionalidade ela tem que</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/93-1
+<v Ronaldo Robledo Mendes De Souza>fazer? Você consegue?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/94-0
+<v Jessica Cristina de Oliveira>Eu posso,
+eu posso te abrir o meu sistema e fazer</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/94-1
+<v Jessica Cristina de Oliveira>isso para você e te passar.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/96-0
+<v Ronaldo Robledo Mendes De Souza>Sim, sem problema, sem problema, entendeu?
+Porque assim eu preciso saber,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/96-1
+<v Ronaldo Robledo Mendes De Souza>pode ser macro, tá?
+O que cada sistema vai fazer, por exemplo,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/95-0
+<v Jessica Cristina de Oliveira>É micro, não consigo.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/96-2
+<v Ronaldo Robledo Mendes De Souza>ele tem que cadastrar os dados,
+igual você me mostrou aí,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/96-3
+<v Ronaldo Robledo Mendes De Souza>abre novamente aí, por gentileza.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/98-0
+<v Ronaldo Robledo Mendes De Souza>Deixa eu só recapitular com você o para a
+gente é voltar na página lá, Jessica,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/98-1
+<v Ronaldo Robledo Mendes De Souza>compartilha de novo sua tela do documento
+aí, por gentileza.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/99-0
+<v Jessica Cristina de Oliveira>E qual documento você quer?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/100-0
+<v Ronaldo Robledo Mendes De Souza>Você estava separando por tópicos?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/101-0
+<v Jessica Cristina de Oliveira>Tá,
+pera aí que eu vou compartilhar minha</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/101-1
+<v Jessica Cristina de Oliveira>tela toda, aí já pega.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/102-0
+<v Ronaldo Robledo Mendes De Souza>Isso porque a primeira coisa que eu
+preciso fazer aqui é o que que precisa</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/102-1
+<v Ronaldo Robledo Mendes De Souza>ser feito, né?
+Quais são os tópicos que precisa ser</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/102-2
+<v Ronaldo Robledo Mendes De Souza>feito? Aí você colocou ali, né?
+Pelo que eu entendi, certo,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/102-3
+<v Ronaldo Robledo Mendes De Souza>volta lá no documento.
+Isso o que que precisa ser feito?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/104-0
+<v Jessica Cristina de Oliveira>Aqui, aham aqui,
+gestão de dados de servidor ativo,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/104-1
+<v Jessica Cristina de Oliveira>balanceado, efetivo, comissionado. Então,
+o que você quer aqui nesse gestão?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/104-2
+<v Jessica Cristina de Oliveira>Você quer, por exemplo, assim, ai,
+então o cadastro.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/103-0
+<v Ronaldo Robledo Mendes De Souza>Isso.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/105-0
+<v Jessica Cristina de Oliveira>De usuário, vamos supor,
+isso que você está querendo.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/106-0
+<v Ronaldo Robledo Mendes De Souza>Aham, justamente cadastro de usuário,
+por exemplo,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/106-1
+<v Ronaldo Robledo Mendes De Souza>o que é gestão de dados de servidores
+ativos vivenciados?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/106-2
+<v Ronaldo Robledo Mendes De Souza>O que essa funcionalidade vai fazer?
+Porque você colocou assim,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/106-3
+<v Ronaldo Robledo Mendes De Souza>gestão de dados, servidores vivenciados,
+efetivos comissionados.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/107-0
+<v Ronaldo Robledo Mendes De Souza>E contratados e admitido. Isso aí é o quê?
+É um cadastro que ele vai fazer isso?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/107-1
+<v Ronaldo Robledo Mendes De Souza>É essa minha pergunta.
+É uma tela que ele vai fazer isso aí,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/107-2
+<v Ronaldo Robledo Mendes De Souza>é isso?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/108-0
+<v Jessica Cristina de Oliveira>É uma tela e essa tela que eu te mostrei,
+que eu te expliquei.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/109-0
+<v Ronaldo Robledo Mendes De Souza>Isso,
+a atualização de registros é funcional,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/109-1
+<v Ronaldo Robledo Mendes De Souza>correto? E essa tela ela vai fazer,
+ela vai fazer basicamente o quê?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/110-0
+<v Ronaldo Robledo Mendes De Souza>O que essa tela vai fazer?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/112-0
+<v Jessica Cristina de Oliveira>Então, como eu te expliquei anteriormente,
+a gente vai acessar os dados desses</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/111-0
+<v Ronaldo Robledo Mendes De Souza>Uh-huh.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/112-1
+<v Jessica Cristina de Oliveira>usuários, a gestão da unidade,
+então o que a gente consegue ver os modos,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/112-2
+<v Jessica Cristina de Oliveira>as anotações,
+quem são as pessoas afastadas de uma</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/112-3
+<v Jessica Cristina de Oliveira>unidade específica, as vagas,
+as educações e tudo.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/113-0
+<v Jessica Cristina de Oliveira>Aqui eu vou poder pesquisar o RF ou o
+nome,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/113-1
+<v Jessica Cristina de Oliveira>pesquisar o servidor que está ativo no
+banco, então.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/115-0
+<v Ronaldo Robledo Mendes De Souza>Então assim,
+então eu já tenho um cadastro correto,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/115-1
+<v Ronaldo Robledo Mendes De Souza>certo?
+A primeiro momento eu tenho um cadastro,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/114-0
+<v Jessica Cristina de Oliveira>Uh-huh.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/115-2
+<v Ronaldo Robledo Mendes De Souza>eu tenho uma funcionalidade de cadastro,
+eu tenho uma funcionalidade de pesquisa,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/115-3
+<v Ronaldo Robledo Mendes De Souza>correto?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/116-0
+<v Jessica Cristina de Oliveira>So.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/119-0
+<v Ronaldo Robledo Mendes De Souza>né não é isso então eu vou ter que
+cadastrar essa tela ela vai ter que</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/117-0
+<v Jessica Cristina de Oliveira>Peace.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/119-1
+<v Ronaldo Robledo Mendes De Souza>cadastrar ela vai ter cadastrar o quê
+informações referente ao registro</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/119-2
+<v Ronaldo Robledo Mendes De Souza>funcional não é isso do do Servidor não é
+isso</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/118-0
+<v Jessica Cristina de Oliveira>Jose Vito.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/120-0
+<v Jessica Cristina de Oliveira>Nesse caso aqui do servidor ativo.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/121-0
+<v Ronaldo Robledo Mendes De Souza>Isso, então assim,
+você pode colocar lá primeira tela,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/121-1
+<v Ronaldo Robledo Mendes De Souza>o que precisa ser feito?
+Cadastro do registro funcional dos</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/121-2
+<v Ronaldo Robledo Mendes De Souza>servidores ativos, certo?
+Então você vai colocar lá a segunda</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/121-3
+<v Ronaldo Robledo Mendes De Souza>funcionalidade,
+eu vou ter que essa tela vai ter que ter</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/121-4
+<v Ronaldo Robledo Mendes De Souza>pesquisa,
+essa tela vai ter que ter uma pesquisa</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/121-5
+<v Ronaldo Robledo Mendes De Souza>dentro dela assim,
+então vai ter que ter uma funcionalidade.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/122-0
+<v Ronaldo Robledo Mendes De Souza>Pesquisa, pesquisar o quê?
+O que é que eu preciso pesquisar para</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/122-1
+<v Ronaldo Robledo Mendes De Souza>trazer de dentro dessa tela, né?
+Vai ter alguma?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/123-0
+<v Jessica Cristina de Oliveira>Aí eu já tô, aí eu já tô sendo bem micro,
+né?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/124-0
+<v Ronaldo Robledo Mendes De Souza>Aí vai ter que ter uma pesquisa, entendeu?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/126-0
+<v Jessica Cristina de Oliveira>Mas aí vai ser uma informação mais micro,
+se eu te trazer que cada tela vai ser</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/126-1
+<v Jessica Cristina de Oliveira>pesquisada. Por exemplo,
+nesse contexto que eu conversei com a</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/126-2
+<v Jessica Cristina de Oliveira>minha cliente,
+eu sei o que eu vou precisar pesquisar,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/125-0
+<v Ronaldo Robledo Mendes De Souza>Aham, certo.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/126-3
+<v Jessica Cristina de Oliveira>que é o servidor.
+Mas aí se eu entrar numa tela que,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/126-4
+<v Jessica Cristina de Oliveira>vamos supor que eu.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/127-0
+<v Jessica Cristina de Oliveira>Posso pesquisar?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/129-0
+<v Jessica Cristina de Oliveira>Unidades,
+então eu vou colocar bem macro assim</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/129-1
+<v Jessica Cristina de Oliveira>unidades,
+eu não vou trazer o que são essas</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/129-2
+<v Jessica Cristina de Oliveira>unidades ou não, porque aí eu não vou,
+por exemplo,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/129-3
+<v Jessica Cristina de Oliveira>aqui a gente já sabe o que a gente vai
+trazer aqui, por exemplo, a atividade,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/129-4
+<v Jessica Cristina de Oliveira>eu já sei quais são as atividades.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/128-0
+<v Ronaldo Robledo Mendes De Souza>Mhm.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/131-0
+<v Jessica Cristina de Oliveira>Tipo de ocupação,
+isso é uma coisa mais informação micro,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/131-1
+<v Jessica Cristina de Oliveira>tipo assim, tipo de vaga ocupada,
+definitiva, precária, ocupada.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/130-0
+<v Ronaldo Robledo Mendes De Souza>Mm-hmm.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/131-2
+<v Jessica Cristina de Oliveira>Isso eu vou sentar com a minha cliente,
+eu vou falar, tá,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/131-3
+<v Jessica Cristina de Oliveira>mas e esse campo aqui de tipo de vaga
+ocupada, que é?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/131-4
+<v Jessica Cristina de Oliveira>Você pode me explicar quem que é esse
+campo que ele faz?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/133-0
+<v Ronaldo Robledo Mendes De Souza>Não, não, não, não precisa,
+não precisa chegar, chegar,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/132-0
+<v Jessica Cristina de Oliveira>O que ele tem que trazer?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/133-1
+<v Ronaldo Robledo Mendes De Souza>chegar a esse nível, tá?
+Então vamos fazer o seguinte,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/133-2
+<v Ronaldo Robledo Mendes De Souza>primeira funcionalidade, cadastro,
+como é que vai ser o nome dessa tela aí?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/133-3
+<v Ronaldo Robledo Mendes De Souza>Cadastro de?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/134-0
+<v Jessica Cristina de Oliveira>Não vai secar. Essa daqui é pesquisa,
+é por é registro funcional.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/134-1
+<v Jessica Cristina de Oliveira>A gente vai pesquisar o servidor que já
+está lá no sistema.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/136-0
+<v Ronaldo Robledo Mendes De Souza>Então precisa ter uma então precisa ter
+uma funcionalidade de pesquisa de</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/135-0
+<v Jessica Cristina de Oliveira>Here.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/136-1
+<v Ronaldo Robledo Mendes De Souza>registro funcional, não é isso?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/137-0
+<v Jessica Cristina de Oliveira>Isso.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/138-0
+<v Ronaldo Robledo Mendes De Souza>Isso,
+então é isso que a gente vai colocar lá,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/138-1
+<v Ronaldo Robledo Mendes De Souza>entendeu? Então, primeira funcionalidade,
+precisa criar uma pesquisa de registro</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/138-2
+<v Ronaldo Robledo Mendes De Souza>funcional.
+É uma funcionalidade que a gente precisa</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/138-3
+<v Ronaldo Robledo Mendes De Souza>colocar lá.
+Por que eu preciso definir isso? É.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/140-0
+<v Ronaldo Robledo Mendes De Souza>Para mim, colocar os tópicos lá dentro,
+o Jessica,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/140-1
+<v Ronaldo Robledo Mendes De Souza>até mesmo para o pessoal saber quais são
+os próximos passos, entendeu?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/140-2
+<v Ronaldo Robledo Mendes De Souza>Dentro da documentação, né?
+Então eu preciso colocar isso lá dentro</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/139-0
+<v Jessica Cristina de Oliveira>Yes.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/140-3
+<v Ronaldo Robledo Mendes De Souza>lá, né? E até mesmo definir, por exemplo.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/141-0
+<v Ronaldo Robledo Mendes De Souza>Em qual API que eu vou utilizar isso aí?
+Qual é a API que eu vou precisar utilizar</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/141-1
+<v Ronaldo Robledo Mendes De Souza>isso aí?
+Então eu vou precisar dessa informação.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/141-2
+<v Ronaldo Robledo Mendes De Souza>Essas informações eu preciso até para me
+colocar no documento de arquitetura.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/142-0
+<v Ronaldo Robledo Mendes De Souza>Eu não sei se eu não sei.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/143-0
+<v Jessica Cristina de Oliveira>Tá, eu queria ter acesso.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/144-0
+<v Ronaldo Robledo Mendes De Souza>Esse documento aqui que eu estava te
+mostrando.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/145-0
+<v Jessica Cristina de Oliveira>Eu que aí esse documento seu pra eu
+entender um pouco melhor o que que é que</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/145-1
+<v Jessica Cristina de Oliveira>cê.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/146-0
+<v Ronaldo Robledo Mendes De Souza>A deixa, deixa.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/150-0
+<v Jessica Cristina de Oliveira>Tá me pedindo porque, querendo ou não,
+eu estou entendendo que você está me</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/147-0
+<v Ronaldo Robledo Mendes De Souza>A.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/150-1
+<v Jessica Cristina de Oliveira>pedindo algumas coisas macro,
+mas eu também não sei até onde eu consigo</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/148-0
+<v Ronaldo Robledo Mendes De Souza>Aha.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/150-2
+<v Jessica Cristina de Oliveira>te entregar todo, porque tipo assim,
+nessa documentação do alvo, por exemplo,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/150-3
+<v Jessica Cristina de Oliveira>o que acontece?
+A gente sabia que a gente ia fazer.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/149-0
+<v Ronaldo Robledo Mendes De Souza>Said, uh-huh.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/151-0
+<v Jessica Cristina de Oliveira>A escolha do candidato,
+a convocação que a gente vai fazer,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/151-1
+<v Jessica Cristina de Oliveira>a convocação do candidato,
+a escolha do candidato,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/151-2
+<v Jessica Cristina de Oliveira>gerar relatório e fazer a importação.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/152-0
+<v Ronaldo Robledo Mendes De Souza>Go ahead.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/153-0
+<v Jessica Cristina de Oliveira>A gente sabia que a gente ia fazer isso,
+mas dentro de uma convocação a gente tem</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/153-1
+<v Jessica Cristina de Oliveira>a agenda,
+a gente tem várias outras coisas dentro</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/153-2
+<v Jessica Cristina de Oliveira>da convocação.
+Se você está me pedindo algum macro,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/153-3
+<v Jessica Cristina de Oliveira>eu vou te trazer, a gente vai ter.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/154-0
+<v Jessica Cristina de Oliveira>uma pesquisa de RF do servidor.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/155-0
+<v Ronaldo Robledo Mendes De Souza>Isso.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/156-0
+<v Jessica Cristina de Oliveira>Se tiver detalhes lá dentro</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/158-0
+<v Jessica Cristina de Oliveira>Aí a gente vai já diminuindo,
+a gente vai deixando de estar no macro,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/158-1
+<v Jessica Cristina de Oliveira>vai já diminuindo nas coisas.
+Então eu tenho que entender o que você</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/158-2
+<v Jessica Cristina de Oliveira>está me pedindo para eu tentar trazer
+para você o mais destrinchado que eu</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/158-3
+<v Jessica Cristina de Oliveira>consigo te entregar.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/157-0
+<v Ronaldo Robledo Mendes De Souza>Okay.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/160-0
+<v Ronaldo Robledo Mendes De Souza>É, deixa eu te mostrar aqui,
+tá vendo na tela aqui?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/159-0
+<v Jessica Cristina de Oliveira>Uh-.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/160-1
+<v Ronaldo Robledo Mendes De Souza>Convocação de candidato, então assim,
+é fluxo de convocação de candidatos, né?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/160-2
+<v Ronaldo Robledo Mendes De Souza>Então eu preciso uma descrição do que que
+essa funcionalidade vai fazer.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/160-3
+<v Ronaldo Robledo Mendes De Souza>O que que essa funcionalidade fluxo de de
+convocação de funcionalidade vai fazer?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/160-4
+<v Ronaldo Robledo Mendes De Souza>O que que o que eu preciso de uma
+descrição do que ela vai ser feita?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/161-0
+<v Ronaldo Robledo Mendes De Souza>Entendeu? Pode ser macro? Pode,
+mas eu preciso da descrição do fluxo.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/161-1
+<v Ronaldo Robledo Mendes De Souza>É realizada a importação dos dados,
+consulta, entendeu? do Sistemas em tela.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/161-2
+<v Ronaldo Robledo Mendes De Souza>No Sistemas alvo é realizada a consulta
+de candidatos,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/161-3
+<v Ronaldo Robledo Mendes De Souza>habilitada para os candidatos,
+podendo reordenar a posição.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/161-4
+<v Ronaldo Robledo Mendes De Souza>É então listar da parte de barras para UE.
+É realizada também uma extração das</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/161-5
+<v Ronaldo Robledo Mendes De Souza>laudas.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/162-0
+<v Ronaldo Robledo Mendes De Souza>Rodas Então eu preciso saber essa tela aí
+que você criou aí eu preciso saber o que</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/162-1
+<v Ronaldo Robledo Mendes De Souza>que essa tela faz qual que é a
+responsabilidade dela entendeu certo</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/162-2
+<v Ronaldo Robledo Mendes De Souza>porque é sabendo que essa tela faz é eu
+consigo é determinar componentes que vão</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/162-3
+<v Ronaldo Robledo Mendes De Souza>utilizar ela né</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/163-0
+<v Ronaldo Robledo Mendes De Souza>Então, por exemplo,
+depois eu posso me reunir com você,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/163-1
+<v Ronaldo Robledo Mendes De Souza>com o que você me passou,
+o que essa tela vai fazer?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/163-2
+<v Ronaldo Robledo Mendes De Souza>Ela vai essa tela,
+ela vai cadastrar fulano, essa tela,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/163-3
+<v Ronaldo Robledo Mendes De Souza>ela vai pesquisar tal situação, essa tela,
+ela tem que gravar tal dado e mandar tal</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/163-4
+<v Ronaldo Robledo Mendes De Souza>dado para o banco de dados, essa tela.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/164-0
+<v Ronaldo Robledo Mendes De Souza>Ela vai ter que pesquisar nessa tela,
+eu vou ter que pesquisar isso e isso,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/164-1
+<v Ronaldo Robledo Mendes De Souza>essa tela ela vai ter que gravar essas
+informações e essa tela,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/164-2
+<v Ronaldo Robledo Mendes De Souza>a regra de negócio,
+eu não posso deixar fazer isso,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/164-3
+<v Ronaldo Robledo Mendes De Souza>eu não posso deixar fazer aquilo.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/165-0
+<v Ronaldo Robledo Mendes De Souza>Entendeu? Então é,
+eu preciso dessas informações para mim</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/165-1
+<v Ronaldo Robledo Mendes De Souza>poder criar aqui, entendeu?
+A documentação EA documentação da</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/165-2
+<v Ronaldo Robledo Mendes De Souza>arquitetura. Então assim, pode ser macro,
+então eu preciso saber o que essa tela</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/165-3
+<v Ronaldo Robledo Mendes De Souza>faz macro mesmo, entendeu?
+Não precisa descer a.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/166-0
+<v Ronaldo Robledo Mendes De Souza>A tão é subir a tão alto nível,
+até mesmo para mim,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/166-1
+<v Ronaldo Robledo Mendes De Souza>para mim poder criar ela aqui dentro.
+Então assim me detalha macro,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/166-2
+<v Ronaldo Robledo Mendes De Souza>macro é macro.
+O que cada funcionalidade sua vai fazer?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/166-3
+<v Ronaldo Robledo Mendes De Souza>Por exemplo,
+nós tivemos aqui a situação de provocação</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/166-4
+<v Ronaldo Robledo Mendes De Souza>de dados.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/167-0
+<v Ronaldo Robledo Mendes De Souza>A importação de dados do Lopes aqui,
+o que a tela faz?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/167-1
+<v Ronaldo Robledo Mendes De Souza>Então ela vai ter que fazer isso e isso.
+Então eu vou ter que saber o que essa</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/167-2
+<v Ronaldo Robledo Mendes De Souza>tela faz para mim poder até gerar aqui
+igual aqui.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/168-0
+<v Ronaldo Robledo Mendes De Souza>Vou te mostrar aqui para mim poder saber
+aqui,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/168-1
+<v Ronaldo Robledo Mendes De Souza>o que o usuário isso aqui eu vou ter que
+sentar com você e vou fazer igual,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/168-2
+<v Ronaldo Robledo Mendes De Souza>por exemplo,
+quem vai ser o usuário que vai mexer</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/168-3
+<v Ronaldo Robledo Mendes De Souza>nessa tela,
+então eu vou ter que colocar lá o que eu</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/168-4
+<v Ronaldo Robledo Mendes De Souza>vou ter que desenhar,
+eu vou ter conseguir desenhar.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/169-0
+<v Ronaldo Robledo Mendes De Souza>Entendeu? Por exemplo,
+importação de dados lá na tela importação</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/169-1
+<v Ronaldo Robledo Mendes De Souza>de dados.
+Eu sei que alguém vai entrar e importar</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/169-2
+<v Ronaldo Robledo Mendes De Souza>os dados,
+vai gerar arquivos XYZ e vai sair tal.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/169-3
+<v Ronaldo Robledo Mendes De Souza>Então, por exemplo,
+se eu for pegar com você aqui,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/169-4
+<v Ronaldo Robledo Mendes De Souza>eu vou pegar aqui, deixa eu só pegar aqui,
+só para te mostrar a ideia.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/171-0
+<v Jessica Cristina de Oliveira>Aham, eu fiz isso com risco pro alvo.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/170-0
+<v Ronaldo Robledo Mendes De Souza>So.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/173-0
+<v Ronaldo Robledo Mendes De Souza>Pois é, então se eu pegar aqui ó,
+deixa eu pegar aqui</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/174-0
+<v Ronaldo Robledo Mendes De Souza>Então eu vou pegar aqui a um usuário,
+não é?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/174-1
+<v Ronaldo Robledo Mendes De Souza>Vou pegar um usuário e aí eu vou pegar
+aqui.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/175-0
+<v Ronaldo Robledo Mendes De Souza>Vou pegar aqui, ver se eu pego aqui, aqui,
+eu vou pegar aqui e vou pegar um diagrama</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/175-1
+<v Ronaldo Robledo Mendes De Souza>de contexto aqui, pegar aqui.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/176-0
+<v Ronaldo Robledo Mendes De Souza>Uh, moment.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/177-0
+<v Ronaldo Robledo Mendes De Souza>tentar fazer um aqui rapidinho né?
+Vou colocar o nome</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/178-0
+<v Ronaldo Robledo Mendes De Souza>Esse nome aí, a tela, a tela,
+o nome da tela que você falou é tela</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/178-1
+<v Ronaldo Robledo Mendes De Souza>XYXYX, não é?
+Vou aplicar aqui e dentro dessa tela.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/179-0
+<v Ronaldo Robledo Mendes De Souza>Não é? Ela vai ser o quê?
+Eu vou ter que criar um componente que</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/179-1
+<v Ronaldo Robledo Mendes De Souza>vai ser. Vai ter que fazer o quê?
+Eu vou ter que.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/181-0
+<v Ronaldo Robledo Mendes De Souza>Eu vou ter que API, ela vai fazer o quê?
+Eu vou ter que cadastrar alguma coisa</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/181-1
+<v Ronaldo Robledo Mendes De Souza>nessa API,
+então eu vou colocar aqui cadastro de tal</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/181-2
+<v Ronaldo Robledo Mendes De Souza>situação, né?
+Então eu vou ter que cadastrar isso aqui,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/181-3
+<v Ronaldo Robledo Mendes De Souza>eu vou ter que gravar na base de dados,
+né?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/181-4
+<v Ronaldo Robledo Mendes De Souza>Então eu vou ter que criar uma base de
+dados aqui.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/180-0
+<v Jessica Cristina de Oliveira>Mhm.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/182-0
+<v Ronaldo Robledo Mendes De Souza>Para mim gravar essas informações, então,
+e aí eu vou criando o que o fluxo dessa</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/182-1
+<v Ronaldo Robledo Mendes De Souza>aplicação vai fazer? Então, assim,
+cada funcionalidade dessa aí, Jessica,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/182-2
+<v Ronaldo Robledo Mendes De Souza>eu vou ter que sentar com você.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/184-0
+<v Ronaldo Robledo Mendes De Souza>E desenhar o que cada funcionalidade vai
+fazer, passo a passo, entendeu? Então,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/183-0
+<v Jessica Cristina de Oliveira>Mhm.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/184-1
+<v Ronaldo Robledo Mendes De Souza>por exemplo, é aqui nessa funcionalidade,
+vai ser qual API, por exemplo,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/184-2
+<v Ronaldo Robledo Mendes De Souza>eu vou colocar aqui, vai ser na API, é.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/185-0
+<v Ronaldo Robledo Mendes De Souza>Vou colocar aqui, vai ser na MS,
+é ver qual da.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/186-0
+<v Ronaldo Robledo Mendes De Souza>Importação de dados,
+deixa eu ver quais são as APIs que nós</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/186-1
+<v Ronaldo Robledo Mendes De Souza>temos aqui,
+que vai ser responsável por isso.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/186-2
+<v Ronaldo Robledo Mendes De Souza>Aí eu vou ter que chamar o Vitor para a
+gente discutir em qual API que vai ser</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/186-3
+<v Ronaldo Robledo Mendes De Souza>responsável por fazer essas informações
+hoje, né? Então nós temos MS escolha,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/186-4
+<v Ronaldo Robledo Mendes De Souza>processo de recurso, agenda, convocação,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/188-0
+<v Ronaldo Robledo Mendes De Souza>Prontente,
+o que que está dentro do Lopes hoje?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/188-1
+<v Ronaldo Robledo Mendes De Souza>Então vamos criar uma,
+nós vamos precisar criar uma API logo,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/188-2
+<v Ronaldo Robledo Mendes De Souza>certo?
+O que que vai ser a responsabilidade de</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/188-3
+<v Ronaldo Robledo Mendes De Souza>cada API dessa aqui é um processo um
+pouco mais chato, mas precisa ser feito.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/187-0
+<v Jessica Cristina de Oliveira>H.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/191-0
+<v Jessica Cristina de Oliveira>Essa arquitetura, então,
+vai demorar bem um tempo para ser feita.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/188-4
+<v Ronaldo Robledo Mendes De Souza>Então é.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/189-0
+<v Ronaldo Robledo Mendes De Souza>É poor.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/192-0
+<v Ronaldo Robledo Mendes De Souza>É por isso que eu precisava.
+É por isso que eu preciso a primeiro</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/192-1
+<v Ronaldo Robledo Mendes De Souza>momento agora a gente definir o que aqui
+dentro dessa documentação.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/192-2
+<v Ronaldo Robledo Mendes De Souza>Essa documentação que você passou ótimo.
+Eu já consegui criar uma boa parte da</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/192-3
+<v Ronaldo Robledo Mendes De Souza>documentação aqui.
+Mas o que eu preciso criar dentro dela</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/192-4
+<v Ronaldo Robledo Mendes De Souza>agora?
+A gente precisa partir para as</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/192-5
+<v Ronaldo Robledo Mendes De Souza>funcionalidades.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/193-0
+<v Ronaldo Robledo Mendes De Souza>né Quais são as funcionalidades que nós
+vamos fazer né a primeira tela essa tela</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/193-1
+<v Ronaldo Robledo Mendes De Souza>aí então beleza eu vou eu vou destrinchar
+essa tela aí né para desenhar ela que o</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/193-2
+<v Ronaldo Robledo Mendes De Souza>diagrama de contexto dela vou destrinchar
+essa tela segunda funcionalidade é igual</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/193-3
+<v Ronaldo Robledo Mendes De Souza>nós temos aqui como eu já te dei o
+exemplo segunda funcionalidade</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/195-0
+<v Ronaldo Robledo Mendes De Souza>Cadê aqui voltando ao exemplo que eu
+tinha aqui a é agendamento é convocação</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/195-1
+<v Ronaldo Robledo Mendes De Souza>de candidatos né O que convocação de
+candidato vai ter que fazer vai ter que</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/195-2
+<v Ronaldo Robledo Mendes De Souza>fazer isso isso igual esse fluxo aqui ó ó
+essa aqui é a descrição do fluxo tá vendo</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/194-0
+<v Jessica Cristina de Oliveira>Mhm.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/195-3
+<v Ronaldo Robledo Mendes De Souza>ó é realizada a importação dos dados
+concurso e tal em tela do sistema ao</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/199-0
+<v Ronaldo Robledo Mendes De Souza>Então ela está da parte de vaga, tal, tal,
+tal. E aí,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/199-1
+<v Ronaldo Robledo Mendes De Souza>depois dessa descrição que essa tela faz,
+você pode ver que é macro,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/199-2
+<v Ronaldo Robledo Mendes De Souza>não tem nada de negócio.
+E aí eu vou sentar, entendeu?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/199-3
+<v Ronaldo Robledo Mendes De Souza>Com você e com o Vitor,
+e aí eu vou te desenhar o diagrama de</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/196-0
+<v Jessica Cristina de Oliveira>Vulto.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/197-0
+<v Jessica Cristina de Oliveira>So.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/199-4
+<v Ronaldo Robledo Mendes De Souza>contexto dela.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/201-0
+<v Ronaldo Robledo Mendes De Souza>Entendeu?
+Desenhado o diagrama de contexto,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/198-0
+<v Jessica Cristina de Oliveira>Mhm.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/201-1
+<v Ronaldo Robledo Mendes De Souza>eu consigo desenhar os componentes dela,
+entendeu?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/201-2
+<v Ronaldo Robledo Mendes De Souza>Eu o Vitor consegue desenhar os
+componentes, mas então eu preciso disso.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/200-0
+<v Jessica Cristina de Oliveira>O.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/201-3
+<v Ronaldo Robledo Mendes De Souza>Esse segundo momento agora,
+quais são as funcionalidades que você já</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/201-4
+<v Ronaldo Robledo Mendes De Souza>tem em mãos?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/202-0
+<v Ronaldo Robledo Mendes De Souza>né quais são as funcionalidades que você
+já tem mãos e aí descrever o que que cada</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/202-1
+<v Ronaldo Robledo Mendes De Souza>funcionalidade dessa fase o máximo que
+você você puder descrever aí o Jessica o</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/202-2
+<v Ronaldo Robledo Mendes De Souza>máximo que você puder descrever de cada
+funcionalidade o que que essa</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/202-3
+<v Ronaldo Robledo Mendes De Souza>funcionalidade vai fazer</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/203-0
+<v Ronaldo Robledo Mendes De Souza>Entendeu?
+Fica fácil depois para a gente desenhar o</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/203-1
+<v Ronaldo Robledo Mendes De Souza>os organogramas.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/205-0
+<v Ronaldo Robledo Mendes De Souza>Eu assim, eu consegui me fazer entender.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/204-0
+<v Jessica Cristina de Oliveira>Mm-hmm.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/206-0
+<v Jessica Cristina de Oliveira>Deu pra entender? Eu vou fazer</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/208-0
+<v Ronaldo Robledo Mendes De Souza>Eu posso, eu posso.
+Eu não sei quem faz essa liberação aqui</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/208-1
+<v Ronaldo Robledo Mendes De Souza>dessa tela aqui,
+mas eu acho que eu consigo importar isso</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/208-2
+<v Ronaldo Robledo Mendes De Souza>aqui para PDF para você. Se você quiser,
+eu consigo gerar isso aqui em PDF para</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/208-3
+<v Ronaldo Robledo Mendes De Souza>você ter como um exemplo. Então assim,
+isso, então assim, é muito simples.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/207-0
+<v Jessica Cristina de Oliveira>Eu quero que você me.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/209-0
+<v Ronaldo Robledo Mendes De Souza>você vai colocar listar as
+funcionalidades né YZX tal a b c d f g</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/209-1
+<v Ronaldo Robledo Mendes De Souza>funcionalidade primeiro funcionalidade aí
+você vai descrever ela usuário vai ter</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/209-2
+<v Ronaldo Robledo Mendes De Souza>que cadastrar né XYZ do tal é é</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/212-0
+<v Jessica Cristina de Oliveira>Tá, me passa então essa,
+então me passa essa documentação é que eu</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/211-0
+<v Ronaldo Robledo Mendes De Souza>Mm-hmm.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/212-1
+<v Jessica Cristina de Oliveira>vou tentar trazer essas informações aí
+mais.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/213-0
+<v Jessica Cristina de Oliveira>eu consegui aí</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/214-0
+<v Ronaldo Robledo Mendes De Souza>Isso porque você me trazendo isso.
+E aí eu vou sentar com você, talvez é,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/214-1
+<v Ronaldo Robledo Mendes De Souza>vai ter.
+Você vai ter que participar também.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/214-2
+<v Ronaldo Robledo Mendes De Souza>Eu vou sentar com você e vou sentar com o
+Vitor. E aí eu vou fazer o diagrama.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/214-3
+<v Ronaldo Robledo Mendes De Souza>Talvez alguns eu já consiga fazer.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/215-0
+<v Ronaldo Robledo Mendes De Souza>Sem precisar da participação de vocês,
+entendeu? Só lendo a documentação,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/215-1
+<v Ronaldo Robledo Mendes De Souza>mas com outros eu vou,
+com certeza eu vou precisar.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/215-2
+<v Ronaldo Robledo Mendes De Souza>E aí eu te passo. Então assim, é,
+eu vou te passar os dados. Então assim,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/215-3
+<v Ronaldo Robledo Mendes De Souza>a parte mais que você tem que se
+preocupar é a descrição do fluxo, tá?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/216-0
+<v Ronaldo Robledo Mendes De Souza>Aqui a descrição do fluxo,
+como que vai funcionar o fluxo de cada</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/216-1
+<v Ronaldo Robledo Mendes De Souza>funcionalidade?
+Eu preciso saber para mim poder desenhar</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/216-2
+<v Ronaldo Robledo Mendes De Souza>o diagrama.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/217-0
+<v Jessica Cristina de Oliveira>A.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/218-0
+<v Ronaldo Robledo Mendes De Souza>Tudo bem?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/219-0
+<v Jessica Cristina de Oliveira>Tá bom?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/221-0
+<v Ronaldo Robledo Mendes De Souza>Eu acho que eu consigo gerar isso aqui em
+PDF e aí eu te mando, eu vou gerar aqui,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/220-0
+<v Jessica Cristina de Oliveira>Tá.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/221-1
+<v Ronaldo Robledo Mendes De Souza>aí eu te mando,
+porque eu não sei quem faz a liberação</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/221-2
+<v Ronaldo Robledo Mendes De Souza>desses acessos aqui.
+Eu vou até perguntar pra oi?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/222-0
+<v Jessica Cristina de Oliveira>É, eu pedi a Carol, eu ou isso.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/224-0
+<v Ronaldo Robledo Mendes De Souza>Eu vou perguntar para cá,
+eu vou perguntar se a Carol ou isso</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/223-0
+<v Jessica Cristina de Oliveira>So.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/224-1
+<v Ronaldo Robledo Mendes De Souza>consegue, e aí?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/225-0
+<v Jessica Cristina de Oliveira>Porque eu acho que o risco fez é o risco
+que.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/226-0
+<v Jessica Cristina de Oliveira>Fez essa documentação aí?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/227-0
+<v Ronaldo Robledo Mendes De Souza>Well, his face.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/228-0
+<v Jessica Cristina de Oliveira>Mm.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/229-0
+<v Ronaldo Robledo Mendes De Souza>Beleza, beleza, eu vou,
+eu vou ver se o Risso consegue liberar,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/229-1
+<v Ronaldo Robledo Mendes De Souza>então eu te passo.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/230-0
+<v Jessica Cristina de Oliveira>Tá bom, aí cê me manda, por favor,
+porque aí eu vou tentar fazer.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/231-0
+<v Jessica Cristina de Oliveira>O mais rápido possível, tá?
+Mas aí final de.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/232-0
+<v Ronaldo Robledo Mendes De Souza>Essa documentação, o Jessica,
+foi até importante.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/232-1
+<v Ronaldo Robledo Mendes De Souza>Eu não sabia que tinha sido isso ser
+feito. Essa documentação,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/232-2
+<v Ronaldo Robledo Mendes De Souza>o que você passou para ele de informação,
+você lembra?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/234-0
+<v Jessica Cristina de Oliveira>A gente conversou,
+ele que foi criando isso daí,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/233-0
+<v Ronaldo Robledo Mendes De Souza>Tá.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/234-1
+<v Jessica Cristina de Oliveira>a gente foi alinhando,
+a gente tentou com as PO's e foi</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/234-2
+<v Jessica Cristina de Oliveira>conversando.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/235-0
+<v Ronaldo Robledo Mendes De Souza>BA</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/236-0
+<v Jessica Cristina de Oliveira>Porque é igual, é igual,
+é igual eu te falei.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/238-0
+<v Jessica Cristina de Oliveira>Por mais que a gente vai chegar no micro
+em algum momento,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/238-1
+<v Jessica Cristina de Oliveira>mais no início do projeto eu sei o macro,
+então eu pego aquele macro,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/237-0
+<v Ronaldo Robledo Mendes De Souza>Uh-huh.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/238-2
+<v Jessica Cristina de Oliveira>a gente vai fazer importação de arquivos.
+Beleza, eu sei que vai,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/238-3
+<v Jessica Cristina de Oliveira>a gente vai ter que importar arquivos do
+eol.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/238-4
+<v Jessica Cristina de Oliveira>Quando a gente for desenvolver essa tela
+do.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/242-0
+<v Jessica Cristina de Oliveira>É importação do arquivos do eol.
+Eu vou chegar pra minha cliente e falar,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/242-1
+<v Jessica Cristina de Oliveira>tá,
+vamos conversar sobre essa tela de</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/242-2
+<v Jessica Cristina de Oliveira>importação do arquivo que a gente vai ter.
+Então claro que a gente sabe que a gente</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/239-0
+<v Ronaldo Robledo Mendes De Souza>Uh-huh.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/242-3
+<v Jessica Cristina de Oliveira>vai ter que importar um arquivo ali
+dentro. Jessica,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/240-0
+<v Ronaldo Robledo Mendes De Souza>Sim.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/242-4
+<v Jessica Cristina de Oliveira>mas eu queria que eu definisse o nome
+desse arquivo aqui.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/243-0
+<v Jessica Cristina de Oliveira>Eu queria que eu tivesse um histórico de
+arquivos.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/241-0
+<v Ronaldo Robledo Mendes De Souza>Mhm.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/243-1
+<v Jessica Cristina de Oliveira>É que toda vez que eu subir um arquivo,
+vai ter o histórico do passado,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/243-2
+<v Jessica Cristina de Oliveira>vai ter se gerou erros, se nos gerou,
+vai ter quem foi a pessoa.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/243-3
+<v Jessica Cristina de Oliveira>Então aí a gente dentro desse importar
+arquivos.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/245-0
+<v Jessica Cristina de Oliveira>A gente vai quebrando em partes as coisas.
+Aí eu vou dar entrada aqui.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/245-1
+<v Jessica Cristina de Oliveira>Eu tenho uma parte desse fund med dois,
+eu tenho um módulo dele,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/245-2
+<v Jessica Cristina de Oliveira>eu vou entrar e vou tentar fazer o maior
+levantamento possível desse módulo,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/244-0
+<v Ronaldo Robledo Mendes De Souza>Mm.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/245-3
+<v Jessica Cristina de Oliveira>desse único módulo. Por que acontece?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/248-0
+<v Jessica Cristina de Oliveira>A gente sabendo desse módulo,
+a gente vai meio que replicar para os</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/248-1
+<v Jessica Cristina de Oliveira>outros, não vai mudar tanto.
+Esse é o módulo maior.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/248-2
+<v Jessica Cristina de Oliveira>Então a gente tendo mais informações dele,
+eu consigo te trazer mais informações,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/248-3
+<v Jessica Cristina de Oliveira>mas eu não consigo te trazer dos outros
+todos, entendeu?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/248-4
+<v Jessica Cristina de Oliveira>Aí a gente vai conversando e vai.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/246-0
+<v Ronaldo Robledo Mendes De Souza>It.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/249-0
+<v Jessica Cristina de Oliveira>Alinhando tudo e eu posso validar também
+tecapol,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/247-0
+<v Ronaldo Robledo Mendes De Souza>Mhm.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/249-1
+<v Jessica Cristina de Oliveira>a gente pode sentar com APOL e ver se faz
+sentido ou não.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/250-0
+<v Ronaldo Robledo Mendes De Souza>Não tranquilo o Jessica assim, a primeira,
+a primeiro momento aqui é igual eu te</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/250-1
+<v Ronaldo Robledo Mendes De Souza>falei.
+O objetivo é sabermos quais são as</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/250-2
+<v Ronaldo Robledo Mendes De Souza>funcionalidades que nós já temos
+pendentes e mapeadas. É, eu tenho SSS,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/250-3
+<v Ronaldo Robledo Mendes De Souza>então beleza,
+a gente vai colocar o que a gente tem.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/251-0
+<v Ronaldo Robledo Mendes De Souza>Não adianta tentar ir buscar o que já não
+tem,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/251-1
+<v Ronaldo Robledo Mendes De Souza>então a gente vai colocar o que já tem.
+Só que eu preciso uma descrição do fluxo</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/251-2
+<v Ronaldo Robledo Mendes De Souza>de cada de cada funcionalidade dessa para
+mim justamente criar isso aqui, entendeu?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/251-3
+<v Ronaldo Robledo Mendes De Souza>Criar o diagrama de contexto aqui.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/252-0
+<v Ronaldo Robledo Mendes De Souza>É caso você queira, é,
+eu estou te passando isso.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/252-1
+<v Ronaldo Robledo Mendes De Souza>É caso você queira buscar essa informação.
+Agora,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/252-2
+<v Ronaldo Robledo Mendes De Souza>se você quiser marcar uma reunião para a
+gente com a PO,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/252-3
+<v Ronaldo Robledo Mendes De Souza>para a gente é obter essas informações
+juntas.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/253-0
+<v Ronaldo Robledo Mendes De Souza>Pode ser também.
+Só que aí eu acho que a gente vai ter</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/253-1
+<v Ronaldo Robledo Mendes De Souza>muitas reuniões para fazer.
+Não é para destrinchar e descrever cada</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/253-2
+<v Ronaldo Robledo Mendes De Souza>fluxo, não.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/255-0
+<v Jessica Cristina de Oliveira>Você está falando da gente fazer algo,
+pegar todo o fluxo que eu defini para</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/255-1
+<v Jessica Cristina de Oliveira>você, eu sentar com a P.
+O e destrinchar com ela?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/256-0
+<v Ronaldo Robledo Mendes De Souza>Não, eu falo assim, é, por exemplo,
+de todas essas funcionalidades que você é,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/256-1
+<v Ronaldo Robledo Mendes De Souza>apontou aí para mim no documento.
+Eu falei assim, caso você queira,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/256-2
+<v Ronaldo Robledo Mendes De Souza>é que a gente já reúna junto com a PO
+para ela passar o fluxo para a gente.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/259-0
+<v Ronaldo Robledo Mendes De Souza>E a gente foi escrevendo e já fazendo,
+é uma opção,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/259-1
+<v Ronaldo Robledo Mendes De Souza>só que eu acho que vai demorar mais.
+É fazer isso para cada,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/257-0
+<v Jessica Cristina de Oliveira>Muito mais.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/259-2
+<v Ronaldo Robledo Mendes De Souza>para cada funcionalidade,
+em vez de simplesmente você tentar</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/258-0
+<v Jessica Cristina de Oliveira>Okay.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/259-3
+<v Ronaldo Robledo Mendes De Souza>digitar cada fluxo desse aí, não?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/260-0
+<v Ronaldo Robledo Mendes De Souza>O que você acha melhor?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/261-0
+<v Jessica Cristina de Oliveira>Eu vou tentar fazer pelo módulo aqui.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/262-0
+<v Ronaldo Robledo Mendes De Souza>Uh-huh.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/264-0
+<v Jessica Cristina de Oliveira>É, do fluxo.
+Se eu vejo que está dando muito trabalho,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/264-1
+<v Jessica Cristina de Oliveira>alguma coisa assim,
+aí eu posso tentar fazer outra questão.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/264-2
+<v Jessica Cristina de Oliveira>O negócio é que a gente já está com esse
+pedido de arquitetura,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/264-3
+<v Jessica Cristina de Oliveira>tem uns já um mês e alguma coisa e a
+gente com isso que eu estou percebendo,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/264-4
+<v Jessica Cristina de Oliveira>a gente vai levar mais um tempo, né?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/267-0
+<v Jessica Cristina de Oliveira>É para fazer, fazer esse levantamento,
+porque quando você me mandou o documento,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/267-1
+<v Jessica Cristina de Oliveira>eu respondi tudo que estava me
+perguntando. Não estava esse Jessica,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/265-0
+<v Ronaldo Robledo Mendes De Souza>Sing.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/267-2
+<v Jessica Cristina de Oliveira>me descreva ou não me foi falado Jessica,
+a gente precisa desse, desse, desse,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/267-3
+<v Jessica Cristina de Oliveira>desse ponto. Então agora você.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/266-0
+<v Ronaldo Robledo Mendes De Souza>Uh-huh.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/268-0
+<v Jessica Cristina de Oliveira>Trazendo isso,
+isso vai me apertar muito e muitas</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/268-1
+<v Jessica Cristina de Oliveira>questões, tanto do sistema,
+porque a gente está desenvolvendo</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/268-2
+<v Jessica Cristina de Oliveira>protótipo e acaba que nosso back end a
+gente precisa da arquitetura feita e eu</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/268-3
+<v Jessica Cristina de Oliveira>vou ter que parar para fazer isso e eu
+também estou com outros projetos,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/268-4
+<v Jessica Cristina de Oliveira>então isso vai levar um tempo,
+então eu vou tentar.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/270-0
+<v Jessica Cristina de Oliveira>Eu fazer por mim o mais rápido possível
+que eu mais consigo,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/270-1
+<v Jessica Cristina de Oliveira>porque aí se a gente for para depender de
+cliente, a gente depende da agenda deles,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/270-2
+<v Jessica Cristina de Oliveira>do momento deles.
+E é uma coisa bem puxado, né?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/270-3
+<v Jessica Cristina de Oliveira>Porque eu lembro quando a gente fez isso
+com isso, a gente tinha reuniões.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/269-0
+<v Ronaldo Robledo Mendes De Souza>Yes.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/274-0
+<v Jessica Cristina de Oliveira>Praticamente duas vezes ao dia e uma dela
+a gente envolvia a cliente e o outro era</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/274-1
+<v Jessica Cristina de Oliveira>entre a gente de equipe.
+E isso levou quase um mês fazendo e não</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/271-0
+<v Ronaldo Robledo Mendes De Souza>Mm-hmm.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/272-0
+<v Ronaldo Robledo Mendes De Souza>É justamente eu estou.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/274-2
+<v Jessica Cristina de Oliveira>temos tanto prazo assim.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/276-0
+<v Ronaldo Robledo Mendes De Souza>É porque na parte de arquitetura,
+infelizmente a gente não tem como é fugir</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/276-1
+<v Ronaldo Robledo Mendes De Souza>disso. O que você pode fazer também?
+O Jessica, eu vou te dar é uma dica,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/276-2
+<v Ronaldo Robledo Mendes De Souza>caso você queira, tá? É se você,
+eu uso muita IA nesse caso, tá?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/277-0
+<v Ronaldo Robledo Mendes De Souza>Se você quiser,
+é fazer uma reunião comigo a cada</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/275-0
+<v Jessica Cristina de Oliveira>Mhm.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/277-1
+<v Ronaldo Robledo Mendes De Souza>funcionalidade dessa e explicar e
+explicar o que cada funcionalidade faz</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/277-2
+<v Ronaldo Robledo Mendes De Souza>verbalmente, eu boto na transcrição,
+não é? E aí eu pego a sua transcrição.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/278-0
+<v Ronaldo Robledo Mendes De Souza>Com a sua transcrição do que você vai me
+explicar cada funcionalidade,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/278-1
+<v Ronaldo Robledo Mendes De Souza>eu consigo gerar o que eu quero, entendeu?
+Talvez seja até melhor e mais rápido.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/278-2
+<v Ronaldo Robledo Mendes De Souza>Então a gente pode fazer uma reunião e aí
+você vai me explicar,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/278-3
+<v Ronaldo Robledo Mendes De Souza>descrever o que cada funcionalidade faz.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/279-0
+<v Ronaldo Robledo Mendes De Souza>Né? E aí, com essa descrição eu consigo,
+eu consigo agilizar o processo.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/279-1
+<v Ronaldo Robledo Mendes De Souza>O que você prefere?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/282-0
+<v Jessica Cristina de Oliveira>Deixa eu tentar, deixa eu sentar aqui,
+tipo,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/282-1
+<v Jessica Cristina de Oliveira>o negócio que essa semana é uma semana
+corrida pra mim é uma semana também que</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/282-2
+<v Jessica Cristina de Oliveira>vai ser, a gente vai ter só 4 dias, né?
+Mas deixa eu sentar primeiro,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/280-0
+<v Ronaldo Robledo Mendes De Souza>Uh-huh.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/282-3
+<v Jessica Cristina de Oliveira>levantar esse banco aqui do sistema que
+eu tenho.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/281-0
+<v Ronaldo Robledo Mendes De Souza>Uh-huh.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/284-0
+<v Jessica Cristina de Oliveira>Trazer o máximo de coisas.
+Aí se você falar, Jessica,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/284-1
+<v Jessica Cristina de Oliveira>a gente precisa sentar e conversar e
+alinhando.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/284-2
+<v Jessica Cristina de Oliveira>Aí a gente vai destrinchando mais.
+Mas deixa eu tentar, me manda,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/283-0
+<v Ronaldo Robledo Mendes De Souza>Tudo bem.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/284-3
+<v Jessica Cristina de Oliveira>me manda esses exemplos,
+porque eu confesso que é um pouco mais</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/284-4
+<v Jessica Cristina de Oliveira>puxado para mim,
+porque eu passar muito tempo em reunião.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/286-0
+<v Jessica Cristina de Oliveira>Porque, querendo ou não,
+eu tenho reuniões com o PO.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/286-1
+<v Jessica Cristina de Oliveira>Eu tenho nessa semana que eu estou cheio
+de reuniões de treinamento,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/286-2
+<v Jessica Cristina de Oliveira>é com os PO's ali,
+e eu tenho alinhamento com o PO,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/286-3
+<v Jessica Cristina de Oliveira>eu tenho organização do board,
+porque eu tenho springs, então.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/285-0
+<v Ronaldo Robledo Mendes De Souza>Okay.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/287-0
+<v Ronaldo Robledo Mendes De Souza>É, eu estou te dando essa segunda.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/288-0
+<v Jessica Cristina de Oliveira>É,
+eu prefiro sentar de um tempo em tempo</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/288-1
+<v Jessica Cristina de Oliveira>outro, eu pegar e sentar e fazendo,
+porque aí com você eu vou precisar sentar,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/288-2
+<v Jessica Cristina de Oliveira>passar algumas horas conversando.
+Eu comigo,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/288-3
+<v Jessica Cristina de Oliveira>eu tenho um espacinho de 10 minutos,
+eu consigo sentar e fazer isso.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/288-4
+<v Jessica Cristina de Oliveira>Eu tenho um espacinho de 30 minutos,
+eu consigo sentar e fazer isso.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/289-0
+<v Jessica Cristina de Oliveira>Então eu acho que deixa eu primeiro
+tentar fazer aqui por mim.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/289-1
+<v Jessica Cristina de Oliveira>Aí a gente vê que a gente faz se falar,
+Jessica, não tá?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/289-2
+<v Jessica Cristina de Oliveira>Ou se eu ver que não tá funcionando de
+mim mesma, aí eu te chamo.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/290-0
+<v Ronaldo Robledo Mendes De Souza>É a minha,
+a minha sugestão da referente a gente</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/290-1
+<v Ronaldo Robledo Mendes De Souza>fazer a reunião de gravação,
+Jessica é justamente isso, entendeu?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/290-2
+<v Ronaldo Robledo Mendes De Souza>Por exemplo,
+porque ou você mesmo pode fazer aí,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/290-3
+<v Ronaldo Robledo Mendes De Souza>entendeu?
+Você abre uma tela aí é no próprio Teams.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/292-0
+<v Ronaldo Robledo Mendes De Souza>E aí você grava o que o que cada é tem.
+Eu tenho outras pios que fazem isso, tá?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/292-1
+<v Ronaldo Robledo Mendes De Souza>Ela abre a tela no teams, aí ela grava,
+entendeu?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/291-0
+<v Jessica Cristina de Oliveira>Oh.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/292-2
+<v Ronaldo Robledo Mendes De Souza>Explicando detalhadamente o que cada tela
+vai fazer, certo?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/292-3
+<v Ronaldo Robledo Mendes De Souza>E aí ela me manda o vídeo e a transcrição,
+e com esse vídeo e a transcrição de.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/296-0
+<v Ronaldo Robledo Mendes De Souza>Cada funcionalidade eu consigo gerar a
+documentação,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/296-1
+<v Ronaldo Robledo Mendes De Souza>em vez de ela ficar só escrevendo,
+que dá muito trabalho,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/293-0
+<v Jessica Cristina de Oliveira>Uhum, tá?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/296-2
+<v Ronaldo Robledo Mendes De Souza>então ela explica no vídeo o que cada
+tela e cada funcionalidade faz,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/294-0
+<v Jessica Cristina de Oliveira>Mhm.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/296-3
+<v Ronaldo Robledo Mendes De Souza>e aí eu pego essa transcrição,
+bota aí a para gerar o que eu preciso,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/296-4
+<v Ronaldo Robledo Mendes De Souza>entendeu?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/295-0
+<v Jessica Cristina de Oliveira>Tá mhm.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/297-0
+<v Ronaldo Robledo Mendes De Souza>então é uma é uma ideia que eu tô te
+dando porque eu já faço isso com alguns</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/297-1
+<v Ronaldo Robledo Mendes De Souza>pios né então elas fazem isso para mim
+elas elas Pereira funcionalidade YX e aí</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/297-2
+<v Ronaldo Robledo Mendes De Souza>elas gravam né e explica direitinho o que
+que cada tela vai fazer e qualquer e que</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/297-3
+<v Ronaldo Robledo Mendes De Souza>cada funcionalidade vai fazer</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/299-0
+<v Ronaldo Robledo Mendes De Souza>É regra de negócio,
+é se tem que gravar no banco de dados ou</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/299-1
+<v Ronaldo Robledo Mendes De Souza>não, explica direitinho.
+E aí aquela transcrição,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/298-0
+<v Jessica Cristina de Oliveira>Okay.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/299-2
+<v Ronaldo Robledo Mendes De Souza>eu Gero a documentação que eu preciso.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/300-0
+<v Jessica Cristina de Oliveira>Tá bom, aham, eu vou,
+eu vou ver aqui qual que vai ser.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/301-0
+<v Ronaldo Robledo Mendes De Souza>Está bom, é uma ideia,
+é uma ideia que eu estou te dando,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/301-1
+<v Ronaldo Robledo Mendes De Souza>porque eu acho que até agiliza seu seu
+trabalho.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/303-0
+<v Jessica Cristina de Oliveira>Sim,
+eu vou ver qual é a melhor forma que eu</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/303-1
+<v Jessica Cristina de Oliveira>consigo trabalhar aqui e.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/302-0
+<v Ronaldo Robledo Mendes De Souza>Mhm.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/305-0
+<v Jessica Cristina de Oliveira>Aí se eu falar não está fluindo,
+não está seguindo, aí eu posso,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/305-1
+<v Jessica Cristina de Oliveira>aí eu venho e falo com você.
+Mas aí se eu ver que,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/304-0
+<v Ronaldo Robledo Mendes De Souza>Tudo bem, sem problema.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/305-2
+<v Jessica Cristina de Oliveira>porque aí talvez eu conseguindo sentar em
+algum momento e fazer esse levantamento</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/305-3
+<v Jessica Cristina de Oliveira>aqui,
+aí eu consigo talvez transcrever ou jogar</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/305-4
+<v Jessica Cristina de Oliveira>também,
+ver alguma coisa aqui e trazer para você</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/305-5
+<v Jessica Cristina de Oliveira>um pouco mais detalhado.
+Mas eu preciso que você me mande o seu</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/305-6
+<v Jessica Cristina de Oliveira>exemplo.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/309-0
+<v Jessica Cristina de Oliveira>exemplo também para eu conseguir entender
+o que você está me pedindo aqui para não</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/309-1
+<v Jessica Cristina de Oliveira>trazer porque tipo nessa documentação que
+você me mandou você me perguntou sobre</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/309-2
+<v Jessica Cristina de Oliveira>funcionalidades mas ali você fala
+funcionalidades Tá eu vou te trazer a</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/306-0
+<v Ronaldo Robledo Mendes De Souza>Isso.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/307-0
+<v Ronaldo Robledo Mendes De Souza>Okay.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/309-3
+<v Jessica Cristina de Oliveira>funcionalidade eu te trouxe mas não é o
+que você precisa Então talvez ali na</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/308-0
+<v Ronaldo Robledo Mendes De Souza>É porque.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/309-4
+<v Jessica Cristina de Oliveira>documentação precisaria falar não traga
+sua funcionalidade e o fluxo</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/310-0
+<v Jessica Cristina de Oliveira>Essa funcionalidade é.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/314-0
+<v Ronaldo Robledo Mendes De Souza>Isso é porque é porque assim é, eu assim,
+não é o caso, tá?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/314-1
+<v Ronaldo Robledo Mendes De Souza>Já eu é porque tem os outros.
+Eu já tô acostumado com outras pior aqui.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/311-0
+<v Jessica Cristina de Oliveira>Uh-huh.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/314-2
+<v Ronaldo Robledo Mendes De Souza>Quando eu pego outro, ela já sabe,
+já manda o fluxo, né?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/314-3
+<v Ronaldo Robledo Mendes De Souza>E aí eu foi erro meu, tá?
+Eu esqueci de te passar isso porque era</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/312-0
+<v Jessica Cristina de Oliveira>Na.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/313-0
+<v Jessica Cristina de Oliveira>No.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/314-4
+<v Ronaldo Robledo Mendes De Souza>pra.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/315-0
+<v Ronaldo Robledo Mendes De Souza>Colocar a funcionalidade e o fluxo
+detalhado daquela funcionalidade, não é?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/316-0
+<v Jessica Cristina de Oliveira>Sim, é aham.
+É porque eu levando em consideração o que</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/315-1
+<v Ronaldo Robledo Mendes De Souza>Então eu.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/316-1
+<v Jessica Cristina de Oliveira>eu estou lendo o documento,
+você me pediu a funcionalidade.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/316-2
+<v Jessica Cristina de Oliveira>Então eu realmente trouxe ali que é banco
+dos nativos, ativo e tal.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/316-3
+<v Jessica Cristina de Oliveira>Então essas são as funcionalidades.
+Mas eu entendo assim, faz sentido.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/316-4
+<v Jessica Cristina de Oliveira>É só porque, tipo assim.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/319-0
+<v Jessica Cristina de Oliveira>Quem já trabalha com você já sabe que
+você vai pedir um fluxo. Eu,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/317-0
+<v Ronaldo Robledo Mendes De Souza>Is.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/319-1
+<v Jessica Cristina de Oliveira>como é a primeira vez, eu não saberia.
+Eu não sabia que você estava me pedindo</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/319-2
+<v Jessica Cristina de Oliveira>um fluxo. Eu falei, tá,
+ele está me pedindo. É a funcionalidade,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/319-3
+<v Jessica Cristina de Oliveira>é essas funcionalidades.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/318-0
+<v Ronaldo Robledo Mendes De Souza>Tranquilo.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/320-0
+<v Jessica Cristina de Oliveira>Aí então a gente valida assim,
+a gente vê e tudo certinho para ver como</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/320-1
+<v Jessica Cristina de Oliveira>que a gente faz.
+Mas aí eu vou tentar nesse primeiro</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/320-2
+<v Jessica Cristina de Oliveira>momento fazer algo aqui para aí depois a
+gente já ir alinhando eu e você,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/320-3
+<v Jessica Cristina de Oliveira>porque aí eu acho que vai render mais
+nosso trabalho do que a gente sentar e</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/320-4
+<v Jessica Cristina de Oliveira>passar algumas horas em reunião.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/323-0
+<v Jessica Cristina de Oliveira>Principalmente que toda hora alguém vem,
+fala comigo, precisa chamar e tudo,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/321-0
+<v Ronaldo Robledo Mendes De Souza>C C.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/323-1
+<v Jessica Cristina de Oliveira>então acaba que me pega um pouco ficar
+muito tempo em chamadas.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/322-0
+<v Ronaldo Robledo Mendes De Souza>É por.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/325-0
+<v Ronaldo Robledo Mendes De Souza>Isso,
+é por isso que eu te dei a ideia de você</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/325-1
+<v Ronaldo Robledo Mendes De Souza>fazer a gravação no Teams, explicando,
+porque você só vai explicar, mostrar,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/324-0
+<v Jessica Cristina de Oliveira>Uh-huh.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/325-2
+<v Ronaldo Robledo Mendes De Souza>se tiver que mostrar alguma coisa,
+vai explicar,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/325-3
+<v Ronaldo Robledo Mendes De Souza>e se não tiver que mostrar nada,
+você só fala a explicação da</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/325-4
+<v Ronaldo Robledo Mendes De Souza>funcionalidade tal,
+e aí você fala o que você tem para</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/325-5
+<v Ronaldo Robledo Mendes De Souza>explicar sobre a funcionalidade.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/326-0
+<v Ronaldo Robledo Mendes De Souza>Com essa transcrição que você vai me
+passar, eu consigo é dar andamento aqui,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/326-1
+<v Ronaldo Robledo Mendes De Souza>caso depois queira finalizar,
+eu refinar o diagrama de contexto,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/326-2
+<v Ronaldo Robledo Mendes De Souza>aí eu marco uma reunião depois, entendeu?
+Só para refinar o diagrama de contexto,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/327-0
+<v Jessica Cristina de Oliveira>Tá, tá bom, aham, tá bom,
+então a gente faz assim então.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/326-3
+<v Ronaldo Robledo Mendes De Souza>está bom?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/328-0
+<v Ronaldo Robledo Mendes De Souza>OK, então beleza, Jessica,
+eu vou ver se eu consigo ou liberar ou te</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/328-1
+<v Ronaldo Robledo Mendes De Souza>mandar isso aqui, está bom?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/329-0
+<v Jessica Cristina de Oliveira>Tá, por favor, aí, se não,
+pelo menos me manda assim uns 23 fluxos</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/329-1
+<v Jessica Cristina de Oliveira>aí que você acha importante para eu ter
+isso em mente e fazer já mais da forma</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/329-2
+<v Jessica Cristina de Oliveira>que você precisa.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/330-0
+<v Ronaldo Robledo Mendes De Souza>Tá eu vou correr atrás de liberar aqui
+para você assim beleza</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/331-0
+<v Jessica Cristina de Oliveira>Tá bom, então deixa eu ver.
+Eu acho que eu pedi,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/331-1
+<v Jessica Cristina de Oliveira>porque hoje o Pedro me mandou isso mais
+cedo. Jessica, o Robledo me mandou isso,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/331-2
+<v Jessica Cristina de Oliveira>essa documentação e coisa.
+Aí eu entrei pra ver o que que era.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/331-3
+<v Jessica Cristina de Oliveira>Aí eu falei Ixi, não tenho permissão.
+Deixa eu até pedir de novo aqui a</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/331-4
+<v Jessica Cristina de Oliveira>permissão pra ver. Eu não lembro se eu</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/332-0
+<v Jessica Cristina de Oliveira>Se eu pedir ou não pedir,
+eu acho que eu pedi quase 100% de certeza</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/332-1
+<v Jessica Cristina de Oliveira>que eu pedi,
+porque eu lembro que eu cliquei lá,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/332-2
+<v Jessica Cristina de Oliveira>eu falei,
+mas eu não tenho essa informação.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/332-3
+<v Jessica Cristina de Oliveira>Eu falei com ele.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/333-0
+<v Jessica Cristina de Oliveira>Deixa eu ver aqui.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/334-0
+<v Jessica Cristina de Oliveira>Aham, só que meu, não tem o request.
+Eu cliquei aqui e eu mandei mesmo.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/334-1
+<v Jessica Cristina de Oliveira>Já tinha mandado, mas eu mandei de novo.
+Aí, se alguém tiver como me liberar,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/334-2
+<v Jessica Cristina de Oliveira>vai ser melhor ainda. O</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/335-0
+<v Ronaldo Robledo Mendes De Souza>Está, eu vou correr atrás disso aqui,
+eu vou correr atrás disso aqui e já eu te</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/335-1
+<v Ronaldo Robledo Mendes De Souza>informo.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/336-0
+<v Jessica Cristina de Oliveira>Tá bom,
+eu vou até só deixa eu verificar uma</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/336-1
+<v Jessica Cristina de Oliveira>coisa aqui antes de você ir e pode ser
+uma coisa minha também.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/337-0
+<v Jessica Cristina de Oliveira>Eu não estou prestando atenção,
+deixa eu ver aqui overview, o Wiki.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/338-0
+<v Jessica Cristina de Oliveira>Deixa eu só ver se eu tenho a.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/339-0
+<v Jessica Cristina de Oliveira>Visão geral.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/340-0
+<v Jessica Cristina de Oliveira>Questão de negócio.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/341-0
+<v Jessica Cristina de Oliveira>diagramas documento deixa eu ver se eu
+tenho essa decisão de arquitetura</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/342-0
+<v Jessica Cristina de Oliveira>Ação da biblioteca, não sei o que é isso.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/343-0
+<v Jessica Cristina de Oliveira>É jornada.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/344-0
+<v Jessica Cristina de Oliveira>Visão front-end.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/345-0
+<v Jessica Cristina de Oliveira>Talvez eu tenha,
+mas eu tenho só as imagens. É,</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/345-1
+<v Jessica Cristina de Oliveira>eu preciso que você me</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/346-0
+<v Jessica Cristina de Oliveira>Me mande mais detalhado.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/347-0
+<v Ronaldo Robledo Mendes De Souza>Você não tem a jornada inteira, não é?</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/350-0
+<v Jessica Cristina de Oliveira>Quer ver?
+Eu vou te mostrar aqui o que eu tenho e</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/348-0
+<v Ronaldo Robledo Mendes De Souza>Yeah.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/350-1
+<v Jessica Cristina de Oliveira>eu acho que não é o que você precisa.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/351-0
+<v Ronaldo Robledo Mendes De Souza>Deixa eu ver.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/352-0
+<v Jessica Cristina de Oliveira>Quer ver? Deixa eu ver aqui.</v>
+a9518a07-8e6f-4b7e-9773-b76198346cad/353-0
+<v Jessica Cristina de Oliveira>sigla login aqui ó</v>

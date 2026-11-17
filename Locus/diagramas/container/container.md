@@ -15,7 +15,7 @@ Diagrama de **contêineres (C2)** do LOCUS: frontends, microsserviços e workers
 
 * **Portal SIGLA** — React; login, recuperação de senha e seleção ALVO / LOCUS em `/sigla/` (hoje espelhado em `modules/sigla` do LOCUS).
 * **LOCUS SPA** — React 19 / Vite / Ant Design; servido por Nginx em `/locus/`. Telas de UE e servidor prontas com dados estáticos.
-* **Telas de Importação e Permissões (TO-BE)** — previstas na wiki; consomem MS-ImportaArquivos e MS-AdminUsuarios.
+* **Telas de Importação e Permissões (TO-BE)** — previstas; consomem MS-ImportaArquivos e MS-AdminUsuarios.
 
 ### 2. Camada de ingresso
 
@@ -34,8 +34,8 @@ Diagrama de **contêineres (C2)** do LOCUS: frontends, microsserviços e workers
 
 ### 4. Camada de dados (Persistência)
 
-* **PostgreSQL SIGLA — escrita** — write model por domínio (usuários, importações, LOCUS).
-* **PostgreSQL SIGLA — leitura (TO-BE)** — read model CQRS (Command Query Responsibility Segregation) para telas, relatórios e exportações.
+* **Base Sigla Escrita** (PostgreSQL) — write model por domínio (usuários, importações, LOCUS), dentro da Base de Dados SIGLA (BASE SIGLA).
+* **Base Sigla Leitura** (PostgreSQL, TO-BE para o domínio LOCUS) — read model CQRS (Command Query Responsibility Segregation) para telas, relatórios e exportações.
 * **Arquivos importados** — hoje `media/` local; alvo: volume persistente / object storage.
 
 ### 5. Operação
@@ -45,7 +45,7 @@ Diagrama de **contêineres (C2)** do LOCUS: frontends, microsserviços e workers
 
 ### 6. Serviços externos
 
-* CoreSSO / API SME Integração, Keycloak (em estudo), EOL / PRODAM, SIGPEC (SEGES), E-mail SME (SMTP); ALVO como consumidor da base SIGLA.
+* CoreSSO / API SME Integração, Keycloak (em estudo), EOL / PRODAM, SIGPEC (SEGES), E-mail SME (SMTP); ALVO como consumidor da Base de Dados SIGLA (BASE SIGLA).
 
 ---
 
@@ -58,3 +58,7 @@ Diagrama de **contêineres (C2)** do LOCUS: frontends, microsserviços e workers
 | CQRS | Escrita existente; leitura **TO-BE** |
 | Login | CoreSSO via MS-AdminUsuarios → JWT |
 | Origem oficial dos dados funcionais | **EOL / SIGPEC** (LOCUS concilia) |
+
+## Referências
+
+- Wiki Azure DevOps *COTIC - DevOps › SIGLA › Visão Arquitetural*

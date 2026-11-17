@@ -5,7 +5,7 @@
 | ---------------- | ------------------------------------------- |
 | **Status**       | Accepted (as-is) — a confirmar para o LOCUS |
 | **Data**         | 2026-10-27                                  |
-| **Decisores**    | Arquitetura SIGLA (wiki) / Infra Ágil       |
+| **Decisores**    | Arquitetura SIGLA / Infra Ágil          |
 | **Sistema**      | SIGLA                                       |
 | **Relacionadas** | ADR-002, ADR-010                            |
 
@@ -14,7 +14,7 @@
 
 ## Contexto
 
-A wiki define Kubernetes via Rancher, Ingress Controllers como API Gateway (com possibilidade de Keycloak, TLS, circuit breaker e rate limiting), Jenkins para CI/CD e Grafana + Elastic para observabilidade. Os repositórios LOCUS têm Dockerfile, mas nenhum Jenkinsfile versionado (só `CODEOWNERS`).
+A plataforma do SIGLA é Kubernetes via Rancher, com Ingress Controllers como API Gateway (com possibilidade de Keycloak, TLS, circuit breaker e rate limiting), Jenkins para CI/CD e Grafana + Elastic para observabilidade. Os repositórios LOCUS têm Dockerfile, mas nenhum Jenkinsfile versionado (só `CODEOWNERS`).
 
 ## Decisão
 

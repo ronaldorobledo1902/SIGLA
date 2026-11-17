@@ -2,7 +2,7 @@
 
 ## Contexto
 
-Todo acesso ao SIGLA começa no **Portal SIGLA** com a credencial única da SME (CoreSSO). O **MS-AdminUsuarios** valida na API SME Integração e emite o JWT (JSON Web Token) usado por ALVO e LOCUS. Pela wiki, **as permissões dos dois subsistemas são administradas no LOCUS**.
+Todo acesso ao SIGLA começa no **Portal SIGLA** com a credencial única da SME (CoreSSO). O **MS-AdminUsuarios** valida na API SME Integração e emite o JWT (JSON Web Token) usado por ALVO e LOCUS. **As permissões dos dois subsistemas são administradas no LOCUS**.
 
 ```{image} ../assets/07-locus-componente-ms-admin-usuarios.svg
 :width: 100%
@@ -40,7 +40,7 @@ Todo acesso ao SIGLA começa no **Portal SIGLA** com a credencial única da SME 
 ```text
 Usuário → Portal SIGLA → MS-AdminUsuarios /login → API SME Integração (CoreSSO)
         ← JWT (grupos) → /locus/ → AuthGuard → menus por perfil → APIs (Bearer)
-Administrador → tela de permissões (LOCUS) → MS-AdminUsuarios → DB_SIGLA (auth_user, grupos)
+Administrador → tela de permissões (LOCUS) → MS-AdminUsuarios → Base Sigla Escrita (auth_user, grupos)
 ```
 
 ---
@@ -53,7 +53,7 @@ Administrador → tela de permissões (LOCUS) → MS-AdminUsuarios → DB_SIGLA 
 | MS-AdminUsuarios | Autenticação, emissão de JWT, usuários, grupos, senha |
 | API SME Integração / CoreSSO | Valida credenciais, dados do usuário, redefinição de senha |
 | E-mail SME | Envio do link de redefinição |
-| PostgreSQL SIGLA | Usuários e grupos locais |
+| Base Sigla Escrita | Usuários e grupos locais |
 
 ---
 
@@ -62,3 +62,7 @@ Administrador → tela de permissões (LOCUS) → MS-AdminUsuarios → DB_SIGLA 
 - Hoje os grupos são só do ALVO; perfis LOCUS precisam existir **antes** de expor dados reais.
 - O access token de 7 dias deve ser reduzido (ver [Segurança](../../seguranca/index.md)).
 - MFA (autenticação multifator) depende do IdP corporativo (CoreSSO/Keycloak).
+
+## Referências
+
+- Wiki SIGLA — Jornadas › Cadastro de usuários do sistema

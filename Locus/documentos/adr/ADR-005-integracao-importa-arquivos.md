@@ -14,7 +14,7 @@
 
 ## Contexto
 
-O LOCUS precisa consumir EOL (PRODAM) e SIGPEC (SEGES) ao menos 1x/dia, com o mecanismo ainda indefinido. O **MS-ImportaArquivos** — atribuído ao LOCUS na wiki — já possui layouts posicionais, validação, registro de erros, histórico, cliente PRODAM, Celery beat e clientes HTTP para outros MS.
+O LOCUS precisa consumir EOL (PRODAM) e SIGPEC (SEGES) ao menos 1x/dia, com o mecanismo ainda indefinido. O **MS-ImportaArquivos**, atribuído ao LOCUS, já possui layouts posicionais, validação, registro de erros, histórico, cliente PRODAM, Celery beat e clientes HTTP para outros MS.
 
 ## Decisão
 

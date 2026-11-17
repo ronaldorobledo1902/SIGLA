@@ -14,7 +14,7 @@
 
 ## Contexto
 
-Os usuários do SIGLA usam a credencial única da SME (a mesma do antigo sistema ESCOLHAS). A wiki define o **CoreSSO** como provedor e cita o **Keycloak** como possibilidade em estudo pela SME-COTIC. O PO pediu verificação do IdP (Identity Provider) corporativo e recomenda MFA (autenticação multifator).
+Os usuários do SIGLA usam a credencial única da SME (a mesma do antigo sistema ESCOLHAS). O **CoreSSO** é o provedor e o **Keycloak** permanece como possibilidade em estudo pela SME-COTIC. O PO pediu verificação do IdP (Identity Provider) corporativo e recomenda MFA (autenticação multifator).
 
 ## Decisão
 
