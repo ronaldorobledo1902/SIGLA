@@ -1,0 +1,569 @@
+onaldo Robledo Mendes De Souza  0:03
+boa tarde pessoal boa tarde bom dia né 11 horas ainda na meio-dia bom dia bom dia a todos é eu faço parte aqui da da parte do ambiente arquitetural aqui né do quadro de arquitetura do sistema E aí a gente tá tentando fazer aí é criar os do
+documentação arquitetural e criar os diagramas de contexto aqui definir definir como que vai funcionar a arquitetura aqui do código de micro serviço né é verificar que é que a gente vai utilizar como que vai ser vai funcionar a parte interna do sistema
+Para isso a gente a Jessica já tinha me passado aí um overview aí no sistema de algumas coisas a gente já conseguiu desenhar algum quadro aí dos microsserviços já utilizados e como que vai funcionar e aí surgiu alguma algumas dúvidas a respeito principalmente dessa
+questão do locus né é eu vi que a gente tem ali uma parte de importação do sistema é só só colocar primeiro nome e seis pessoal eu peguei o sistema tem pouco tempo agora nessa parte de arquitetura ainda tô
+Ainda estou engatinhando aí algumas informações aí, tá? Então é essa parte do locus aí eu vim estudando aí e eu verifiquei que onde a gente está mais pegando aqui no processo é na parte da importação dos arquivos.
+É, deixa eu compartilhar minha tela aqui.
+Partilhar minha tela aqui. Eu tinha pedido pra Jessica fazer um apanhado pra gente como é que ia funcionar a parte do locus aqui, principalmente nesse primeiro momento da parte do fundamental 2 e médio, né? Que seria as primeiras coisas.
+É os primeiros trabalhos a serem realizados aí e a gente ficou muito na dúvida aqui dessa parte da integração do sistema é eu verifiquei que a parte da integração do sistema já está funcionando, mas a gente ficou na dúvida dessa parte.
+é de como que como que fica essa questão do sistema escolha do do CI precários é se nós vamos ter é uma integração só de busca é do sistema é ou não vamos ter que fazer
+Informações que vem e que vão ter que retornar também é, eu queria saber se você tinha como passar um overview disso pra gente ou onboard de qual que é a ideia do sistema Lopes, da funcionalidade dele como todo para mim poder desenhar como que vai funcionar essa questão é.
+É arquitetural dele, né? Então a gente pode falar, Jessica.
+
+Jessica Cristina de Oliveira  2:49
+A.
+Robledo, só tenta explicar um pouquinho mais de uma forma que eles possam entender, porque é realmente não é um contexto muito comum para eles, tá? Então só tenta explicar um pouquinho assim, de um jeito mais simples para eles.
+
+Ronaldo Robledo Mendes De Souza  3:03
+Uh-huh.
+
+Jessica Cristina de Oliveira  3:09
+Que você realmente quer sem muita parte técnica ali para eles entender um pouco?
+
+Ronaldo Robledo Mendes De Souza  3:12
+Tá OK, eu gosto, eu gostaria só de saber como é que o sistema Lopes vai funcionar, né? Qual que são a as regras de negócio e como que o sistema Lopes vai funcionar, como que foi pensado o sistema Lopes pra vocês, entendeu? É basicamente isso a primeiro momento.
+
+DANIELA ALVES MENEZES  3:32
+A ideia é que assim a gente tem o sistema é ou tem esse sistema de escolha só que a gente tem um outro sistema que no caso aqui é o banco access que a gente usa para verificar se esses sistemas estão
+
+Ronaldo Robledo Mendes De Souza  3:43
+Mm-hmm.
+
+DANIELA ALVES MENEZES  3:47
+Estão atualizados porque o e o ele não é atualizado diariamente, mas ele é o sistema oficial da SME.
+
+Ronaldo Robledo Mendes De Souza  3:55
+Is.
+
+DANIELA ALVES MENEZES  3:55
+Só que a gente precisa de dados atualizados o tempo todo, diário. Então a gente tem o Access que a gente faz essa atualização aqui no NADCAR, mas ele precisa estar alinhado com o EOL, só que ele não pode estar assim, eu não posso trazer tudo do EOL
+para ele, porque o EOL não está atualizado, então ele tem que ter esse confronto com o EOL, entendeu? Então, assim, a gente tem uma tela lá no access que a gente traz essas informações do EOL numa planilha, sobe para o access e faz um confronto.
+Para ver as diferenças do EOL com o Access E aí a gente vai analisar se essas diferenças que tem, qual do Sistemas está correto, se é o EOL ou se é o Access, entendeu?
+Fez sentido.
+
+Ronaldo Robledo Mendes De Souza  4:46
+Entendi, mas essa parte de importação de arquivos, eu entendi até esse momento. Essa parte, mas se houver a diferença, a gente vai ter que retornar alguma informação para o e o, ou se a gente vai só atualizar na nossa base do.
+Do sistema do sigla.
+
+DANIELA ALVES MENEZES  5:05
+A gente precisa que o sigla, o Locus, identifique essa diferença. E aí, identificada essa diferença, a gente vai analisar qual sistema precisa ser corrigido, se é o EOL ou se é o Locus, no caso, quando ele passar a ser utilizado.
+
+Ronaldo Robledo Mendes De Souza  5:11
+Mhm.
+
+DANIELA ALVES MENEZES  5:22
+Porque, como eu falei, o EOL, ele é o sistema oficial da SME, só que ele não é atualizado diariamente, mas a gente precisa de informações atualizadas, entendeu? Então, por isso que a gente vai ter o Locus para ter para nós aqui, para o nosso serviço, ele vai ter que ser
+
+Ronaldo Robledo Mendes De Souza  5:22
+Yeah.
+Mm-hmm.
+Then you.
+
+DANIELA ALVES MENEZES  5:42
+Ele tem que estar atualizado sempre. E aí, quando a gente identificar uma diferença entre ele e o EOL, a gente vai verificar se é ele que está Porque o locus, a ideia é que nós aqui de cara vamos fazer atualização. Então, se a gente identificar essa diferença entre ele e o EOL, a gente vai ver se é
+Se é a atualização que a gente fez que está correta ou se é o e o, entendeu?
+Porque se no e o, por exemplo, tiver um dado desatualizado e o nosso está atualizado, a gente comunica a DRE, porque quem faz a atualização do EOL é a DRE. Aí a gente comunica a DRE e pede para a DRE atualizar o EOL, entendeu? Agora, vamos supor que eu fiz uma atualização no Lopes ou deixei de fazer e no EOL já está feita.
+
+Ronaldo Robledo Mendes De Souza  6:06
+Okay.
+Mhm.
+
+DANIELA ALVES MENEZES  6:25
+Aí eu vou, a gente vai ter que ver se a gente precisa atualizar o nosso locus de acordo com o que está no eon. É importante que tenha os dois sistemas para que haja esse confronto.
+
+Ronaldo Robledo Mendes De Souza  6:37
+Entendi. E essa carga hoje ela está sendo feita através do Sistemas. É isso que você está falando. Ele gera um Sistemas correto e a gente conhece Sistemas, a gente importa no Sistemas, no Sistemas.
+
+DANIELA ALVES MENEZES  6:45
+Isso, exato.
+
+Ronaldo Robledo Mendes De Souza  6:53
+É no sistema do alvo, correto? É isso mesmo?
+
+Jessica Cristina de Oliveira  6:58
+Não, aqui que acontece hoje, o é igual a gente fala, o alvo, você põe um pouco de lado. A gente está literalmente conversando só sobre o locus aqui. A gente vai precisar de algumas informações, caso necessário, no alvo.
+
+Ronaldo Robledo Mendes De Souza  7:05
+Uh-huh.
+But
+
+Jessica Cristina de Oliveira  7:14
+Aí a gente vai fazer essa integração, mas agora conversando sobre o lócus, hoje no banco Access deles, eles recebem um arquivo do eol e eles fazem essa importação ali no Access deles.
+Então, quando eles fazem essa importação, eles vão ver o nome era, vamos supor, um nome, o nome desse servidor era Maria.
+
+Ronaldo Robledo Mendes De Souza  7:30
+Go ahead.
+
+Jessica Cristina de Oliveira  7:41
+de Oliveira.
+Mas agora é a Maria Silva de tão no deles, eles já fizeram essa atualização. Vamos supor esse servidor, eles precisaram gerar alguma informação, então no banco access dele já tem essa informação.
+E o nome dessa pessoa mudou. Ah, então no eol não mudou ainda. Eles vão entrar em contato com a Adri e falar olha, fulano, essa informação aqui está divergente entre o nosso banco e o eol. Por quê? E normalmente aqui no Ação eles fazem essa atualização mais rápida.
+de informações de servidores não que vai ser obrigatório sempre então o que que eles vão fazer essa essa essa o que que a Daniela falou elas vão pegar esse esse arquivo do e hoje e vão pegar e vão por lá no access e vai confrontar essas informações e
+No AX, a informação tiver errar, entre aspas, errado, eles vão atualizar no AX. Se no EOL estiver entre aspas errado, eles vão pedir para o para Adriana e falar informar para Adriana.
+Para eles fazer essa atualização da eol, o que a gente quer para o Lopes que a gente consiga ao máximo fazer essa comunicação com o sistema eol, porque, como eu te expliquei hoje, eles pegam o arquivo e fazem a importação.
+No Whats, o interessante.
+
+Ronaldo Robledo Mendes De Souza  9:10
+Tudo manualmente, Jessica.
+
+Jessica Cristina de Oliveira  9:11
+É tudo manualmente. O interessante aqui para a gente seria no locus a gente fazer, sei lá, uma vez por dia, à noite, de manhã, tipo, é igual. Eu já até conversei sobre esse ponto com a Daniela. Não é que sempre vai ter informações divergentes ou.
+
+Ronaldo Robledo Mendes De Souza  9:13
+Mm-hmm.
+
+Jessica Cristina de Oliveira  9:28
+Só um nome, alguma coisa assim. Talvez eles precisem de mais coisas. É para levar para o Madrê. Vamos supor que o Madrê é hoje bateu ali o deparo ou essa esse confronto teve um nome, amanhã teve outras informações.
+Enfim, isso vai ser uma questão deles ali, como que vai ser levado isso diariamente ou não? Mas seria interessante que o sistema, o locus, o locus e o eol se conversassem pelo menos uma vez por dia, ou se eles falar, ah não Jessica, uma vez por semana está interessante para a gente.
+Ou a cada 2 dias, mas que o sistema se conversasse e fazesse esse confronto de dados, olhe e sinalizasse para o usuário, ó, nessa desse usuário, desse servidor ou nessa unidade, tá essa informação divergente.
+Aí elas é a Daniela, o Bruno, seja quem for, vai entrar em contato com a Adri ou atualizar o sistema deles, entendeu? Não fazer manualmente igual eles fazem hoje. E eu acredito que vocês recebem esse arquivo de 15 em 15 dias ou uma vez por mês, Daniela?
+
+DANIELA ALVES MENEZES  10:36
+A gente recebe de 15 em 15 dias, geralmente. E aí a gente, é um arquivo que vem numa planilha do Excel. E aí a gente pega essa planilha, coloca dentro do Access, aí tem uma tela lá que faz o confronto entre esse arquivo que veio do EOL e o que a gente tem no Access.
+
+Jessica Cristina de Oliveira  10:39
+A. That was it.
+
+DANIELA ALVES MENEZES  10:54
+E aí ele mostra o que tem de diferente. Aí a gente faz uma análise para identificar se a diferença é um erro do e o ou se é um erro nosso do banco Access. E aí, identificada a diferença, a gente, como a Jessica comentou, se for do e o, a gente vai pedir para a Adriana.
+Corrigir, se for nossa, no nosso banco a gente vai fazer a atualização, porque algumas informações que a gente faz no nosso banco access de atualização diária a gente pega do Diário Oficial.
+Mas tem atualizações que são feitas no EOL, que depende de outras demandas, que é, por exemplo, sei lá, o número de turmas de uma escola. Isso é feito só no EOL, não sai publicado no Diário Oficial. Então a gente não tem, a gente não vê essa informação.
+E aí, por isso que a gente precisa trazer do EOL para o nosso banco Access, porque só no EOL que tem essa informação de atualização de número de turmas. E aí, quando a gente traz essa informação para o Access, a gente vê se o nosso banco precisa atualizar algum número de turma.
+Conforme o que está no e o, entendeu? Aí a gente está falando de escola, por exemplo, agora quando a gente fala de servidor, muita coisa a gente pega do diário oficial. Então o nosso banco, no caso de informação do servidor, às vezes ele está mais atualizado com o e o.
+
+Ronaldo Robledo Mendes De Souza  12:14
+Entendi, entendi, não. Agora ficou bem claro essa questão da importação aí, qual que é o objetivo? Entendi perfeitamente uma pergunta, o Jessica, eu bato de novo nessa tecla, porque se eu não me engano com a com a conversa que eu tive com os desenvolvedores.
+E talvez eu esteja misturando os assuntos, tá? Mas eu vou perguntar de novo, você me corrige se eu estiver errado. É que já existe um processo de importação de dados hoje, esse processo de importação de dados que é, pelo que eu entendi, já está criado.
+
+Jessica Cristina de Oliveira  12:33
+Mhm.
+A.
+
+Ronaldo Robledo Mendes De Souza  12:46
+Ele importa os dados do e o ou só do Sig pack de algum outro local? Porque pelo que eu entendi, lá no alvo ele já está fazendo um processo de importação de dados, correto? Eu não estou falando que é isso, mas ele já faz um processo de importação de dados lá no alvo, não faz?
+
+Jessica Cristina de Oliveira  12:58
+Sim.
+Sim, a gente faz, mas no alvo é igual eu te expliquei ontem. No alvo a gente está conversando sobre candidatos.
+
+Ronaldo Robledo Mendes De Souza  13:06
+Hmm.
+Mm-hmm.
+Correto, sim.
+
+Jessica Cristina de Oliveira  13:11
+Aqui a gente está conversando sobre servidor, então é lá no alvo, a gente está conversando sobre é.
+
+Ronaldo Robledo Mendes De Souza  13:14
+And.
+
+Jessica Cristina de Oliveira  13:20
+vagas sobre habilitados que vai ser feita a convocação. Então a gente está conversando sobre isso. Então ali a pessoa ela foi, passou no concurso, é, as meninas receberam a lista desses concursados de quem foi aprovado.
+
+Ronaldo Robledo Mendes De Souza  13:23
+Mm-hmm.
+Mm-hmm.
+Mm-hmm.
+
+Jessica Cristina de Oliveira  13:36
+E elas vão trabalhar nesse processo de realizar a convocação, publicação no diário oficial. Aí a pessoa vai lá, é.
+Assume a vaga. Quando a pessoa assume a vaga, ela se torna um servidor. Ela vai ter um RF. Aí a gente está conversando aqui sobre RF dentro do locus. Então aqui dentro do locus, como eu te expliquei, é onde vai ter tanto as informações dos servidores.
+
+Ronaldo Robledo Mendes De Souza  13:48
+Yes.
+Mhm.
+
+Jessica Cristina de Oliveira  14:05
+Quanto a quanto vai gerar vagas na nas unidades, igual eu te expliquei, tipo, eu tenho um servidor que entrou em licença maternidade, né? Ela entrou em licença maternidade, vai ser feita a atualização aqui no sistema logo.
+
+Ronaldo Robledo Mendes De Souza  14:05
+Mm-hmm.
+Mm-hmm.
+
+Jessica Cristina de Oliveira  14:20
+Cos e essa pessoa está de licença maternidade, então gerou uma vaga naquela unidade que ela atua, que aí é igual eu te falei, tem outros lugares que aí vai fazer designação, enfim, aqui não entra essa parte, mas no locus e no alvo.
+
+Ronaldo Robledo Mendes De Souza  14:21
+Mm-hmm.
+
+Jessica Cristina de Oliveira  14:37
+A gente está conversando sobre.
+A mesma pessoa, mais pessoas diferentes. Não sei se deu para entender. A gente conversa sobre candidato e a gente conversa sobre servidores.
+
+Ronaldo Robledo Mendes De Souza  14:43
+Não entendi, não entendi.
+Isso, o candidato depois ele passa a ser um servidor, correto? Entendi.
+
+Jessica Cristina de Oliveira  14:51
+É, se ele aceitar a vaga, se ele vira um servidor.
+
+Ronaldo Robledo Mendes De Souza  14:53
+Uh-huh.
+Isso entendi, e esse?
+
+Jessica Cristina de Oliveira  14:57
+Daniela, Daniela e Bruna, qualquer coisa de errado que eu tiver falando ali, se tiver alguma coisa que vocês quiserem complementar também, vocês podem falar, tá?
+
+DANIELA ALVES MENEZES  15:04
+não tá ok aí falando também desse sistema de escolha é aqui no nosso banco access a gente também faz também traz essa informação para o access porque o candidato mesmo que ele ainda não
+tenha virado servidor de fato, a gente precisa desses dados dele, porque vamos supor que ele foi nomeado, mas ele resolveu não assumir o cargo. Quando ele é nomeado,
+Ele já é, de certa forma, um servidor. E a gente precisa, no nosso banco Access, colocar essa pessoa até ela ingressar. Se ela não ingressar, a gente tem que colocar que ela foi tornada sem efeito a nomeação dela.
+
+Jessica Cristina de Oliveira  15:45
+Mhm.
+
+DANIELA ALVES MENEZES  15:51
+Então a gente também tem essa ligação do lócus, eu acho que vai ser com o alvo no caso, não é?
+
+Jessica Cristina de Oliveira  15:56
+So.
+Isso, essa conversa que a gente vai fazer.
+
+Ronaldo Robledo Mendes De Souza  16:01
+Yes.
+
+DANIELA ALVES MENEZES  16:02
+Oh.
+
+Ronaldo Robledo Mendes De Souza  16:04
+Isso.
+
+Jessica Cristina de Oliveira  16:04
+Aí é essa parte que a gente conversa, Robledo, entre o locus e o alvo, trazendo essa informação ali do, né? Como a Daniele explicou, do alvo para o locus, porque hoje, querendo ou não, é um sistema complementar, né?
+
+Ronaldo Robledo Mendes De Souza  16:09
+Mm-hmm.
+Lopes.
+Mm-hmm.
+
+Jessica Cristina de Oliveira  16:20
+Então eles vão se conversar nessa questão.
+
+Ronaldo Robledo Mendes De Souza  16:25
+Entendi, entendi. Não, tranquilo então, mais uma pergunta. O objetivo então, assim, o objetivo principal da gente fazer essa importação com eu através do lócus aqui é justamente isso né, fazer essa verificação
+É para ver se vamos colocar assim, para ver se os dados estão coesos entre locus e IEO, correto?
+
+DANIELA ALVES MENEZES  16:51
+Is.
+
+Jessica Cristina de Oliveira  16:52
+Mhm.
+
+Ronaldo Robledo Mendes De Souza  16:53
+OK, tá bom, entendi, entendi. Apesar baseado nisso, é qual que é o objetivo, qual que é a premissa? A gente consegue aqui basear, é, eu já consigo visualizar aqui uns microsserviços já nascendo pra gente poder fazer.
+esse trabalho é pergunta esse sistema esse sistema escolha no caso passando aqui agora para o sistema escolha é esse sistema escolha ele entra na que momento aqui a gente também tem que fazer uma importação de
+
+Jessica Cristina de Oliveira  17:22
+Ele morre? Não, ele vai morrer. Esse é o sistema legado hoje delas, deles, né? É ali no coisa que eles fazem essa parte do alvo, convocação, é escolha. Então hoje o sistema escolha.
+
+Ronaldo Robledo Mendes De Souza  17:23
+Oi?
+Uh-huh.
+Mm-hmm.
+
+Jessica Cristina de Oliveira  17:37
+É o legado deles. A partir do momento, igual o Vitor te explicou ontem, a gente no alvo vai fazer tudo novo, a gente não vai trazer informações do escolha para o alvo, tá? Foi definido ali, não vamos trazer informações do
+
+Ronaldo Robledo Mendes De Souza  17:39
+Entendi.
+
+Jessica Cristina de Oliveira  17:53
+do sistema escolha pro alvo. Então a partir do momento que a gente começar a usar o sistema escolha, o desculpa, alvo, o escolha vai deixar de ser utilizado. Então a gente não trabalha mais com escolha. Então aqui não entra, o escolha não entra aqui pra gente no escopo.
+
+Ronaldo Robledo Mendes De Souza  18:07
+Entendi, entendi.
+Tá, entendi o Jessica é agora está começando a clarear mais a mente a responsabilidade de cada um aqui. O Jessica aí no caso é essas informações e alterações e inclusões que a gente vai operar tanto no al como no Lopes.
+A gente vai precisar remeter alguma coisa por enquanto, de volta para o para esse sistema escolher legado ou não vai ter necessidade, não é? Está OK?
+
+Jessica Cristina de Oliveira  18:32
+Não, nada, não, nada. A gente está literalmente. A gente tem um sistema legado que é o escolha, mas literalmente a gente está trabalhando apartado dele hoje, porque por a gente continua utilizando eles, claro.
+Porque às vezes surge alguma convocação para ser feita, então vai ser ainda a gente, como a gente está fazendo essa parte ali do alvo, vamos colocar em produção, o escolha ainda está ativo, mas a partir do momento que o alvo estiver em produção e fazendo todo o que ele precisa fazer,
+Escolha, digamos assim, ele vai morrer, ele vai deixar de existir, não é?
+
+Ronaldo Robledo Mendes De Souza  19:12
+Entendi, entendi, beleza. Mais uma pergunta a respeito do sistema escolha. Ontem a gente comentou a respeito da da carga inicial dos dados. A gente vai ter essa necessidade realmente de fazer uma carga inicial dos dados.
+
+Jessica Cristina de Oliveira  19:29
+É que você está falando, trazer do sistema para o outro?
+
+Ronaldo Robledo Mendes De Souza  19:33
+É do sistema escolha. Lembra que lá na reunião o os meninos, os desenvolvedores comentaram de fazer essa carga inicial do dos dados que já existem hoje no sistema escolha? Você lembra que a gente?
+
+Jessica Cristina de Oliveira  19:42
+Não, o escolha, a gente não traz nada para o alvo, tá? A gente não está mexendo. O que é que a gente vai fazer para o sistema locus? Tudo que existe no banco access hoje vai vim para o banco, vai vim para o locus.
+
+Ronaldo Robledo Mendes De Souza  19:47
+Tá, o que que?
+Mhm.
+Isso.
+That.
+A.
+
+Jessica Cristina de Oliveira  20:12
+do locus, tudo que existe no banco access hoje, a gente obrigatoriamente vai trazer para o banco, para o locus hoje, porque são informações que eles sempre estão utilizando e não é uma coisa que é um histórico.
+É um histórico ali que eles têm, então não é uma coisa que a gente descarta.
+
+Ronaldo Robledo Mendes De Souza  20:33
+Tá, eu só fiquei confuso aqui numa coisa aqui, Jessica, quando você fala banco access, quando você está se referindo ao access, você está se referindo a qual Sistemas nós estamos falando do eol ou estão falando do Sistemas Escolha?
+porque é agora a pouco a gente falou do
+
+Jessica Cristina de Oliveira  20:50
+Nenhum, nem outro. Nenhum, nem outro. É literalmente. O access é o banco onde tem essas informações dos servidores e das unidades que geram vaga. É o que a gente está conversando. O access é o banco que eles utilizam hoje para isso que a gente está.
+Desculpa que a gente vai transformar no lócus. Pensa num conjunto. O escolha se transformou no alvo. O axis vai se transformar no lócus. Ponto. O e o é apartado também.
+
+Ronaldo Robledo Mendes De Souza  21:11
+Bye.
+Okay.
+Entendi, entendi então.
+Entendi, entendi. Então é, a gente vai precisar é pegar esse banco access e fazer uma importação para o banco lócus, correto?
+
+Jessica Cristina de Oliveira  21:31
+Isso, tudo que existe no Access hoje.
+
+Ronaldo Robledo Mendes De Souza  21:33
+Não vamos ter, não vamos ter que fazer uma carga inicial desses dados, correto?
+
+Jessica Cristina de Oliveira  21:39
+É que seria essa carga inicial? Porque se a carga inicial vai trazer tudo o que tem dentro do axe, pro loco, se aí.
+
+Ronaldo Robledo Mendes De Souza  21:46
+Isso é isso é quando a gente fala carga inicial é isso é fazer aquela carga aquela carga inicial pegar tudo que tem lá no primeiro momento e jogar para cá porque depois ele começa a ser atualizado sozinho e a gente não tem mais essa necessidade do banco access então quando a gente fala
+
+Jessica Cristina de Oliveira  21:57
+É.
+Isso.
+
+Ronaldo Robledo Mendes De Souza  22:01
+Isso quando a gente fala essa carga inicial, é justamente isso, pegar tudo que tem lá e jogar para cá. Então seria tá, seria essa carga inicial, beleza, a gente vai precisar fazer isso. E aí aonde que a gente estava comentando aquele dia, Jessica de a gente precisar fazer um de para.
+
+Jessica Cristina de Oliveira  22:06
+É exatamente.
+
+Ronaldo Robledo Mendes De Souza  22:18
+Para a gente ver em quais locais que a gente vai precisar jogar as informações que estão nesse banco de dados para esse novo banco que a gente está criando do Lopes. Então a gente vai precisar fazer isso aí futuramente. Ok, beleza, acho que e o ficou claro. Sistemas de escolha ficou claro para mim agora.
+
+Jessica Cristina de Oliveira  22:19
+Mhm.
+
+Ronaldo Robledo Mendes De Souza  22:37
+Tanto que a gente já tem um micro.
+
+Jessica Cristina de Oliveira  22:37
+É porque aqui tá trazendo nesse nessa parte aqui que eu tô vendo, tem o locus.
+E está escrito aqui sistema escolha. Eu tiraria isso, tá? É não.
+
+Ronaldo Robledo Mendes De Souza  22:47
+Is.
+Mhm. Qual é o Access, Banco Access.
+
+Jessica Cristina de Oliveira  22:53
+Não, não o banco access, mas nesse aqui tem no meio aqui o back end de locus e aí tem um coisa de ligação para o sistema escolha, vagas e candidatos. Não, você pode tirar isso aí que a gente não vai comunicar com o sistema escolha, tá? Aqui a gente.
+
+Ronaldo Robledo Mendes De Souza  22:59
+Mm-hmm.
+Correto.
+Tranquilo.
+
+Jessica Cristina de Oliveira  23:11
+Vai comunicar com o sistema alvo, então aí faz sentido você conversar com o alvo, mas com escolha é o legado do alvo.
+
+Ronaldo Robledo Mendes De Souza  23:15
+Stop.
+Isso.
+não tranquilo sem problema tanto que depois daquela reunião o Jessica acho que eu já tinha até comentado com você é de acordo com a reunião depois eu fiz aqui uma um eu desenhei arquitetura aqui né buscando as informações do do alvo né e seus micro serviços específicos entendeu
+
+Jessica Cristina de Oliveira  23:33
+Data.
+
+Ronaldo Robledo Mendes De Souza  23:40
+Então, cada fluxo desse que você me passou aqui é, eu vou utilizar o micro serviço que já criamos hoje, entendeu? Então eu já fiz, eu já fiz o redirecionamento para cada fluxo desse, aonde que eu vou conseguir cada informação é nos micro serviços já existentes.
+
+Jessica Cristina de Oliveira  23:47
+Mhm.
+
+Ronaldo Robledo Mendes De Souza  23:56
+Ou se vai preciso criar um ou mais um ou não, entendeu? Então eu já fiz esse redesenho aqui, então já ficou mais claro aquela reunião que a gente teve agora com essa agora está ficando mais claro ainda para a gente poder finalizar a documentação é.
+
+Jessica Cristina de Oliveira  24:00
+Mhm.
+
+Ronaldo Robledo Mendes De Souza  24:12
+Esses CI precários, esses CI precários.
+
+DANIELA ALVES MENEZES  24:15
+Eu IA perguntar isso, o que é isso?
+
+Jessica Cristina de Oliveira  24:17
+Eu também queria saber o que é isso.
+
+DANIELA ALVES MENEZES  24:18
+É, eu também não, pra mim eu desconheço.
+
+Jessica Cristina de Oliveira  24:20
+H.
+É assim, não sei se isso é um sistema que você está indicando que fosse um sistema, mas eu também não tenho noção do que seria, sempre é caro.
+
+Ronaldo Robledo Mendes De Souza  24:30
+Ah tá não tudo bem eu posso retirar ele é porque assim ele tinha vindo junto na na na na documentação que você me mandou né Jessica E aí eu fiquei na dúvida o que que é esse precários esse CI mas nós temos uma uma alguma parte de precários aqui embaixo temos ou não não né
+
+Jessica Cristina de Oliveira  24:40
+Mhm.
+
+Ronaldo Robledo Mendes De Souza  24:49
+Não, né?
+
+Jessica Cristina de Oliveira  24:50
+Não, provavelmente deve ser alguma informação. É igual eu te expliquei sobre o que eu fiz, sobre documentação. Eu vou, eu abri literalmente o banco que eu tenho, a parte do banco que eu tenho e fui vendo, entendendo o sistema e te passando alguma questão.
+
+Ronaldo Robledo Mendes De Souza  24:57
+No, entendi. Acompanhamento.
+
+Jessica Cristina de Oliveira  25:07
+Por isso que eu até a gente está com a Daniela e o Bruna aqui para caso precisasse tirar alguma informação mais específica ali do Lopes, porque eu estou entendendo, eu sei o geral do Lopes, o que é o Lopes no geral, o que ele vai fazer?
+
+Ronaldo Robledo Mendes De Souza  25:07
+Mhm.
+Mm-hmm.
+Mm-hmm.
+
+Jessica Cristina de Oliveira  25:23
+Mas a gente, eu vou descobrindo informações micros com a Bruna e com Bruna e com a Daniela. Então vou descobrir essas informações com eles, né? Então por isso que.
+
+Ronaldo Robledo Mendes De Souza  25:32
+Entendi.
+Não, tranquilo, sem problema. Ficou agora tudo tá ficando mais claro, então tá ficando todo mais claro. É, deixa eu ver se eu tenho mais alguma pergunta anotada aqui. Espera só um pouquinho, porque a minha dúvida mesmo estava mais é nessa parte da.
+Das integrações, que um vai fazer, o que o outro vai fazer é, deixa eu ver só mais um detalhe aqui, só um momentinho.
+Vamos ver se tem, se tem mais alguma anotação aqui que eu tinha que ver com vocês.
+a dúvida maior primeiro momento era mais é o sistema
+Yeah.
+A parte das integrações ficou bem claro, então dá para bolar aí uma coisa aí que seja automática para a gente fazer esse confronto dos dados, de ficar rodando de tempo em tempo, né? O que mais?
+Um.
+So.
+Pronto, não, eu acho que a primeiro momento ficou bem claro aqui, agora, o Jessica, mesmo porque depois que a gente conversou naquela naquela última reunião, eu consegui fazer o levantamento dos dados aqui dos microsserviços e a responsabilidade de cada um.
+E onde que cada um entra em cada, em cada fluxo aqui do que você tinha me passado, né? Eu acho que agora já ficou bem claro onde a gente tinha pego muito, é o que estava mais pegando. Era a parte do entendimento aqui da das integrações. Então acho que agora ficou bem claro, dá para mim criar um.
+E finalizar o desenho arquitetural aqui e os microsserviços que a gente vai vai utilizar. Tem alguma informação a mais? É principalmente os pios aí que vocês é acham relevante passar que tipo assim, olha, não pode. O sistema não pode deixar de de.
+De ler isso aqui, ou gravar isso aqui, ou buscar essa informação ou ter é repassar essa informação de alguma, de alguma, de alguma outra forma. A uma dúvida que eu tenho aqui é a questão dos relatórios, tá? Ou.
+o vamos falar aqui só da questão dos relatórios que o sistema vai ter que gerar é esses relatórios eu tava dando uma olhada aqui vai ter algum relatório ou é que a gente vai precisar gerar que seja
+relatórios grandes ou são ou são relatórios pequenos por que que eu tô perguntando isso é eu vou precisar gerar algum relatório que vai ele vai demandar 1 o volume grande de informações né porque é relatórios são seguinte eu tenho aqueles relatórios que o sistema consegue gerar e apresentar na tela
+Correto? E eu tenho aqueles relatórios que o sistema demora muito para buscar as informações, então ele vai ter que ser um processo assíncrono para depois ter que apresentar isso depois que o usuário pode receber por e-mail ou aparecer, ou depois ele pode buscar esse relatório.
+Nós vamos ter algum caso nesse sentido de relatórios é pesados, que vão ser que vão ser preciso gerar depois é separadamente, ou serão relatórios mais tranquilos de ser visualizados? Vocês têm noção disso a primeiro momento ou não?
+
+DANIELA ALVES MENEZES  28:59
+É sim a ideia é que o sistema faça o relatório que a gente faz com muito trabalho através das informações do access a gente precisa desde relatório simples como sei lá número de
+
+Ronaldo Robledo Mendes De Souza  29:00
+Uh.
+Entendi.
+Mhm.
+
+DANIELA ALVES MENEZES  29:15
+Lotados, afastados e vagas, um número total. A gente precisa desde um relatório simples assim, quanto um relatório completo, porque para gerar esses números de lotados, afastados, ele vai usar vários dados.
+
+Ronaldo Robledo Mendes De Souza  29:18
+Mhm.
+Mm-hmm.
+Isso demanda cálculo e algumas coisas nesse sentido, não é isso? Entendi, aham.
+
+DANIELA ALVES MENEZES  29:32
+Demanda, demanda. E aí a gente, às vezes, assim, dependendo da situação, a gente só precisa desse número total. Ai, quanto que tem de vaga do fundo de 2? Aí eu preciso saber do número geral. Só que mensalmente, por exemplo, a gente elabora um relatório.
+
+Ronaldo Robledo Mendes De Souza  29:42
+Mhm.
+
+DANIELA ALVES MENEZES  29:49
+Que mostra tudo o que gerou esse número de vagas, entendeu? E aí a gente precisa desse relatório. É ele que a gente tem a demanda maior, que é um relatório completo, com o número de cargos, com o número de pessoas que estão afastadas, a estar afastada em função de.
+que aí precisa especificar isso é um relatório bem completo e esse relatório geralmente a gente faz manualmente.
+E aí a gente precisa que o sistema faça isso.
+
+Ronaldo Robledo Mendes De Souza  30:15
+So, I do so hot.
+Entendi, Daniel, e são relatórios que às vezes demoram, tem grande processamento de informações, grande processamento de dados, correto?
+
+DANIELA ALVES MENEZES  30:25
+Exato, exato.
+
+Ronaldo Robledo Mendes De Souza  30:27
+Isso, é importante a gente saber desses processos que o sistema vai ter que executar justamente para a gente, porque a gente monta a arquitetura de duas maneiras. Bom, relatórios simples não tem questão. A gente faz um post, um get lá e traz o relatório na tela. Agora, relatórios que demandam
+Uma complexidade maior que ele vai demorar precisa ser assim. Então qual tecnologia eu vou utilizar aqui para poder gerar relatórios dessa magnitude? Então a gente precisa escrever isso aqui também, tá? É, então ficou bem claro isso aí, é.
+É envio de e-mail, é a gente vai cair algum caso desse, precisar disparar e-mail, alguma situação vai, não é?
+
+DANIELA ALVES MENEZES  31:08
+Olha, eu não sei porque a gente não faz isso. A gente faz isso, mas em outras situações. E não exatamente, anão ser, por exemplo, que eu faça o confronto entre o Eol e o Lopes, no caso, que vai ser, né? E gere a diferença e dispara o e-mail padre identificando. Não sei.
+
+Ronaldo Robledo Mendes De Souza  31:14
+Mm-hmm.
+
+DANIELA ALVES MENEZES  31:26
+Aí eu acho que ainda há alguma coisa que precisa ser analisada. No momento, eu não tenho uma resposta efetiva para isso.
+
+Ronaldo Robledo Mendes De Souza  31:34
+Tranquilo, sem problema, sem problema. Eu acho que eu acho que por enquanto é isso pessoal, né? Eu acho Jessica, eu acho que acho que agora eu consigo a gente consegue finalizar aqui, né? Eu vou.
+Pegar essas informações, eu vou fazer um desenho arquitetural, vou ter uma conversa com o meu gerente, com Risso, que é o chefe da arquitetura. E qualquer duvidazinha agora, Jessica, eu acho que são dúvidas pequenas. Eu acho que eu consigo sanar com você mesmo se elas aparecerem, entendeu?
+
+Jessica Cristina de Oliveira  31:55
+Mhm.
+Mhm.
+
+Ronaldo Robledo Mendes De Souza  32:09
+E aí a gente consegue finalizar essa arquitetura agora ficou bem mais claro, principalmente essa parte das integrações de toda essa parte do relatório, o que se quer com o sistema Nox, o que quer que ele integra, o que ele gera. Eu acho que agora ficou mais tranquilo, Jessica.
+
+Jessica Cristina de Oliveira  32:24
+Você sabe me dizer quanto tempo mais levaria isso?
+
+Ronaldo Robledo Mendes De Souza  32:27
+então hoje é quinta-feira amanhã é feriado Jessica eu acredito que lá pela terça-feira eu já tenho um compilado esse relatório Tá eu já tenho um arquitetura já já montada nisso eu vou ver se eu consigo
+
+Jessica Cristina de Oliveira  32:33
+Uh-huh.
+That.
+
+Ronaldo Robledo Mendes De Souza  32:41
+É finalizar uma boa parte dele hoje para segunda-feira. Eu ainda acabar de finalizar, ele marca uma reunião com risco para a gente. E aí, se não tiver mais nada, alguma coisa pendente, alguma, algum detalhe. E aí na terça-feira eu consigo já.
+
+Jessica Cristina de Oliveira  32:45
+Mhm.
+
+Ronaldo Robledo Mendes De Souza  32:58
+Apresentar e a gente conversar sobre isso.
+
+Jessica Cristina de Oliveira  33:00
+Tá, mas aí a aí depois a arquitetura em si não tem mais.
+
+Ronaldo Robledo Mendes De Souza  33:04
+Não, eu já apresento a arquitetura já completa já.
+
+Jessica Cristina de Oliveira  33:08
+Uh, nossa, que ótima notícia! Tá bom, então vou, vou, é.
+
+Ronaldo Robledo Mendes De Souza  33:10
+Then.
+Tá bom, eu já apresento. É porque a documentação, os desenhos arquiteturais, eles já foram feitos aqui, né? Então agora eu só vou mais é refinar os detalhes, onde que vai buscar cada informação, como é que vai funcionar, tudo direitinho, o que o pessoal vai utilizar, quais são os micros serviços, vai precisar criar outro ou não.
+
+Jessica Cristina de Oliveira  33:21
+Okay.
+
+Ronaldo Robledo Mendes De Souza  33:29
+E aí a gente passa para o pessoal.
+
+Jessica Cristina de Oliveira  33:32
+Tá bom então, muito obrigada Daniela, muito obrigada Bruna, muito obrigada Robledo também. É.
+
+Ronaldo Robledo Mendes De Souza  33:33
+Tá bom?
+Eu que agradeço todo mundo a disponibilidade aí para a gente poder executar essa tarefa pessoal eu agradeço
+
+Jessica Cristina de Oliveira  33:40
+Mm.
+
+DANIELA ALVES MENEZES  33:45
+Está certo gente, muito obrigada também. Bom dia aí para vocês.
+
+Jessica Cristina de Oliveira  33:47
+Good yeah, bom dia, tchau.
+
+Ronaldo Robledo Mendes De Souza  33:48
+Bom dia, até mais.
+
+DANIELA ALVES MENEZES  33:49
+Oh.
