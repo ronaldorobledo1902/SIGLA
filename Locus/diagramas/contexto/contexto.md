@@ -1,8 +1,8 @@
 # Contexto Geral do Sistema — LOCUS (Lotação e Controle Unificado de Servidores)
 
-O **LOCUS** é o subsistema do **SIGLA** que gerencia o quadro funcional da SME (Secretaria Municipal de Educação): servidores ativos e inativos, Unidades Educacionais, módulos, lotação/exercício, movimentações, vacância, histórico e relatórios. Também concentra a **importação de dados** e as **permissões** de ALVO e LOCUS.
+O **LOCUS** é o subsistema do **SIGLA** que gerencia o quadro funcional da SME (Secretaria Municipal de Educação): servidores ativos e inativos, Unidades Educacionais, módulos, lotação/exercício, movimentações, vacância, histórico e relatórios.
 
-O usuário entra pelo **Portal SIGLA** (credencial única via CoreSSO) e é redirecionado para `/locus/`. O LOCUS consome e confronta os dados oficiais do **EOL (Escola Online / PRODAM)** e do **SIGPEC (SEGES)** e entrega dados importados e permissões ao **ALVO**.
+O usuário entra pelo **Portal SIGLA**. O **MS-AdminUsuarios** valida a credencial na API SME Integração e emite o JWT. O **MS-ImportaArquivos**, usado pelo ALVO, importa escolhas da PRODAM e exporta vagas e lotes no formato SIGPEC. O domínio de servidores e lotação é o **MS-Locus**, ainda proposta.
 
 **Premissa de negócio:** uso interno pela DICAR (Divisão de Gestão de Carreiras); o LOCUS não é origem oficial dos dados funcionais.
 
@@ -29,15 +29,14 @@ contexto-integracao
 | Elemento | Tipo | Papel |
 |----------|------|-------|
 | **Operador DICAR** | Person | Consulta e atualiza servidores, lotação/exercício, UE e módulos; trata divergências |
-| **Administrador SIGLA** | Person | Gerencia usuários e permissões do LOCUS e do ALVO; layouts de importação |
+| **Administrador SIGLA** | Person | Cadastro de usuários no MS-AdminUsuarios (grupos do ALVO). Perfis do LOCUS são proposta |
 | **Consulta (Jurídico / SEGES)** | Person externa | Leitura e relatórios — fase futura, acesso mínimo |
 | **Portal SIGLA** | Software System | Login, recuperação de senha, seleção ALVO / LOCUS |
 | **LOCUS** | Software System | Sistema em foco |
-| **ALVO** | Software System (vizinho) | Convocação e escolha — fora do escopo; consome dados importados e permissões |
-| **CoreSSO / API SME Integração** | Software System externo | Credenciais únicas da SME |
-| **Keycloak** | Software System externo (TO-BE) | Gestor de identidades em estudo pela SME-COTIC |
-| **EOL (PRODAM)** | Software System externo | Origem de servidores, cargos, unidades e DREs |
-| **SIGPEC (SEGES)** | Software System externo | Dados funcionais, processos seletivos e lotes de nomeação |
+| **ALVO** | Software System (vizinho) | Convocação e escolha |
+| **CoreSSO / API SME Integração** | Software System externo | Validação da credencial (`/api/v1/autenticacao/externa`) |
+| **EOL (PRODAM)** | Software System externo | Origem pretendida de servidores, cargos, unidades e DREs. O cliente PRODAM que existe hoje alimenta escolhas do ALVO |
+| **SIGPEC (SEGES)** | Software System externo | No código, destino da exportação de vagas e lotes. O confronto do quadro com o SIGPEC é proposta |
 | **E-mail SME (SMTP)** | Software System externo | E-mail de recuperação de senha |
 
 ---

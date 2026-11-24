@@ -2,7 +2,7 @@
 
 Inventário das funcionalidades do LOCUS que **ainda precisam ser construídas**, consolidado a partir do menu do frontend (`src/componentes/layout/MenuLateral.itens.ts`) e do questionário do PO (Product Owner).
 
-O módulo Fundamental II e Médio tem os cinco fluxos levantados (novembro/2026): Cadastro, Relatórios e consultas, Data base, Vagas e Remoção. O texto e os containers estão em [Fundamental II e Médio](../visao-arquitetural/proposta-fundamental-ii-medio.md) e na [página de diagramas](../diagramas/funcionalidades/fundamental-ii-medio.md).
+O módulo Fundamental II e Médio tem os cinco fluxos levantados (novembro/2026): Cadastro, Relatórios e consultas, Data base, Vagas e Remoção. Os containers estão no [reaproveitamento do ALVO](../cenarios/reaproveitamento-alvo/containers.md).
 
 Nesse recorte, F01 a F07 e F10 a F13 já têm fluxo. F08 (Classificação) aparece no Cadastro, com a operação ainda a mapear. Nenhuma dessas telas está construída, salvo a atualização por RF (F06), que segue com dados estáticos. F09, F14, F15 e F16 não fazem parte desse levantamento. Os outros dez módulos seguem sem levantamento.
 
@@ -25,9 +25,9 @@ Nesse recorte, F01 a F07 e F10 a F13 já têm fluxo. F08 (Classificação) apare
 | F11 | Data base | Datas de referência, migração de candidatos, extratos | Sem tela | MS-Locus | Sim | Sim (Fund. II) |
 | F12 | Vagas | Cálculo, EXC, confronto e arquivo para a Escolha | Sem tela dedicada; a gestão de UEs antecipa a consulta | MS-Locus | Sim | Sim (Fund. II) |
 | F13 | Remoção | Preparação da remoção (confronto, precários, congelado). Carga ainda a mapear | Sem tela | MS-Locus | Sim | Sim (Fund. II) |
-| F14 | Integração | Painel de integrações EOL/SIGPEC e divergências | Sem tela | MS-ImportaArquivos + MS-Locus | Sim | Proposta ([fluxo](../diagramas/funcionalidades/integracao-eol-sigpec.md)) |
-| F15 | Importação de dados | Cadastro de layout posicional, upload, validação, histórico | Sem tela | **MS-ImportaArquivos existente** | Sim | Sim |
-| F16 | Cadastro de usuários | Usuários e permissões ALVO + LOCUS | Sem tela (portal só tem login) | MS-AdminUsuarios (parcial) | Sim | Sim |
+| F14 | Integração | Painel de integrações EOL/SIGPEC e divergências | Sem tela | MS-ImportaArquivos + MS-Locus | Sim | Sem fluxo |
+| F15 | Importação de dados | Layout e importação existem no MS-ImportaArquivos para o ALVO (tipo `HABILITADOS`, escolhas PRODAM, exportação SIGPEC) | Sem tela no LOCUS | MS-ImportaArquivos (uso ALVO) | Não | Não |
+| F16 | Cadastro de usuários | Login e grupos do ALVO. O LOCUS não administra os dois subsistemas | Sem tela no LOCUS | MS-AdminUsuarios | Não | Não |
 
 ---
 
@@ -39,7 +39,7 @@ Nesse recorte, F01 a F07 e F10 a F13 já têm fluxo. F08 (Classificação) apare
 | Q2 | A carga da remoção entra no MS-Locus? Inscrição e classificação do concurso não estão no fluxo | O fluxo 5 prepara o concurso (confronto, precários, congelados e vagas) no MS-Locus. A carga está a mapear |
 | Q3 | O que a operação Classificação consulta e grava? O botão está no Cadastro e o parâmetro está a mapear | Regra de ordenação do Fluxo 1 |
 | Q4 | "Inclusão" cria servidor no LOCUS antes do EOL? Qual fonte prevalece? | Regra de conciliação. Substituição e cargo vago têm o parâmetro a mapear |
-| Q5 | Os relatórios dos outros módulos ficam no MS-Locus ou reaproveitam o MS-Relatorios do ALVO? | No Fund. II o relatório fica no MS-Locus e só lê a base de leitura |
+| Q5 | Os relatórios dos outros módulos ficam no MS-Locus ou reaproveitam o MS-Relatorios do ALVO? | No Fund. II o relatório fica no MS-Locus e consulta a Base de Dados SIGLA |
 | Q6 | Mecanismo PRODAM e SIGPEC (API, view, arquivo, SFTP)? | Desenho do worker de integração |
 | Q7 | Dados de saúde/afastamento são armazenados? | Classificação LGPD (Lei Geral de Proteção de Dados) e mascaramento |
 | Q8 | Perfis finais (Administrador, Operador DICAR, Consulta) e abrangência por DRE? | Modelo de permissões |
@@ -52,7 +52,3 @@ Nesse recorte, F01 a F07 e F10 a F13 já têm fluxo. F08 (Classificação) apare
 2. Adicionar uma página `FUNC - Fxx <nome>` no `ARQUITETURA - LOCUS - C4.drawio` usando a legenda C4 (página 1).
 3. Exportar o SVG para `diagramas/assets/` e atualizar a tabela de [assets](../diagramas/assets/index.md).
 4. Atualizar a coluna **Fluxo recebido** desta página.
-
-## Referências
-
-- Wiki Azure DevOps *COTIC - DevOps › SIGLA › Visão Arquitetural* — Jornadas › Importação de dados LOCUS e Cadastro de usuários (origem de F15 e F16)

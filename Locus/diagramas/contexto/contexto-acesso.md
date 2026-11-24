@@ -2,7 +2,7 @@
 
 ## Contexto
 
-Todo acesso ao SIGLA começa no **Portal SIGLA** com a credencial única da SME (CoreSSO). O **MS-AdminUsuarios** valida na API SME Integração e emite o JWT (JSON Web Token) usado por ALVO e LOCUS. **As permissões dos dois subsistemas são administradas no LOCUS**.
+Todo acesso ao SIGLA começa no **Portal SIGLA** com a credencial única da SME (CoreSSO). O **MS-AdminUsuarios** valida na API SME Integração e emite o JWT (JSON Web Token) usado por ALVO e LOCUS. Os grupos existentes são do ALVO. O LOCUS não administra as permissões dos dois subsistemas.
 
 ```{image} ../assets/07-locus-componente-ms-admin-usuarios.svg
 :width: 100%
@@ -31,7 +31,7 @@ Todo acesso ao SIGLA começa no **Portal SIGLA** com a credencial única da SME 
 ### Fora de escopo
 
 - Gestão de credenciais (continua no CoreSSO)
-- Federação Keycloak (em estudo)
+- Outro provedor de identidade (não há no código)
 
 ---
 
@@ -40,7 +40,8 @@ Todo acesso ao SIGLA começa no **Portal SIGLA** com a credencial única da SME 
 ```text
 Usuário → Portal SIGLA → MS-AdminUsuarios /login → API SME Integração (CoreSSO)
         ← JWT (grupos) → /locus/ → AuthGuard → menus por perfil → APIs (Bearer)
-Administrador → tela de permissões (LOCUS) → MS-AdminUsuarios → Base Sigla Escrita (auth_user, grupos)
+Administrador → MS-AdminUsuarios (grupos do ALVO) → Base de Dados SIGLA (auth_user, grupos)
+Tela de permissões do LOCUS → proposta (ADR-003)
 ```
 
 ---
@@ -53,7 +54,7 @@ Administrador → tela de permissões (LOCUS) → MS-AdminUsuarios → Base Sigl
 | MS-AdminUsuarios | Autenticação, emissão de JWT, usuários, grupos, senha |
 | API SME Integração / CoreSSO | Valida credenciais, dados do usuário, redefinição de senha |
 | E-mail SME | Envio do link de redefinição |
-| Base Sigla Escrita | Usuários e grupos locais |
+| Base de Dados SIGLA | Usuários e grupos locais |
 
 ---
 
@@ -61,8 +62,8 @@ Administrador → tela de permissões (LOCUS) → MS-AdminUsuarios → Base Sigl
 
 - Hoje os grupos são só do ALVO; perfis LOCUS precisam existir **antes** de expor dados reais.
 - O access token de 7 dias deve ser reduzido (ver [Segurança](../../seguranca/index.md)).
-- MFA (autenticação multifator) depende do IdP corporativo (CoreSSO/Keycloak).
+- MFA (autenticação multifator) não está implementado.
 
 ## Referências
 
-- Wiki SIGLA — Jornadas › Cadastro de usuários do sistema
+- `SME-SIGLA-MS-AdminUsuarios` — `AutenticacaoService`, grupos em `load_initial_permissions`

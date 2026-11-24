@@ -2,7 +2,7 @@
 
 O **LOCUS (Lotação e Controle Unificado de Servidores)** é o subsistema do **SIGLA** responsável pelo controle do quadro funcional da SME (Secretaria Municipal de Educação) de São Paulo: mais de **100 mil servidores** (ativos e inativos, efetivos, comissionados, contratados e admitidos) e cerca de **1.600 Unidades Educacionais**, além das DREs (Diretorias Regionais de Educação) e órgãos centrais.
 
-Substitui sistemas descontinuados que não recebem mais atualizações de legislação. Os dados **oficiais** continuam no **EOL (Escola Online / PRODAM)** e no **SIGPEC**; o LOCUS consome, confronta, complementa e historiza essas informações.
+Substitui sistemas descontinuados que não recebem mais atualizações de legislação. O quadro oficial continua no **EOL (Escola Online / PRODAM)** e no **SIGPEC**. O confronto diário desse quadro é proposta. O serviço de importação que existe hoje atende o ALVO: escolhas da PRODAM e exportação no formato SIGPEC.
 
 ## O que o sistema oferece (alvo do MVP)
 
@@ -12,7 +12,7 @@ Substitui sistemas descontinuados que não recebem mais atualizações de legisl
 - Integração com EOL e SIGPEC ao menos 1 vez ao dia, com **confronto de dados** e sinalização de divergências
 - Histórico de registros e acesso a **versões anteriores** (revisão e auditoria)
 - Relatórios básicos de lotação e quadro funcional
-- Administração de usuários e permissões do SIGLA (LOCUS e ALVO)
+- Administração de usuários e permissões do LOCUS (proposta; hoje os grupos do MS-AdminUsuarios são do ALVO)
 
 ## Como a solução está organizada
 
@@ -21,10 +21,10 @@ Substitui sistemas descontinuados que não recebem mais atualizações de legisl
 | **Portal / login** | Portal SIGLA (React) — login RF/senha, recuperação de senha, seleção ALVO / LOCUS | Existente |
 | **Interface LOCUS** | `SME-SIGLA-LOCUS-Frontend` — React 19, Vite 7, Ant Design 5, React Query, servido por Nginx em `/locus/` | Em construção, **dados estáticos** |
 | **Identidade e permissões** | `SME-SIGLA-MS-AdminUsuarios` — Django 5.2 / DRF (Django REST Framework), CoreSSO via API SME Integração, JWT (JSON Web Token) | Existente (perfis ALVO) |
-| **Importação de dados** | `SME-SIGLA-MS-ImportaArquivos` — Django / DRF + Celery, layouts posicionais, PRODAM, SIGPEC | Existente (uso ALVO), **reaproveitado** pelo LOCUS |
+| **Importação de dados** | `SME-SIGLA-MS-ImportaArquivos` — Django / DRF + Celery; layout de arquivo, escolhas PRODAM, exportação SIGPEC | Existente (uso ALVO). Reuso pelo LOCUS é proposta (ADR-005) |
 | **Domínio LOCUS** | **MS-Locus** — Django / DRF + Celery + `sigla-sdk` | **Planejado (TO-BE)** |
-| **Dados** | Base de Dados SIGLA (BASE SIGLA): **Base Sigla Escrita** e **Base Sigla Leitura** (PostgreSQL, CQRS (Command Query Responsibility Segregation)); Redis (broker Celery) | Escrita existente / leitura do LOCUS planejada |
-| **Runtime** | Kubernetes (Rancher), Ingress Nginx como API Gateway, Jenkins + Registry SME | A confirmar com Infra Ágil |
+| **Dados** | Base de Dados SIGLA (BASE SIGLA): PostgreSQL único (`db_sigla`); Redis (broker Celery) | Existente |
+| **Runtime** | Dockerfile nos repositórios. Elastic APM configurado e desligado por padrão. Rancher aparece no README do MS-ProcessosConvocacao. Sem manifesto de Ingress, rate limit, Grafana ou Jenkinsfile nos repositórios do LOCUS | Observado no código |
 
 ## Premissas importantes
 
@@ -32,7 +32,7 @@ Substitui sistemas descontinuados que não recebem mais atualizações de legisl
 - LOCUS **não é origem oficial**: EOL e SIGPEC continuam sendo a fonte; divergências são resolvidas pela DICAR
 - Dados pessoais sob **LGPD (Lei Geral de Proteção de Dados)**: controle por perfil, trilha de auditoria, criptografia e mascaramento em relatórios
 - Uso em horário comercial; disponibilidade sugerida de **99,5%**; consultas em até **3 s**, relatórios pesados **assíncronos**
-- O LOCUS **gerencia as permissões** de acesso dos dois subsistemas (ALVO e LOCUS)
+- Os grupos de acesso atuais são do ALVO, no MS-AdminUsuarios. Perfis do LOCUS são proposta (ADR-003)
 
 ## Onde aprofundar
 

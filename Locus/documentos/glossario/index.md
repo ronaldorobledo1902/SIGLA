@@ -41,14 +41,13 @@ Termos de negócio e técnicos usados na documentação do LOCUS.
 | Termo | Significado |
 |-------|-------------|
 | **EOL** | Escola Online — sistema externo da SME, mantido pela PRODAM. Origem de dados funcionais, módulos e unidades. Não é microsserviço do SIGLA |
-| **Sistema Escolha** | Sistema externo ao SIGLA. Envia candidatos e a agenda de nomeação ao LOCUS e recebe o arquivo de vagas. Não é o MS-Escolha |
+| **Sistema Escolha** | Legado do ALVO (convocação e escolha). Fora de integração: o ALVO não importa dado dele e o Locus não o chama. Não é o MS-Escolha |
 | **CI** | Centro de Informática. Envia o Excel de precários no período de remoção |
 | **MS-Escolha** | Microsserviço do ALVO (convocação e escolha de vagas). Não é o Sistema Escolha do módulo Fundamental II |
 | **PRODAM** | Empresa de Tecnologia da Informação e Comunicação do Município de São Paulo |
 | **SIGPEC** | Sistema Integrado de Gestão de Pessoas e Competências — mantido pela SEGES |
 | **SEGES** | Secretaria Municipal de Gestão |
-| **CoreSSO** | Single Sign-On corporativo da SME, acessado via API SME Integração |
-| **Keycloak** | Gestor de identidades em estudo pela SME-COTIC |
+| **CoreSSO** | Autenticação externa chamada pelo MS-AdminUsuarios na API SME Integração (`/api/v1/autenticacao/externa`) |
 | **SME-COTIC** | Coordenadoria de Tecnologia da Informação e Comunicação da SME |
 
 ## Técnicos
@@ -57,7 +56,6 @@ Termos de negócio e técnicos usados na documentação do LOCUS.
 |-------|-------------|
 | **C4** | Context, Containers, Components, Code — modelo de diagramas |
 | **ADR** | Architecture Decision Record |
-| **CQRS** | Command Query Responsibility Segregation — modelos de escrita e leitura separados |
 | **DRF** | Django REST Framework |
 | **JWT** | JSON Web Token |
 | **MFA** | Autenticação multifator |
@@ -65,8 +63,5 @@ Termos de negócio e técnicos usados na documentação do LOCUS.
 | **MS** | Microsserviço |
 | **TO-BE** | Estado futuro proposto (borda tracejada nos diagramas) |
 | **`sigla-sdk`** | Biblioteca comum dos MS SIGLA (HTTP client, middlewares, ApiKey, logs JSON) |
-| **Base de Dados SIGLA (BASE SIGLA)** | Conjunto das bases PostgreSQL do SIGLA: Base Sigla Escrita e Base Sigla Leitura |
-| **Base Sigla Escrita** | Base de escrita da Base de Dados SIGLA; guarda os write models |
-| **Base Sigla Leitura** | Base de leitura da Base de Dados SIGLA; read model atualizado via CQRS |
-| **Read model / Write model** | Estruturas de leitura (Base Sigla Leitura) e de escrita (Base Sigla Escrita) no CQRS |
+| **Base de Dados SIGLA (BASE SIGLA)** | PostgreSQL único do SIGLA (`db_sigla`). Consultas e gravações usam a mesma base |
 | **PVC** | PersistentVolumeClaim — volume persistente no Kubernetes |

@@ -28,13 +28,13 @@ A análise dos repositórios atuais encontrou lacunas que **precisam ser corrigi
 | Origem | Padrão | Cache / fila? |
 |--------|--------|---------------|
 | LOCUS SPA | React Query | Cache em memória do navegador |
-| MS-Locus (TO-BE) | REST síncrono + read model | Read model (CQRS (Command Query Responsibility Segregation)) |
+| MS-Locus (TO-BE) | REST síncrono na Base de Dados SIGLA | Mesma base das gravações |
 | Integração EOL/SIGPEC | Celery (madrugada) | Fila Redis |
 | Relatórios | Job assíncrono (TO-BE) | Fila Redis |
 
 ### 2.2 — Por que pode degradar
 
-- Listagens de 100 mil+ servidores sem paginação/índices no read model.
+- Listagens de 100 mil+ servidores sem paginação/índices.
 - Relatórios pesados executados de forma síncrona.
 - Carga integral (não incremental) do EOL concorrendo com o horário comercial.
 - Redis compartilhado entre todos os workers do SIGLA.
@@ -49,7 +49,7 @@ A análise dos repositórios atuais encontrou lacunas que **precisam ser corrigi
 
 ### 2.4 — Conclusão
 
-O volume de usuários é baixo; o risco está no **volume de dados** e nos **relatórios**. Paginação, read model e jobs assíncronos resolvem o requisito de ≤ 3 s.
+O volume de usuários é baixo; o risco está no **volume de dados** e nos **relatórios**. Paginação e jobs assíncronos resolvem o requisito de ≤ 3 s.
 
 ---
 
@@ -69,7 +69,7 @@ O volume de usuários é baixo; o risco está no **volume de dados** e nos **rel
 
 ### 3.4 — Reduzir validade e separar a chave do JWT (JSON Web Token)
 
-**Por quê:** access token de 7 dias no MS-AdminUsuarios; assinatura HS256 com `SECRET_KEY`/`JWT_SIGNING_KEY` compartilhada entre MS. Alvo: access ≤ 30 min + refresh com rotação, chave dedicada por ambiente; evolução para RS256/JWKS ou Keycloak.
+**Por quê:** access token de 7 dias no MS-AdminUsuarios; assinatura HS256 com `SECRET_KEY`/`JWT_SIGNING_KEY` compartilhada entre MS. Alvo: access ≤ 30 min + refresh com rotação e chave dedicada por ambiente.
 
 ### 3.5 — Remover segredos de exemplo e rotacionar
 
@@ -99,13 +99,13 @@ O volume de usuários é baixo; o risco está no **volume de dados** e nos **rel
 
 **Por quê:** sem `/health/ready`, pods sem banco/Redis continuam recebendo tráfego; alertar falha da carga diária.
 
-### 4.5 — Rate limiting e limite de upload no Ingress
+### 4.5 — Limite de abuso em login e importação
 
-**Por quê:** proteger login e importação contra abuso e arquivos grandes.
+**Por quê:** não há manifesto de Ingress nem rate limiting no código. Proteger login e importação contra abuso e arquivos grandes quando a borda HTTP estiver definida.
 
 ### 4.6 — Versionar a esteira
 
-**Por quê:** Jenkinsfile fica fora dos repositórios; incluir SAST (Static Application Security Testing), auditoria de dependências (`pip-audit`, `npm audit`) e cobertura ≥ 80%.
+**Por quê:** não há Jenkinsfile nos repositórios; incluir SAST (Static Application Security Testing) e auditoria de dependências (`pip-audit`, `npm audit`). A cobertura é relatório, sem mínimo obrigatório no código.
 
 ---
 
@@ -113,7 +113,7 @@ O volume de usuários é baixo; o risco está no **volume de dados** e nos **rel
 
 ### 5.1 — IdP corporativo com MFA
 
-**Por quê:** concluir o estudo Keycloak (SME-COTIC) e habilitar MFA para perfis com acesso amplo.
+**Por quê:** habilitar MFA para perfis com acesso amplo. O login atual só chama a API SME Integração.
 
 ### 5.2 — Criptografia em repouso
 
@@ -149,7 +149,6 @@ O volume de usuários é baixo; o risco está no **volume de dados** e nos **rel
 
 ## 7. Referência
 
-Documento arquitetural: [documento_arquitetural_sistema.md](../visao-arquitetural/documento_arquitetural_sistema.md)  
-Integrações: [integracoes_eol_sigpec.md](../visao-arquitetural/integracoes_eol_sigpec.md)
+Documento arquitetural: [documento_arquitetural_sistema.md](../visao-arquitetural/documento_arquitetural_sistema.md)
 
 ---

@@ -14,13 +14,13 @@
 
 ## Contexto
 
-O LOCUS precisa consumir EOL (PRODAM) e SIGPEC (SEGES) ao menos 1x/dia, com o mecanismo ainda indefinido. O **MS-ImportaArquivos**, atribuído ao LOCUS, já possui layouts posicionais, validação, registro de erros, histórico, cliente PRODAM, Celery beat e clientes HTTP para outros MS.
+O **MS-ImportaArquivos** não é um serviço do LOCUS. Hoje ele atende o ALVO: layout de arquivo (tipo padrão `HABILITADOS`), importação de escolhas da PRODAM para o MS-Escolha, e exportação de vagas e lotes no formato SIGPEC. Tem validação, registro de erros, histórico, Celery beat (`enfileirar_importacoes_escolhas`) e clientes HTTP para os MS do ALVO. Não importa SIGPEC nem grava quadro funcional do LOCUS.
 
 ## Decisão
 
 1. Toda **ingestão** de EOL e SIGPEC passa pelo **MS-ImportaArquivos**: novos tipos de importação (servidores, vínculos, unidades, dados funcionais) e novo cliente `api_locus`.
 2. O MS-ImportaArquivos **não aplica regra de negócio**: valida formato e entrega lotes ao **MS-Locus** (`/api/v1/integracao/`, `X-API-Key`), que faz a conciliação.
-3. Cargas automáticas via **Celery beat**; SIGPEC por **upload** enquanto não houver automação.
+3. A carga que existe hoje é a de escolhas PRODAM, via **Celery beat**. Ingestão de arquivo SIGPEC para o LOCUS não existe no serviço.
 4. Arquivos passam a ficar em **armazenamento persistente** (PVC ou object storage), não em `media/` do pod.
 
 ## Consequências
@@ -46,5 +46,3 @@ O LOCUS precisa consumir EOL (PRODAM) e SIGPEC (SEGES) ao menos 1x/dia, com o me
 ## Referências
 
 - `SME-SIGLA-MS-ImportaArquivos/importa_arquivos/*`
-- `visao-arquitetural/integracoes_eol_sigpec.md`
-- Wiki SIGLA — Jornadas › Importação de dados LOCUS

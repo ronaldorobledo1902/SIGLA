@@ -38,8 +38,8 @@ Núcleo funcional do LOCUS: a DICAR consulta e mantém o quadro de **servidores*
 ## Fluxo resumido
 
 ```text
-Operador → LOCUS SPA → MS-Locus API (JWT) → Services de domínio → write model + histórico
-                                                      └── Worker → read model → listagens/relatórios
+Operador → LOCUS SPA → MS-Locus API (JWT) → Services de domínio → Base de Dados SIGLA + histórico
+                                                      └── Worker → listagens/relatórios
 ```
 
 ---
@@ -50,8 +50,8 @@ Operador → LOCUS SPA → MS-Locus API (JWT) → Services de domínio → write
 |---------|-----------|
 | LOCUS SPA | Telas de UE, servidor e atualização |
 | MS-Locus (TO-BE) | Regras, persistência, histórico |
-| Base Sigla Escrita e Base Sigla Leitura | Write model do LOCUS na Escrita; read model na Leitura |
-| MS-ImportaArquivos | Abastece dados oficiais (EOL/SIGPEC) |
+| Base de Dados SIGLA | Consultas e gravações do LOCUS na mesma base PostgreSQL |
+| MS-ImportaArquivos | Hoje importa escolhas PRODAM e exporta SIGPEC (uso ALVO). Abastecer o quadro do LOCUS é proposta |
 
 ---
 

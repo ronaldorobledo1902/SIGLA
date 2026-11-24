@@ -18,7 +18,7 @@ ADR-002-autenticacao
 ADR-003-permissoes
 ADR-004-ms-locus
 ADR-005-integracao-importa-arquivos
-ADR-006-cqrs
+ADR-006-base-unica
 ADR-007-assincrono-celery
 ADR-008-historico-versoes
 ADR-009-infra-gateway
@@ -40,10 +40,10 @@ ADR-014-escolha-precarios
 | [ADR-003](./ADR-003-permissoes.md) | Permissões de ALVO e LOCUS geridas no LOCUS, com perfis LOCUS | Proposed |
 | [ADR-004](./ADR-004-ms-locus.md) | MS-Locus — quadro em exercício, sem recriar cadastros do ALVO | Proposed |
 | [ADR-005](./ADR-005-integracao-importa-arquivos.md) | Integrações EOL / SIGPEC — reaproveitar o MS-ImportaArquivos | Proposed |
-| [ADR-006](./ADR-006-cqrs.md) | Dados — Base de Dados SIGLA (BASE SIGLA): Base Sigla Escrita e Base Sigla Leitura, com CQRS (Command Query Responsibility Segregation) | Accepted (as-is) / leitura Proposed |
+| [ADR-006](./ADR-006-base-unica.md) | Dados — Base de Dados SIGLA única (PostgreSQL `db_sigla`) | Accepted (as-is) |
 | [ADR-007](./ADR-007-assincrono-celery.md) | Processamento assíncrono — Celery + Redis com filas por MS | Accepted (as-is) |
 | [ADR-008](./ADR-008-historico-versoes.md) | Histórico — `django-auditlog` + versões de registro | Proposed |
-| [ADR-009](./ADR-009-infra-gateway.md) | Infra — Ingress como API Gateway, Rancher, Jenkins | Accepted (as-is) — a confirmar |
+| [ADR-009](./ADR-009-infra-gateway.md) | Infra — o que os repositórios mostram | Accepted (as-is) |
 | [ADR-010](./ADR-010-branches.md) | Branches — padrão `test` / `homolog` / `master` | Accepted (as-is) |
 | [ADR-011](./ADR-011-relatorios-assincronos.md) | Relatórios — síncronos até 3 s, assíncronos acima | Proposed |
 | [ADR-012](./ADR-012-modulo-fundamental-ii.md) | Fundamental II e Médio no MS-Locus | Proposed |
@@ -71,10 +71,10 @@ ADR-005 (integração via MS-ImportaArquivos) [Proposed]
    ├── ADR-007 (Celery/Redis)
    └── ADR-004 (entrega ao MS-Locus)
 
-ADR-006 (CQRS)
-   └── ADR-011 (relatórios no read model)
+ADR-006 (base única)
+   └── ADR-011 (total síncrono e relatório completo em base de leitura)
 
-ADR-009 (Ingress/Rancher/Jenkins)
+ADR-009 (infra observada nos repositórios)
    └── ADR-010 (branches)
 ```
 
@@ -83,11 +83,10 @@ ADR-009 (Ingress/Rancher/Jenkins)
 ## Documentos de origem
 
 - `visao-arquitetural/documento_arquitetural_sistema.md`
-- `visao-arquitetural/integracoes_eol_sigpec.md`
 - `seguranca/index.md`
 - `diagramas/assets/ARQUITETURA - LOCUS - C4.drawio`
-- Wiki SIGLA *Visão Arquitetural* (ADR-01 Django × FastAPI), questionário do PO LOCUS
+- Questionário do PO LOCUS
 
 ---
 
-*Pacote inicial em 27/10/2026 (ADR-001 a ADR-011). ADR-012 a ADR-014, de 17/11/2026, registram o módulo Fundamental II e Médio. A integração com os sistemas externos permanece em aberto.*
+*Pacote inicial em 27/10/2026 (ADR-001 a ADR-011). ADR-012 a ADR-014, de 17/11/2026, registram o módulo Fundamental II e Médio. Em 24/11/2026 a entrevista tirou o Sistema Escolha da integração. EOL e CI seguem sem contrato.*

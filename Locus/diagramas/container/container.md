@@ -1,6 +1,6 @@
 # Container da Solução — LOCUS (Lotação e Controle Unificado de Servidores)
 
-Diagrama de **contêineres (C2)** do LOCUS: frontends, microsserviços e workers em Kubernetes (Rancher), persistência e sistemas externos. Elementos com **borda tracejada** são TO-BE.
+Diagrama de **contêineres (C2)** do LOCUS: frontends, microsserviços e workers. Elementos com **borda tracejada** são proposta ou não estão nos repositórios.
 
 ```{image} ../assets/03-locus-containers.svg
 :width: 100%
@@ -19,7 +19,7 @@ Diagrama de **contêineres (C2)** do LOCUS: frontends, microsserviços e workers
 
 ### 2. Camada de ingresso
 
-* **Ingress Nginx (API Gateway)** — `sigla.sme.prefeitura.sp.gov.br/locus` e `api-sigla.sme.prefeitura.sp.gov.br/ms-admin-usuarios`, `/ms-importa-arquivos`, `/ms-locus` (TO-BE).
+* **Ingress** — não há manifesto nos repositórios. Rate limit e gateway não estão no código.
 
 ### 3. Camada de API e workers (LOCUS-Backend)
 
@@ -29,23 +29,22 @@ Diagrama de **contêineres (C2)** do LOCUS: frontends, microsserviços e workers
 | MS-ImportaArquivos | Django 5.2 / DRF | Layouts, importações, PRODAM, exportações SIGPEC |
 | Worker ImportaArquivos | Celery worker + beat | Cargas agendadas (fila `importa_arquivos`) |
 | MS-Locus (TO-BE) | Django 5.2 / DRF + `sigla-sdk` | Domínio de servidores, UE, lotação, movimentações, histórico |
-| Worker MS-Locus (TO-BE) | Celery worker + beat | Conciliação, read model, relatórios (fila `locus`) |
+| Worker MS-Locus (TO-BE) | Celery worker + beat | Conciliação e relatórios (fila `locus`) |
 | Redis | Redis 7 | Broker Celery compartilhado |
 
 ### 4. Camada de dados (Persistência)
 
-* **Base Sigla Escrita** (PostgreSQL) — write model por domínio (usuários, importações, LOCUS), dentro da Base de Dados SIGLA (BASE SIGLA).
-* **Base Sigla Leitura** (PostgreSQL, TO-BE para o domínio LOCUS) — read model CQRS (Command Query Responsibility Segregation) para telas, relatórios e exportações.
+* **Base de Dados SIGLA** (PostgreSQL, `db_sigla`) — única base: usuários, importações, domínio LOCUS, consultas e relatórios.
 * **Arquivos importados** — hoje `media/` local; alvo: volume persistente / object storage.
 
 ### 5. Operação
 
-* **Jenkins + Registry SME** — build e deploy (Infra Ágil).
-* **Elastic APM + Grafana** — APM (Application Performance Monitoring), logs JSON e telemetria.
+* **Elastic APM** — cliente nas settings, desligado por padrão. Grafana não está nos repositórios.
+* **Jenkins** — não há Jenkinsfile nos repositórios do LOCUS.
 
 ### 6. Serviços externos
 
-* CoreSSO / API SME Integração, Keycloak (em estudo), EOL / PRODAM, SIGPEC (SEGES), E-mail SME (SMTP); ALVO como consumidor da Base de Dados SIGLA (BASE SIGLA).
+* CoreSSO / API SME Integração, EOL / PRODAM, SIGPEC (SEGES), E-mail SME (SMTP).
 
 ---
 
@@ -53,12 +52,8 @@ Diagrama de **contêineres (C2)** do LOCUS: frontends, microsserviços e workers
 
 | Padrão | LOCUS |
 |--------|-------|
-| BFF (Backend for Frontend) único | **Ausente** — o SPA fala com cada MS via Ingress |
+| BFF (Backend for Frontend) único | **Ausente** — o SPA fala com cada MS |
 | Mensageria | **Celery + Redis** (sem RabbitMQ) |
-| CQRS | Escrita existente; leitura **TO-BE** |
+| Base única | PostgreSQL `db_sigla`; consultas e gravações na mesma base |
 | Login | CoreSSO via MS-AdminUsuarios → JWT |
-| Origem oficial dos dados funcionais | **EOL / SIGPEC** (LOCUS concilia) |
-
-## Referências
-
-- Wiki Azure DevOps *COTIC - DevOps › SIGLA › Visão Arquitetural*
+| Importação em execução | Escolhas PRODAM e exportação SIGPEC, no MS-ImportaArquivos (uso ALVO) |

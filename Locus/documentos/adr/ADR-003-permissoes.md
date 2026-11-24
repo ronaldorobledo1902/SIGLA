@@ -46,11 +46,9 @@
 
 | Alternativa | Motivo de não adoção |
 |-------------|----------------------|
-| Permissões dentro do MS-Locus | Duplicaria o cadastro de usuários e contraria o dono único das permissões |
-| Papéis no Keycloak | Depende do estudo SME-COTIC; pode ser migração futura |
+| Permissões dentro do MS-Locus | Duplicaria o cadastro de usuários já existente no MS-AdminUsuarios |
 
 ## Referências
 
-- Wiki SIGLA — Jornadas › Cadastro de usuários do sistema
 - `SME-SIGLA-MS-AdminUsuarios` — `load_initial_permissions`
 - Questionário do PO — §2 e §8

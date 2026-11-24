@@ -24,14 +24,14 @@ Os backends do LOCUS seguem o padrão dos MS SIGLA: `api` → `serializers` → 
 | Services de domínio | `UnidadeService`, `ServidorService`, `LotacaoService`, `MovimentacaoService` |
 | Serviço de Conciliação | Confronto LOCUS × EOL/SIGPEC, divergências |
 | Histórico e versões | `django-auditlog` + snapshots (ADR-008) |
-| Repositórios | Escrita no write model, leitura no read model |
+| Repositórios | Consultas e gravações na Base de Dados SIGLA |
 | Models | Servidor, Vínculo, Cargo, UnidadeEducacional, DRE, ComponenteCurricular, Módulo, Lotação, Exercício, Afastamento, Movimentação, Divergência |
-| Tasks Celery | Conciliação diária, projeção do read model, relatórios |
+| Tasks Celery | Conciliação diária e relatórios assíncronos |
 | Relatórios e exportações | Quadro funcional e lotação (ADR-011) |
 
 ---
 
-## 2. MS-ImportaArquivos (uso LOCUS)
+## 2. MS-ImportaArquivos (uso ALVO)
 
 ```{image} ../assets/06-locus-componente-ms-importa-arquivos.svg
 :width: 100%
@@ -40,9 +40,9 @@ Os backends do LOCUS seguem o padrão dos MS SIGLA: `api` → `serializers` → 
 
 | Componente | Responsabilidade |
 |------------|------------------|
-| API Layouts | Layout posicional (txt/csv), campos, posições, tamanhos |
-| API Importações | Habilitados, vagas, lotes SIGPEC, escolhas PRODAM; histórico e erros |
-| Importações LOCUS (TO-BE) | Servidores/unidades EOL, dados funcionais SIGPEC |
+| API Layouts | Layout de arquivo (tipo e estrutura JSON) |
+| API Importações | Habilitados e escolhas PRODAM; histórico e erros |
+| Importações LOCUS (TO-BE) | Servidores/unidades EOL para o MS-Locus (proposta) |
 | API Exportações | Vagas SIGPEC, candidatos e lotes por processo (ALVO) |
 | Validação de layout | `validacao_*` + schema; `ImportacaoErro` |
 | Services de importação | `importacao_lotes`, `importacao_escolhas_service` |
@@ -82,7 +82,7 @@ Os backends do LOCUS seguem o padrão dos MS SIGLA: `api` → `serializers` → 
 4. **CORS explícito** e `JWT_SIGNING_KEY` dedicada; não usar `CORS_ALLOW_ALL_ORIGINS`.
 5. **Segredos** fora do Git; `env.example` só com placeholders.
 6. **Health checks** `/health/live` e `/health/ready`.
-7. **Cobertura ≥ 80%**.
+7. Relatório de cobertura. Os repositórios não definem um mínimo obrigatório.
 
 ---
 
@@ -95,11 +95,7 @@ Os backends do LOCUS seguem o padrão dos MS SIGLA: `api` → `serializers` → 
 | ADR-003 | Perfis LOCUS |
 | ADR-004 | MS-Locus |
 | ADR-005 | Integração via MS-ImportaArquivos |
-| ADR-006 | CQRS |
+| ADR-006 | Base única |
 | ADR-007 | Celery + Redis |
 | ADR-008 | Histórico e versões |
 | ADR-011 | Relatórios assíncronos |
-
-## Referências
-
-- Wiki Azure DevOps *COTIC - DevOps › SIGLA › Visão Arquitetural* — cobertura mínima de testes de 80%

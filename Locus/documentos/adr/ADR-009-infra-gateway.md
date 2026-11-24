@@ -1,48 +1,49 @@
-# ADR-009 — Infra: Ingress como API Gateway, Kubernetes Rancher, Jenkins
+# ADR-009 — Infra observada nos repositórios
 
 
-| Campo            | Valor                                       |
-| ---------------- | ------------------------------------------- |
-| **Status**       | Accepted (as-is) — a confirmar para o LOCUS |
-| **Data**         | 2026-10-27                                  |
-| **Decisores**    | Arquitetura SIGLA / Infra Ágil          |
-| **Sistema**      | SIGLA                                       |
-| **Relacionadas** | ADR-002, ADR-010                            |
+| Campo            | Valor                          |
+| ---------------- | ------------------------------ |
+| **Status**       | Accepted (as-is)               |
+| **Data**         | 2026-11-17                     |
+| **Decisores**    | Arquitetura SIGLA              |
+| **Sistema**      | SIGLA                          |
+| **Relacionadas** | ADR-002, ADR-010               |
 
 
 ---
 
 ## Contexto
 
-A plataforma do SIGLA é Kubernetes via Rancher, com Ingress Controllers como API Gateway (com possibilidade de Keycloak, TLS, circuit breaker e rate limiting), Jenkins para CI/CD e Grafana + Elastic para observabilidade. Os repositórios LOCUS têm Dockerfile, mas nenhum Jenkinsfile versionado (só `CODEOWNERS`).
+Os repositórios do SIGLA trazem Dockerfile. O cliente Elastic APM está nas settings e permanece desligado enquanto `ELASTIC_APM_ENABLED` não for `1`. O README do `SME-SIGLA-MS-ProcessosConvocacao` cita dois deployments no Rancher/Kubernetes (QA e homologação).
+
+Não há, nestes repositórios, manifesto de Ingress, rate limiting, circuit breaker, Grafana nem Jenkinsfile.
 
 ## Decisão
 
-1. LOCUS roda no **Rancher SME**, com front em `sigla.sme.prefeitura.sp.gov.br/locus` e APIs em `api-sigla.sme.prefeitura.sp.gov.br/ms-*`.
-2. **Ingress Nginx** como gateway: TLS, roteamento por path, **rate limiting** e limites de upload para importação.
-3. **Jenkins** (Infra Ágil) + **Registry SME**; deploy por branch (ADR-010).
-4. Configuração por ConfigMap/Secret; o frontend recebe `VITE_LOCUS_API_URL` por build arg ou por injeção em runtime (`window.__ENV__`).
+1. Ingress, rate limiting, circuit breaker e um gateway de identidade **não** fazem parte da descrição do sistema atual.
+2. A observabilidade presente no código é o cliente Elastic APM (desligado por padrão) e os logs JSON do `sigla-sdk`.
+3. A esteira de deploy não está versionada nos repositórios do LOCUS.
+4. A URL do frontend continua no build (`VITE_LOCUS_API_URL` / `VITE_BASE_PATH`).
 
 ## Consequências
 
 ### Positivas
 
-- Mesmo runtime do restante do SIGLA
-- Gateway sem novo produto
+- A documentação descreve o que os repositórios contêm
+- Não se assume quota, TLS de borda nem um segundo provedor de identidade
 
 ### Negativas
 
-- Pipeline fora do repositório dificulta revisão e reprodutibilidade
-- Funções de gateway (auth centralizada, quotas) limitadas ao que o Ingress oferece
+- O caminho real de publicação (host, TLS, orquestração do LOCUS) continua fora destes repositórios
 
 ## Alternativas consideradas
 
 | Alternativa | Motivo de não adoção |
 |-------------|----------------------|
-| API Gateway dedicado (Kong etc.) | Fora do padrão SME |
-| GitHub Actions | Esteira oficial é Jenkins |
+| Descrever um API Gateway com rate limit e identidade na borda | Não há manifesto nem código correspondente |
 
 ## Referências
 
-- Wiki SIGLA — API Gateway, Tecnologias Utilizadas
 - `SME-SIGLA-LOCUS-Frontend/Dockerfile`, `nginx.conf`, `entrypoint.sh`
+- Settings `ELASTIC_APM_*` dos microsserviços
+- `SME-SIGLA-MS-ProcessosConvocacao/README.md` — menção a Rancher

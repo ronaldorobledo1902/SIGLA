@@ -2,11 +2,11 @@
 
 ## Contexto
 
-O LOCUS precisa consumir os dados oficiais do **EOL (PRODAM)** e do **SIGPEC (SEGES)** ao menos 1x/dia e confrontá-los com o quadro funcional. A ingestão reaproveita o **MS-ImportaArquivos** (ADR-005), que já tem layout posicional, validação e histórico; a conciliação fica no **MS-Locus**.
+O LOCUS precisa consumir os dados oficiais do **EOL (PRODAM)** e do **SIGPEC (SEGES)** ao menos 1x/dia e confrontá-los com o quadro funcional. Isso é proposta (ADR-005). Hoje o **MS-ImportaArquivos** atende o ALVO: layout de arquivo (tipo e estrutura JSON, padrão `HABILITADOS`), importação de escolhas da PRODAM e exportação SIGPEC. A conciliação do quadro ficaria no **MS-Locus**.
 
 ```{image} ../assets/06-locus-componente-ms-importa-arquivos.svg
 :width: 100%
-:alt: Componentes do MS-ImportaArquivos (uso LOCUS)
+:alt: Componentes do MS-ImportaArquivos (uso ALVO)
 ```
 
 ---
@@ -21,28 +21,26 @@ O LOCUS precisa consumir os dados oficiais do **EOL (PRODAM)** e do **SIGPEC (SE
 
 ## Escopo
 
-### Em escopo
+### Em escopo da proposta
 
-- Cadastro de layout posicional (txt/csv; posição, tamanho e tipo de cada campo)
-- Upload de arquivo SIGPEC e validação contra o layout
-- Carga agendada a partir da PRODAM (mecanismo a confirmar)
+- Novos tipos de importação para servidores e unidades
 - Entrega de lotes ao MS-Locus e conciliação
-- Histórico de importações e erros
+- Histórico de importações e erros (o registro de erro já existe no serviço)
 
-### Fora de escopo
+### O que o serviço já faz (ALVO)
 
-- Exportações para o ALVO (vagas SIGPEC, lotes de nomeação) — continuam no MS-ImportaArquivos, sem mudança
+- Layout de arquivo e importação de habilitados
+- Carga de escolhas da PRODAM
+- Exportação de vagas e lotes no formato SIGPEC
 
 ---
 
 ## Fluxo resumido
 
 ```text
-Beat → Worker ImportaArquivos → EOL/PRODAM → valida → MS-Locus /integracao → conciliação → divergências
-Operador → upload SIGPEC → MS-ImportaArquivos → (mesmo caminho)
+Beat → Worker ImportaArquivos → escolhas PRODAM → MS-Escolha (comportamento atual)
+Proposta: EOL/PRODAM → valida → MS-Locus /integracao → conciliação → divergências
 ```
-
-Fluxo completo em [Integração EOL / SIGPEC](../funcionalidades/integracao-eol-sigpec.md).
 
 ---
 
@@ -53,7 +51,7 @@ Fluxo completo em [Integração EOL / SIGPEC](../funcionalidades/integracao-eol-
 | MS-ImportaArquivos + Worker | Ingestão, validação, histórico |
 | MS-Locus + Worker | Conciliação e aplicação |
 | EOL / PRODAM | Origem (API/view a confirmar) |
-| SIGPEC / SEGES | Origem (arquivo TXT/CSV) |
+| SIGPEC / SEGES | Destino da exportação atual de vagas e lotes. Origem do quadro do LOCUS é proposta |
 | Redis | Broker Celery |
 
 ---

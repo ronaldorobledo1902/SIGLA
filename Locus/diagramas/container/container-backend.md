@@ -22,7 +22,7 @@ O backend do LOCUS é formado por três microsserviços Django/DRF (Django REST 
 | Worker | Fila | Tarefas |
 |--------|------|---------|
 | Worker ImportaArquivos | `importa_arquivos` | `enfileirar_importacoes_escolhas` (1 min), cargas EOL/SIGPEC (proposta) |
-| Worker MS-Locus | `locus` | Conciliação diária, projeção do read model, relatórios assíncronos |
+| Worker MS-Locus | `locus` | Conciliação diária e relatórios assíncronos |
 
 ## 3. Comunicação
 

@@ -6,9 +6,9 @@
 
 ## 1. Visão Geral do Sistema
 
-O **SIGLA** é composto por dois subsistemas: **ALVO** (Alocação de Vagas Online — convocação e escolha de vagas) e **LOCUS** (gestão do quadro funcional, lotação, importação de dados e permissões). Ambos compartilham login (Portal SIGLA + CoreSSO), a **Base de Dados SIGLA (BASE SIGLA)** — **Base Sigla Escrita** e **Base Sigla Leitura**, em PostgreSQL com CQRS — e o padrão de microsserviços Python/Django em Kubernetes (Rancher).
+O **SIGLA** é composto por dois subsistemas: **ALVO** (Alocação de Vagas Online — convocação e escolha de vagas) e **LOCUS** (gestão do quadro funcional e da lotação). Ambos compartilham o login (Portal SIGLA + API SME Integração) e a **Base de Dados SIGLA (BASE SIGLA)** — um único PostgreSQL (`db_sigla`). Os microsserviços existentes são Python/Django.
 
-Em outubro/2026 o LOCUS tem **frontend em construção com dados estáticos**. O LOCUS já conta com dois microsserviços — **MS-ImportaArquivos** e **MS-AdminUsuarios** — e esta documentação propõe um terceiro, o **MS-Locus**, para o domínio de servidores, unidades e lotação (ADR-004).
+Em outubro/2026 o LOCUS tem **frontend em construção com dados estáticos**. **MS-AdminUsuarios** faz o login do SIGLA (grupos atuais do ALVO). **MS-ImportaArquivos** atende o ALVO (habilitados, escolhas PRODAM, exportação SIGPEC). Esta documentação propõe o **MS-Locus** para o domínio de servidores, unidades e lotação (ADR-004).
 
 ### 1.1 — Mapa de produtos e repositórios
 
@@ -18,7 +18,7 @@ Em outubro/2026 o LOCUS tem **frontend em construção com dados estáticos**. O
 | **Portal SIGLA**       | `SME-SIGLA-Frontend` (espelhado em `modules/sigla` do LOCUS) | React 19 / Vite                                                                                      | Login, recuperação de senha, seleção ALVO / LOCUS                                                                              | Existente                                                 |
 | **LOCUS Frontend**     | `SME-SIGLA-LOCUS-Frontend`                                   | React 19, Vite 7, TypeScript, Ant Design 5, React Query, Axios, Zod, styled-components; Nginx alpine | Telas de UE, servidor, atualizações, menus do domínio                                                                          | **Em construção**; contratos prontos, respostas estáticas |
 | **MS-AdminUsuarios**   | `SME-SIGLA-MS-AdminUsuarios`                                 | Django 5.2, DRF (Django REST Framework) 3.15, SimpleJWT, `sigla-sdk`                                 | Login via CoreSSO, JWT (JSON Web Token), usuários, grupos, senha, e-mail                                                       | Existente; grupos orientados ao ALVO                      |
-| **MS-ImportaArquivos** | `SME-SIGLA-MS-ImportaArquivos`                               | Django 5.2 / DRF + Celery 5.4 + Redis                                                                | Layouts, importação CSV/TXT, PRODAM, exportações SIGPEC                                                                        | Existente (uso ALVO); **reaproveitado** (ADR-005)         |
+| **MS-ImportaArquivos** | `SME-SIGLA-MS-ImportaArquivos`                               | Django 5.2 / DRF + Celery 5.4 + Redis                                                                | Layout de arquivo, escolhas PRODAM, exportação SIGPEC                                                                          | Existente (uso ALVO). Reuso pelo LOCUS é proposta (ADR-005) |
 | **MS-Locus**           | *a criar*                                                    | Django 5.2 / DRF + Celery + `sigla-sdk`                                                              | Servidores, UE, módulos, lotação/exercício, movimentações, vacância, histórico, conciliação, relatórios                        | **TO-BE**                                                 |
 | **sigla-sdk**          | `SME-SIGLA-SDK-Microsservico` (tag `1.1.1`)                  | Python                                                                                               | `http_client`, `CorrelationIdMiddleware`, `AuditlogJWTMiddleware`, `ApiKeyAuthentication` (`X-API-Key`), `CustomJsonFormatter` | Existente                                                 |
 
@@ -54,8 +54,7 @@ Comunicação **síncrona HTTP/REST** (HTTPS) entre frontend e microsserviços e
 
 | Conexão                      | Driver / padrão                                                                                              |
 | ---------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| Base Sigla Escrita           | PostgreSQL — Django ORM (psycopg); write model por domínio                                                   |
-| Base Sigla Leitura           | PostgreSQL — read model (CQRS (Command Query Responsibility Segregation)); projeção do domínio LOCUS é TO-BE |
+| Base de Dados SIGLA          | PostgreSQL único (`db_sigla`) — Django ORM (psycopg); consultas e gravações na mesma base                    |
 | Redis                        | Broker Celery (filas dedicadas por MS, ex.: `importa_arquivos`; proposta `locus`)                            |
 | CoreSSO / API SME Integração | `requests` — `POST /api/v1/autenticacao/externa` (header `x-api-eol-key`), `AutenticacaoSgp/*`               |
 | PRODAM                       | `api_prodam` (timeout 300 s)                                                                                 |
@@ -74,14 +73,14 @@ Comunicação **síncrona HTTP/REST** (HTTPS) entre frontend e microsserviços e
 | LOCUS SPA                             | React Query (memória do navegador) | Cache de consultas por chave, invalidação após mutação            |
 | LOCUS SPA                             | `localStorage`                     | `TOKEN` JWT e dados do usuário                                    |
 | MS-AdminUsuarios / MS-ImportaArquivos | —                                  | Sem cache                                                         |
-| MS-Locus (TO-BE)                      | **Base Sigla Leitura**             | Consultas e relatórios; cache Redis só se medição indicar (≤ 3 s) |
+| MS-Locus (TO-BE)                      | **Base de Dados SIGLA**            | Consultas e relatórios na mesma base; cache Redis só se medição indicar (≤ 3 s) |
 
 
 ---
 
 ### 3.3 — Existe padrão de observabilidade?
 
-**Sim, padronizado pelo** `sigla-sdk` (Grafana + Elastic).
+O `sigla-sdk` padroniza log JSON e correlation id. O cliente **Elastic APM** está nas settings e fica desligado por padrão (`ELASTIC_APM_ENABLED`). Grafana não está nos repositórios.
 
 
 | Capacidade                               | MS-AdminUsuarios                | MS-ImportaArquivos | MS-Locus (TO-BE)                      | Frontend    |
@@ -101,10 +100,10 @@ Comunicação **síncrona HTTP/REST** (HTTPS) entre frontend e microsserviços e
 
 | Padrão                                                       | Onde                                                                                                                                    |
 | ------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
-| Microsserviço por domínio                                    | SIGLA — LOCUS: AdminUsuarios, ImportaArquivos, MS-Locus                                                                                 |
+| Microsserviço por domínio                                    | AdminUsuarios e ImportaArquivos existem no SIGLA (uso do ALVO). MS-Locus é proposta                                                     |
 | Camadas `api → serializers → services → repository → models` | MS SIGLA existentes; adotado no MS-Locus                                                                                                |
 | Repository                                                   | `repository.py` nos MS                                                                                                                  |
-| CQRS                                                         | Base de Dados SIGLA: **Base Sigla Escrita** (write models por domínio) e **Base Sigla Leitura** (read models por processos assíncronos) |
+| Base única                                                   | Base de Dados SIGLA (PostgreSQL, `db_sigla`): consultas e gravações no mesmo banco (ADR-006)                |
 
 
 ---
@@ -119,7 +118,7 @@ Comunicação **síncrona HTTP/REST** (HTTPS) entre frontend e microsserviços e
 | MS-AdminUsuarios   | Session, Token, JWT, ApiKey                              | `CORS_ALLOW_ALL_ORIGINS=True`; access token de **7 dias**       |
 | MS-ImportaArquivos | JWT HS256 (24 h) + ApiKey                                | `CORS_ALLOW_ALL_ORIGINS=True`; chave JWT cai para `SECRET_KEY`  |
 | MS → MS            | `X-API-Key` (`sigla-sdk`)                                | Rotação não documentada                                         |
-| Ingress            | TLS                                                      | Rate limiting / WAF (Web Application Firewall) não evidenciados |
+| Borda HTTP         | Não há manifesto de Ingress nos repositórios             | Rate limiting e WAF não evidenciados                            |
 
 
 Detalhes e plano em [Segurança](../seguranca/index.md).
@@ -134,7 +133,7 @@ Detalhes e plano em [Segurança](../seguranca/index.md).
 | Fila               | Produtor                  | Consumidor             | Uso                                                                                   |
 | ------------------ | ------------------------- | ---------------------- | ------------------------------------------------------------------------------------- |
 | `importa_arquivos` | MS-ImportaArquivos / beat | Worker ImportaArquivos | Importações (beat `enfileirar_importacoes_escolhas` a cada 1 min); timeouts 300/360 s |
-| `locus` (TO-BE)    | MS-Locus / beat           | Worker MS-Locus        | Conciliação diária, relatórios assíncronos, projeção do read model                    |
+| `locus` (TO-BE)    | MS-Locus / beat           | Worker MS-Locus        | Conciliação diária e relatórios assíncronos                                           |
 
 
 ---
@@ -150,13 +149,13 @@ Os repositórios LOCUS já usam `test` → `homolog` → `master`, Ver ADR-010.
 
 | Item         | Situação                                                                                      |
 | ------------ | --------------------------------------------------------------------------------------------- |
-| Orquestração | Kubernetes via Rancher — **a confirmar** para o LOCUS                                         |
-| API Gateway  | Ingress Nginx; Keycloak, TLS, rate limiting previstos                                         |
-| CI/CD        | Jenkins (Jenkinsfile mantido pela Infra Ágil, fora dos repositórios) + Registry SME           |
-| Banco        | PostgreSQL — Base de Dados SIGLA (BASE SIGLA): Base Sigla Escrita e Base Sigla Leitura (CQRS) |
-| Arquivos     | `media/` local no pod do MS-ImportaArquivos — **precisa de PVC ou object storage**            |
-| Imagens      | Python 3.12 (MS), `nginx:alpine` (front, `VITE_BASE_PATH=/locus/`)                            |
-| Testes       | Cobertura mínima de **80%**; frontend com Jest                                                |
+| Orquestração | Rancher citado no README do MS-ProcessosConvocacao; sem manifesto Kubernetes nos repositórios do LOCUS |
+| Borda HTTP   | Sem manifesto de Ingress. Rate limit e gateway não estão no código                            |
+| CI/CD        | Sem Jenkinsfile nos repositórios do LOCUS                                                     |
+| Banco        | PostgreSQL único — Base de Dados SIGLA (BASE SIGLA, `db_sigla`)                               |
+| Arquivos     | `media/` local no pod do MS-ImportaArquivos — **precisa de PVC ou object storage**             |
+| Imagens      | Python 3.12 (MS), `nginx:alpine` (front, `VITE_BASE_PATH=/locus/`)                             |
+| Testes       | Relatório de cobertura sem mínimo obrigatório; frontend com Jest                               |
 
 
 ---
@@ -170,40 +169,44 @@ Usuário → Portal SIGLA → MS-AdminUsuarios /login → CoreSSO (API SME Integ
        ← JWT (localStorage TOKEN) → seleção de sistema → /locus/ → APIs com Bearer
 ```
 
-![Login SIGLA](../documentos/anexos/wiki/Login_1.png)
-
 ### 4.2 — Integração e conciliação diária (proposta)
+
+Hoje o MS-ImportaArquivos importa escolhas da PRODAM para o MS-Escolha e exporta vagas e lotes no formato SIGPEC. O fluxo abaixo é proposta para o quadro do LOCUS. A ingestão de arquivo SIGPEC para esse quadro não existe.
 
 ```text
 Beat (madrugada) → Worker ImportaArquivos → EOL/PRODAM → valida layout → MS-Locus /integracao (X-API-Key)
 → Worker MS-Locus (ConciliacaoService) → divergências + histórico → tela de divergências (DICAR)
-SIGPEC → arquivo → upload pelo operador → mesmo caminho a partir da validação
 ```
-
-![Fluxo de integração EOL/SIGPEC](../diagramas/assets/08-locus-fluxo-integracao-eol-sigpec.svg)
-
-Detalhe em [Integrações EOL / SIGPEC](integracoes_eol_sigpec.md).
 
 ### 4.3 — Atualização funcional com histórico
 
 ```text
 Operador → DetalheServidor → POST atualização (motivo, portaria, data, documento)
-→ MS-Locus valida (serializer) → LotacaoService/MovimentacaoService → write model + auditlog/versão
-→ projeção assíncrona no read model
+→ MS-Locus valida (serializer) → LotacaoService/MovimentacaoService → Base de Dados SIGLA + auditlog/versão
 ```
 
-### 4.4 — Relatório pesado
+### 4.4 — Relatório
+
+A entrevista (`Levantamento/transcricaoreuniao.vtt`) separou dois pedidos. O total de lotados, afastados e vagas volta na tela. O relatório mensal completo — cargos, pessoas afastadas e o motivo do afastamento, hoje montado à mão — é processamento pesado: o usuário busca o arquivo depois.
 
 ```text
-Operador solicita → MS-Locus cria job (202 Accepted) → Worker gera arquivo a partir do read model
-→ tela consulta status → download
+Total simples → MS-Locus lê a base de relatórios → tela mostra o número
+
+Relatório completo → MS-Locus cria job (202 Accepted) → Worker consolida o schema do Locus
+→ grava a base de relatórios e o arquivo → tela consulta status → download
 ```
+
+O desenho de containers, no padrão da imagem de referência (base dedicada, serviço e tela, com download), está no [fluxo 2 do cenário de reaproveitamento](../cenarios/reaproveitamento-alvo/containers.md). Detalhe da decisão no [ADR-011](../documentos/adr/ADR-011-relatorios-assincronos.md).
 
 ---
 
 ### 4.5 — Módulo Fundamental II e Médio
 
-O primeiro módulo da área fica no MS-Locus. O recorte cobre os cinco fluxos: Cadastro, Relatórios, Data base, Vagas e Remoção. A integração com EOL, Sistema Escolha e CI não está definida; o acesso é do MS-Locus. Texto e diagramas: [Fundamental II e Médio](proposta-fundamental-ii-medio.md).
+O primeiro módulo da área fica no MS-Locus. O recorte cobre os cinco fluxos: Cadastro, Relatórios, Data base, Vagas e Remoção.
+
+A entrevista (`Levantamento/transcricaoreuniao.vtt`) fechou o Sistema Escolha. Ele é o legado do ALVO. O ALVO não importa dado dele e não devolve nada. O Locus também não chama esse legado: a ligação “vagas e candidatos” saiu dos diagramas de contexto, de Data base e de Vagas. O nomeado que a equipe lança hoje no Banco Access passa a ser lido nos microsserviços do ALVO. A carga inicial do Locus é o conteúdo atual do Access. A planilha citada na entrevista é a do EOL, subida manualmente no Access; não é arquivo do Escolha.
+
+EOL e CI continuam sem contrato de integração do MS-Locus. Containers deste recorte: [reaproveitamento do ALVO](../cenarios/reaproveitamento-alvo/containers.md).
 
 ## 5. Avaliação consolidada
 
@@ -229,11 +232,11 @@ O primeiro módulo da área fica no MS-Locus. O recorte cobre os cinco fluxos: C
 | C2 - Containers LOCUS               | Containers                   | `03-locus-containers.svg`                     |
 | C3 - Componentes LOCUS Frontend     | Componentes do frontend      | `04-locus-componente-frontend.svg`            |
 | C3 - Componentes MS-Locus (TO-BE)   | Componentes do MS de domínio | `05-locus-componente-ms-locus.svg`            |
-| C3 - Componentes MS-ImportaArquivos | Componentes (uso LOCUS)      | `06-locus-componente-ms-importa-arquivos.svg` |
+| C3 - Componentes MS-ImportaArquivos | Componentes (uso ALVO)       | `06-locus-componente-ms-importa-arquivos.svg` |
 | C3 - Componentes MS-AdminUsuarios   | Componentes                  | `07-locus-componente-ms-admin-usuarios.svg`   |
-| FLUXO - Integração e conciliação    | Fluxo EOL/SIGPEC proposto    | `08-locus-fluxo-integracao-eol-sigpec.svg`    |
 | SISTEMA - Pipeline CI/CD            | Esteira                      | `09-locus-pipeline-cicd.svg`                  |
 | SISTEMA - Matriz Risco de Segurança | Matriz de risco              | `10-locus-matriz-risco.svg`                   |
+| C2 - Reaproveitamento               | Visão, cadastro, relatórios, data base, vagas, remoção e importação do EOL | `17` a `23` em `diagramas/assets` |
 
 
 ---
@@ -245,11 +248,11 @@ O primeiro módulo da área fica no MS-Locus. O recorte cobre os cinco fluxos: C
 | ----------------------------------------- | ------------------------------ | ------------------------------------------------------------------------- |
 | CoreSSO / API SME Integração indisponível | Ninguém faz login              | Timeout curto + mensagem clara; sessão vigente continua                   |
 | PRODAM/EOL fora na janela de carga        | Conciliação do dia não roda    | Retry com backoff; alerta; LOCUS segue com dados do dia anterior          |
-| Arquivo SIGPEC fora do layout             | Carga rejeitada                | Validação por layout + `ImportacaoErro` exibido ao operador               |
+| Layout de importação inválido             | Importação de escolhas rejeitada | Validação + `ImportacaoErro`                                            |
 | Redis indisponível                        | Filas param                    | Probes; alertas; tarefas idempotentes                                     |
 | Pod do MS-ImportaArquivos reinicia        | Perda de arquivos em `media/`  | PVC (PersistentVolumeClaim) ou object storage                             |
-| Read model desatualizado                  | Relatórios divergentes da tela | Monitorar atraso da projeção; reprocessamento                             |
-| Chave JWT compartilhada vazada            | Token forjado em todos os MS   | Chave dedicada (`JWT_SIGNING_KEY`), rotação, migrar para RS256 / Keycloak |
+| Relatório pesado na mesma base           | Consulta disputa recurso com a operação | Job assíncrono, paginação e índices (ADR-011)                      |
+| Chave JWT compartilhada vazada            | Token forjado em todos os MS   | Chave dedicada (`JWT_SIGNING_KEY`) e rotação                              |
 
 
 ---
@@ -257,6 +260,5 @@ O primeiro módulo da área fica no MS-Locus. O recorte cobre os cinco fluxos: C
 ## Referências
 
 - Repositórios `SME-SIGLA-LOCUS-Frontend`, `SME-SIGLA-Frontend`, `SME-SIGLA-MS-AdminUsuarios`, `SME-SIGLA-MS-ImportaArquivos`, `SME-SIGLA-SDK-Microsservico`
-- Wiki Azure DevOps *COTIC - DevOps › SIGLA › Visão Arquitetural* (recorte em [Anexos](../documentos/anexos/index.md))
 - Questionário do PO (Product Owner) LOCUS
 

@@ -14,14 +14,14 @@
 
 ## Contexto
 
-Os usuários do SIGLA usam a credencial única da SME (a mesma do antigo sistema ESCOLHAS). O **CoreSSO** é o provedor e o **Keycloak** permanece como possibilidade em estudo pela SME-COTIC. O PO pediu verificação do IdP (Identity Provider) corporativo e recomenda MFA (autenticação multifator).
+O login do SIGLA valida a credencial na **API SME Integração** (`/api/v1/autenticacao/externa`, `codigoSistema=1`) e o MS-AdminUsuarios emite o JWT. Não há outro provedor de identidade no código. O PO recomenda MFA (autenticação multifator).
 
 ## Decisão
 
 1. O **Portal SIGLA** autentica no **MS-AdminUsuarios** (`/api/v1/login`), que valida as credenciais na **API SME Integração** (`/api/v1/autenticacao/externa`, `codigoSistema=1`) e sincroniza o usuário local.
 2. O MS-AdminUsuarios emite **JWT** (SimpleJWT); o frontend guarda em `localStorage` (`TOKEN`) e envia `Authorization: Bearer` a todos os MS.
 3. Cada MS valida o JWT localmente; chamadas entre MS usam **`X-API-Key`** (`sigla-sdk`).
-4. Keycloak e MFA permanecem **em estudo**; se adotados, substituem a emissão de JWT pelo MS-AdminUsuarios sem mudar os MS consumidores (validação por JWKS).
+4. MFA não está implementado.
 
 ## Consequências
 
@@ -40,7 +40,6 @@ Os usuários do SIGLA usam a credencial única da SME (a mesma do antigo sistema
 
 | Alternativa | Motivo de não adoção (atual) |
 |-------------|------------------------------|
-| Keycloak (OIDC (OpenID Connect)) já no MVP | Em estudo pela SME-COTIC; sem data |
 | Sessão Django com cookie | Não atende múltiplos MS e fronts |
 | Login próprio do LOCUS | Duplicaria credenciais e contraria a premissa de login único |
 
@@ -48,4 +47,3 @@ Os usuários do SIGLA usam a credencial única da SME (a mesma do antigo sistema
 
 - `SME-SIGLA-MS-AdminUsuarios` — `AutenticacaoService`, `SmeIntegracaoService`, `SIMPLE_JWT`
 - `SME-SIGLA-LOCUS-Frontend/src/servicos/http.ts`
-- Wiki SIGLA — Jornadas › Login

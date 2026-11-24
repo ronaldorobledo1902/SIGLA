@@ -42,8 +42,8 @@ Criar o **MS-Locus** (`SME-SIGLA-MS-Locus`, rota `api-sigla.sme.prefeitura.sp.go
    - `movimentacoes` — atualização com motivo, vacância e ato sem efeito
    - `conciliacao` — divergências do quadro frente a EOL/SIGPEC
 2. **APIs públicas** (JWT) espelhando os contratos do frontend. A API lê escola, DRE, cargo de concurso e candidato nos MS já existentes. **API interna** `/api/v1/integracao/` (`X-API-Key`) recebe lotes do MS-ImportaArquivos (ADR-005).
-3. **Worker Celery** (fila `locus`) para conciliação e projeção do read model. Relatório do quadro funcional fica em aberto: reaproveitar o MS-Relatorios ou expor no MS-Locus (ADR-011).
-4. Escrita do write model LOCUS na **Base Sigla Escrita**; leitura de telas na **Base Sigla Leitura** (ADR-006).
+3. **Worker Celery** (fila `locus`) para conciliação e relatórios assíncronos. Relatório do quadro funcional fica em aberto: reaproveitar o MS-Relatorios ou expor no MS-Locus (ADR-011).
+4. Consultas e gravações do LOCUS na **Base de Dados SIGLA**, o mesmo PostgreSQL dos demais MS (ADR-006).
 
 ## Consequências
 
@@ -75,4 +75,4 @@ Criar o **MS-Locus** (`SME-SIGLA-MS-Locus`, rota `api-sigla.sme.prefeitura.sp.go
 - `SME-SIGLA-MS-Candidatos` — `candidatos`
 - `SME-SIGLA-MS-Relatorios` — relatórios da escolha e da convocação
 - `diagramas/componente/componente-backend.md`
-- [Proposta Fundamental II e Médio](../../visao-arquitetural/proposta-fundamental-ii-medio.md) e ADR-012
+- [ADR-012](ADR-012-modulo-fundamental-ii.md) e [containers do reaproveitamento](../../cenarios/reaproveitamento-alvo/containers.md)

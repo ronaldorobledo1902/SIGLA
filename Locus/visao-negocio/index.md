@@ -34,7 +34,7 @@ Para a **DICAR/COGEP**, o **LOCUS** é a plataforma única para:
 - **preservar o histórico** de registros com acesso a versões anteriores;
 - **apoiar decisões** com relatórios do quadro funcional.
 
-Dentro do SIGLA, o LOCUS também é o **importador de dados** (layouts posicionais, arquivos SIGPEC) e o **gestor de permissões** de usuários dos dois subsistemas (ALVO e LOCUS)
+Dentro do SIGLA, o importador que existe hoje é o **MS-ImportaArquivos**, a serviço do ALVO (habilitados, escolhas PRODAM, exportação SIGPEC). O login e os grupos ficam no **MS-AdminUsuarios**; os grupos atuais são do ALVO. Usar o LOCUS como importador do quadro e como gestor das permissões dos dois subsistemas é proposta (ADR-003 e ADR-005).
 
 ---
 
@@ -71,10 +71,10 @@ Dentro do SIGLA, o LOCUS também é o **importador de dados** (layouts posiciona
 | **Administrador SIGLA**                  | Cadastrar usuários, atribuir perfis/permissões de ALVO e LOCUS, manter layouts de importação                                                              |
 | **Consulta (Jurídico SME, SEGES, DREs)** | Leitura e relatórios com acesso mínimo necessário — **fase futura**, a definir                                                                            |
 | **Gestor COGEP**                         | Relatórios do quadro funcional para planejamento de RH com reflexo no planejamento pedagógico                                                             |
-| **Operador ALVO** (sistema vizinho)      | Consome dados importados no LOCUS e depende das permissões cadastradas nele                                                                               |
+| **Operador ALVO** (sistema vizinho)      | Usa o ALVO. Os grupos de acesso atuais são do ALVO, no MS-AdminUsuarios                                                                 |
 
 
-**Premissa de acesso:** usuários **internos**; login com credencial única da SME (CoreSSO via API SME Integração). Provedor corporativo definitivo (Keycloak) **em estudo** pela SME-COTIC. MFA (autenticação multifator) recomendado.
+**Premissa de acesso:** usuários **internos**; login com credencial única da SME (CoreSSO via API SME Integração). MFA (autenticação multifator) é recomendação do PO e não está implementado.
 
 ---
 
@@ -91,8 +91,8 @@ Dentro do SIGLA, o LOCUS também é o **importador de dados** (layouts posiciona
 | Atualizações de unidade de exercício / lotação, sem RF, ato sem efeito, vacância                                      | **Pendente** (menu sem tela)                                           |
 | Inclusão e Classificação                                                                                              | **Pendente**                                                           |
 | Integração EOL / SIGPEC com confronto                                                                                 | **Pendente**                                                           |
-| Importação por layout posicional e histórico de importações                                                           | Backend existente (MS-ImportaArquivos); telas LOCUS **pendentes**      |
-| Usuários e permissões (ALVO + LOCUS)                                                                                  | Backend parcial (MS-AdminUsuarios); perfis LOCUS e telas **pendentes** |
+| Importação | Serviço do ALVO: layout de arquivo, escolhas PRODAM e exportação SIGPEC. Sem tela no LOCUS |
+| Usuários e permissões | Login e grupos do ALVO no MS-AdminUsuarios. Perfis e telas do LOCUS são proposta |
 | Relatórios básicos de lotação e quadro funcional                                                                      | **Pendente**                                                           |
 
 
@@ -147,11 +147,11 @@ Operador filtra unidades por DRE, tipo e características → abre o detalhe →
 
 ### Jornada D — Importação de arquivo
 
-Administrador cadastra o **layout posicional** (txt/csv, posição e tamanho de cada campo) → operador faz upload → o MS-ImportaArquivos valida contra o layout e registra erros → dados válidos seguem para a **Base Sigla Escrita** → histórico de importações disponível.
+O MS-ImportaArquivos, usado pelo ALVO, importa escolhas da PRODAM e exporta vagas e lotes no formato SIGPEC. Não há tela de layout no LOCUS.
 
-### Jornada E — Usuários e permissões 
+### Jornada E — Usuários e permissões
 
-Administrador acessa o LOCUS → cadastra/consulta usuário (dados do CoreSSO/EOL) → atribui acessos de ALVO e LOCUS → o backend grava na **Base Sigla Escrita**.
+O cadastro de usuários e grupos está no MS-AdminUsuarios. Os grupos atuais são do ALVO. A tela de permissões no LOCUS é proposta (ADR-003).
 
 ---
 
@@ -163,7 +163,7 @@ Administrador acessa o LOCUS → cadastra/consulta usuário (dados do CoreSSO/EO
 | **0 — Fundação**       | MS-Locus (esqueleto padrão SIGLA), perfis LOCUS no AdminUsuarios, AuthGuard no frontend, integração das telas existentes com a API | ADR-004, ADR-003                    |
 | **1 — MVP cadastro**   | UE, servidor por RF, atualizações (lotação, exercício, vacância, ato sem efeito), histórico                                        | Contratos já desenhados no frontend |
 | **2 — MVP integração** | Importação EOL/SIGPEC via MS-ImportaArquivos, conciliação diária, tela de divergências                                             | Mecanismo PRODAM/SIGPEC confirmado  |
-| **3 — MVP relatórios** | Lotação e quadro funcional, exportação assíncrona                                                                                  | Read model (CQRS)                   |
+| **3 — MVP relatórios** | Lotação e quadro funcional, exportação assíncrona                                                                                  | Mesma base; job assíncrono (ADR-011) |
 | **4 — Evolução**       | Painéis, alertas, perfil Consulta para outras áreas, simulações                                                                    | Definições do PO                    |
 
 
@@ -179,8 +179,8 @@ Administrador acessa o LOCUS → cadastra/consulta usuário (dados do CoreSSO/EO
 | PRODAM                       | Disponibiliza dados do EOL                                     |
 | SEGES (Secretaria de Gestão) | Responsável pelo SIGPEC                                        |
 | Jurídico SME                 | Retenção de dados, normas de gestão de pessoal, LGPD           |
-| SME-COTIC                    | Infraestrutura, identidade corporativa (Keycloak), padrões     |
-| Infra Ágil                   | Jenkins, Rancher, Registry                                     |
+| SME-COTIC                    | Infraestrutura e padrões da SME                                |
+| Infra Ágil                   | Esteira e registry. Não há Jenkinsfile nos repositórios do LOCUS |
 | Squad SIGLA (Spassu)         | Desenvolvimento ALVO e LOCUS                                   |
 
 
@@ -209,7 +209,7 @@ Administrador acessa o LOCUS → cadastra/consulta usuário (dados do CoreSSO/EO
 | Dados sensíveis (saúde/afastamento) não confirmados  | Requisitos LGPD subdimensionados                   | Validar com Jurídico; mascaramento por padrão em relatórios       |
 | Dependência de fornecedores externos                 | Atrasos fora do controle do time                   | Contratos de interface versionados; mocks no MS-ImportaArquivos   |
 | Fluxos das funcionalidades pendentes não descritos   | Retrabalho de modelagem                            | Modelo de detalhamento em `diagramas/funcionalidades`             |
-| Picos em início de ano letivo, atribuição e remoção  | Lentidão em consultas/relatórios                   | Read model + relatórios assíncronos                               |
+| Picos em início de ano letivo, atribuição e remoção  | Lentidão em consultas/relatórios                   | Paginação, índices e relatórios assíncronos                       |
 
 
 ---
@@ -232,6 +232,5 @@ KPIs não foram definidos formalmente; propostos pelo PO:
 ## Referências
 
 - Questionário do PO LOCUS — `Levantamento/Questionário_PO_LOCUS_respondido.docx`
-- Wiki Azure DevOps *COTIC - DevOps › SIGLA › Visão Arquitetural*
 
 

@@ -13,34 +13,41 @@
 O levantamento nomeia três sistemas de fora do SIGLA:
 
 - EOL: dados funcionais, módulos, lotações e afastamentos.
-- Sistema Escolha: envia candidatos e agenda de nomeação; recebe as vagas.
+- Sistema Escolha: no levantamento, enviaria candidatos e a agenda de nomeação e receberia as vagas.
 - CI: envia o arquivo de professores precários.
 
-O mesmo documento deixa em aberto a API do EOL, o formato da lista do Sistema Escolha, o layout do arquivo de vagas e o recebimento dos precários. No desenho de containers, o backend é quem acessa esses sistemas.
+A entrevista `Levantamento/transcricaoreuniao.vtt` fechou o segundo item. Jessica: o Escolha é o legado do ALVO; não se traz dado dele para o ALVO; quando o ALVO entrar em produção, o Escolha deixa de ser usado; nada é remetido de volta. No diagrama, pediu para tirar a ligação do backend do Locus com “sistema escolha, vagas e candidatos”. A conversa do Locus é com o ALVO. Daniela: o nomeado que ainda não assumiu é lançado hoje no Banco Access; essa ligação passa a ser com o ALVO.
+
+O Access não é o EOL nem o Escolha. É o banco de servidores e de unidades que geram vaga, e é a carga inicial do Locus. A planilha nomeada na entrevista é a do EOL (Excel, em geral de 15 em 15 dias), que a equipe sobe no Access para confronto. A transcrição não descreve planilha gerada pelo Sistema Escolha.
+
+EOL e CI continuam sem contrato.
 
 ## Decisão
 
-1. EOL, Sistema Escolha e CI não são microsserviços do SIGLA.
-2. A forma da integração não está definida.
-3. Até essa definição, o acesso é responsabilidade do **MS-Locus**.
+1. Não há integração do ALVO nem do Locus com o Sistema Escolha.
+2. Nomeação, habilitado, escola e vaga do processo são lidos nos microsserviços do ALVO. A vaga calculada pelo módulo é publicada no MS-Escolha do ALVO, não enviada em arquivo ao legado.
+3. A carga inicial do Locus é o conteúdo atual do Banco Access, uma vez.
+4. EOL e CI não são microsserviços do SIGLA. A forma de acesso continua indefinida, e o cenário de reaproveitamento não cria essa chamada no MS-Locus.
 
 ## Consequências
 
 ### Positivas
 
-- Nenhum outro serviço assume a troca antes de o mecanismo existir
+- O legado Escolha sai do desenho antes de existir um contrato que a entrevista já descartou
 
 ### Negativas
 
-- O MS-Locus concentra o acesso externo do módulo enquanto o mecanismo não fecha
+- EOL e CI seguem sem contrato. O quadro que só eles têm não entra por esta decisão
 
 ## Alternativas consideradas
 
 | Alternativa | Motivo de não adoção |
 | --- | --- |
-| Fixar agora arquivo, API ou outro microsserviço como canal | O levantamento não define o mecanismo |
+| Manter o Sistema Escolha como sistema externo do Locus | A entrevista removeu essa ligação |
+| Tratar a planilha do EOL como arquivo do Escolha | A transcrição atribui a planilha ao EOL e o Access como destino operacional |
 
 ## Referências
 
-- [Fundamental II e Médio](../../visao-arquitetural/proposta-fundamental-ii-medio.md)
+- [Containers do reaproveitamento](../../cenarios/reaproveitamento-alvo/containers.md)
 - Levantamento *Locus – Fundamental II e Médio: fluxo, containers e componentes*, seções de containers e de integrações externas
+- `Levantamento/transcricaoreuniao.vtt`

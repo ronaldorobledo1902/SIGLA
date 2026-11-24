@@ -14,13 +14,13 @@
 
 ## Contexto
 
-O ADR-01 registrou a escolha de Django em vez de FastAPI para os microsserviços. Todos os MS existentes (AdminUsuarios, ImportaArquivos e os do ALVO) seguem Django 5.2.5, DRF 3.15, SimpleJWT, drf-spectacular, django-auditlog, elastic-apm, python-json-logger e a biblioteca comum `sigla-sdk` (tag `1.1.1`), em Python 3.12 / Docker.
+Os microsserviços existentes (AdminUsuarios, ImportaArquivos e os do ALVO) usam Django 5.2.5, DRF 3.15, SimpleJWT, drf-spectacular, django-auditlog, elastic-apm, python-json-logger e a biblioteca comum `sigla-sdk` (tag `1.1.1`), em Python 3.12 / Docker.
 
 ## Decisão
 
 1. Todo backend do LOCUS (inclusive o novo MS-Locus) usa **Django 5.2 + DRF** com a mesma estrutura de camadas: `api` → `serializers` → `services` → `repository` → `models`.
 2. Uso obrigatório do `sigla-sdk` para `http_client`, `CorrelationIdMiddleware`, `AuditlogJWTMiddleware`, `ApiKeyAuthentication` e `CustomJsonFormatter`.
-3. OpenAPI via **drf-spectacular**; cobertura de testes ≥ **80%**.
+3. OpenAPI via **drf-spectacular**. Os repositórios geram relatório de cobertura e não definem um mínimo obrigatório.
 
 ## Consequências
 
@@ -43,6 +43,5 @@ O ADR-01 registrou a escolha de Django em vez de FastAPI para os microsserviços
 
 ## Referências
 
-- Wiki SIGLA — *Visão Arquitetural* (ADR-01)
 - `SME-SIGLA-MS-AdminUsuarios/requirements.txt`, `SME-SIGLA-MS-ImportaArquivos/requirements.txt`
 - `SME-SIGLA-SDK-Microsservico`
