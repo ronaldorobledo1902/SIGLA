@@ -2,14 +2,16 @@
 
 ## Contexto
 
-Núcleo funcional do LOCUS: a DICAR consulta e mantém o quadro de **servidores** (RF (Registro Funcional), vínculos, cargos, situação) e de **Unidades Educacionais** (características, módulos, saldo de vagas, lotados e afastados), registrando cada alteração com motivo e ato. O frontend já possui as telas de UE e de atualização por RF com dados estáticos; o backend é o **SME-LOCUS-MICROSERVICO (TO-BE)**.
+Núcleo funcional do LOCUS: a DICAR consulta e mantém o quadro de **servidores** (RF (Registro Funcional), vínculos, cargos, situação) e de **Unidades Educacionais** (características, módulos, saldo de vagas, lotados e afastados), registrando cada alteração com motivo e ato. A tela fala com o SME-SIGLA-BFF. O SME-LOCUS-MICROSERVICO grava o quadro na base do Locus e lê, no ALVO, a unidade, o cargo e a pessoa que o concurso, a convocação e a escolha já gravaram.
 
-```{image} ../assets/05-locus-componente-ms-locus.svg
+```{image} ../assets/24-locus-contexto-lotacao.svg
 :width: 100%
-:alt: Componentes do SME-LOCUS-MICROSERVICO (TO-BE)
+:alt: Contexto de lotação. Tela, SME-SIGLA-BFF, quadro na base do Locus e leitura do ALVO
 ```
 
 ---
+
+
 
 ## Objetivos
 
@@ -19,7 +21,11 @@ Núcleo funcional do LOCUS: a DICAR consulta e mantém o quadro de **servidores*
 
 ---
 
+
+
 ## Escopo
+
+
 
 ### Em escopo
 
@@ -28,6 +34,8 @@ Núcleo funcional do LOCUS: a DICAR consulta e mantém o quadro de **servidores*
 - Atualizações: unidade de exercício, unidade de lotação, sem RF/código, ato sem efeito, vacância
 - Histórico e versões
 
+
+
 ### Fora de escopo
 
 - Escolha de vaga por candidato (ALVO)
@@ -35,27 +43,28 @@ Núcleo funcional do LOCUS: a DICAR consulta e mantém o quadro de **servidores*
 
 ---
 
-## Fluxo resumido
 
-```text
-Operador → LOCUS SPA → SME-LOCUS-MICROSERVICO API (JWT) → Services de domínio → Base de Dados SIGLA + histórico
-                                                      └── Worker → listagens/relatórios
-```
-
----
 
 ## Sistemas envolvidos
 
+
 | Sistema | Interação |
-|---------|-----------|
-| LOCUS SPA | Telas de UE, servidor e atualização |
-| SME-LOCUS-MICROSERVICO (TO-BE) | Regras, persistência, histórico |
-| Base de Dados SIGLA | Consultas e gravações do LOCUS na mesma base PostgreSQL |
-| MS-ImportaArquivos | Hoje importa escolhas PRODAM e exporta SIGPEC (uso ALVO). Abastecer o quadro do LOCUS é proposta |
+| --- | --- |
+| Telas de UE e servidor | Requisição da tela ao SME-SIGLA-BFF |
+| SME-SIGLA-BFF | Valida o token, agrega e devolve o DTO |
+| SME-LOCUS-MICROSERVICO | Grava lotação, exercício, afastamento, módulo e histórico |
+| Base do Locus | Quadro do módulo |
+| MS-Escolha | Unidade, tipo e sigla da DRE já gravados |
+| MS-ProcessosConcursos | Código e descrição do cargo já gravados |
+| MS-Candidatos | Nome, CPF e vínculo, quando o RF existe |
+
 
 ---
+
+
 
 ## Considerações
 
 - Contratos da API estão definidos em `SME-SIGLA-LOCUS-Frontend/src/servicos/*` e schemas Zod — usar como base do OpenAPI do SME-LOCUS-MICROSERVICO.
 - Afastamentos podem conter dados de saúde (a confirmar) — tratar como dado sensível.
+
