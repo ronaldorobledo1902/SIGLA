@@ -19,8 +19,8 @@ O login do SIGLA valida a credencial na **API SME Integração** (`/api/v1/auten
 ## Decisão
 
 1. O **Portal SIGLA** autentica no **MS-AdminUsuarios** (`/api/v1/login`), que valida as credenciais na **API SME Integração** (`/api/v1/autenticacao/externa`, `codigoSistema=1`) e sincroniza o usuário local.
-2. O MS-AdminUsuarios emite **JWT** (SimpleJWT). O front do ALVO e o front do Locus enviam a requisição ao BFF único ([ADR-015](ADR-015-bff-unico.md)). O BFF valida o token.
-3. Cada MS valida o JWT quando o BFF o encaminha; chamadas entre MS usam **`X-API-Key`** (`sigla-sdk`).
+2. O MS-AdminUsuarios emite **JWT** (SimpleJWT). O front do ALVO e o front do Locus enviam a requisição ao SME-SIGLA-BFF único ([ADR-015](ADR-015-bff-unico.md)). O SME-SIGLA-BFF valida o token.
+3. Cada MS valida o JWT quando o SME-SIGLA-BFF o encaminha; chamadas entre MS usam **`X-API-Key`** (`sigla-sdk`).
 4. MFA não está implementado.
 
 ## Consequências

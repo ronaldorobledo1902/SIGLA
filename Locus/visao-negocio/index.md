@@ -6,22 +6,13 @@
 **Versão:** 1.0  
 **Público-alvo:** Product Owner, DICAR, stakeholders de negócio e time multidisciplinar  
 
-```{toctree}
-:maxdepth: 1
-:caption: Tópicos
-
-funcionalidades-pendentes
-```
-
----
-
-## 1. Propósito deste documento
-
 Consolidar a **visão de negócio** do LOCUS com base no questionário respondido pelo PO (Product Owner) (`Levantamento/Questionário_PO_LOCUS_respondido.docx`), no frontend LOCUS em construção (`SME-SIGLA-LOCUS-Frontend`) e nos microsserviços SIGLA já existentes.
 
 O LOCUS **não é portal público** e **não é acessado pelos servidores** cujos dados gerencia: é uma ferramenta interna da DICAR.
 
 ---
+
+
 
 ## 2. Visão do produto
 
@@ -38,6 +29,8 @@ Dentro do SIGLA, o importador que existe hoje é o **MS-ImportaArquivos**, a ser
 
 ---
 
+
+
 ## 3. Problema que resolve
 
 
@@ -52,6 +45,8 @@ Dentro do SIGLA, o importador que existe hoje é o **MS-ImportaArquivos**, a ser
 
 ---
 
+
+
 ## 4. Objetivos de negócio
 
 1. Prover **visão integrada e atualizada** do quadro funcional da SME (mais de 100 mil servidores, ~1.600 UEs).
@@ -62,6 +57,8 @@ Dentro do SIGLA, o importador que existe hoje é o **MS-ImportaArquivos**, a ser
 
 ---
 
+
+
 ## 5. Personas
 
 
@@ -71,29 +68,33 @@ Dentro do SIGLA, o importador que existe hoje é o **MS-ImportaArquivos**, a ser
 | **Administrador SIGLA**                  | Cadastrar usuários, atribuir perfis/permissões de ALVO e LOCUS, manter layouts de importação                                                              |
 | **Consulta (Jurídico SME, SEGES, DREs)** | Leitura e relatórios com acesso mínimo necessário — **fase futura**, a definir                                                                            |
 | **Gestor COGEP**                         | Relatórios do quadro funcional para planejamento de RH com reflexo no planejamento pedagógico                                                             |
-| **Operador ALVO** (sistema vizinho)      | Usa o ALVO. Os grupos de acesso atuais são do ALVO, no MS-AdminUsuarios                                                                 |
+| **Operador ALVO** (sistema vizinho)      | Usa o ALVO. Os grupos de acesso atuais são do ALVO, no MS-AdminUsuarios                                                                                   |
 
 
 **Premissa de acesso:** usuários **internos**; login com credencial única da SME (CoreSSO via API SME Integração). MFA (autenticação multifator) é recomendação do PO e não está implementado.
 
 ---
 
+
+
 ## 6. Escopo do produto
+
+
 
 ### 6.1 — Em escopo (MVP)
 
 
-| Capacidade                                                                                                            | Situação (out/2026)                                                    |
-| --------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| Gestão de Unidades Educacionais (listar, filtrar, registrar, detalhar, excluir; módulos, lotados, afastados)          | Tela pronta, **dados estáticos**                                       |
-| Atualização por RF (dados funcionais, lotação/exercício, readaptação, encerramento, registrar atualização com motivo) | Tela pronta, **dados estáticos**                                       |
-| Histórico e versão anterior da UE (banner de versão histórica)                                                        | Tela pronta, dados estáticos                                           |
-| Atualizações de unidade de exercício / lotação, sem RF, ato sem efeito, vacância                                      | **Pendente** (menu sem tela)                                           |
-| Inclusão e Classificação                                                                                              | **Pendente**                                                           |
-| Integração EOL / SIGPEC com confronto                                                                                 | **Pendente**                                                           |
-| Importação | Serviço do ALVO: layout de arquivo, escolhas PRODAM e exportação SIGPEC. Sem tela no LOCUS |
-| Usuários e permissões | Login e grupos do ALVO no MS-AdminUsuarios. Perfis e telas do LOCUS são proposta |
-| Relatórios básicos de lotação e quadro funcional                                                                      | **Pendente**                                                           |
+| Capacidade                                                                                                            | Situação (out/2026)                                                                        |
+| --------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| Gestão de Unidades Educacionais (listar, filtrar, registrar, detalhar, excluir; módulos, lotados, afastados)          | Tela pronta, **dados estáticos**                                                           |
+| Atualização por RF (dados funcionais, lotação/exercício, readaptação, encerramento, registrar atualização com motivo) | Tela pronta, **dados estáticos**                                                           |
+| Histórico e versão anterior da UE (banner de versão histórica)                                                        | Tela pronta, dados estáticos                                                               |
+| Atualizações de unidade de exercício / lotação, sem RF, ato sem efeito, vacância                                      | **Pendente** (menu sem tela)                                                               |
+| Inclusão e Classificação                                                                                              | **Pendente**                                                                               |
+| Integração EOL / SIGPEC com confronto                                                                                 | **Pendente**                                                                               |
+| Importação                                                                                                            | Serviço do ALVO: layout de arquivo, escolhas PRODAM e exportação SIGPEC. Sem tela no LOCUS |
+| Usuários e permissões                                                                                                 | Login e grupos do ALVO no MS-AdminUsuarios. Perfis e telas do LOCUS são proposta           |
+| Relatórios básicos de lotação e quadro funcional                                                                      | **Pendente**                                                                               |
 
 
 O detalhamento por item está em [Funcionalidades pendentes](funcionalidades-pendentes.md).
@@ -105,12 +106,16 @@ O detalhamento por item está em [Funcionalidades pendentes](funcionalidades-pen
 - Ser origem oficial dos dados funcionais (continua EOL / SIGPEC)
 - Folha de pagamento
 
+
+
 ### 6.3 — Fases futuras
 
 - Painéis analíticos e relatórios avançados
 - Alertas automáticos de divergência e de vagas/disponibilidade
 - Acesso de outras áreas (DREs, SEGES, Jurídico) com perfil Consulta
 - Simulações de movimentação para planejamento
+
+
 
 ### 6.4 — Dependências de dados (visão de negócio)
 
@@ -125,7 +130,11 @@ O detalhamento por item está em [Funcionalidades pendentes](funcionalidades-pen
 
 ---
 
+
+
 ## 7. Jornadas do usuário
+
+
 
 ### Jornada A — Integração e conciliação diária (proposta do PO)
 
@@ -136,6 +145,8 @@ O detalhamento por item está em [Funcionalidades pendentes](funcionalidades-pen
 5. O sistema grava a alteração no histórico, **preservando a versão anterior**.
 6. O analista ou gestor gera relatórios do quadro funcional.
 7. Em revisão ou auditoria, consulta-se o histórico de versões do registro.
+
+
 
 ### Jornada B — Atualização por RF (tela existente)
 
@@ -155,36 +166,42 @@ O cadastro de usuários e grupos está no MS-AdminUsuarios. Os grupos atuais sã
 
 ---
 
+
+
 ## 8. Roadmap de produto (proposto)
 
 
-| Fase                   | Entregas                                                                                                                           | Dependências                        |
-| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
-| **0 — Fundação**       | MS-Locus (esqueleto padrão SIGLA), perfis LOCUS no AdminUsuarios, AuthGuard no frontend, integração das telas existentes com a API | ADR-004, ADR-003                    |
-| **1 — MVP cadastro**   | UE, servidor por RF, atualizações (lotação, exercício, vacância, ato sem efeito), histórico                                        | Contratos já desenhados no frontend |
-| **2 — MVP integração** | Importação EOL/SIGPEC via MS-ImportaArquivos, conciliação diária, tela de divergências                                             | Mecanismo PRODAM/SIGPEC confirmado  |
-| **3 — MVP relatórios** | Lotação e quadro funcional, exportação assíncrona                                                                                  | Mesma base; job assíncrono (ADR-011) |
-| **4 — Evolução**       | Painéis, alertas, perfil Consulta para outras áreas, simulações                                                                    | Definições do PO                    |
+| Fase                   | Entregas                                                                                                                                         | Dependências                         |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------ |
+| **0 — Fundação**       | SME-LOCUS-MICROSERVICO (esqueleto padrão SIGLA), perfis LOCUS no AdminUsuarios, AuthGuard no frontend, integração das telas existentes com a API | ADR-004, ADR-003                     |
+| **1 — MVP cadastro**   | UE, servidor por RF, atualizações (lotação, exercício, vacância, ato sem efeito), histórico                                                      | Contratos já desenhados no frontend  |
+| **2 — MVP integração** | Importação EOL/SIGPEC via MS-ImportaArquivos, conciliação diária, tela de divergências                                                           | Mecanismo PRODAM/SIGPEC confirmado   |
+| **3 — MVP relatórios** | Lotação e quadro funcional, exportação assíncrona                                                                                                | Mesma base; job assíncrono (ADR-011) |
+| **4 — Evolução**       | Painéis, alertas, perfil Consulta para outras áreas, simulações                                                                                  | Definições do PO                     |
 
 
 ---
+
+
 
 ## 9. Stakeholders e governança
 
 
-| Stakeholder                  | Papel                                                          |
-| ---------------------------- | -------------------------------------------------------------- |
-| COGEP / DICAR                | Dona do produto e principal usuária                            |
-| PO (Product Owner) LOCUS     | Prioriza backlog e define fluxos das funcionalidades pendentes |
-| PRODAM                       | Disponibiliza dados do EOL                                     |
-| SEGES (Secretaria de Gestão) | Responsável pelo SIGPEC                                        |
-| Jurídico SME                 | Retenção de dados, normas de gestão de pessoal, LGPD           |
-| SME-COTIC                    | Infraestrutura e padrões da SME                                |
+| Stakeholder                  | Papel                                                            |
+| ---------------------------- | ---------------------------------------------------------------- |
+| COGEP / DICAR                | Dona do produto e principal usuária                              |
+| PO (Product Owner) LOCUS     | Prioriza backlog e define fluxos das funcionalidades pendentes   |
+| PRODAM                       | Disponibiliza dados do EOL                                       |
+| SEGES (Secretaria de Gestão) | Responsável pelo SIGPEC                                          |
+| Jurídico SME                 | Retenção de dados, normas de gestão de pessoal, LGPD             |
+| SME-COTIC                    | Infraestrutura e padrões da SME                                  |
 | Infra Ágil                   | Esteira e registry. Não há Jenkinsfile nos repositórios do LOCUS |
-| Squad SIGLA (Spassu)         | Desenvolvimento ALVO e LOCUS                                   |
+| Squad SIGLA (Spassu)         | Desenvolvimento ALVO e LOCUS                                     |
 
 
 ---
+
+
 
 ## 10. Regras e premissas de negócio relevantes
 
@@ -198,6 +215,8 @@ O cadastro de usuários e grupos está no MS-AdminUsuarios. Os grupos atuais sã
 - Histórico preservado; prazo de retenção a definir com o Jurídico (tabela de temporalidade).
 
 ---
+
+
 
 ## 11. Riscos de negócio
 
@@ -214,6 +233,8 @@ O cadastro de usuários e grupos está no MS-AdminUsuarios. Os grupos atuais sã
 
 ---
 
+
+
 ## 12. Critérios de sucesso (negócio)
 
 KPIs não foram definidos formalmente; propostos pelo PO:
@@ -227,10 +248,12 @@ KPIs não foram definidos formalmente; propostos pelo PO:
 | Tempo de geração de relatórios gerenciais | Consultas ≤ 3 s; relatórios pesados entregues de forma assíncrona |
 | Disponibilidade em horário comercial      | 99,5%                                                             |
 
+
 ---
+
+
 
 ## Referências
 
 - Questionário do PO LOCUS — `Levantamento/Questionário_PO_LOCUS_respondido.docx`
-
 

@@ -39,18 +39,18 @@ ADR-015-bff-unico
 | [ADR-001](./ADR-001-backend-django.md) | Backend — Python / Django 5.2 + DRF (Django REST Framework) + `sigla-sdk` | Accepted (as-is) |
 | [ADR-002](./ADR-002-autenticacao.md) | Autenticação — CoreSSO via MS-AdminUsuarios + JWT (JSON Web Token) | Accepted (as-is) |
 | [ADR-003](./ADR-003-permissoes.md) | Permissões de ALVO e LOCUS geridas no LOCUS, com perfis LOCUS | Proposed |
-| [ADR-004](./ADR-004-ms-locus.md) | MS-Locus — quadro em exercício, sem recriar cadastros do ALVO | Proposed |
-| [ADR-005](./ADR-005-integracao-importa-arquivos.md) | Integrações EOL / SIGPEC — reaproveitar o MS-ImportaArquivos | Proposed |
-| [ADR-006](./ADR-006-base-unica.md) | Dados — Base de Dados SIGLA única (PostgreSQL `db_sigla`) | Accepted (as-is) |
+| [ADR-004](./ADR-004-ms-locus.md) | SME-LOCUS-MICROSERVICO — quadro em exercício, sem recriar cadastros do ALVO | Proposed |
+| [ADR-005](./ADR-005-integracao-importa-arquivos.md) | Importações — ALVO no MS-ImportaArquivos e EOL do Locus no Airflow | Proposed |
+| [ADR-006](./ADR-006-base-unica.md) | Dados — bases separadas de ALVO e LOCUS | Proposed |
 | [ADR-007](./ADR-007-assincrono-celery.md) | Processamento assíncrono — Celery + Redis com filas por MS | Accepted (as-is) |
 | [ADR-008](./ADR-008-historico-versoes.md) | Histórico — `django-auditlog` + versões de registro | Proposed |
 | [ADR-009](./ADR-009-infra-gateway.md) | Infra — o que os repositórios mostram | Accepted (as-is) |
 | [ADR-010](./ADR-010-branches.md) | Branches — padrão `test` / `homolog` / `master` | Accepted (as-is) |
 | [ADR-011](./ADR-011-relatorios-assincronos.md) | Relatórios — síncronos até 3 s, assíncronos acima | Proposed |
-| [ADR-012](./ADR-012-modulo-fundamental-ii.md) | Fundamental II e Médio no MS-Locus | Proposed |
+| [ADR-012](./ADR-012-modulo-fundamental-ii.md) | Fundamental II e Médio no SME-LOCUS-MICROSERVICO | Proposed |
 | [ADR-013](./ADR-013-calculo-vagas-confronto.md) | Vagas e confronto com o EOL | Proposed |
 | [ADR-014](./ADR-014-escolha-precarios.md) | Acesso aos sistemas externos do Fundamental II | Proposed |
-| [ADR-015](./ADR-015-bff-unico.md) | BFF único para ALVO e LOCUS | Proposed |
+| [ADR-015](./ADR-015-bff-unico.md) | SME-SIGLA-BFF único para ALVO e LOCUS | Proposed |
 
 ---
 
@@ -58,7 +58,7 @@ ADR-015-bff-unico
 
 ```text
 ADR-001 (Django/DRF)
-   ├── ADR-004 (MS-Locus) [Proposed]
+   ├── ADR-004 (SME-LOCUS-MICROSERVICO) [Proposed]
    │      ├── ADR-008 (histórico) [Proposed]
    │      ├── ADR-011 (relatórios) [Proposed]
    │      ├── ADR-012 (módulo Fund. II) [Proposed]
@@ -68,14 +68,14 @@ ADR-001 (Django/DRF)
 
 ADR-002 (CoreSSO + JWT)
    ├── ADR-003 (permissões/perfis LOCUS) [Proposed]
-   └── ADR-015 (BFF único) [Proposed]
+   └── ADR-015 (SME-SIGLA-BFF único) [Proposed]
 
-ADR-005 (integração via MS-ImportaArquivos) [Proposed]
-   ├── ADR-007 (Celery/Redis)
-   └── ADR-004 (entrega ao MS-Locus)
+ADR-005 (importações do ALVO no MS-ImportaArquivos; EOL do Locus no Airflow) [Proposed]
+   ├── ADR-007 (Celery do ALVO e worker do Locus)
+   └── ADR-004 (Locus lê o ALVO por HTTP)
 
-ADR-006 (base única)
-   └── ADR-011 (relatório síncrono ou DAG do Airflow na base do Locus)
+ADR-006 (bases separadas)
+   └── ADR-011 (relatório na base do Locus)
 
 ADR-009 (infra observada nos repositórios)
    └── ADR-010 (branches)
@@ -92,4 +92,4 @@ ADR-009 (infra observada nos repositórios)
 
 ---
 
-*Pacote inicial em 27/10/2026 (ADR-001 a ADR-011). ADR-012 a ADR-014, de 17/11/2026, registram o módulo Fundamental II e Médio. Em 24/11/2026 a entrevista tirou o Sistema Escolha da integração. EOL e CI seguem sem contrato. No mesmo dia, o ADR-015 coloca um BFF único na frente do ALVO e do Locus.*
+*Pacote inicial em 27/10/2026 (ADR-001 a ADR-011). ADR-012 a ADR-014, de 17/11/2026, registram o módulo Fundamental II e Médio. Em 24/11/2026 a entrevista tirou o Sistema Escolha da integração e o ADR-015 colocou um SME-SIGLA-BFF único na frente do ALVO e do Locus. Em 25/11/2026 as bases de ALVO e Locus ficaram separadas, a importação do EOL passou à DAG do Airflow e o MS-ImportaArquivos permaneceu a porta de entrada do ALVO.*

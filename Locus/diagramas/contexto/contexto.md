@@ -2,7 +2,7 @@
 
 O **LOCUS** é o subsistema do **SIGLA** que gerencia o quadro funcional da SME (Secretaria Municipal de Educação): servidores ativos e inativos, Unidades Educacionais, módulos, lotação/exercício, movimentações, vacância, histórico e relatórios.
 
-O usuário entra pelo **Portal SIGLA**. O **MS-AdminUsuarios** valida a credencial na API SME Integração e emite o JWT. O **MS-ImportaArquivos**, usado pelo ALVO, importa escolhas da PRODAM e exporta vagas e lotes no formato SIGPEC. O domínio de servidores e lotação é o **MS-Locus**, ainda proposta.
+O usuário entra pelo **Portal SIGLA**. O **MS-AdminUsuarios** valida a credencial na API SME Integração e emite o JWT. O **MS-ImportaArquivos**, usado pelo ALVO, importa escolhas da PRODAM e exporta vagas e lotes no formato SIGPEC. O domínio de servidores e lotação é o **SME-LOCUS-MICROSERVICO**, ainda proposta.
 
 **Premissa de negócio:** uso interno pela DICAR (Divisão de Gestão de Carreiras); o LOCUS não é origem oficial dos dados funcionais.
 

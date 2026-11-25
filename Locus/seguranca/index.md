@@ -28,7 +28,7 @@ A análise dos repositórios atuais encontrou lacunas que **precisam ser corrigi
 | Origem | Padrão | Cache / fila? |
 |--------|--------|---------------|
 | LOCUS SPA | React Query | Cache em memória do navegador |
-| MS-Locus (TO-BE) | REST síncrono na Base de Dados SIGLA | Mesma base das gravações |
+| SME-LOCUS-MICROSERVICO (TO-BE) | REST síncrono na Base de Dados SIGLA | Mesma base das gravações |
 | Integração EOL/SIGPEC | Celery (madrugada) | Fila Redis |
 | Relatórios | Job assíncrono (TO-BE) | Fila Redis |
 
@@ -123,9 +123,9 @@ O volume de usuários é baixo; o risco está no **volume de dados** e nos **rel
 
 **Por quê:** histórico cresce continuamente; definir com o Jurídico a tabela de temporalidade e o expurgo/anonimização.
 
-### 5.4 — BFF valida o token
+### 5.4 — SME-SIGLA-BFF valida o token
 
-**Por quê:** o front do ALVO e o do Locus passam a chamar só o BFF ([ADR-015](../documentos/adr/ADR-015-bff-unico.md)). Ele valida o token antes de consultar os microsserviços. O navegador deixa de falar com cada API.
+**Por quê:** o front do ALVO e o do Locus passam a chamar só o SME-SIGLA-BFF ([ADR-015](../documentos/adr/ADR-015-bff-unico.md)). Ele valida o token antes de consultar os microsserviços. O navegador deixa de falar com cada API.
 
 ---
 

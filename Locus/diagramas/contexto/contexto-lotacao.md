@@ -2,11 +2,11 @@
 
 ## Contexto
 
-Núcleo funcional do LOCUS: a DICAR consulta e mantém o quadro de **servidores** (RF (Registro Funcional), vínculos, cargos, situação) e de **Unidades Educacionais** (características, módulos, saldo de vagas, lotados e afastados), registrando cada alteração com motivo e ato. O frontend já possui as telas de UE e de atualização por RF com dados estáticos; o backend é o **MS-Locus (TO-BE)**.
+Núcleo funcional do LOCUS: a DICAR consulta e mantém o quadro de **servidores** (RF (Registro Funcional), vínculos, cargos, situação) e de **Unidades Educacionais** (características, módulos, saldo de vagas, lotados e afastados), registrando cada alteração com motivo e ato. O frontend já possui as telas de UE e de atualização por RF com dados estáticos; o backend é o **SME-LOCUS-MICROSERVICO (TO-BE)**.
 
 ```{image} ../assets/05-locus-componente-ms-locus.svg
 :width: 100%
-:alt: Componentes do MS-Locus (TO-BE)
+:alt: Componentes do SME-LOCUS-MICROSERVICO (TO-BE)
 ```
 
 ---
@@ -38,7 +38,7 @@ Núcleo funcional do LOCUS: a DICAR consulta e mantém o quadro de **servidores*
 ## Fluxo resumido
 
 ```text
-Operador → LOCUS SPA → MS-Locus API (JWT) → Services de domínio → Base de Dados SIGLA + histórico
+Operador → LOCUS SPA → SME-LOCUS-MICROSERVICO API (JWT) → Services de domínio → Base de Dados SIGLA + histórico
                                                       └── Worker → listagens/relatórios
 ```
 
@@ -49,7 +49,7 @@ Operador → LOCUS SPA → MS-Locus API (JWT) → Services de domínio → Base 
 | Sistema | Interação |
 |---------|-----------|
 | LOCUS SPA | Telas de UE, servidor e atualização |
-| MS-Locus (TO-BE) | Regras, persistência, histórico |
+| SME-LOCUS-MICROSERVICO (TO-BE) | Regras, persistência, histórico |
 | Base de Dados SIGLA | Consultas e gravações do LOCUS na mesma base PostgreSQL |
 | MS-ImportaArquivos | Hoje importa escolhas PRODAM e exporta SIGPEC (uso ALVO). Abastecer o quadro do LOCUS é proposta |
 
@@ -57,5 +57,5 @@ Operador → LOCUS SPA → MS-Locus API (JWT) → Services de domínio → Base 
 
 ## Considerações
 
-- Contratos da API estão definidos em `SME-SIGLA-LOCUS-Frontend/src/servicos/*` e schemas Zod — usar como base do OpenAPI do MS-Locus.
+- Contratos da API estão definidos em `SME-SIGLA-LOCUS-Frontend/src/servicos/*` e schemas Zod — usar como base do OpenAPI do SME-LOCUS-MICROSERVICO.
 - Afastamentos podem conter dados de saúde (a confirmar) — tratar como dado sensível.

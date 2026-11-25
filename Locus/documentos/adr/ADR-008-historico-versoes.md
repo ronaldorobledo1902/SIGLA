@@ -6,7 +6,7 @@
 | **Status**       | Proposed                                |
 | **Data**         | 2026-10-27                              |
 | **Decisores**    | Arquitetura SIGLA / PO LOCUS            |
-| **Sistema**      | MS-Locus                                |
+| **Sistema**      | SME-LOCUS-MICROSERVICO                                |
 | **Relacionadas** | ADR-004                                 |
 
 
@@ -18,7 +18,7 @@
 
 ## Decisão
 
-1. **Trilha técnica:** `django-auditlog` em todos os models do MS-Locus (quem, quando, campos alterados).
+1. **Trilha técnica:** `django-auditlog` em todos os models do SME-LOCUS-MICROSERVICO (quem, quando, campos alterados).
 2. **Versão de negócio:** cada atualização funcional gera um registro imutável em `Movimentacao` (motivo, portaria, data, documento, origem — manual ou importação) e um **snapshot** da entidade (UE, lotação), exposto em `/{recurso}/historico/` e `/{recurso}/versoes/{id}/`.
 3. Registros nunca são apagados fisicamente; "excluir" e "ato sem efeito" geram nova versão.
 4. Política de retenção parametrizável, definida com o Jurídico SME.

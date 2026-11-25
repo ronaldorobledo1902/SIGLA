@@ -1,14 +1,18 @@
 # Documentação Arquitetural — LOCUS (Lotação e Controle Unificado de Servidores)
 
 **Sistema:** LOCUS (subsistema do SIGLA)  
-**Data da análise:** Outubro/2026  
-**Versão do documento:** 1.0  
+**Data da análise:** Novembro/2026  
+**Versão do documento:** 1.1  
 
 ## 1. Visão Geral do Sistema
 
-O **SIGLA** é composto por dois subsistemas: **ALVO** (Alocação de Vagas Online — convocação e escolha de vagas) e **LOCUS** (gestão do quadro funcional e da lotação). Ambos compartilham o login (Portal SIGLA + API SME Integração) e a **Base de Dados SIGLA (BASE SIGLA)** — um único PostgreSQL (`db_sigla`). Os microsserviços existentes são Python/Django.
+O **SIGLA** é composto por dois subsistemas: **ALVO** (Alocação de Vagas Online — convocação e escolha de vagas) e **LOCUS** (gestão do quadro funcional e da lotação). Os dois compartilham o login (Portal SIGLA, MS-AdminUsuarios e API SME Integração) e, a partir desta arquitetura, um **SME-SIGLA-BFF** único ([ADR-015](../documentos/adr/ADR-015-bff-unico.md)).
 
-Em outubro/2026 o LOCUS tem **frontend em construção com dados estáticos**. **MS-AdminUsuarios** faz o login do SIGLA (grupos atuais do ALVO). **MS-ImportaArquivos** atende o ALVO (habilitados, escolhas PRODAM, exportação SIGPEC). Esta documentação propõe o **MS-Locus** para o domínio de servidores, unidades e lotação (ADR-004).
+As bases são separadas. A **base do ALVO** guarda concurso, convocação, escolha e as importações que o ALVO já faz. A **base do Locus** guarda o quadro do módulo: lotação, exercício, afastamento, módulo e vaga calculada. O SME-LOCUS-MICROSERVICO lê e grava só a base do Locus. O que precisa do ALVO é lido por HTTP nos microsserviços do ALVO, com `X-API-Key`. Cada base tem credencial própria.
+
+O navegador fala só com o SME-SIGLA-BFF. O SME-SIGLA-BFF valida o token, consulta os microsserviços, agrega os dados e devolve o DTO da tela. O código do ALVO ainda não tem esse componente. Ele entra a partir desta arquitetura.
+
+Em outubro/2026 o LOCUS tem **frontend em construção com dados estáticos**. **MS-AdminUsuarios** faz o login do SIGLA. **MS-ImportaArquivos** é a porta de entrada das importações do ALVO (habilitados, escolhas PRODAM, exportação SIGPEC). O Locus recebe essas informações já gravadas, lendo os microsserviços do ALVO. A importação de arquivo do Locus segue outro caminho: a carga inicial copia o Banco Access uma vez; a busca periódica do EOL é uma DAG do Airflow, que grava JSON, PDF ou hash na base do Locus. O desenho está em [containers deste cenário](../cenarios/reaproveitamento-alvo/containers.md). Esta documentação propõe o **SME-LOCUS-MICROSERVICO** para o domínio de servidores, unidades e lotação (ADR-004).
 
 ### 1.1 — Mapa de produtos e repositórios
 
@@ -17,9 +21,13 @@ Em outubro/2026 o LOCUS tem **frontend em construção com dados estáticos**. *
 | ---------------------- | ------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------- |
 | **Portal SIGLA**       | `SME-SIGLA-Frontend` (espelhado em `modules/sigla` do LOCUS) | React 19 / Vite                                                                                      | Login, recuperação de senha, seleção ALVO / LOCUS                                                                              | Existente                                                 |
 | **LOCUS Frontend**     | `SME-SIGLA-LOCUS-Frontend`                                   | React 19, Vite 7, TypeScript, Ant Design 5, React Query, Axios, Zod, styled-components; Nginx alpine | Telas de UE, servidor, atualizações, menus do domínio                                                                          | **Em construção**; contratos prontos, respostas estáticas |
-| **MS-AdminUsuarios**   | `SME-SIGLA-MS-AdminUsuarios`                                 | Django 5.2, DRF (Django REST Framework) 3.15, SimpleJWT, `sigla-sdk`                                 | Login via CoreSSO, JWT (JSON Web Token), usuários, grupos, senha, e-mail                                                       | Existente; grupos orientados ao ALVO                      |
-| **MS-ImportaArquivos** | `SME-SIGLA-MS-ImportaArquivos`                               | Django 5.2 / DRF + Celery 5.4 + Redis                                                                | Layout de arquivo, escolhas PRODAM, exportação SIGPEC                                                                          | Existente (uso ALVO). Reuso pelo LOCUS é proposta (ADR-005) |
-| **MS-Locus**           | *a criar*                                                    | Django 5.2 / DRF + Celery + `sigla-sdk`                                                              | Servidores, UE, módulos, lotação/exercício, movimentações, vacância, histórico, conciliação, relatórios                        | **TO-BE**                                                 |
+| **SME-SIGLA-BFF**      | *a criar*                                                    | A definir na implementação                                                                           | Valida o token, consulta os microsserviços, agrega e devolve o DTO da tela do ALVO e do Locus                                  | **TO-BE** (ADR-015). O código do ALVO ainda não tem esse componente |
+| **MS-AdminUsuarios**   | `SME-SIGLA-MS-AdminUsuarios`                                 | Django 5.2, DRF (Django REST Framework) 3.15, SimpleJWT, `sigla-sdk`                                 | Login via CoreSSO, JWT (JSON Web Token), usuários, grupos, senha, e-mail. O SME-SIGLA-BFF fala com ele em nome da tela          | Existente; grupos orientados ao ALVO                      |
+| **MS-ImportaArquivos** | `SME-SIGLA-MS-ImportaArquivos`                               | Django 5.2 / DRF + Celery 5.4 + Redis                                                                | Porta de entrada das importações do ALVO. O Locus lê o resultado já gravado nos microsserviços do ALVO                          | Existente (uso ALVO)                                      |
+| **Airflow**            | Plataforma de orquestração                                   | DAG                                                                                                  | Busca periódica só do EOL (grava JSON, PDF ou hash na base do Locus) e execução do relatório de grande processamento            | Definido neste desenho. Fora do SME-SIGLA-BFF e do MS-ImportaArquivos |
+| **SME-LOCUS-MICROSERVICO**           | *a criar*                                                    | Django 5.2 / DRF + Celery + `sigla-sdk`                                                              | Servidores, UE, módulos, lotação/exercício, movimentações, vacância, histórico, confronto com o snapshot do EOL, relatórios     | **TO-BE**                                                 |
+| **Base do ALVO**       | PostgreSQL dos microsserviços do ALVO                       | PostgreSQL                                                                                           | Concurso, convocação, escolha e arquivos importados pelo ALVO                                                                   | Existente                                                 |
+| **Base do Locus**      | PostgreSQL do SME-LOCUS-MICROSERVICO                        | PostgreSQL                                                                                           | Quadro do módulo, carga inicial do Access, resultado do Airflow e relatórios                                                    | **TO-BE**                                                 |
 | **sigla-sdk**          | `SME-SIGLA-SDK-Microsservico` (tag `1.1.1`)                  | Python                                                                                               | `http_client`, `CorrelationIdMiddleware`, `AuditlogJWTMiddleware`, `ApiKeyAuthentication` (`X-API-Key`), `CustomJsonFormatter` | Existente                                                 |
 
 
@@ -27,7 +35,15 @@ Em outubro/2026 o LOCUS tem **frontend em construção com dados estáticos**. *
 
 ## 2. Diagrama de Arquitetura (containers)
 
-![Diagrama de containers do LOCUS](../diagramas/assets/03-locus-containers.svg)
+Visão vigente: front do ALVO e front do Locus no SME-SIGLA-BFF, SME-LOCUS-MICROSERVICO na base do Locus, microsserviços do ALVO na base do ALVO, carga inicial do Access e busca periódica do EOL pelo Airflow.
+
+![Visão geral: Front, SME-SIGLA-BFF, SME-LOCUS-MICROSERVICO, bases separadas e ALVO](../diagramas/assets/17-reaproveitamento-visao-sigla.svg)
+
+A importação periódica do EOL é uma DAG do Airflow. O Airflow consulta só o EOL e grava na base do Locus um JSON, um PDF ou um hash. O SME-SIGLA-BFF e o MS-ImportaArquivos ficam fora desse fluxo.
+
+![Importação periódica: Airflow busca o EOL e grava na base do Locus](../diagramas/assets/23-reaproveitamento-importacao-eol.svg)
+
+Os cinco fluxos do módulo (Cadastro, Relatórios, Data base, Vagas e Remoção) estão em [containers deste cenário](../cenarios/reaproveitamento-alvo/containers.md), diagramas `17` a `23`.
 
 ---
 
@@ -35,16 +51,18 @@ Em outubro/2026 o LOCUS tem **frontend em construção com dados estáticos**. *
 
 ### 3.1 — Qual tipo de conexão?
 
-Comunicação **síncrona HTTP/REST** (HTTPS) entre frontend e microsserviços e entre microsserviços; **assíncrona via Celery + Redis** para cargas, conciliação e relatórios.
+Comunicação **síncrona HTTP/REST** (HTTPS) entre o navegador e o SME-SIGLA-BFF e entre o SME-SIGLA-BFF e os microsserviços. **Celery + Redis** permanece nas importações do ALVO e no worker do Locus. A busca periódica do EOL e o relatório de grande processamento rodam em **DAG do Airflow**.
 
 #### Clientes → APIs
 
 
 | Origem                              | Destino                                                                     | Protocolo                             |
 | ----------------------------------- | --------------------------------------------------------------------------- | ------------------------------------- |
-| Front do ALVO e Front do Locus      | BFF único                                                                   | HTTPS. O BFF valida o token           |
-| BFF                                 | MS-AdminUsuarios, microsserviços do ALVO e MS-Locus                         | Consulta interna. Agrega e devolve o DTO da tela |
-| Airflow                             | EOL e base do Locus                                                         | Busca periódica. Grava JSON, PDF ou hash |
+| Front do ALVO e Front do Locus      | SME-SIGLA-BFF único                                                         | HTTPS. O SME-SIGLA-BFF valida o token |
+| SME-SIGLA-BFF                       | MS-AdminUsuarios, microsserviços do ALVO e SME-LOCUS-MICROSERVICO           | Consulta interna. Agrega e devolve o DTO da tela |
+| Airflow                             | EOL e base do Locus                                                         | Busca periódica. Grava JSON, PDF ou hash. Fora do SME-SIGLA-BFF |
+| SME-LOCUS-MICROSERVICO              | MS-ProcessosConcursos, MS-Candidatos, MS-Agenda, MS-ProcessosConvocacao, MS-Escolha | Leitura do que o ALVO já gravou. `X-API-Key` |
+| MS-ImportaArquivos                  | Microsserviços do ALVO e base do ALVO                                       | Importações já existentes do ALVO     |
 | MS → MS                             | Microsserviço de destino                                                    | `X-API-Key`, na rede interna          |
 
 
@@ -53,10 +71,12 @@ Comunicação **síncrona HTTP/REST** (HTTPS) entre frontend e microsserviços e
 
 | Conexão                      | Driver / padrão                                                                                              |
 | ---------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| Base de Dados SIGLA          | PostgreSQL único (`db_sigla`) — Django ORM (psycopg); consultas e gravações na mesma base                    |
-| Redis                        | Broker Celery (filas dedicadas por MS, ex.: `importa_arquivos`; proposta `locus`)                            |
+| Base do ALVO                 | PostgreSQL dos microsserviços do ALVO. Credencial própria                                                    |
+| Base do Locus                | PostgreSQL do SME-LOCUS-MICROSERVICO. Credencial própria. Relatório leve e pesado usam esta base             |
+| Redis                        | Broker Celery. Fila `importa_arquivos` do ALVO. Fila `locus` do worker do Locus                               |
 | CoreSSO / API SME Integração | `requests` — `POST /api/v1/autenticacao/externa` (header `x-api-eol-key`), `AutenticacaoSgp/*`               |
-| PRODAM                       | `api_prodam` (timeout 300 s)                                                                                 |
+| PRODAM                       | `api_prodam` (timeout 300 s), no MS-ImportaArquivos, para o ALVO                                             |
+| EOL                          | Consultado pela DAG do Airflow. O resultado fica na base do Locus                                            |
 | MS → MS                      | `sigla-sdk.http_client` + `X-API-Key`, timeout 30 s                                                          |
 
 
@@ -72,7 +92,7 @@ Comunicação **síncrona HTTP/REST** (HTTPS) entre frontend e microsserviços e
 | LOCUS SPA                             | React Query (memória do navegador) | Cache de consultas por chave, invalidação após mutação            |
 | LOCUS SPA                             | `localStorage`                     | `TOKEN` JWT e dados do usuário                                    |
 | MS-AdminUsuarios / MS-ImportaArquivos | —                                  | Sem cache                                                         |
-| MS-Locus (TO-BE)                      | **Base de Dados SIGLA**            | Consultas e relatórios na mesma base; cache Redis só se medição indicar (≤ 3 s) |
+| SME-LOCUS-MICROSERVICO (TO-BE)        | **Base do Locus**                  | Consultas e relatórios nesta base. Cache Redis só se medição indicar (≤ 3 s) |
 
 
 ---
@@ -82,7 +102,7 @@ Comunicação **síncrona HTTP/REST** (HTTPS) entre frontend e microsserviços e
 O `sigla-sdk` padroniza log JSON e correlation id. O cliente **Elastic APM** está nas settings e fica desligado por padrão (`ELASTIC_APM_ENABLED`). Grafana não está nos repositórios.
 
 
-| Capacidade                               | MS-AdminUsuarios                | MS-ImportaArquivos | MS-Locus (TO-BE)                      | Frontend    |
+| Capacidade                               | MS-AdminUsuarios                | MS-ImportaArquivos | SME-LOCUS-MICROSERVICO (TO-BE)                      | Frontend    |
 | ---------------------------------------- | ------------------------------- | ------------------ | ------------------------------------- | ----------- |
 | Logs JSON estruturados                   | Sim (`CustomJsonFormatter`)     | Sim                | Obrigatório                           | Console     |
 | Correlation id                           | Sim (`CorrelationIdMiddleware`) | Sim                | Obrigatório                           | Não propaga |
@@ -99,10 +119,11 @@ O `sigla-sdk` padroniza log JSON e correlation id. O cliente **Elastic APM** est
 
 | Padrão                                                       | Onde                                                                                                                                    |
 | ------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
-| Microsserviço por domínio                                    | AdminUsuarios e ImportaArquivos existem no SIGLA (uso do ALVO). MS-Locus é proposta                                                     |
-| Camadas `api → serializers → services → repository → models` | MS SIGLA existentes; adotado no MS-Locus                                                                                                |
+| Microsserviço por domínio                                    | AdminUsuarios e ImportaArquivos existem no SIGLA e atendem o ALVO. SME-LOCUS-MICROSERVICO é proposta do quadro do módulo                |
+| SME-SIGLA-BFF único                                          | Um componente na frente do ALVO e do Locus. O navegador conhece esse endereço (ADR-015)                                                 |
+| Camadas `api → serializers → services → repository → models` | MS SIGLA existentes; adotado no SME-LOCUS-MICROSERVICO                                                                                  |
 | Repository                                                   | `repository.py` nos MS                                                                                                                  |
-| Base única                                                   | Base de Dados SIGLA (PostgreSQL, `db_sigla`): consultas e gravações no mesmo banco (ADR-006)                |
+| Bases separadas                                              | Base do ALVO para os microsserviços do ALVO. Base do Locus para o quadro, a carga do Access, o Airflow e os relatórios. Leitura cruzada por HTTP |
 
 
 ---
@@ -112,10 +133,11 @@ O `sigla-sdk` padroniza log JSON e correlation id. O cliente **Elastic APM** est
 
 | Ponto              | Mecanismo                                                | Lacuna                                                          |
 | ------------------ | -------------------------------------------------------- | --------------------------------------------------------------- |
-| Portal → login     | CoreSSO via MS-AdminUsuarios → JWT                       | Sem MFA                                                         |
+| Portal → login     | CoreSSO via MS-AdminUsuarios → JWT. O SME-SIGLA-BFF fala com o MS-AdminUsuarios em nome da tela | Sem MFA                                          |
+| Navegador → API    | Somente o SME-SIGLA-BFF. O BFF valida o token antes de consultar os microsserviços | O código do ALVO ainda não tem o BFF              |
 | LOCUS SPA          | Bearer do `localStorage`; 401 limpa sessão, 403 → `/403` | **Rotas LOCUS sem AuthGuard** (só `modules/sigla` tem)          |
 | MS-AdminUsuarios   | Session, Token, JWT, ApiKey                              | `CORS_ALLOW_ALL_ORIGINS=True`; access token de **7 dias**       |
-| MS-ImportaArquivos | JWT HS256 (24 h) + ApiKey                                | `CORS_ALLOW_ALL_ORIGINS=True`; chave JWT cai para `SECRET_KEY`  |
+| MS-ImportaArquivos | JWT HS256 (24 h) + ApiKey. Uso do ALVO                   | `CORS_ALLOW_ALL_ORIGINS=True`; chave JWT cai para `SECRET_KEY`  |
 | MS → MS            | `X-API-Key` (`sigla-sdk`)                                | Rotação não documentada                                         |
 | Borda HTTP         | Não há manifesto de Ingress nos repositórios             | Rate limiting e WAF não evidenciados                            |
 
@@ -126,13 +148,14 @@ Detalhes e plano em [Segurança](../seguranca/index.md).
 
 ### 3.6 — Utiliza mensageria?
 
-**Sim, via Celery com Redis como broker** 
+**Sim.** As importações do ALVO usam Celery com Redis. A importação periódica do EOL e o relatório de grande processamento usam DAG do Airflow.
 
 
-| Fila               | Produtor                  | Consumidor             | Uso                                                                                   |
-| ------------------ | ------------------------- | ---------------------- | ------------------------------------------------------------------------------------- |
-| `importa_arquivos` | MS-ImportaArquivos / beat | Worker ImportaArquivos | Importações (beat `enfileirar_importacoes_escolhas` a cada 1 min); timeouts 300/360 s |
-| `locus` (TO-BE)    | MS-Locus / beat           | Worker MS-Locus        | Conciliação diária. Relatório pesado vai para uma DAG do Airflow (ADR-011)            |
+| Fila ou agenda         | Produtor                  | Consumidor             | Uso                                                                                   |
+| ---------------------- | ------------------------- | ---------------------- | ------------------------------------------------------------------------------------- |
+| `importa_arquivos`     | MS-ImportaArquivos / beat | Worker ImportaArquivos | Importações do ALVO (beat `enfileirar_importacoes_escolhas` a cada 1 min); timeouts 300/360 s |
+| `locus` (TO-BE)        | SME-LOCUS-MICROSERVICO    | Worker SME-LOCUS-MICROSERVICO | Job do relatório pesado. Lê e grava na base do Locus                          |
+| DAG do Airflow         | Agenda do Airflow, ou disparo do SME-LOCUS-MICROSERVICO no relatório pesado | Airflow | Busca periódica do EOL. Execução do relatório de grande processamento. Grava na base do Locus |
 
 
 ---
@@ -149,10 +172,10 @@ Os repositórios LOCUS já usam `test` → `homolog` → `master`, Ver ADR-010.
 | Item         | Situação                                                                                      |
 | ------------ | --------------------------------------------------------------------------------------------- |
 | Orquestração | Rancher citado no README do MS-ProcessosConvocacao; sem manifesto Kubernetes nos repositórios do LOCUS |
-| Borda HTTP   | Sem manifesto de Ingress. Rate limit e gateway não estão no código                            |
+| Borda HTTP   | Sem manifesto de Ingress. Rate limit e gateway não estão no código. O navegador chega ao SME-SIGLA-BFF |
 | CI/CD        | Sem Jenkinsfile nos repositórios do LOCUS                                                     |
-| Banco        | PostgreSQL único — Base de Dados SIGLA (BASE SIGLA, `db_sigla`)                               |
-| Arquivos     | `media/` local no pod do MS-ImportaArquivos — **precisa de PVC ou object storage**             |
+| Banco        | Bases separadas. Base do ALVO para os microsserviços do ALVO. Base do Locus para o SME-LOCUS-MICROSERVICO, a carga do Access, o Airflow e os relatórios |
+| Arquivos     | Importação do ALVO: `media/` local no pod do MS-ImportaArquivos — **precisa de PVC ou object storage**. Importação do Locus: a DAG grava JSON, PDF ou hash na base do Locus |
 | Imagens      | Python 3.12 (MS), `nginx:alpine` (front, `VITE_BASE_PATH=/locus/`)                             |
 | Testes       | Relatório de cobertura sem mínimo obrigatório; frontend com Jest                               |
 
@@ -161,54 +184,7 @@ Os repositórios LOCUS já usam `test` → `homolog` → `master`, Ver ADR-010.
 
 ## 4. Fluxos principais
 
-### 4.1 — Login e acesso ao LOCUS
-
-```text
-Usuário → Front do ALVO ou Front do Locus → BFF (valida o token)
-        → MS-AdminUsuarios /login → CoreSSO (API SME Integração)
-        → BFF consulta os microsserviços, agrega e devolve o DTO da tela
-```
-
-### 4.2 — Integração e conciliação diária (proposta)
-
-Hoje o MS-ImportaArquivos importa escolhas da PRODAM para o MS-Escolha e exporta vagas e lotes no formato SIGPEC. O fluxo abaixo é proposta para o quadro do LOCUS. A ingestão de arquivo SIGPEC para esse quadro não existe.
-
-```text
-Beat (madrugada) → Worker ImportaArquivos → EOL/PRODAM → valida layout → MS-Locus /integracao (X-API-Key)
-→ Worker MS-Locus (ConciliacaoService) → divergências + histórico → tela de divergências (DICAR)
-```
-
-A busca periódica do módulo no EOL segue outro caminho. O Airflow consulta só o EOL e grava o resultado na base do Locus, em arquivo JSON, PDF ou hash. O desenho está na [importação periódica](../cenarios/reaproveitamento-alvo/containers.md). O BFF não entra nesse fluxo.
-
-### 4.3 — Atualização funcional com histórico
-
-```text
-Operador → DetalheServidor → POST atualização (motivo, portaria, data, documento)
-→ MS-Locus valida (serializer) → LotacaoService/MovimentacaoService → Base de Dados SIGLA + auditlog/versão
-```
-
-### 4.4 — Relatório
-
-O ritmo depende da demanda de processamento. O de menor processamento é síncrono: a tela recebe a resposta na hora. O de grande processamento é assíncrono: uma DAG do Airflow executa a operação e grava na base do Locus. Não há base separada de relatório. A tela apresenta esse resultado quando o Airflow termina.
-
-```text
-Menor processamento → BFF → MS-Locus lê a base do Locus → tela mostra na hora
-
-Grande processamento → MS-Locus dispara a DAG do Airflow → grava na base do Locus
-→ tela mostra quando estiver pronto
-```
-
-O desenho está no [fluxo 2 do cenário de reaproveitamento](../cenarios/reaproveitamento-alvo/containers.md). Detalhe da decisão no [ADR-011](../documentos/adr/ADR-011-relatorios-assincronos.md).
-
----
-
-### 4.5 — Módulo Fundamental II e Médio
-
-O primeiro módulo da área fica no MS-Locus. O recorte cobre os cinco fluxos: Cadastro, Relatórios, Data base, Vagas e Remoção.
-
-A entrevista (`Levantamento/transcricaoreuniao.vtt`) fechou o Sistema Escolha. Ele é o legado do ALVO. O ALVO não importa dado dele e não devolve nada. O Locus também não chama esse legado: a ligação “vagas e candidatos” saiu dos diagramas de contexto, de Data base e de Vagas. O nomeado que a equipe lança hoje no Banco Access passa a ser lido nos microsserviços do ALVO. A carga inicial do Locus é o conteúdo atual do Access. A planilha citada na entrevista é a do EOL, subida manualmente no Access; não é arquivo do Escolha.
-
-EOL e CI continuam sem contrato de integração do MS-Locus. Containers deste recorte: [reaproveitamento do ALVO](../cenarios/reaproveitamento-alvo/containers.md).
+Os fluxos do sistema — login, importações, atualização do quadro, relatórios e o módulo Fundamental II e Médio (Cadastro, Relatórios, Data base, Vagas e Remoção) — estão descritos em [Containers deste cenário](../cenarios/reaproveitamento-alvo/containers.md).
 
 ## 5. Avaliação consolidada
 
@@ -216,10 +192,11 @@ EOL e CI continuam sem contrato de integração do MS-Locus. Containers deste re
 | Dimensão              | Situação                                          | Nota                                    |
 | --------------------- | ------------------------------------------------- | --------------------------------------- |
 | Padronização de stack | MS seguem o mesmo padrão Django/DRF + `sigla-sdk` | Boa                                     |
-| Contratos de API      | Frontend já define contratos (Zod)                | Boa — falta OpenAPI do MS-Locus         |
+| Contratos de API      | Frontend já define contratos (Zod). O DTO da tela fica no SME-SIGLA-BFF | Boa — falta OpenAPI do SME-LOCUS-MICROSERVICO e do BFF |
 | Backend de domínio    | Inexistente                                       | **Crítico** para o MVP                  |
-| Integração EOL/SIGPEC | Mecanismo indefinido                              | **Crítico**                             |
-| Segurança             | CORS aberto, rotas sem guarda, JWT longo          | **Alta prioridade**                     |
+| Bases                 | Base do ALVO existente. Base do Locus a criar. Leitura cruzada por HTTP | Definido                                |
+| Importação            | ALVO: MS-ImportaArquivos. Locus: carga única do Access e DAG do Airflow sobre o EOL | Definido no cenário de reaproveitamento |
+| Segurança             | CORS aberto, rotas sem guarda, JWT longo. BFF ainda ausente no código | **Alta prioridade**              |
 | Observabilidade       | APM + logs JSON + correlation id                  | Boa — faltam health checks e dashboards |
 | Esteira               | Branches corretas; Jenkinsfile fora do repo       | Média                                   |
 
@@ -231,14 +208,14 @@ EOL e CI continuam sem contrato de integração do MS-Locus. Containers deste re
 | ----------------------------------- | ---------------------------- | --------------------------------------------- |
 | C4                                  | Legenda                      | `01-c4-legenda.svg`                           |
 | C1 - Contexto LOCUS                 | Contexto do sistema          | `02-locus-contexto.svg`                       |
-| C2 - Containers LOCUS               | Containers                   | `03-locus-containers.svg`                     |
+| C2 - Containers LOCUS               | Containers do C4 anterior    | `03-locus-containers.svg`                     |
 | C3 - Componentes LOCUS Frontend     | Componentes do frontend      | `04-locus-componente-frontend.svg`            |
-| C3 - Componentes MS-Locus (TO-BE)   | Componentes do MS de domínio | `05-locus-componente-ms-locus.svg`            |
-| C3 - Componentes MS-ImportaArquivos | Componentes (uso ALVO)       | `06-locus-componente-ms-importa-arquivos.svg` |
+| C3 - Componentes SME-LOCUS-MICROSERVICO (TO-BE)   | Componentes do MS de domínio | `05-locus-componente-ms-locus.svg`            |
+| C3 - Componentes MS-ImportaArquivos | Componentes da porta de entrada do ALVO | `06-locus-componente-ms-importa-arquivos.svg` |
 | C3 - Componentes MS-AdminUsuarios   | Componentes                  | `07-locus-componente-ms-admin-usuarios.svg`   |
 | SISTEMA - Pipeline CI/CD            | Esteira                      | `09-locus-pipeline-cicd.svg`                  |
 | SISTEMA - Matriz Risco de Segurança | Matriz de risco              | `10-locus-matriz-risco.svg`                   |
-| C2 - Reaproveitamento               | Visão, cadastro, relatórios, data base, vagas, remoção e importação do EOL | `17` a `23` em `diagramas/assets` |
+| C2 - Reaproveitamento               | Visão vigente: BFF, bases separadas, cadastro, relatórios, data base, vagas, remoção e importação do EOL pelo Airflow | `17` a `23` em `diagramas/assets` |
 
 
 ---
@@ -249,12 +226,13 @@ EOL e CI continuam sem contrato de integração do MS-Locus. Containers deste re
 | Ponto de falha                            | Efeito                         | Mitigação                                                                 |
 | ----------------------------------------- | ------------------------------ | ------------------------------------------------------------------------- |
 | CoreSSO / API SME Integração indisponível | Ninguém faz login              | Timeout curto + mensagem clara; sessão vigente continua                   |
-| PRODAM/EOL fora na janela de carga        | Conciliação do dia não roda    | Retry com backoff; alerta; LOCUS segue com dados do dia anterior          |
-| Layout de importação inválido             | Importação de escolhas rejeitada | Validação + `ImportacaoErro`                                            |
-| Redis indisponível                        | Filas param                    | Probes; alertas; tarefas idempotentes                                     |
-| Pod do MS-ImportaArquivos reinicia        | Perda de arquivos em `media/`  | PVC (PersistentVolumeClaim) ou object storage                             |
-| Relatório pesado na mesma base           | Consulta disputa recurso com a operação | Job assíncrono, paginação e índices (ADR-011)                      |
-| Chave JWT compartilhada vazada            | Token forjado em todos os MS   | Chave dedicada (`JWT_SIGNING_KEY`) e rotação                              |
+| EOL fora na janela da DAG                 | A busca periódica do dia não grava novo snapshot | Retry com backoff; alerta; a base do Locus segue com o snapshot anterior |
+| PRODAM fora na janela do ALVO             | A importação de escolhas do ALVO não roda | Retry do worker do MS-ImportaArquivos; o Locus continua lendo o que o ALVO já gravou |
+| Layout de importação do ALVO inválido     | Importação de escolhas rejeitada na base do ALVO | Validação + `ImportacaoErro` no MS-ImportaArquivos                     |
+| Redis indisponível                        | Filas do ALVO e o job do worker do Locus param | Probes; alertas; tarefas idempotentes. A DAG do Airflow segue o agendamento próprio |
+| Pod do MS-ImportaArquivos reinicia        | Perda de arquivos do ALVO em `media/` | PVC (PersistentVolumeClaim) ou object storage                          |
+| Relatório pesado na base do Locus         | Consulta disputa recurso com a operação do quadro | DAG do Airflow, job no worker, paginação e índices (ADR-011)          |
+| Chave JWT compartilhada vazada            | Token forjado em todos os MS   | Chave dedicada (`JWT_SIGNING_KEY`) e rotação. O SME-SIGLA-BFF valida o token antes da consulta |
 
 
 ---
@@ -262,5 +240,7 @@ EOL e CI continuam sem contrato de integração do MS-Locus. Containers deste re
 ## Referências
 
 - Repositórios `SME-SIGLA-LOCUS-Frontend`, `SME-SIGLA-Frontend`, `SME-SIGLA-MS-AdminUsuarios`, `SME-SIGLA-MS-ImportaArquivos`, `SME-SIGLA-SDK-Microsservico`
+- [Containers do reaproveitamento](../cenarios/reaproveitamento-alvo/containers.md) e [base do Locus](../cenarios/reaproveitamento-alvo/base-de-dados.md)
+- `Levantamento/transcricaoreuniao.vtt`
+- [ADR-015](../documentos/adr/ADR-015-bff-unico.md), [ADR-011](../documentos/adr/ADR-011-relatorios-assincronos.md), [ADR-004](../documentos/adr/ADR-004-ms-locus.md)
 - Questionário do PO (Product Owner) LOCUS
-

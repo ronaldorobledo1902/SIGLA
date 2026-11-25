@@ -28,13 +28,13 @@ Termos de negócio e técnicos usados na documentação do LOCUS.
 | **Motivo de atualização** | Catálogo (~90 itens) que classifica a alteração registrada |
 | **Divergência** | Diferença entre o dado do LOCUS e o da origem oficial (EOL/SIGPEC) |
 | **Conciliação** | Processo de confrontar LOCUS × origem e tratar divergências |
-| **Remoção** | Preparação do concurso de remoção do Fund. II e Médio: confronto, precários, congelado e vagas. A carga ainda está a mapear |
+| **Remoção** | Preparação do concurso de remoção do Fund. II e Médio: confronto, congelado e vagas. A carga ainda está a mapear |
 | **Data base** | Datas de referência do módulo (EOL, DOC, agenda), migração de candidatos e extrato de entrada e saída |
 | **Norteador** | Código associado ao vínculo do professor. No exemplo do Fund. II tem o formato de código de unidade |
-| **ATIVEOL** | Conferência dos dados funcionais do EOL no cadastro. O mecanismo de acesso não está definido; fica com o MS-Locus |
+| **ATIVEOL** | Conferência dos dados funcionais do EOL no cadastro. O mecanismo de acesso não está definido; fica com o SME-LOCUS-MICROSERVICO |
 | **MOU / Mourão** | Extrato do EOL por componente, importado como `<COMPONENTE>MOU`. Mourão é o nome legado dessa referência, não um sistema |
 | **EXC** | Excedente ajustado à mão na vaga da unidade. É gravado e auditado |
-| **Fund. II e Médio** | Primeiro módulo do LOCUS. Valor `fund2-medio` no MS-Locus |
+| **Fund. II e Médio** | Primeiro módulo do LOCUS. Valor `fund2-medio` no SME-LOCUS-MICROSERVICO |
 
 ## Sistemas externos
 
@@ -42,7 +42,6 @@ Termos de negócio e técnicos usados na documentação do LOCUS.
 |-------|-------------|
 | **EOL** | Escola Online — sistema externo da SME, mantido pela PRODAM. Origem de dados funcionais, módulos e unidades. Não é microsserviço do SIGLA |
 | **Sistema Escolha** | Legado do ALVO (convocação e escolha). Fora de integração: o ALVO não importa dado dele e o Locus não o chama. Não é o MS-Escolha |
-| **CI** | Centro de Informática. Envia o Excel de precários no período de remoção |
 | **MS-Escolha** | Microsserviço do ALVO (convocação e escolha de vagas). Não é o Sistema Escolha do módulo Fundamental II |
 | **PRODAM** | Empresa de Tecnologia da Informação e Comunicação do Município de São Paulo |
 | **SIGPEC** | Sistema Integrado de Gestão de Pessoas e Competências — mantido pela SEGES |
@@ -58,7 +57,7 @@ Termos de negócio e técnicos usados na documentação do LOCUS.
 | **ADR** | Architecture Decision Record |
 | **DRF** | Django REST Framework |
 | **JWT** | JSON Web Token |
-| **BFF** | Backend for Frontend. Um só para o ALVO e o Locus: recebe a tela, valida o token, consulta os microsserviços, agrega e devolve o DTO |
+| **SME-SIGLA-BFF** | Backend for Frontend. Um só para o ALVO e o Locus: recebe a tela, valida o token, consulta os microsserviços, agrega e devolve o DTO |
 | **MFA** | Autenticação multifator |
 | **LGPD** | Lei Geral de Proteção de Dados (Lei 13.709/2018) |
 | **MS** | Microsserviço |

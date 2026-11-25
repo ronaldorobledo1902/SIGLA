@@ -46,7 +46,7 @@
 
 | Alternativa | Motivo de não adoção |
 |-------------|----------------------|
-| Permissões dentro do MS-Locus | Duplicaria o cadastro de usuários já existente no MS-AdminUsuarios |
+| Permissões dentro do SME-LOCUS-MICROSERVICO | Duplicaria o cadastro de usuários já existente no MS-AdminUsuarios |
 
 ## Referências
 

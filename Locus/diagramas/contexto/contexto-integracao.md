@@ -2,7 +2,7 @@
 
 ## Contexto
 
-O LOCUS precisa consumir os dados oficiais do **EOL (PRODAM)** e do **SIGPEC (SEGES)** ao menos 1x/dia e confrontá-los com o quadro funcional. Isso é proposta (ADR-005). Hoje o **MS-ImportaArquivos** atende o ALVO: layout de arquivo (tipo e estrutura JSON, padrão `HABILITADOS`), importação de escolhas da PRODAM e exportação SIGPEC. A conciliação do quadro ficaria no **MS-Locus**.
+O LOCUS precisa consumir os dados oficiais do **EOL (PRODAM)** e do **SIGPEC (SEGES)** ao menos 1x/dia e confrontá-los com o quadro funcional. Isso é proposta (ADR-005). Hoje o **MS-ImportaArquivos** atende o ALVO: layout de arquivo (tipo e estrutura JSON, padrão `HABILITADOS`), importação de escolhas da PRODAM e exportação SIGPEC. A conciliação do quadro ficaria no **SME-LOCUS-MICROSERVICO**.
 
 ```{image} ../assets/06-locus-componente-ms-importa-arquivos.svg
 :width: 100%
@@ -24,7 +24,7 @@ O LOCUS precisa consumir os dados oficiais do **EOL (PRODAM)** e do **SIGPEC (SE
 ### Em escopo da proposta
 
 - Novos tipos de importação para servidores e unidades
-- Entrega de lotes ao MS-Locus e conciliação
+- Entrega de lotes ao SME-LOCUS-MICROSERVICO e conciliação
 - Histórico de importações e erros (o registro de erro já existe no serviço)
 
 ### O que o serviço já faz (ALVO)
@@ -39,7 +39,7 @@ O LOCUS precisa consumir os dados oficiais do **EOL (PRODAM)** e do **SIGPEC (SE
 
 ```text
 Beat → Worker ImportaArquivos → escolhas PRODAM → MS-Escolha (comportamento atual)
-Proposta: EOL/PRODAM → valida → MS-Locus /integracao → conciliação → divergências
+Proposta: EOL/PRODAM → valida → SME-LOCUS-MICROSERVICO /integracao → conciliação → divergências
 ```
 
 ---
@@ -49,7 +49,7 @@ Proposta: EOL/PRODAM → valida → MS-Locus /integracao → conciliação → d
 | Sistema | Interação |
 |---------|-----------|
 | MS-ImportaArquivos + Worker | Ingestão, validação, histórico |
-| MS-Locus + Worker | Conciliação e aplicação |
+| SME-LOCUS-MICROSERVICO + Worker | Conciliação e aplicação |
 | EOL / PRODAM | Origem (API/view a confirmar) |
 | SIGPEC / SEGES | Destino da exportação atual de vagas e lotes. Origem do quadro do LOCUS é proposta |
 | Redis | Broker Celery |

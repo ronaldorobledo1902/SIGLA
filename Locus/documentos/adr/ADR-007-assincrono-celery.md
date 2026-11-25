@@ -5,6 +5,7 @@
 | ---------------- | --------------------------------------- |
 | **Status**       | Accepted (as-is)                        |
 | **Data**         | 2026-10-27                              |
+| **Revisão**      | 2026-11-25                              |
 | **Decisores**    | Time SIGLA                              |
 | **Sistema**      | SIGLA                                   |
 | **Relacionadas** | ADR-005, ADR-006, ADR-011               |
@@ -14,14 +15,14 @@
 
 ## Contexto
 
-O MS-ImportaArquivos usa Celery 5.4 com Redis como broker (fila `importa_arquivos`, beat a cada 1 min, timeouts 300/360 s). O LOCUS usa a fila `locus` para a conciliação diária. O relatório de grande processamento segue por DAG do Airflow (ADR-011).
+O MS-ImportaArquivos usa Celery 5.4 com Redis como broker (fila `importa_arquivos`, beat a cada 1 min, timeouts 300/360 s) para as importações do ALVO. O worker do Locus usa a fila `locus` para o job do relatório de grande processamento. A busca periódica do EOL e a execução desse relatório são DAGs do Airflow (ADR-005, ADR-011).
 
 ## Decisão
 
-1. Manter **Celery + Redis** como mecanismo assíncrono do SIGLA.
+1. Manter **Celery + Redis** para as importações do ALVO e para o job do worker do Locus.
 2. **Uma fila por MS** (`importa_arquivos`, `locus`) e workers dedicados; Redis compartilhado.
 3. Tarefas **idempotentes**, com `acks_late`, retry com backoff e limites de tempo explícitos.
-4. Agendamentos em **Celery beat** (um beat por MS, réplica única).
+4. O beat do MS-ImportaArquivos continua agendando as importações do ALVO. A busca periódica do EOL e o relatório de grande processamento são agendados no Airflow.
 
 ## Consequências
 

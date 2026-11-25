@@ -1,6 +1,6 @@
 # O que cada microsserviço atende
 
-Cada serviço abaixo foi lido pelo código que está nos repositórios. “Atende” significa que o dado já está persistido e o MS-Locus pode lê-lo por HTTP, com a mesma chave de API que os serviços já usam entre si. O MS-Locus não lê tabela de outro serviço.
+Cada serviço abaixo foi lido pelo código que está nos repositórios. “Atende” significa que o dado já está persistido e o SME-LOCUS-MICROSERVICO pode lê-lo por HTTP, com a mesma chave de API que os serviços já usam entre si. O SME-LOCUS-MICROSERVICO não lê tabela de outro serviço.
 
 A chave de ligação, quando a pessoa veio de concurso, é o Registro Funcional no MS-Candidatos, o código EOL da escola no MS-Escolha e o código do cargo no MS-ProcessosConcursos.
 
@@ -8,7 +8,7 @@ O **Sistema Escolha** não é o MS-Escolha. A entrevista (`Levantamento/transcri
 
 ## Resumo
 
-| Microsserviço | Papel para o MS-Locus | Fluxos |
+| Microsserviço | Papel para o SME-LOCUS-MICROSERVICO | Fluxos |
 | --- | --- | --- |
 | MS-Escolha | Escola, DRE, vaga definitiva ou precária e escolha feita. Não é o Sistema Escolha | 1, 3, 4, 5 |
 | MS-Candidatos | Pessoa habilitada, classificação e lote SIGPEC | 1, 3 |
@@ -75,7 +75,7 @@ Já persiste concurso, tipo de escolha, status, data de convocação, data de co
 
 Atende o recorte do processo na migração: qual concurso, qual data de convocação e qual corte de vagas.
 
-Não é o cadastro funcional e não substitui o MS-Convocacao antigo: este último é um CRUD genérico (título, número, tipo, datas) e não participa do fluxo real. O MS-Locus não integra com ele.
+Não é o cadastro funcional e não substitui o MS-Convocacao antigo: este último é um CRUD genérico (título, número, tipo, datas) e não participa do fluxo real. O SME-LOCUS-MICROSERVICO não integra com ele.
 
 ## MS-Agenda
 
@@ -89,17 +89,17 @@ Não grava a Data base DOC nem a checagem de módulo. Essas duas datas são oper
 
 ## MS-AdminUsuarios
 
-Login no CoreSSO, JWT, usuário, grupo e permissão. O BFF único consulta este serviço em nome do front do ALVO e do front do Locus. Não há dado de professor, unidade ou vaga.
+Login no CoreSSO, JWT, usuário, grupo e permissão. O SME-SIGLA-BFF único consulta este serviço em nome do front do ALVO e do front do Locus. Não há dado de professor, unidade ou vaga.
 
 ## sigla-sdk
 
-Biblioteca. O MS-Locus usa o cliente HTTP, o correlation id e o middleware de auditoria do JWT, no mesmo padrão dos outros serviços. Não guarda domínio.
+Biblioteca. O SME-LOCUS-MICROSERVICO usa o cliente HTTP, o correlation id e o middleware de auditoria do JWT, no mesmo padrão dos outros serviços. Não guarda domínio.
 
 ## MS-ImportaArquivos
 
 Hoje ele recebe o CSV de habilitados, o arquivo de vagas e o TXT de lotes SIGPEC, busca a escolha na PRODAM e entrega o resultado ao MS-Candidatos e ao MS-Escolha. Também exporta vagas e lotes no formato SIGPEC.
 
-Neste cenário ele continua sendo a porta de entrada do ALVO. O MS-Locus não ganha cliente `api_locus`, não cria layout de EOL ou SIGPEC e não lê a tabela de importação. O dado útil já está no serviço de domínio depois que a importação termina.
+Neste cenário ele continua sendo a porta de entrada do ALVO. O SME-LOCUS-MICROSERVICO não ganha cliente `api_locus`, não cria layout de EOL ou SIGPEC e não lê a tabela de importação. O dado útil já está no serviço de domínio depois que a importação termina.
 
 A exportação SIGPEC que já existe continua saindo das vagas do MS-Escolha. Se o Locus publicar a vaga calculada nesse serviço, o arquivo SIGPEC segue sendo gerado por quem já o gera hoje.
 
@@ -107,13 +107,13 @@ A exportação SIGPEC que já existe continua saindo das vagas do MS-Escolha. Se
 
 Gera ata, súmula, lauda de vagas, lauda de convocação, listagem e resultado da escolha. Cada relatório chama os outros microsserviços e grava o arquivo.
 
-Nenhum tipo atual é banco de servidores, quadro da unidade, cargos do módulo, mensal ou auditoria do Cadastro. O motor (job, planilha, documento) pode ser reutilizado depois. Neste cenário os relatórios do módulo nascem no MS-Locus.
+Nenhum tipo atual é banco de servidores, quadro da unidade, cargos do módulo, mensal ou auditoria do Cadastro. O motor (job, planilha, documento) pode ser reutilizado depois. Neste cenário os relatórios do módulo nascem no SME-LOCUS-MICROSERVICO.
 
 O relatório de menor processamento volta na hora. O de grande processamento dispara uma DAG do Airflow, que grava na base do Locus. A tela mostra esse resultado quando a DAG termina. Não há base separada de relatório. O MS-Relatorios não passa a depender do quadro funcional. O desenho está em [Containers](containers.md), fluxo 2.
 
 ## Matriz por fluxo
 
-| Necessidade do levantamento | Onde já está | O que o MS-Locus faz |
+| Necessidade do levantamento | Onde já está | O que o SME-LOCUS-MICROSERVICO faz |
 | --- | --- | --- |
 | Unidade, tipo e DRE | MS-Escolha | Consulta por código EOL |
 | Cargo (código e nome) | MS-ProcessosConcursos | Consulta o catálogo |
@@ -130,5 +130,4 @@ O relatório de menor processamento volta na hora. O de grande processamento dis
 | Relatório de menor processamento | em lugar nenhum | Síncrono, lendo a base do Locus |
 | Relatório de grande processamento | em lugar nenhum | DAG do Airflow grava na base do Locus. A tela mostra quando termina |
 | ATIVEOL, tabela MOU, confronto com EOL | em lugar nenhum | Fora deste cenário |
-| Precários do CI | em lugar nenhum | Fora deste cenário |
 | Login | MS-AdminUsuarios | Front autentica lá |

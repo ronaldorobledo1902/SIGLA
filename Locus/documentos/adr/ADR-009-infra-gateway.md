@@ -20,7 +20,7 @@ Não há, nestes repositórios, manifesto de Ingress, rate limiting, circuit bre
 
 ## Decisão
 
-1. Ingress, rate limiting, circuit breaker e um gateway de identidade **não** fazem parte do que os repositórios contêm. O BFF único do ALVO e do Locus é decisão de arquitetura ([ADR-015](ADR-015-bff-unico.md)) e ainda não está no código.
+1. Ingress, rate limiting, circuit breaker e um gateway de identidade **não** fazem parte do que os repositórios contêm. O SME-SIGLA-BFF único do ALVO e do Locus é decisão de arquitetura ([ADR-015](ADR-015-bff-unico.md)) e ainda não está no código.
 2. A observabilidade presente no código é o cliente Elastic APM (desligado por padrão) e os logs JSON do `sigla-sdk`.
 3. A esteira de deploy não está versionada nos repositórios do LOCUS.
 4. A URL do frontend continua no build (`VITE_LOCUS_API_URL` / `VITE_BASE_PATH`).

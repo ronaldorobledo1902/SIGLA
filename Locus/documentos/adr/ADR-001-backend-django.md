@@ -18,7 +18,7 @@ Os microsserviços existentes (AdminUsuarios, ImportaArquivos e os do ALVO) usam
 
 ## Decisão
 
-1. Todo backend do LOCUS (inclusive o novo MS-Locus) usa **Django 5.2 + DRF** com a mesma estrutura de camadas: `api` → `serializers` → `services` → `repository` → `models`.
+1. Todo backend do LOCUS (inclusive o novo SME-LOCUS-MICROSERVICO) usa **Django 5.2 + DRF** com a mesma estrutura de camadas: `api` → `serializers` → `services` → `repository` → `models`.
 2. Uso obrigatório do `sigla-sdk` para `http_client`, `CorrelationIdMiddleware`, `AuditlogJWTMiddleware`, `ApiKeyAuthentication` e `CustomJsonFormatter`.
 3. OpenAPI via **drf-spectacular**. Os repositórios geram relatório de cobertura e não definem um mínimo obrigatório.
 

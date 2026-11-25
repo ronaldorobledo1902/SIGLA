@@ -20,9 +20,9 @@ Substitui sistemas descontinuados que não recebem mais atualizações de legisl
 |--------|-------------|---------------------|
 | **Portal / login** | Portal SIGLA (React) — login RF/senha, recuperação de senha, seleção ALVO / LOCUS | Existente |
 | **Interface LOCUS** | `SME-SIGLA-LOCUS-Frontend` — React 19, Vite 7, Ant Design 5, React Query, servido por Nginx em `/locus/` | Em construção, **dados estáticos** |
-| **Identidade e permissões** | `SME-SIGLA-MS-AdminUsuarios` — Django 5.2 / DRF (Django REST Framework), CoreSSO via API SME Integração, JWT (JSON Web Token). O front fala com o BFF único, que valida o token | Existente (perfis ALVO). BFF a inserir |
+| **Identidade e permissões** | `SME-SIGLA-MS-AdminUsuarios` — Django 5.2 / DRF (Django REST Framework), CoreSSO via API SME Integração, JWT (JSON Web Token). O front fala com o SME-SIGLA-BFF único, que valida o token | Existente (perfis ALVO). SME-SIGLA-BFF a inserir |
 | **Importação de dados** | `SME-SIGLA-MS-ImportaArquivos` — Django / DRF + Celery; layout de arquivo, escolhas PRODAM, exportação SIGPEC | Existente (uso ALVO). Reuso pelo LOCUS é proposta (ADR-005) |
-| **Domínio LOCUS** | **MS-Locus** — Django / DRF + Celery + `sigla-sdk` | **Planejado (TO-BE)** |
+| **Domínio LOCUS** | **SME-LOCUS-MICROSERVICO** — Django / DRF + Celery + `sigla-sdk` | **Planejado (TO-BE)** |
 | **Dados** | Base de Dados SIGLA (BASE SIGLA): PostgreSQL único (`db_sigla`); Redis (broker Celery) | Existente |
 | **Runtime** | Dockerfile nos repositórios. Elastic APM configurado e desligado por padrão. Rancher aparece no README do MS-ProcessosConvocacao. Sem manifesto de Ingress, rate limit, Grafana ou Jenkinsfile nos repositórios do LOCUS | Observado no código |
 
@@ -44,4 +44,4 @@ Substitui sistemas descontinuados que não recebem mais atualizações de legisl
 | [Diagramas C4 (Context, Containers, Components, Code)](diagramas/index.md) | Contexto (C1), containers (C2), componentes (C3) e fluxos |
 | [Segurança](seguranca/index.md) | Recomendações prioritárias e matriz de risco |
 
-> Esta documentação descreve o LOCUS **as-is** (outubro/2026: frontend em construção e microsserviços SIGLA existentes) e a arquitetura **TO-BE** proposta (MS-Locus, integrações EOL/SIGPEC, perfis LOCUS). Elementos TO-BE aparecem com **borda tracejada** nos diagramas.
+> Esta documentação descreve o LOCUS **as-is** (outubro/2026: frontend em construção e microsserviços SIGLA existentes) e a arquitetura **TO-BE** proposta (SME-LOCUS-MICROSERVICO, integrações EOL/SIGPEC, perfis LOCUS). Elementos TO-BE aparecem com **borda tracejada** nos diagramas.

@@ -1,6 +1,6 @@
 # Base do Locus
 
-Sim. O MS-Locus precisa de um schema próprio, no mesmo PostgreSQL `db_sigla` dos outros microsserviços, com credencial que não lê o schema dos demais.
+Sim. O SME-LOCUS-MICROSERVICO precisa de um schema próprio, no mesmo PostgreSQL `db_sigla` dos outros microsserviços, com credencial que não lê o schema dos demais.
 
 Reaproveitar o ALVO não elimina essa base. O ALVO guarda o processo de escolha. O Locus guarda o que acontece com o professor depois que ele entra no módulo, e o cálculo que só o módulo faz.
 
@@ -8,7 +8,7 @@ Reaproveitar o ALVO não elimina essa base. O ALVO guarda o processo de escolha.
 
 | Dado do levantamento | Já está no ALVO? |
 | --- | --- |
-| Escola, DRE, cargo, habilitado, agenda, escolha, vaga ofertada | Sim. O MS-Locus consulta. Não copia o cadastro. |
+| Escola, DRE, cargo, habilitado, agenda, escolha, vaga ofertada | Sim. O SME-LOCUS-MICROSERVICO consulta. Não copia o cadastro. |
 | Ficha do Cadastro: cargo atual, atividade, tipo de vaga ocupada, exercício, lotação, afastamento, substituição, vacância, norteador, motivo e autor da atualização | Não |
 | Data base DOC e checagem de módulo | Não |
 | Módulo por unidade e componente, EXC e vaga calculada | Não. A vaga do MS-Escolha é a oferta do processo, não este cálculo |
@@ -19,7 +19,7 @@ Copiar escola, cargo e candidato para dentro do Locus duplicaria dono. O [ADR-00
 
 ## O que fica no schema do Locus
 
-O MS-Locus grava só o que não tem dono. A referência ao ALVO é por chave natural, sem chave estrangeira entre schemas.
+O SME-LOCUS-MICROSERVICO grava só o que não tem dono. A referência ao ALVO é por chave natural, sem chave estrangeira entre schemas.
 
 | Agregado | Conteúdo | Chave para o ALVO |
 | --- | --- | --- |
@@ -39,13 +39,13 @@ A migração do fluxo de Data base escreve o vínculo na primeira vez em que o u
 - Catálogo de cargo e concurso. Continuam no MS-ProcessosConcursos.
 - Pessoa, CPF e classificação do concurso. Continuam no MS-Candidatos.
 - Arquivo importado, layout e log da PRODAM. Continuam no MS-ImportaArquivos.
-- Tabela MOU, planilha do CI e fila de divergência com o EOL. Este cenário não as recebe. Se a comparação de cenários decidir que o confronto continua obrigatório, a importação volta ao desenho atual e estas tabelas passam a ter dono no Locus.
+- Tabela MOU e fila de divergência com o EOL. Este cenário não as recebe. Se a comparação de cenários decidir que o confronto continua obrigatório, a importação volta ao desenho atual e estas tabelas passam a ter dono no Locus.
 
 ## Como os serviços se falam
 
-Leitura do ALVO: HTTP com `X-API-Key`, no padrão que MS-ImportaArquivos, MS-Relatorios e MS-ProcessosConvocacao já usam. O MS-Locus não abre conexão no banco dos outros.
+Leitura do ALVO: HTTP com `X-API-Key`, no padrão que MS-ImportaArquivos, MS-Relatorios e MS-ProcessosConvocacao já usam. O SME-LOCUS-MICROSERVICO não abre conexão no banco dos outros.
 
-Escrita no ALVO: um único caso. No fluxo de Vagas, o MS-Locus publica a vaga calculada no MS-Escolha (`vagas definitivas` e `vagas precárias` por escola e cargo). Hoje essa vaga também pode entrar por arquivo no MS-ImportaArquivos. A regra deste cenário é: vaga calculada pelo Fundamental II tem o MS-Locus como publicador; arquivo de vaga continua valendo para processo que o Locus não calcula. Os dois não gravam a mesma vaga do mesmo processo.
+Escrita no ALVO: um único caso. No fluxo de Vagas, o SME-LOCUS-MICROSERVICO publica a vaga calculada no MS-Escolha (`vagas definitivas` e `vagas precárias` por escola e cargo). Hoje essa vaga também pode entrar por arquivo no MS-ImportaArquivos. A regra deste cenário é: vaga calculada pelo Fundamental II tem o SME-LOCUS-MICROSERVICO como publicador; arquivo de vaga continua valendo para processo que o Locus não calcula. Os dois não gravam a mesma vaga do mesmo processo.
 
 A carga inicial copia o Banco Access para este schema, uma vez. Não há sincronismo contínuo com o Access nem com o Sistema Escolha.
 

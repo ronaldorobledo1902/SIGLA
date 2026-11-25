@@ -11,6 +11,5 @@ Todos os diagramas foram desenhados no arquivo `assets/ARQUITETURA - LOCUS - C4.
 contexto/index
 container/index
 componente/index
-funcionalidades/index
 assets/index
 ```
