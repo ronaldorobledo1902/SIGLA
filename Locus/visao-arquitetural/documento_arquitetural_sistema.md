@@ -42,11 +42,10 @@ Comunicação **síncrona HTTP/REST** (HTTPS) entre frontend e microsserviços e
 
 | Origem                              | Destino                                                                     | Protocolo                             |
 | ----------------------------------- | --------------------------------------------------------------------------- | ------------------------------------- |
-| Portal SIGLA                        | MS-AdminUsuarios `/api/v1/login`, `esqueci-minha-senha`, `criar-nova-senha` | HTTPS + JSON                          |
-| LOCUS SPA (Single Page Application) | MS-AdminUsuarios `/meus-dados`, permissões                                  | HTTPS + `Authorization: Bearer <JWT>` |
-| LOCUS SPA                           | MS-Locus `/api/v1/unidades-educacionais/*`, `/api/v1/servidores/*` (TO-BE)  | HTTPS + JWT                           |
-| Telas de importação (TO-BE)         | MS-ImportaArquivos (layouts, importações)                                   | HTTPS multipart + JWT                 |
-| Todos                               | Ingress Nginx `api-sigla.sme.prefeitura.sp.gov.br/ms-*`                     | Roteamento por path                   |
+| Front do ALVO e Front do Locus      | BFF único                                                                   | HTTPS. O BFF valida o token           |
+| BFF                                 | MS-AdminUsuarios, microsserviços do ALVO e MS-Locus                         | Consulta interna. Agrega e devolve o DTO da tela |
+| Airflow                             | EOL e base do Locus                                                         | Busca periódica. Grava JSON, PDF ou hash |
+| MS → MS                             | Microsserviço de destino                                                    | `X-API-Key`, na rede interna          |
 
 
 #### APIs / Workers → dados e integrações
@@ -133,7 +132,7 @@ Detalhes e plano em [Segurança](../seguranca/index.md).
 | Fila               | Produtor                  | Consumidor             | Uso                                                                                   |
 | ------------------ | ------------------------- | ---------------------- | ------------------------------------------------------------------------------------- |
 | `importa_arquivos` | MS-ImportaArquivos / beat | Worker ImportaArquivos | Importações (beat `enfileirar_importacoes_escolhas` a cada 1 min); timeouts 300/360 s |
-| `locus` (TO-BE)    | MS-Locus / beat           | Worker MS-Locus        | Conciliação diária e relatórios assíncronos                                           |
+| `locus` (TO-BE)    | MS-Locus / beat           | Worker MS-Locus        | Conciliação diária. Relatório pesado vai para uma DAG do Airflow (ADR-011)            |
 
 
 ---
@@ -165,8 +164,9 @@ Os repositórios LOCUS já usam `test` → `homolog` → `master`, Ver ADR-010.
 ### 4.1 — Login e acesso ao LOCUS
 
 ```text
-Usuário → Portal SIGLA → MS-AdminUsuarios /login → CoreSSO (API SME Integração)
-       ← JWT (localStorage TOKEN) → seleção de sistema → /locus/ → APIs com Bearer
+Usuário → Front do ALVO ou Front do Locus → BFF (valida o token)
+        → MS-AdminUsuarios /login → CoreSSO (API SME Integração)
+        → BFF consulta os microsserviços, agrega e devolve o DTO da tela
 ```
 
 ### 4.2 — Integração e conciliação diária (proposta)
@@ -178,6 +178,8 @@ Beat (madrugada) → Worker ImportaArquivos → EOL/PRODAM → valida layout →
 → Worker MS-Locus (ConciliacaoService) → divergências + histórico → tela de divergências (DICAR)
 ```
 
+A busca periódica do módulo no EOL segue outro caminho. O Airflow consulta só o EOL e grava o resultado na base do Locus, em arquivo JSON, PDF ou hash. O desenho está na [importação periódica](../cenarios/reaproveitamento-alvo/containers.md). O BFF não entra nesse fluxo.
+
 ### 4.3 — Atualização funcional com histórico
 
 ```text
@@ -187,16 +189,16 @@ Operador → DetalheServidor → POST atualização (motivo, portaria, data, doc
 
 ### 4.4 — Relatório
 
-A entrevista (`Levantamento/transcricaoreuniao.vtt`) separou dois pedidos. O total de lotados, afastados e vagas volta na tela. O relatório mensal completo — cargos, pessoas afastadas e o motivo do afastamento, hoje montado à mão — é processamento pesado: o usuário busca o arquivo depois.
+O ritmo depende da demanda de processamento. O de menor processamento é síncrono: a tela recebe a resposta na hora. O de grande processamento é assíncrono: uma DAG do Airflow executa a operação e grava na base do Locus. Não há base separada de relatório. A tela apresenta esse resultado quando o Airflow termina.
 
 ```text
-Total simples → MS-Locus lê a base de relatórios → tela mostra o número
+Menor processamento → BFF → MS-Locus lê a base do Locus → tela mostra na hora
 
-Relatório completo → MS-Locus cria job (202 Accepted) → Worker consolida o schema do Locus
-→ grava a base de relatórios e o arquivo → tela consulta status → download
+Grande processamento → MS-Locus dispara a DAG do Airflow → grava na base do Locus
+→ tela mostra quando estiver pronto
 ```
 
-O desenho de containers, no padrão da imagem de referência (base dedicada, serviço e tela, com download), está no [fluxo 2 do cenário de reaproveitamento](../cenarios/reaproveitamento-alvo/containers.md). Detalhe da decisão no [ADR-011](../documentos/adr/ADR-011-relatorios-assincronos.md).
+O desenho está no [fluxo 2 do cenário de reaproveitamento](../cenarios/reaproveitamento-alvo/containers.md). Detalhe da decisão no [ADR-011](../documentos/adr/ADR-011-relatorios-assincronos.md).
 
 ---
 

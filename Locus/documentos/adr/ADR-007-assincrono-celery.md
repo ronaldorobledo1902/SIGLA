@@ -14,7 +14,7 @@
 
 ## Contexto
 
-O MS-ImportaArquivos usa Celery 5.4 com Redis como broker (fila `importa_arquivos`, beat a cada 1 min, timeouts 300/360 s). O LOCUS precisa de conciliação diária e relatórios assíncronos.
+O MS-ImportaArquivos usa Celery 5.4 com Redis como broker (fila `importa_arquivos`, beat a cada 1 min, timeouts 300/360 s). O LOCUS usa a fila `locus` para a conciliação diária. O relatório de grande processamento segue por DAG do Airflow (ADR-011).
 
 ## Decisão
 

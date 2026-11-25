@@ -52,7 +52,7 @@ Diagrama de **contêineres (C2)** do LOCUS: frontends, microsserviços e workers
 
 | Padrão | LOCUS |
 |--------|-------|
-| BFF (Backend for Frontend) único | **Ausente** — o SPA fala com cada MS |
+| BFF (Backend for Frontend) único | O front do ALVO e o do Locus falam só com ele. Os microsserviços ficam internos ([ADR-015](../../documentos/adr/ADR-015-bff-unico.md)) |
 | Mensageria | **Celery + Redis** (sem RabbitMQ) |
 | Base única | PostgreSQL `db_sigla`; consultas e gravações na mesma base |
 | Login | CoreSSO via MS-AdminUsuarios → JWT |

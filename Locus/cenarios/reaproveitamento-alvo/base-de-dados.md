@@ -49,4 +49,4 @@ Escrita no ALVO: um único caso. No fluxo de Vagas, o MS-Locus publica a vaga ca
 
 A carga inicial copia o Banco Access para este schema, uma vez. Não há sincronismo contínuo com o Access nem com o Sistema Escolha.
 
-O total de relatório e o arquivo mensal não leem este schema na hora da tela. O worker consolida o quadro numa base de relatórios, como o [ADR-011](../../documentos/adr/ADR-011-relatorios-assincronos.md) passa a descrever. A operação continua neste schema.
+O relatório leve lê este schema na hora. O relatório pesado é gravado aqui pela DAG do Airflow. Não há base separada de relatório, como o [ADR-011](../../documentos/adr/ADR-011-relatorios-assincronos.md) descreve.

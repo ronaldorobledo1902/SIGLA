@@ -2,7 +2,7 @@
 
 ## Contexto
 
-Todo acesso ao SIGLA começa no **Portal SIGLA** com a credencial única da SME (CoreSSO). O **MS-AdminUsuarios** valida na API SME Integração e emite o JWT (JSON Web Token) usado por ALVO e LOCUS. Os grupos existentes são do ALVO. O LOCUS não administra as permissões dos dois subsistemas.
+Todo acesso ao SIGLA começa no **Portal SIGLA** com a credencial única da SME (CoreSSO). O **MS-AdminUsuarios** valida na API SME Integração e emite o JWT (JSON Web Token). O front do ALVO e o front do Locus falam com um **BFF** único, que valida o token e chama os microsserviços. Os grupos existentes são do ALVO. O LOCUS não administra as permissões dos dois subsistemas.
 
 ```{image} ../assets/07-locus-componente-ms-admin-usuarios.svg
 :width: 100%
@@ -38,8 +38,9 @@ Todo acesso ao SIGLA começa no **Portal SIGLA** com a credencial única da SME 
 ## Fluxo resumido
 
 ```text
-Usuário → Portal SIGLA → MS-AdminUsuarios /login → API SME Integração (CoreSSO)
-        ← JWT (grupos) → /locus/ → AuthGuard → menus por perfil → APIs (Bearer)
+Usuário → Front do ALVO ou do Locus → BFF (valida o token)
+        → MS-AdminUsuarios /login → API SME Integração (CoreSSO)
+        ← JWT → BFF consulta os microsserviços e devolve o DTO da tela
 Administrador → MS-AdminUsuarios (grupos do ALVO) → Base de Dados SIGLA (auth_user, grupos)
 Tela de permissões do LOCUS → proposta (ADR-003)
 ```
@@ -51,6 +52,7 @@ Tela de permissões do LOCUS → proposta (ADR-003)
 | Sistema | Interação |
 |---------|-----------|
 | Portal SIGLA | Login e seleção de sistema |
+| BFF | Recebe a tela, valida o token, agrega e devolve o DTO. Único para ALVO e Locus |
 | MS-AdminUsuarios | Autenticação, emissão de JWT, usuários, grupos, senha |
 | API SME Integração / CoreSSO | Valida credenciais, dados do usuário, redefinição de senha |
 | E-mail SME | Envio do link de redefinição |

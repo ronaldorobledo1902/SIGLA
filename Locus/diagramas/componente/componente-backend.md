@@ -26,7 +26,7 @@ Os backends do LOCUS seguem o padrão dos MS SIGLA: `api` → `serializers` → 
 | Histórico e versões | `django-auditlog` + snapshots (ADR-008) |
 | Repositórios | Consultas e gravações na Base de Dados SIGLA |
 | Models | Servidor, Vínculo, Cargo, UnidadeEducacional, DRE, ComponenteCurricular, Módulo, Lotação, Exercício, Afastamento, Movimentação, Divergência |
-| Tasks Celery | Conciliação diária e relatórios assíncronos |
+| Tasks Celery | Conciliação diária. Relatório pesado dispara uma DAG do Airflow |
 | Relatórios e exportações | Quadro funcional e lotação (ADR-011) |
 
 ---

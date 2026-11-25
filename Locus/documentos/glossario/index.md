@@ -58,6 +58,7 @@ Termos de negócio e técnicos usados na documentação do LOCUS.
 | **ADR** | Architecture Decision Record |
 | **DRF** | Django REST Framework |
 | **JWT** | JSON Web Token |
+| **BFF** | Backend for Frontend. Um só para o ALVO e o Locus: recebe a tela, valida o token, consulta os microsserviços, agrega e devolve o DTO |
 | **MFA** | Autenticação multifator |
 | **LGPD** | Lei Geral de Proteção de Dados (Lei 13.709/2018) |
 | **MS** | Microsserviço |

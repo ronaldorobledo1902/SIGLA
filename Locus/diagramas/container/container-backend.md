@@ -22,13 +22,13 @@ O backend do LOCUS é formado por três microsserviços Django/DRF (Django REST 
 | Worker | Fila | Tarefas |
 |--------|------|---------|
 | Worker ImportaArquivos | `importa_arquivos` | `enfileirar_importacoes_escolhas` (1 min), cargas EOL/SIGPEC (proposta) |
-| Worker MS-Locus | `locus` | Conciliação diária e relatórios assíncronos |
+| Worker MS-Locus | `locus` | Conciliação diária. Relatório pesado dispara uma DAG do Airflow |
 
 ## 3. Comunicação
 
 | De | Para | Protocolo |
 |----|------|-----------|
-| Frontends | MS | HTTPS + JWT via Ingress |
+| Frontends | BFF | HTTPS. O BFF valida o token e chama os MS na rede interna |
 | MS-ImportaArquivos | MS-Locus | REST + `X-API-Key` (`sigla-sdk.http_client`, timeout 30 s) |
 | MS-ImportaArquivos | MS do ALVO | REST + `X-API-Key` |
 | MS-AdminUsuarios | API SME Integração | HTTPS + `x-api-eol-key` |

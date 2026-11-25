@@ -36,12 +36,11 @@ O frontend do LOCUS é uma SPA (Single Page Application) React servida por Nginx
 
 ## 3. Integração com backends
 
-| Cliente | Base URL | Destino |
-|---------|----------|---------|
-| `servicos/http.ts` | `VITE_LOCUS_API_URL` | MS-Locus (TO-BE) |
-| `modules/sigla/servicos/http.ts` | URL de QA fixa no código | MS-AdminUsuarios |
+| Cliente | Destino nesta arquitetura |
+|---------|----------|
+| Front do ALVO e Front do Locus | BFF único |
 
-Interceptors: Bearer do `localStorage` (`TOKEN`); 401 limpa sessão; 403 redireciona para `/403`.
+O código de hoje ainda aponta cada cliente para um microsserviço (`VITE_LOCUS_API_URL`, `VITE_ADMIN_USUARIOS_API_URL` e as URLs do ALVO) e envia `Authorization: Bearer` a partir do `localStorage`. A arquitetura passa a ter um destino só: o BFF valida o token, consulta os serviços e devolve o DTO da tela ([ADR-015](../../documentos/adr/ADR-015-bff-unico.md)).
 
 ## 4. Pontos de atenção
 

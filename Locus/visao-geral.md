@@ -20,7 +20,7 @@ Substitui sistemas descontinuados que não recebem mais atualizações de legisl
 |--------|-------------|---------------------|
 | **Portal / login** | Portal SIGLA (React) — login RF/senha, recuperação de senha, seleção ALVO / LOCUS | Existente |
 | **Interface LOCUS** | `SME-SIGLA-LOCUS-Frontend` — React 19, Vite 7, Ant Design 5, React Query, servido por Nginx em `/locus/` | Em construção, **dados estáticos** |
-| **Identidade e permissões** | `SME-SIGLA-MS-AdminUsuarios` — Django 5.2 / DRF (Django REST Framework), CoreSSO via API SME Integração, JWT (JSON Web Token) | Existente (perfis ALVO) |
+| **Identidade e permissões** | `SME-SIGLA-MS-AdminUsuarios` — Django 5.2 / DRF (Django REST Framework), CoreSSO via API SME Integração, JWT (JSON Web Token). O front fala com o BFF único, que valida o token | Existente (perfis ALVO). BFF a inserir |
 | **Importação de dados** | `SME-SIGLA-MS-ImportaArquivos` — Django / DRF + Celery; layout de arquivo, escolhas PRODAM, exportação SIGPEC | Existente (uso ALVO). Reuso pelo LOCUS é proposta (ADR-005) |
 | **Domínio LOCUS** | **MS-Locus** — Django / DRF + Celery + `sigla-sdk` | **Planejado (TO-BE)** |
 | **Dados** | Base de Dados SIGLA (BASE SIGLA): PostgreSQL único (`db_sigla`); Redis (broker Celery) | Existente |

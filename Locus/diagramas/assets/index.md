@@ -17,13 +17,13 @@ Arquivos visuais exportados e editáveis do modelo C4 (Context, Containers, Comp
 | `07-locus-componente-ms-admin-usuarios.svg` | C3 - Componentes MS-AdminUsuarios | Componentes de identidade e permissões (C3) |
 | `09-locus-pipeline-cicd.svg` | SISTEMA - Pipeline CI/CD | Esteira CI/CD (Integração Contínua / Entrega Contínua) |
 | `10-locus-matriz-risco.svg` | SISTEMA - Matriz Risco de Segurança | Matriz de risco |
-| `17-reaproveitamento-visao.svg` | C2 - Reaproveitamento Visão geral | Front acima, MS-Locus ao lado da persistência, ALVO abaixo com a base do ALVO. Access dentro da persistência do Locus |
+| `17-reaproveitamento-visao.svg` | C2 - Reaproveitamento Visão geral | Front, BFF único, MS-Locus ao lado da persistência, ALVO abaixo com a base do ALVO. Access dentro da persistência do Locus |
 | `18-reaproveitamento-cadastro.svg` | C2 - Reaproveitamento Cadastro | Containers do Fluxo 1 neste cenário |
-| `19-reaproveitamento-relatorios.svg` | C2 - Reaproveitamento Relatórios | Base dedicada, total síncrono e arquivo do relatório completo |
+| `19-reaproveitamento-relatorios-atual.svg` | C2 - Reaproveitamento Relatórios | Síncrono na hora. Assíncrono em DAG do Airflow, gravando na base do Locus |
 | `20-reaproveitamento-database.svg` | C2 - Reaproveitamento Data base | Nomeação lida no ALVO |
 | `21-reaproveitamento-vagas.svg` | C2 - Reaproveitamento Vagas | Vaga calculada publicada no ALVO |
 | `22-reaproveitamento-remocao.svg` | C2 - Reaproveitamento Remoção | Equipe na escola do ALVO |
-| `23-reaproveitamento-importacao-eol.svg` | C2 - Reaproveitamento Importação EOL | Airflow busca o EOL, compara os servidores e grava no Locus |
+| `23-reaproveitamento-importacao-eol.svg` | C2 - Reaproveitamento Importação EOL | Airflow busca só o EOL e grava JSON, PDF ou hash na base do Locus |
 | `ARQUITETURA - LOCUS - C4.drawio` | — | Fonte editável ([diagrams.net](https://app.diagrams.net)) |
 
 ## Exportar novamente

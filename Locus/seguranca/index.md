@@ -123,9 +123,9 @@ O volume de usuários é baixo; o risco está no **volume de dados** e nos **rel
 
 **Por quê:** histórico cresce continuamente; definir com o Jurídico a tabela de temporalidade e o expurgo/anonimização.
 
-### 5.4 — Token fora do `localStorage`
+### 5.4 — BFF valida o token
 
-**Por quê:** reduzir exposição a XSS (Cross-Site Scripting) com cookie `HttpOnly` / BFF (Backend for Frontend) quando o IdP for definido.
+**Por quê:** o front do ALVO e o do Locus passam a chamar só o BFF ([ADR-015](../documentos/adr/ADR-015-bff-unico.md)). Ele valida o token antes de consultar os microsserviços. O navegador deixa de falar com cada API.
 
 ---
 

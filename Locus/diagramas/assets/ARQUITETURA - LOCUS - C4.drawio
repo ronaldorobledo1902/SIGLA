@@ -1,4 +1,4 @@
-<mxfile host="Electron" agent="Cursor" pages="22">
+<mxfile host="Electron" agent="Cursor" pages="15">
   <diagram id="c4-legend" name="C4">
     <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1850,764 +1850,690 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rzvis" name="C2 - Reaproveitamento Visão geral">
-    <mxGraphModel dx="1229" dy="756" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2180" pageHeight="1360" math="0" shadow="0">
+    <mxGraphModel dx="1688" dy="1026" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2180" pageHeight="1420" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="v-user" parent="1" style="html=1;fontSize=11;dashed=0;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;" value="&lt;b&gt;Usuário&lt;/b&gt;&lt;div&gt;[Person]&lt;/div&gt;&lt;br&gt;&lt;font color=&quot;#cccccc&quot;&gt;Equipe do Fundamental II e Médio&lt;/font&gt;" vertex="1">
-          <mxGeometry height="180" width="200" x="20" y="100" as="geometry" />
+          <mxGeometry height="180" width="200" x="20" y="85" as="geometry" />
         </mxCell>
         <object placeholders="1" c4Name="LOCUS" c4Type="SystemScopeBoundary" c4Application="Módulo" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="v-sys">
           <mxCell parent="1" style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fillColor=none;" vertex="1">
-            <mxGeometry height="1280" width="1860" x="260" y="20" as="geometry" />
+            <mxGeometry height="1360" width="1860" x="260" y="20" as="geometry" />
           </mxCell>
         </object>
         <object placeholders="1" c4Name="LOCUS-Frontend" c4Type="SystemScopeBoundary" c4Application="Interfaces" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="v-fe">
           <mxCell parent="1" style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fillColor=#CCE5FF;" vertex="1">
-            <mxGeometry height="280" width="1780" x="300" y="50" as="geometry" />
+            <mxGeometry height="250" width="1780" x="300" y="50" as="geometry" />
           </mxCell>
         </object>
         <object placeholders="1" c4Name="Front Locus" c4Type="Container" c4Technology="React" c4Description="Cadastro, relatórios, data base, vagas e remoção." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="v-front">
           <mxCell parent="1" style="shape=mxgraph.c4.webBrowserContainer2;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;labelBackgroundColor=none;fillColor=#23A2D9;strokeColor=#118ACD;strokeColor2=#0E7DAD;fontSize=12;fontColor=#ffffff;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.5,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
-            <mxGeometry height="180" width="420" x="1090" y="100" as="geometry" />
+            <mxGeometry height="170" width="420" x="1010" y="90" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="BFF" c4Type="SystemScopeBoundary" c4Application="Único do SIGLA" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="v-bffb">
+          <mxCell parent="1" style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fillColor=#E1D5E7;" vertex="1">
+            <mxGeometry height="180" width="1780" x="300" y="320" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="BFF" c4Type="Container" c4Technology="Backend for Frontend" c4Description="Único para o ALVO e o Locus. Valida o token, consulta, agrega e devolve o DTO da tela." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="v-bff">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#6C8EBF;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#3A6EA5;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];dashed=1;dashPattern=8 4;" vertex="1">
+            <mxGeometry height="150" width="420" x="1010" y="330" as="geometry" />
           </mxCell>
         </object>
         <object placeholders="1" c4Name="MS-Locus" c4Type="SystemScopeBoundary" c4Application="Domínio do módulo" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="v-be">
           <mxCell parent="1" style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fillColor=#F8CECC;" vertex="1">
-            <mxGeometry height="340" width="760" x="300" y="370" as="geometry" />
+            <mxGeometry height="280" width="760" x="300" y="540" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="MS-Locus" c4Type="Container" c4Technology="Django / DRF" c4Description="Atende as telas. Lê o ALVO. Grava o quadro no schema." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="v-ms">
+        <object placeholders="1" c4Name="MS-Locus" c4Type="Container" c4Technology="Django / DRF" c4Description="Quadro do módulo. Consultado pelo BFF." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="v-ms">
           <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];dashed=1;dashPattern=8 4;" vertex="1">
-            <mxGeometry height="180" width="560" x="410" y="450" as="geometry" />
+            <mxGeometry height="160" width="560" x="410" y="590" as="geometry" />
           </mxCell>
         </object>
         <object placeholders="1" c4Name="Persistência" c4Type="SystemScopeBoundary" c4Application="Dados do Locus" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="v-db">
           <mxCell parent="1" style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fillColor=#FFFF99;" vertex="1">
-            <mxGeometry height="340" width="980" x="1100" y="370" as="geometry" />
+            <mxGeometry height="280" width="980" x="1100" y="540" as="geometry" />
           </mxCell>
         </object>
         <object placeholders="1" c4Name="Schema do Locus" c4Type="Container" c4Technology="PostgreSQL" c4Description="Quadro do módulo na Base de Dados SIGLA." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="v-base">
           <mxCell parent="1" style="shape=cylinder3;size=15;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;labelBackgroundColor=none;fillColor=#23A2D9;fontSize=12;fontColor=#ffffff;align=center;strokeColor=#0E7DAD;metaEdit=1;points=[[0.5,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.5,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];resizable=0;" vertex="1">
-            <mxGeometry height="200" width="320" x="1160" y="440" as="geometry" />
+            <mxGeometry height="160" width="320" x="1160" y="590" as="geometry" />
           </mxCell>
         </object>
-        <mxCell id="v-acc" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8C8496;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#736782;fontSize=10;" value="&lt;b&gt;&lt;font style=&quot;font-size: 13px&quot;&gt;Banco Access&lt;/font&gt;&lt;/b&gt;&lt;div&gt;[Software System]&lt;/div&gt;&lt;br&gt;&lt;font color=&quot;#cccccc&quot;&gt;Legado operacional. Servidores e unidades. Carga inicial do Locus. Não é o EOL nem o Escolha.&lt;/font&gt;" vertex="1">
-          <mxGeometry height="160" width="400" x="1600" y="460" as="geometry" />
-        </mxCell>
-        <object placeholders="1" c4Name="ALVO" c4Type="SystemScopeBoundary" c4Application="Dado já importado" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="v-alvo">
+        <object placeholders="1" c4Name="Banco Access" c4Type="Software System" c4Technology="Arquivo" c4Description="Legado operacional. Servidores e unidades. Carga inicial do Locus." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="v-acc">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#8C8496;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#736782;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
+            <mxGeometry height="140" width="360" x="1560" y="600" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="ALVO" c4Type="SystemScopeBoundary" c4Application="Dados já importados" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="v-alvo">
           <mxCell parent="1" style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fillColor=#EEEEEE;" vertex="1">
-            <mxGeometry height="510" width="1780" x="300" y="750" as="geometry" />
+            <mxGeometry height="490" width="1780" x="300" y="850" as="geometry" />
           </mxCell>
         </object>
         <object placeholders="1" c4Name="MS-AdminUsuarios" c4Type="Container" c4Technology="Django" c4Description="Login e permissão." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="v-adm">
-          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
-            <mxGeometry height="140" width="220" x="330" y="850" as="geometry" />
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];dashed=1;dashPattern=8 4;" vertex="1">
+            <mxGeometry height="120" width="210" x="330" y="910" as="geometry" />
           </mxCell>
         </object>
         <object placeholders="1" c4Name="MS-ProcessosConcursos" c4Type="Container" c4Technology="Django" c4Description="Catálogo de cargo." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="v-con">
-          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
-            <mxGeometry height="140" width="220" x="566" y="850" as="geometry" />
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];dashed=1;dashPattern=8 4;" vertex="1">
+            <mxGeometry height="120" width="210" x="560" y="910" as="geometry" />
           </mxCell>
         </object>
         <object placeholders="1" c4Name="MS-Candidatos" c4Type="Container" c4Technology="Django" c4Description="Pessoa habilitada e classificação." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="v-can">
-          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
-            <mxGeometry height="140" width="220" x="802" y="850" as="geometry" />
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];dashed=1;dashPattern=8 4;" vertex="1">
+            <mxGeometry height="120" width="210" x="790" y="910" as="geometry" />
           </mxCell>
         </object>
         <object placeholders="1" c4Name="MS-ProcessosConvocacao" c4Type="Container" c4Technology="Django" c4Description="Processo, convocação e corte." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="v-pro">
-          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
-            <mxGeometry height="140" width="220" x="1038" y="850" as="geometry" />
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];dashed=1;dashPattern=8 4;" vertex="1">
+            <mxGeometry height="120" width="210" x="1020" y="910" as="geometry" />
           </mxCell>
         </object>
         <object placeholders="1" c4Name="MS-Agenda" c4Type="Container" c4Technology="Django" c4Description="Data de escolha e de nomeação." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="v-age">
-          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
-            <mxGeometry height="140" width="220" x="448" y="1020" as="geometry" />
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];dashed=1;dashPattern=8 4;" vertex="1">
+            <mxGeometry height="120" width="210" x="448" y="1060" as="geometry" />
           </mxCell>
         </object>
         <object placeholders="1" c4Name="MS-Escolha" c4Type="Container" c4Technology="Django" c4Description="Escola, DRE e vaga do processo." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="v-esc">
-          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
-            <mxGeometry height="140" width="220" x="684" y="1020" as="geometry" />
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];dashed=1;dashPattern=8 4;" vertex="1">
+            <mxGeometry height="120" width="210" x="678" y="1060" as="geometry" />
           </mxCell>
         </object>
         <object placeholders="1" c4Name="MS-ImportaArquivos" c4Type="Container" c4Technology="Django" c4Description="Porta de entrada do ALVO." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="v-imp">
-          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
-            <mxGeometry height="140" width="220" x="920" y="1020" as="geometry" />
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];dashed=1;dashPattern=8 4;" vertex="1">
+            <mxGeometry height="120" width="210" x="908" y="1060" as="geometry" />
           </mxCell>
         </object>
         <object placeholders="1" c4Name="Persistência" c4Type="SystemScopeBoundary" c4Application="Banco do ALVO" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="v-adb">
           <mxCell parent="1" style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fillColor=#FFFF99;" vertex="1">
-            <mxGeometry height="250" width="720" x="1320" y="800" as="geometry" />
+            <mxGeometry height="250" width="740" x="1280" y="900" as="geometry" />
           </mxCell>
         </object>
         <object placeholders="1" c4Name="Base do ALVO" c4Type="Container" c4Technology="PostgreSQL" c4Description="Schemas dos microsserviços do ALVO." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="v-abase">
           <mxCell parent="1" style="shape=cylinder3;size=15;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;labelBackgroundColor=none;fillColor=#23A2D9;fontSize=12;fontColor=#ffffff;align=center;strokeColor=#0E7DAD;metaEdit=1;points=[[0.5,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.5,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];resizable=0;" vertex="1">
-            <mxGeometry height="160" width="360" x="1500" y="840" as="geometry" />
+            <mxGeometry height="150" width="360" x="1460" y="895" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Type="Relationship" id="v-e1">
-          <mxCell edge="1" parent="1" source="v-user" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;metaEdit=1;endSize=14;startSize=14;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="v-front">
-            <mxGeometry relative="1" as="geometry" />
-          </mxCell>
-        </object>
-        <mxCell id="v-e1-lbl" connectable="0" parent="v-e1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" value="Opera o módulo" vertex="1">
+        <mxCell id="v-e1" edge="1" parent="1" source="v-user" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="v-front" value="Abre o módulo">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v-e2" edge="1" parent="1" source="v-front" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="v-bff" value="Requisição da tela">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="v-e3" edge="1" parent="1" source="v-bff" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="v-ms" value="Consulta">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1220" y="520" />
+              <mxPoint x="690" y="520" />
+            </Array>
           </mxGeometry>
         </mxCell>
-        <object placeholders="1" c4Type="Relationship" id="v-e2">
-          <mxCell edge="1" parent="1" source="v-front" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;metaEdit=1;endSize=14;startSize=14;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="v-ms">
-            <mxGeometry relative="1" as="geometry" />
-          </mxCell>
-        </object>
-        <mxCell id="v-e2-lbl" connectable="0" parent="v-e2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" value="Telas" vertex="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
+        <mxCell id="v-e4" edge="1" parent="1" source="v-ms" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="v-base" value="Grava o quadro">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <object placeholders="1" c4Type="Relationship" id="v-e3">
-          <mxCell edge="1" parent="1" source="v-ms" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;metaEdit=1;endSize=14;startSize=14;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="v-base">
-            <mxGeometry relative="1" as="geometry" />
-          </mxCell>
-        </object>
-        <mxCell id="v-e3-lbl" connectable="0" parent="v-e3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" value="Grava o quadro" vertex="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
+        <mxCell id="v-e5" edge="1" parent="1" source="v-acc" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=0;exitY=0.5;entryX=1;entryY=0.5;dashed=1;dashPattern=8 4;" target="v-base" value="Carga inicial">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <object placeholders="1" c4Type="Relationship" id="v-e4">
-          <mxCell edge="1" parent="1" source="v-acc" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;metaEdit=1;endSize=14;startSize=14;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;dashed=1;dashPattern=8 4;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" target="v-base">
-            <mxGeometry relative="1" as="geometry" />
-          </mxCell>
-        </object>
-        <mxCell id="v-e4-lbl" connectable="0" parent="v-e4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" value="Carga inicial" vertex="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
+        <mxCell id="v-e6" edge="1" parent="1" source="v-ms" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;entryX=0.219;entryY=0;" target="v-alvo" value="Consulta o ALVO">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <object placeholders="1" c4Type="Relationship" id="v-e5">
-          <mxCell edge="1" parent="1" source="v-ms" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;metaEdit=1;endSize=14;startSize=14;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;entryX=0.219;entryY=0;" target="v-alvo">
-            <mxGeometry relative="1" as="geometry" />
-          </mxCell>
-        </object>
-        <mxCell id="v-e5-lbl" connectable="0" parent="v-e5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" value="Consulta o ALVO" vertex="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <object placeholders="1" c4Type="Relationship" id="v-e6">
-          <mxCell edge="1" parent="1" source="v-pro" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;metaEdit=1;endSize=14;startSize=14;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="v-abase">
-            <mxGeometry relative="1" as="geometry" />
-          </mxCell>
-        </object>
-        <mxCell id="v-e6-lbl" connectable="0" parent="v-e6" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" value="Lê e grava" vertex="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
+        <mxCell id="v-e7" edge="1" parent="1" source="v-pro" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="v-abase" value="Lê e grava">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="rzcad" name="C2 - Reaproveitamento Cadastro">
-    <mxGraphModel dx="1433" dy="882" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2100" pageHeight="1120" math="0" shadow="0">
+    <mxGraphModel dx="1876" dy="1140" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2180" pageHeight="1240" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="p-user" parent="1" style="html=1;fontSize=11;dashed=0;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;" value="&lt;b&gt;Usuário&lt;/b&gt;&lt;div&gt;[Person]&lt;/div&gt;&lt;br&gt;&lt;font color=&quot;#cccccc&quot;&gt;Equipe do Fundamental II e Médio&lt;/font&gt;" vertex="1">
-          <mxGeometry height="180" width="200" x="20" y="85" as="geometry" />
+        <mxCell id="cad-user" parent="1" style="html=1;fontSize=11;dashed=0;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;" value="&lt;b&gt;Usuário&lt;/b&gt;&lt;div&gt;[Person]&lt;/div&gt;&lt;br&gt;&lt;font color=&quot;#cccccc&quot;&gt;Equipe do Fundamental II e Médio&lt;/font&gt;" vertex="1">
+          <mxGeometry height="180" width="200" x="20" y="70" as="geometry" />
         </mxCell>
-        <object placeholders="1" c4Name="LOCUS" c4Type="SystemScopeBoundary" c4Application="C2 - Reaproveitamento Cadastro" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="p-sys">
+        <object placeholders="1" c4Name="LOCUS" c4Type="SystemScopeBoundary" c4Application="Cadastro" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="cad-sys">
           <mxCell parent="1" style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fillColor=none;" vertex="1">
-            <mxGeometry height="1040" width="1780" x="260" y="20" as="geometry" />
+            <mxGeometry height="1060" width="990" x="260" y="20" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="LOCUS-Frontend" c4Type="SystemScopeBoundary" c4Application="Interfaces" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="p-fe">
+        <object placeholders="1" c4Name="LOCUS-Frontend" c4Type="SystemScopeBoundary" c4Application="Interfaces" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="cad-fe">
           <mxCell parent="1" style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fillColor=#CCE5FF;" vertex="1">
-            <mxGeometry height="260" width="1700" x="300" y="50" as="geometry" />
+            <mxGeometry height="200" width="900" x="300" y="50" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="Tela de Cadastro" c4Type="Container" c4Technology="React" c4Description="RF, unidade, cargo, motivo e auditoria." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="p-front">
+        <object placeholders="1" c4Name="Tela de Cadastro" c4Type="Container" c4Technology="React" c4Description="RF, unidade, cargo, motivo e auditoria." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="cad-tela">
           <mxCell parent="1" style="shape=mxgraph.c4.webBrowserContainer2;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;labelBackgroundColor=none;fillColor=#23A2D9;strokeColor=#118ACD;strokeColor2=#0E7DAD;fontSize=12;fontColor=#ffffff;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.5,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
-            <mxGeometry height="170" width="420" x="860" y="85" as="geometry" />
+            <mxGeometry height="140" width="280" x="630" y="90" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="MS-Locus" c4Type="SystemScopeBoundary" c4Application="Domínio do módulo" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="p-be">
+        <object placeholders="1" c4Name="BFF" c4Type="SystemScopeBoundary" c4Application="Único do SIGLA" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="cad-bffb">
+          <mxCell parent="1" style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fillColor=#E1D5E7;" vertex="1">
+            <mxGeometry height="160" width="900" x="300" y="300" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="BFF" c4Type="Container" c4Technology="Backend for Frontend" c4Description="Valida o token, agrega e devolve o DTO desta tela." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="cad-bff">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#6C8EBF;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#3A6EA5;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];dashed=1;dashPattern=8 4;" vertex="1">
+            <mxGeometry height="120" width="310" x="615" y="320" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="MS-Locus" c4Type="SystemScopeBoundary" c4Application="Domínio do módulo" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="cad-be">
           <mxCell parent="1" style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fillColor=#F8CECC;" vertex="1">
-            <mxGeometry height="320" width="760" x="300" y="350" as="geometry" />
+            <mxGeometry height="250" width="450" x="300" y="500" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="Cadastro" c4Type="Container" c4Technology="Django / DRF" c4Description="Grava a ficha no schema do Locus." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="p-ms">
+        <object placeholders="1" c4Name="Cadastro" c4Type="Container" c4Technology="Django / DRF" c4Description="Grava a ficha no schema do Locus." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="cad-ms">
           <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];dashed=1;dashPattern=8 4;" vertex="1">
-            <mxGeometry height="170" width="560" x="410" y="420" as="geometry" />
+            <mxGeometry height="120" width="330" x="330" y="560" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="Persistência" c4Type="SystemScopeBoundary" c4Application="Dados do Locus" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="p-db">
+        <object placeholders="1" c4Name="Persistência" c4Type="SystemScopeBoundary" c4Application="Dados do Locus" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="cad-db">
           <mxCell parent="1" style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fillColor=#FFFF99;" vertex="1">
-            <mxGeometry height="320" width="900" x="1100" y="350" as="geometry" />
+            <mxGeometry height="250" width="410" x="790" y="500" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="Schema do Locus" c4Type="Container" c4Technology="PostgreSQL" c4Description="Ficha, lotação, afastamento e motivo." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="p-base">
+        <object placeholders="1" c4Name="Schema do Locus" c4Type="Container" c4Technology="PostgreSQL" c4Description="Ficha, lotação, afastamento e motivo." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="cad-base">
           <mxCell parent="1" style="shape=cylinder3;size=15;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;labelBackgroundColor=none;fillColor=#23A2D9;fontSize=12;fontColor=#ffffff;align=center;strokeColor=#0E7DAD;metaEdit=1;points=[[0.5,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.5,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];resizable=0;" vertex="1">
-            <mxGeometry height="190" width="360" x="1380" y="410" as="geometry" />
+            <mxGeometry height="170" width="360" x="820" y="525" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="ALVO" c4Type="SystemScopeBoundary" c4Application="Consulta" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="p-alvo">
+        <object placeholders="1" c4Name="ALVO" c4Type="SystemScopeBoundary" c4Application="Consulta" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="cad-alvo">
           <mxCell parent="1" style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fillColor=#EEEEEE;" vertex="1">
-            <mxGeometry height="310" width="1700" x="300" y="710" as="geometry" />
+            <mxGeometry height="230" width="900" x="300" y="780" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="MS-Escolha" c4Type="Container" c4Technology="Django" c4Description="Unidade, tipo e sigla da DRE." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="p-s0">
-          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
-            <mxGeometry height="150" width="340" x="610" y="800" as="geometry" />
+        <object placeholders="1" c4Name="MS-Escolha" c4Type="Container" c4Technology="Django" c4Description="Unidade, tipo e sigla de DRE." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="cad-s0">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];dashed=1;dashPattern=8 4;" vertex="1">
+            <mxGeometry height="140" width="240" x="340" y="810" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="MS-ProcessosConcursos" c4Type="Container" c4Technology="Django" c4Description="Código e nome do cargo." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="p-s1">
-          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
-            <mxGeometry height="150" width="340" x="980" y="800" as="geometry" />
+        <object placeholders="1" c4Name="MS-ProcessosConcursos" c4Type="Container" c4Technology="Django" c4Description="Código e nome do cargo." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="cad-s1">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];dashed=1;dashPattern=8 4;" vertex="1">
+            <mxGeometry height="140" width="240" x="620" y="810" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="MS-Candidatos" c4Type="Container" c4Technology="Django" c4Description="Nome, CPF e classificação, se houver RF." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="p-s2">
-          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
-            <mxGeometry height="150" width="340" x="1350" y="800" as="geometry" />
+        <object placeholders="1" c4Name="MS-Candidatos" c4Type="Container" c4Technology="Django" c4Description="Nome, CPF e classificação, se houver RF." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="cad-s2">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];dashed=1;dashPattern=8 4;" vertex="1">
+            <mxGeometry height="140" width="240" x="900" y="810" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Type="Relationship" id="p-e1">
-          <mxCell edge="1" parent="1" source="p-user" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;metaEdit=1;endSize=14;startSize=14;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="p-front">
-            <mxGeometry relative="1" as="geometry" />
-          </mxCell>
-        </object>
-        <mxCell id="p-e1-lbl" connectable="0" parent="p-e1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" value="Opera" vertex="1">
+        <mxCell id="cad-e1" edge="1" parent="1" source="cad-user" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="cad-tela" value="Abre">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cad-e2" edge="1" parent="1" source="cad-tela" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="cad-bff" value="Requisição">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cad-e3" edge="1" parent="1" source="cad-bff" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="cad-ms" value="Consulta">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="770" y="490" />
+              <mxPoint x="495" y="490" />
+            </Array>
           </mxGeometry>
         </mxCell>
-        <object placeholders="1" c4Type="Relationship" id="p-e2">
-          <mxCell edge="1" parent="1" source="p-front" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;metaEdit=1;endSize=14;startSize=14;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="p-ms">
-            <mxGeometry relative="1" as="geometry" />
-          </mxCell>
-        </object>
-        <mxCell id="p-e2-lbl" connectable="0" parent="p-e2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" value="Tela" vertex="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
+        <mxCell id="cad-e4" edge="1" parent="1" source="cad-ms" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.47;" target="cad-base" value="Grava a ficha">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <object placeholders="1" c4Type="Relationship" id="p-e3">
-          <mxCell edge="1" parent="1" source="p-ms" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;metaEdit=1;endSize=14;startSize=14;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="p-base">
-            <mxGeometry relative="1" as="geometry" />
-          </mxCell>
-        </object>
-        <mxCell id="p-e3-lbl" connectable="0" parent="p-e3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" value="Grava a ficha" vertex="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <object placeholders="1" c4Type="Relationship" id="p-e4">
-          <mxCell edge="1" parent="1" source="p-ms" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;metaEdit=1;endSize=14;startSize=14;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;entryX=0.229;entryY=0;" target="p-alvo">
-            <mxGeometry relative="1" as="geometry" />
-          </mxCell>
-        </object>
-        <mxCell id="p-e4-lbl" connectable="0" parent="p-e4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" value="Consulta o ALVO" vertex="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
+        <mxCell id="cad-e5" edge="1" parent="1" source="cad-ms" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;entryX=0.219;entryY=0;" target="cad-alvo" value="Consulta o ALVO">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="rzrel" name="C2 - Reaproveitamento Relatórios">
-    <mxGraphModel dx="1229" dy="756" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2180" pageHeight="1060" math="0" shadow="0">
+    <mxGraphModel dx="1083" dy="513" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1820" pageHeight="1020" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="r-user" parent="1" style="html=1;fontSize=11;dashed=0;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;" value="&lt;b&gt;Usuário&lt;/b&gt;&lt;div&gt;[Person]&lt;/div&gt;&lt;br&gt;&lt;font color=&quot;#cccccc&quot;&gt;Pede o total ou o relatório completo&lt;/font&gt;" vertex="1">
-          <mxGeometry height="180" width="200" x="20" y="80" as="geometry" />
+        <mxCell id="r-user" parent="1" style="html=1;fontSize=11;dashed=0;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;" value="&lt;b&gt;Usuário&lt;/b&gt;&lt;div&gt;[Person]&lt;/div&gt;&lt;br&gt;&lt;font color=&quot;#cccccc&quot;&gt;Pede um relatório&lt;/font&gt;" vertex="1">
+          <mxGeometry height="180" width="200" x="20" y="45" as="geometry" />
         </mxCell>
-        <object placeholders="1" c4Name="LOCUS" c4Type="SystemScopeBoundary" c4Application="Relatórios" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="r-sys">
+        <object placeholders="1" c4Name="LOCUS" c4Type="SystemScopeBoundary" c4Technology="" c4Description="" c4Application="Relatórios" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="r-sys">
           <mxCell parent="1" style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fillColor=none;" vertex="1">
-            <mxGeometry height="900" width="1860" x="260" y="20" as="geometry" />
+            <mxGeometry height="950" width="950" x="240" y="20" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="LOCUS-Frontend" c4Type="SystemScopeBoundary" c4Application="Interfaces" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="r-fe">
+        <object placeholders="1" c4Name="LOCUS-Frontend" c4Type="SystemScopeBoundary" c4Technology="" c4Description="" c4Application="Interfaces" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="r-fe">
           <mxCell parent="1" style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fillColor=#CCE5FF;" vertex="1">
-            <mxGeometry height="250" width="1780" x="300" y="50" as="geometry" />
+            <mxGeometry height="220" width="870" x="280" y="40" as="geometry" />
           </mxCell>
         </object>
         <object placeholders="1" c4Name="Front Locus" c4Type="Container" c4Technology="React" c4Description="Redireciona para a tela de relatórios." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="r-front">
           <mxCell parent="1" style="shape=mxgraph.c4.webBrowserContainer2;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;labelBackgroundColor=none;fillColor=#23A2D9;strokeColor=#118ACD;strokeColor2=#0E7DAD;fontSize=12;fontColor=#ffffff;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.5,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
-            <mxGeometry height="160" width="340" x="300" y="90" as="geometry" />
+            <mxGeometry height="150" width="320" x="320" y="60" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="Tela de Relatórios" c4Type="Container" c4Technology="React" c4Description="Total na hora. Acompanha o job e baixa o arquivo." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="r-tela">
+        <object placeholders="1" c4Name="Tela de Relatórios" c4Type="Container" c4Technology="React" c4Description="Mostra o leve na hora e o pesado quando o Airflow termina." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="r-tela">
           <mxCell parent="1" style="shape=mxgraph.c4.webBrowserContainer2;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;labelBackgroundColor=none;fillColor=#23A2D9;strokeColor=#118ACD;strokeColor2=#0E7DAD;fontSize=12;fontColor=#ffffff;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.5,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
-            <mxGeometry height="160" width="420" x="700" y="90" as="geometry" />
+            <mxGeometry height="150" width="400" x="700" y="60" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="MS-Locus" c4Type="SystemScopeBoundary" c4Application="Relatórios" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="r-be">
+        <object placeholders="1" c4Name="BFF" c4Type="SystemScopeBoundary" c4Technology="" c4Description="" c4Application="Único do SIGLA" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="r-bffb">
+          <mxCell parent="1" style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fillColor=#E1D5E7;" vertex="1">
+            <mxGeometry height="160" width="870" x="280" y="270" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="BFF" c4Type="Container" c4Technology="Backend for Frontend" c4Description="Valida o token e devolve a resposta da tela." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="r-bff">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#6C8EBF;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#3A6EA5;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];dashed=1;dashPattern=8 4;" vertex="1">
+            <mxGeometry height="120" width="400" x="440" y="290" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="MS-Locus" c4Type="SystemScopeBoundary" c4Technology="" c4Description="" c4Application="Relatórios" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="r-be">
           <mxCell parent="1" style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fillColor=#F8CECC;" vertex="1">
-            <mxGeometry height="420" width="500" x="660" y="340" as="geometry" />
+            <mxGeometry height="200" width="870" x="280" y="450" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="MS-Locus Relatórios" c4Type="Container" c4Technology="Django / DRF" c4Description="Total em chamada síncrona. Relatório completo cria o job." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="r-ms">
+        <object placeholders="1" c4Name="Relatorio" c4Type="Container" c4Technology="Django / DRF" c4Description="Menor processamento responde na hora. Grande processamento dispara a DAG." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="r-ms">
           <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];dashed=1;dashPattern=8 4;" vertex="1">
-            <mxGeometry height="150" width="420" x="700" y="390" as="geometry" />
+            <mxGeometry height="140" width="400" x="310" y="460" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="Worker MS-Locus" c4Type="Container" c4Technology="Celery" c4Description="Lê o quadro, grava o consolidado e gera o arquivo." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="r-wk">
+        <object placeholders="1" c4Name="WORKER" c4Type="Container" c4Technology="Celery" c4Description="Lê e grava na base do Locus." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="r-worker">
           <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];dashed=1;dashPattern=8 4;" vertex="1">
-            <mxGeometry height="140" width="420" x="700" y="580" as="geometry" />
+            <mxGeometry height="140" width="350" x="790" y="460" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="Persistência" c4Type="SystemScopeBoundary" c4Application="Dados" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="r-db">
+        <object placeholders="1" c4Name="Airflow" c4Type="SystemScopeBoundary" c4Technology="" c4Description="" c4Application="Relatório pesado" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="r-airb">
+          <mxCell parent="1" style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fillColor=#D5E8D4;" vertex="1">
+            <mxGeometry height="220" width="390" x="280" y="700" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="DAG" c4Type="Container" c4Technology="Airflow" c4Description="Executa o relatório de grande processamento." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="r-air">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];dashed=1;dashPattern=8 4;" vertex="1">
+            <mxGeometry height="110" width="330" x="320" y="740" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Persistência" c4Type="SystemScopeBoundary" c4Technology="" c4Description="" c4Application="Base do Locus" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="r-db">
           <mxCell parent="1" style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fillColor=#FFFF99;" vertex="1">
-            <mxGeometry height="420" width="860" x="1220" y="340" as="geometry" />
+            <mxGeometry height="220" width="450" x="700" y="700" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="Base de relatórios" c4Type="Container" c4Technology="PostgreSQL" c4Description="Consolidado. O total não varre a base operacional." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="r-rep">
+        <object placeholders="1" c4Name="Schema do Locus" c4Type="Container" c4Technology="PostgreSQL" c4Description="Única base. Não há base separada de relatório." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="r-base">
           <mxCell parent="1" style="shape=cylinder3;size=15;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;labelBackgroundColor=none;fillColor=#23A2D9;fontSize=12;fontColor=#ffffff;align=center;strokeColor=#0E7DAD;metaEdit=1;points=[[0.5,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.5,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];resizable=0;" vertex="1">
-            <mxGeometry height="150" width="340" x="1280" y="390" as="geometry" />
+            <mxGeometry height="160" width="360" x="745" y="715" as="geometry" />
           </mxCell>
         </object>
-        <mxCell id="r-arq" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8C8496;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#736782;fontSize=10;" value="&lt;b&gt;&lt;font style=&quot;font-size: 13px&quot;&gt;Arquivo&lt;/font&gt;&lt;/b&gt;&lt;div&gt;[Software System]&lt;/div&gt;&lt;br&gt;&lt;font color=&quot;#cccccc&quot;&gt;PDF ou planilha do relatório completo.&lt;/font&gt;" vertex="1">
-          <mxGeometry height="130" width="340" x="1680" y="400" as="geometry" />
+        <mxCell id="r-e1" edge="1" parent="1" source="r-user" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="r-front" value="Pede o relatório">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <object placeholders="1" c4Name="Schema do Locus" c4Type="Container" c4Technology="PostgreSQL" c4Description="Quadro operacional do módulo." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="r-op">
-          <mxCell parent="1" style="shape=cylinder3;size=15;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;labelBackgroundColor=none;fillColor=#23A2D9;fontSize=12;fontColor=#ffffff;align=center;strokeColor=#0E7DAD;metaEdit=1;points=[[0.5,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.5,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];resizable=0;" vertex="1">
-            <mxGeometry height="120" width="360" x="1400" y="590" as="geometry" />
-          </mxCell>
-        </object>
-        <object placeholders="1" c4Type="Relationship" id="r-e1">
-          <mxCell edge="1" parent="1" source="r-user" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;metaEdit=1;endSize=14;startSize=14;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="r-front">
-            <mxGeometry relative="1" as="geometry" />
-          </mxCell>
-        </object>
-        <mxCell id="r-e1-lbl" connectable="0" parent="r-e1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" value="Pede o relatório" vertex="1">
+        <mxCell id="r-e2" edge="1" parent="1" source="r-front" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="r-tela" value="Redireciona">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r-e3" edge="1" parent="1" source="r-tela" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="r-bff" value="Requisição">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r-e4" edge="1" parent="1" source="r-bff" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="r-ms" value="Síncrono">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r-e5" edge="1" parent="1" source="r-ms" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=0.44;exitY=0.971;entryX=0.5;entryY=0;exitDx=0;exitDy=0;exitPerimeter=0;" target="r-air" value="Dispara a DAG">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r-e6" edge="1" parent="1" source="r-worker" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="r-base" value="Lê e grava">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="925" y="600" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bN4BEhdtGpE-_X9Loiue-1" edge="1" parent="1" source="r-ms" style="endArrow=classic;html=1;rounded=0;" target="r-worker" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="770" y="580" as="sourcePoint" />
+            <mxPoint x="790" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bN4BEhdtGpE-_X9Loiue-2" connectable="0" parent="bN4BEhdtGpE-_X9Loiue-1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Job" vertex="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <object placeholders="1" c4Type="Relationship" id="r-e2">
-          <mxCell edge="1" parent="1" source="r-front" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;metaEdit=1;endSize=14;startSize=14;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="r-tela">
-            <mxGeometry relative="1" as="geometry" />
-          </mxCell>
-        </object>
-        <mxCell id="r-e2-lbl" connectable="0" parent="r-e2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" value="Redireciona" vertex="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint as="offset" />
+        <mxCell id="bN4BEhdtGpE-_X9Loiue-3" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0.042;entryY=0.594;entryDx=0;entryDy=0;entryPerimeter=0;" target="r-base" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="640" y="810" as="sourcePoint" />
+            <mxPoint x="690" y="760" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <object placeholders="1" c4Type="Relationship" id="r-e3">
-          <mxCell edge="1" parent="1" source="r-tela" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;metaEdit=1;endSize=14;startSize=14;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="r-ms">
-            <mxGeometry relative="1" as="geometry" />
-          </mxCell>
-        </object>
-        <mxCell id="r-e3-lbl" connectable="0" parent="r-e3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" value="Síncrono" vertex="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <object placeholders="1" c4Type="Relationship" id="r-e4">
-          <mxCell edge="1" parent="1" source="r-ms" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;metaEdit=1;endSize=14;startSize=14;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="r-wk">
-            <mxGeometry relative="1" as="geometry" />
-          </mxCell>
-        </object>
-        <mxCell id="r-e4-lbl" connectable="0" parent="r-e4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" value="Job" vertex="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <object placeholders="1" c4Type="Relationship" id="r-e5">
-          <mxCell edge="1" parent="1" source="r-ms" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;metaEdit=1;endSize=14;startSize=14;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.4;entryX=0;entryY=0.5;" target="r-rep">
-            <mxGeometry relative="1" as="geometry" />
-          </mxCell>
-        </object>
-        <mxCell id="r-e5-lbl" connectable="0" parent="r-e5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" value="Lê o total" vertex="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <object placeholders="1" c4Type="Relationship" id="r-e6">
-          <mxCell edge="1" parent="1" source="r-wk" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;metaEdit=1;endSize=14;startSize=14;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="r-op">
-            <mxGeometry relative="1" as="geometry" />
-          </mxCell>
-        </object>
-        <mxCell id="r-e6-lbl" connectable="0" parent="r-e6" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" value="Lê o quadro" vertex="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <object placeholders="1" c4Type="Relationship" id="r-e7">
-          <mxCell edge="1" parent="1" source="r-rep" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;metaEdit=1;endSize=14;startSize=14;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="r-arq">
-            <mxGeometry relative="1" as="geometry" />
-          </mxCell>
-        </object>
-        <mxCell id="r-e7-lbl" connectable="0" parent="r-e7" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" value="Arquivo" vertex="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint as="offset" />
+        <mxCell id="bN4BEhdtGpE-_X9Loiue-4" connectable="0" parent="bN4BEhdtGpE-_X9Loiue-3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Grava relatorio" vertex="1">
+          <mxGeometry relative="1" x="-0.284" y="-1" as="geometry">
+            <mxPoint x="7" y="-1" as="offset" />
           </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="rzdb" name="C2 - Reaproveitamento Data base">
-    <mxGraphModel dx="1012" dy="622" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2100" pageHeight="1120" math="0" shadow="0">
+    <mxGraphModel dx="2407" dy="1140" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2180" pageHeight="1240" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="p-user" parent="1" style="html=1;fontSize=11;dashed=0;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;" value="&lt;b&gt;Usuário&lt;/b&gt;&lt;div&gt;[Person]&lt;/div&gt;&lt;br&gt;&lt;font color=&quot;#cccccc&quot;&gt;Equipe do Fundamental II e Médio&lt;/font&gt;" vertex="1">
-          <mxGeometry height="180" width="200" x="20" y="85" as="geometry" />
+        <mxCell id="db-user" parent="1" style="html=1;fontSize=11;dashed=0;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;" value="&lt;b&gt;Usuário&lt;/b&gt;&lt;div&gt;[Person]&lt;/div&gt;&lt;br&gt;&lt;font color=&quot;#cccccc&quot;&gt;Equipe do Fundamental II e Médio&lt;/font&gt;" vertex="1">
+          <mxGeometry height="180" width="200" x="20" y="70" as="geometry" />
         </mxCell>
-        <object placeholders="1" c4Name="LOCUS" c4Type="SystemScopeBoundary" c4Application="C2 - Reaproveitamento Data base" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="p-sys">
+        <object placeholders="1" c4Name="LOCUS" c4Type="SystemScopeBoundary" c4Application="Data base" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="db-sys">
           <mxCell parent="1" style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fillColor=none;" vertex="1">
-            <mxGeometry height="1040" width="1780" x="260" y="20" as="geometry" />
+            <mxGeometry height="1050" width="1240" x="260" y="20" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="LOCUS-Frontend" c4Type="SystemScopeBoundary" c4Application="Interfaces" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="p-fe">
+        <object placeholders="1" c4Name="LOCUS-Frontend" c4Type="SystemScopeBoundary" c4Application="Interfaces" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="db-fe">
           <mxCell parent="1" style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fillColor=#CCE5FF;" vertex="1">
-            <mxGeometry height="260" width="1700" x="300" y="50" as="geometry" />
+            <mxGeometry height="200" width="1140" x="300" y="60" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="Tela DATAS_ATUALIZAÇÃO" c4Type="Container" c4Technology="React" c4Description="Data base DOC, migração, controle e extrato." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="p-front">
+        <object placeholders="1" c4Name="Tela DATAS_ATUALIZAÇÃO" c4Type="Container" c4Technology="React" c4Description="Data base DOC, migração, controle e extrato." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="db-tela">
           <mxCell parent="1" style="shape=mxgraph.c4.webBrowserContainer2;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;labelBackgroundColor=none;fillColor=#23A2D9;strokeColor=#118ACD;strokeColor2=#0E7DAD;fontSize=12;fontColor=#ffffff;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.5,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
-            <mxGeometry height="170" width="420" x="900" y="90" as="geometry" />
+            <mxGeometry height="160" width="420" x="620" y="80" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="MS-Locus" c4Type="SystemScopeBoundary" c4Application="Domínio do módulo" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="p-be">
+        <object placeholders="1" c4Name="BFF" c4Type="SystemScopeBoundary" c4Application="Único do SIGLA" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="db-bffb">
+          <mxCell parent="1" style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fillColor=#E1D5E7;" vertex="1">
+            <mxGeometry height="160" width="1140" x="300" y="300" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="BFF" c4Type="Container" c4Technology="Backend for Frontend" c4Description="Valida o token, agrega e devolve o DTO desta tela." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="db-bff">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#6C8EBF;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#3A6EA5;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];dashed=1;dashPattern=8 4;" vertex="1">
+            <mxGeometry height="110" width="420" x="620" y="320" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="MS-Locus" c4Type="SystemScopeBoundary" c4Application="Domínio do módulo" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="db-be">
           <mxCell parent="1" style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fillColor=#F8CECC;" vertex="1">
-            <mxGeometry height="320" width="760" x="300" y="350" as="geometry" />
+            <mxGeometry height="240" width="550" x="300" y="500" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="Data base" c4Type="Container" c4Technology="Django / DRF" c4Description="Lê o nomeado no ALVO e grava o vínculo." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="p-ms">
+        <object placeholders="1" c4Name="Data base" c4Type="Container" c4Technology="Django / DRF" c4Description="Lê a nomeação no ALVO e grava o vínculo." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="db-ms">
           <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];dashed=1;dashPattern=8 4;" vertex="1">
-            <mxGeometry height="170" width="560" x="410" y="420" as="geometry" />
+            <mxGeometry height="100" width="430" x="380" y="540" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="Persistência" c4Type="SystemScopeBoundary" c4Application="Dados do Locus" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="p-db">
+        <object placeholders="1" c4Name="Persistência" c4Type="SystemScopeBoundary" c4Application="Dados do Locus" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="db-db">
           <mxCell parent="1" style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fillColor=#FFFF99;" vertex="1">
-            <mxGeometry height="320" width="900" x="1100" y="350" as="geometry" />
+            <mxGeometry height="240" width="550" x="890" y="500" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="Schema do Locus" c4Type="Container" c4Technology="PostgreSQL" c4Description="Data base DOC, vínculo e extrato." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="p-base">
+        <object placeholders="1" c4Name="Schema do Locus" c4Type="Container" c4Technology="PostgreSQL" c4Description="Data base DOC, vínculo e extrato." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="db-base">
           <mxCell parent="1" style="shape=cylinder3;size=15;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;labelBackgroundColor=none;fillColor=#23A2D9;fontSize=12;fontColor=#ffffff;align=center;strokeColor=#0E7DAD;metaEdit=1;points=[[0.5,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.5,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];resizable=0;" vertex="1">
-            <mxGeometry height="190" width="360" x="1380" y="410" as="geometry" />
+            <mxGeometry height="170" width="360" x="1000" y="510" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="ALVO" c4Type="SystemScopeBoundary" c4Application="Consulta" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="p-alvo">
+        <object placeholders="1" c4Name="ALVO" c4Type="SystemScopeBoundary" c4Application="Consulta" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="db-alvo">
           <mxCell parent="1" style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fillColor=#EEEEEE;" vertex="1">
-            <mxGeometry height="310" width="1700" x="300" y="710" as="geometry" />
+            <mxGeometry height="220" width="1150" x="300" y="780" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="MS-Agenda" c4Type="Container" c4Technology="Django" c4Description="nomeacao_em e habilitados da sessão." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="p-s0">
-          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
-            <mxGeometry height="150" width="300" x="505" y="800" as="geometry" />
+        <object placeholders="1" c4Name="MS-Agenda" c4Type="Container" c4Technology="Django" c4Description="nomeacao_em e habilitados da sessão." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="db-s0">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];dashed=1;dashPattern=8 4;" vertex="1">
+            <mxGeometry height="140" width="240" x="330" y="800" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="MS-ProcessosConvocacao" c4Type="Container" c4Technology="Django" c4Description="Data de convocação e corte." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="p-s1">
-          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
-            <mxGeometry height="150" width="300" x="835" y="800" as="geometry" />
+        <object placeholders="1" c4Name="MS-ProcessosConvocacao" c4Type="Container" c4Technology="Django" c4Description="Data de convocação e corte." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="db-s1">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];dashed=1;dashPattern=8 4;" vertex="1">
+            <mxGeometry height="140" width="240" x="610" y="800" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="MS-Candidatos" c4Type="Container" c4Technology="Django" c4Description="RF, nome e classificação." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="p-s2">
-          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
-            <mxGeometry height="150" width="300" x="1165" y="800" as="geometry" />
+        <object placeholders="1" c4Name="MS-Candidatos" c4Type="Container" c4Technology="Django" c4Description="RF, nome e classificação." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="db-s2">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];dashed=1;dashPattern=8 4;" vertex="1">
+            <mxGeometry height="140" width="240" x="890" y="800" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="MS-Escolha" c4Type="Container" c4Technology="Django" c4Description="Quem escolheu e o tipo da vaga." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="p-s3">
-          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
-            <mxGeometry height="150" width="300" x="1495" y="800" as="geometry" />
+        <object placeholders="1" c4Name="MS-Escolha" c4Type="Container" c4Technology="Django" c4Description="Quem escolheu e o tipo da vaga." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="db-s3">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];dashed=1;dashPattern=8 4;" vertex="1">
+            <mxGeometry height="140" width="240" x="1170" y="800" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Type="Relationship" id="p-e1">
-          <mxCell edge="1" parent="1" source="p-user" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;metaEdit=1;endSize=14;startSize=14;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="p-front">
-            <mxGeometry relative="1" as="geometry" />
-          </mxCell>
-        </object>
-        <mxCell id="p-e1-lbl" connectable="0" parent="p-e1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" value="Opera" vertex="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
+        <mxCell id="db-e1" edge="1" parent="1" source="db-user" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="db-tela" value="Abre">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <object placeholders="1" c4Type="Relationship" id="p-e2">
-          <mxCell edge="1" parent="1" source="p-front" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;metaEdit=1;endSize=14;startSize=14;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="p-ms">
-            <mxGeometry relative="1" as="geometry" />
-          </mxCell>
-        </object>
-        <mxCell id="p-e2-lbl" connectable="0" parent="p-e2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" value="Tela" vertex="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
+        <mxCell id="db-e2" edge="1" parent="1" source="db-tela" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="db-bff" value="Requisição">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <object placeholders="1" c4Type="Relationship" id="p-e3">
-          <mxCell edge="1" parent="1" source="p-ms" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;metaEdit=1;endSize=14;startSize=14;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="p-base">
-            <mxGeometry relative="1" as="geometry" />
-          </mxCell>
-        </object>
-        <mxCell id="p-e3-lbl" connectable="0" parent="p-e3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" value="Grava o vínculo" vertex="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
+        <mxCell id="db-e3" edge="1" parent="1" source="db-bff" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="db-ms" value="Consulta">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <object placeholders="1" c4Type="Relationship" id="p-e4">
-          <mxCell edge="1" parent="1" source="p-ms" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;metaEdit=1;endSize=14;startSize=14;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;entryX=0.229;entryY=0;" target="p-alvo">
-            <mxGeometry relative="1" as="geometry" />
-          </mxCell>
-        </object>
-        <mxCell id="p-e4-lbl" connectable="0" parent="p-e4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" value="Consulta o ALVO" vertex="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
+        <mxCell id="db-e4" edge="1" parent="1" source="db-ms" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.47;" target="db-base" value="Grava o vínculo">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="db-e5" edge="1" parent="1" source="db-ms" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;entryX=0.219;entryY=0;" target="db-alvo" value="Consulta o ALVO">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="rzvag" name="C2 - Reaproveitamento Vagas">
-    <mxGraphModel dx="1012" dy="622" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2100" pageHeight="1120" math="0" shadow="0">
+    <mxGraphModel dx="1125" dy="684" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2180" pageHeight="1240" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="p-user" parent="1" style="html=1;fontSize=11;dashed=0;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;" value="&lt;b&gt;Usuário&lt;/b&gt;&lt;div&gt;[Person]&lt;/div&gt;&lt;br&gt;&lt;font color=&quot;#cccccc&quot;&gt;Equipe do Fundamental II e Médio&lt;/font&gt;" vertex="1">
-          <mxGeometry height="180" width="200" x="20" y="85" as="geometry" />
+        <mxCell id="vag-user" parent="1" style="html=1;fontSize=11;dashed=0;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;" value="&lt;b&gt;Usuário&lt;/b&gt;&lt;div&gt;[Person]&lt;/div&gt;&lt;br&gt;&lt;font color=&quot;#cccccc&quot;&gt;Equipe do Fundamental II e Médio&lt;/font&gt;" vertex="1">
+          <mxGeometry height="180" width="200" x="20" y="70" as="geometry" />
         </mxCell>
-        <object placeholders="1" c4Name="LOCUS" c4Type="SystemScopeBoundary" c4Application="C2 - Reaproveitamento Vagas" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="p-sys">
+        <object placeholders="1" c4Name="LOCUS" c4Type="SystemScopeBoundary" c4Application="Vagas" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="vag-sys">
           <mxCell parent="1" style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fillColor=none;" vertex="1">
-            <mxGeometry height="1040" width="1780" x="260" y="20" as="geometry" />
+            <mxGeometry height="1020" width="780" x="260" y="20" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="LOCUS-Frontend" c4Type="SystemScopeBoundary" c4Application="Interfaces" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="p-fe">
+        <object placeholders="1" c4Name="LOCUS-Frontend" c4Type="SystemScopeBoundary" c4Application="Interfaces" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="vag-fe">
           <mxCell parent="1" style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fillColor=#CCE5FF;" vertex="1">
-            <mxGeometry height="260" width="1700" x="300" y="50" as="geometry" />
+            <mxGeometry height="230" width="680" x="300" y="50" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="Tela de Vagas" c4Type="Container" c4Technology="React" c4Description="Fund. II, Médio e ajuste de EXC." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="p-front">
+        <object placeholders="1" c4Name="Tela de Vagas" c4Type="Container" c4Technology="React" c4Description="Fund. II, Médio e ajuste de EXC." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="vag-tela">
           <mxCell parent="1" style="shape=mxgraph.c4.webBrowserContainer2;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;labelBackgroundColor=none;fillColor=#23A2D9;strokeColor=#118ACD;strokeColor2=#0E7DAD;fontSize=12;fontColor=#ffffff;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.5,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
-            <mxGeometry height="170" width="420" x="900" y="90" as="geometry" />
+            <mxGeometry height="160" width="420" x="440" y="80" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="MS-Locus" c4Type="SystemScopeBoundary" c4Application="Domínio do módulo" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="p-be">
+        <object placeholders="1" c4Name="BFF" c4Type="SystemScopeBoundary" c4Application="Único do SIGLA" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="vag-bffb">
+          <mxCell parent="1" style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fillColor=#E1D5E7;" vertex="1">
+            <mxGeometry height="180" width="680" x="300" y="300" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="BFF" c4Type="Container" c4Technology="Backend for Frontend" c4Description="Valida o token, agrega e devolve o DTO desta tela." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="vag-bff">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#6C8EBF;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#3A6EA5;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];dashed=1;dashPattern=8 4;" vertex="1">
+            <mxGeometry height="140" width="420" x="440" y="320" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="MS-Locus" c4Type="SystemScopeBoundary" c4Application="Domínio do módulo" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="vag-be">
           <mxCell parent="1" style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fillColor=#F8CECC;" vertex="1">
-            <mxGeometry height="320" width="760" x="300" y="350" as="geometry" />
+            <mxGeometry height="185" width="320" x="300" y="525" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="Vagas" c4Type="Container" c4Technology="Django / DRF" c4Description="Calcula no schema e publica no ALVO." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="p-ms">
+        <object placeholders="1" c4Name="Vagas" c4Type="Container" c4Technology="Django / DRF" c4Description="Calcula no schema e publica no ALVO." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="vag-ms">
           <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];dashed=1;dashPattern=8 4;" vertex="1">
-            <mxGeometry height="170" width="560" x="410" y="420" as="geometry" />
+            <mxGeometry height="105" width="260" x="340" y="547.5" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="Persistência" c4Type="SystemScopeBoundary" c4Application="Dados do Locus" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="p-db">
+        <object placeholders="1" c4Name="Persistência" c4Type="SystemScopeBoundary" c4Application="Dados do Locus" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="vag-db">
           <mxCell parent="1" style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fillColor=#FFFF99;" vertex="1">
-            <mxGeometry height="320" width="900" x="1100" y="350" as="geometry" />
+            <mxGeometry height="185" width="320" x="660" y="525" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="Schema do Locus" c4Type="Container" c4Technology="PostgreSQL" c4Description="Módulo, lotados, afastados e EXC." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="p-base">
-          <mxCell parent="1" style="shape=cylinder3;size=15;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;labelBackgroundColor=none;fillColor=#23A2D9;fontSize=12;fontColor=#ffffff;align=center;strokeColor=#0E7DAD;metaEdit=1;points=[[0.5,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.5,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];resizable=0;" vertex="1">
-            <mxGeometry height="190" width="360" x="1380" y="410" as="geometry" />
-          </mxCell>
-        </object>
-        <object placeholders="1" c4Name="ALVO" c4Type="SystemScopeBoundary" c4Application="Consulta" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="p-alvo">
+        <object placeholders="1" c4Name="ALVO" c4Type="SystemScopeBoundary" c4Application="Consulta" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="vag-alvo">
           <mxCell parent="1" style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fillColor=#EEEEEE;" vertex="1">
-            <mxGeometry height="310" width="1700" x="300" y="710" as="geometry" />
+            <mxGeometry height="170" width="680" x="300" y="780" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="MS-ProcessosConcursos" c4Type="Container" c4Technology="Django" c4Description="Código do componente." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="p-s0">
-          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
-            <mxGeometry height="150" width="340" x="795" y="800" as="geometry" />
+        <object placeholders="1" c4Name="MS-ProcessosConcursos" c4Type="Container" c4Technology="Django" c4Description="Código do componente." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="vag-s0">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];dashed=1;dashPattern=8 4;" vertex="1">
+            <mxGeometry height="140" width="240" x="400" y="800" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="MS-Escolha" c4Type="Container" c4Technology="Django" c4Description="Escola e vaga definitiva ou precária." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="p-s1">
-          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
-            <mxGeometry height="150" width="340" x="1165" y="800" as="geometry" />
+        <object placeholders="1" c4Name="MS-Escolha" c4Type="Container" c4Technology="Django" c4Description="Escola e vaga definitiva ou precária." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="vag-s1">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];dashed=1;dashPattern=8 4;" vertex="1">
+            <mxGeometry height="140" width="240" x="680" y="800" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Type="Relationship" id="p-e1">
-          <mxCell edge="1" parent="1" source="p-user" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;metaEdit=1;endSize=14;startSize=14;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="p-front">
-            <mxGeometry relative="1" as="geometry" />
-          </mxCell>
-        </object>
-        <mxCell id="p-e1-lbl" connectable="0" parent="p-e1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" value="Opera" vertex="1">
+        <mxCell id="vag-e1" edge="1" parent="1" source="vag-user" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="vag-tela" value="Abre">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vag-e2" edge="1" parent="1" source="vag-tela" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="vag-bff" value="Requisição">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vag-e3" edge="1" parent="1" source="vag-bff" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="vag-ms" value="Consulta">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vag-e4" edge="1" parent="1" source="vag-ms" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;" target="NvBM3qtlb1xnUhfR8pTj-1" value="Lê e grava">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint as="offset" />
+            <mxPoint x="680" y="689.8999999999999" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <object placeholders="1" c4Type="Relationship" id="p-e2">
-          <mxCell edge="1" parent="1" source="p-front" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;metaEdit=1;endSize=14;startSize=14;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="p-ms">
-            <mxGeometry relative="1" as="geometry" />
+        <mxCell id="vag-e5" edge="1" parent="1" source="vag-ms" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;entryX=0.219;entryY=0;" target="vag-alvo" value="Consulta o ALVO">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <object placeholders="1" c4Name="Schema Locus" c4Type="Container" c4Technology="PostgreSql" c4Description="Módulo, lotados, afastados e EXC." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="NvBM3qtlb1xnUhfR8pTj-1">
+          <mxCell parent="1" style="shape=cylinder3;size=15;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;labelBackgroundColor=none;fillColor=#23A2D9;fontSize=12;fontColor=#ffffff;align=center;strokeColor=#0E7DAD;metaEdit=1;points=[[0.5,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.5,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];resizable=0;" vertex="1">
+            <mxGeometry height="120" width="240" x="690" y="540" as="geometry" />
           </mxCell>
         </object>
-        <mxCell id="p-e2-lbl" connectable="0" parent="p-e2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" value="Tela" vertex="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <object placeholders="1" c4Type="Relationship" id="p-e3">
-          <mxCell edge="1" parent="1" source="p-ms" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;metaEdit=1;endSize=14;startSize=14;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="p-base">
-            <mxGeometry relative="1" as="geometry" />
-          </mxCell>
-        </object>
-        <mxCell id="p-e3-lbl" connectable="0" parent="p-e3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" value="Lê e grava" vertex="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <object placeholders="1" c4Type="Relationship" id="p-e4">
-          <mxCell edge="1" parent="1" source="p-ms" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;metaEdit=1;endSize=14;startSize=14;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;entryX=0.229;entryY=0;" target="p-alvo">
-            <mxGeometry relative="1" as="geometry" />
-          </mxCell>
-        </object>
-        <mxCell id="p-e4-lbl" connectable="0" parent="p-e4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" value="Consulta o ALVO" vertex="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="rzrem" name="C2 - Reaproveitamento Remoção">
-    <mxGraphModel dx="1433" dy="882" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2100" pageHeight="1120" math="0" shadow="0">
+    <mxGraphModel dx="942" dy="446" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2180" pageHeight="1240" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="p-user" parent="1" style="html=1;fontSize=11;dashed=0;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;" value="&lt;b&gt;Usuário&lt;/b&gt;&lt;div&gt;[Person]&lt;/div&gt;&lt;br&gt;&lt;font color=&quot;#cccccc&quot;&gt;Equipe do Fundamental II e Médio&lt;/font&gt;" vertex="1">
-          <mxGeometry height="180" width="200" x="20" y="85" as="geometry" />
+        <mxCell id="rem-user" parent="1" style="html=1;fontSize=11;dashed=0;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;" value="&lt;b&gt;Usuário&lt;/b&gt;&lt;div&gt;[Person]&lt;/div&gt;&lt;br&gt;&lt;font color=&quot;#cccccc&quot;&gt;Equipe do Fundamental II e Médio&lt;/font&gt;" vertex="1">
+          <mxGeometry height="180" width="200" x="20" y="70" as="geometry" />
         </mxCell>
-        <object placeholders="1" c4Name="LOCUS" c4Type="SystemScopeBoundary" c4Application="C2 - Reaproveitamento Remoção" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="p-sys">
+        <object placeholders="1" c4Name="LOCUS" c4Type="SystemScopeBoundary" c4Application="Remoção" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="rem-sys">
           <mxCell parent="1" style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fillColor=none;" vertex="1">
-            <mxGeometry height="1040" width="1780" x="260" y="20" as="geometry" />
+            <mxGeometry height="950" width="800" x="260" y="20" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="LOCUS-Frontend" c4Type="SystemScopeBoundary" c4Application="Interfaces" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="p-fe">
+        <object placeholders="1" c4Name="LOCUS-Frontend" c4Type="SystemScopeBoundary" c4Application="Interfaces" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="rem-fe">
           <mxCell parent="1" style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fillColor=#CCE5FF;" vertex="1">
-            <mxGeometry height="260" width="1700" x="300" y="50" as="geometry" />
+            <mxGeometry height="200" width="720" x="300" y="80" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="Tela de Remoção" c4Type="Container" c4Technology="React" c4Description="Afastados, equipe, congelado e vaga final." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="p-front">
+        <object placeholders="1" c4Name="Tela de Remoção" c4Type="Container" c4Technology="React" c4Description="Afastados, equipe, congelado e vaga final." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="rem-tela">
           <mxCell parent="1" style="shape=mxgraph.c4.webBrowserContainer2;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;labelBackgroundColor=none;fillColor=#23A2D9;strokeColor=#118ACD;strokeColor2=#0E7DAD;fontSize=12;fontColor=#ffffff;align=center;metaEdit=1;points=[[0.5,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.5,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
-            <mxGeometry height="170" width="420" x="890" y="95" as="geometry" />
+            <mxGeometry height="110" width="300" x="495" y="105" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="MS-Locus" c4Type="SystemScopeBoundary" c4Application="Domínio do módulo" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="p-be">
+        <object placeholders="1" c4Name="BFF" c4Type="SystemScopeBoundary" c4Application="Único do SIGLA" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="rem-bffb">
+          <mxCell parent="1" style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fillColor=#E1D5E7;" vertex="1">
+            <mxGeometry height="140" width="720" x="300" y="300" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="BFF" c4Type="Container" c4Technology="Backend for Frontend" c4Description="Valida o token, agrega e devolve o DTO desta tela." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="rem-bff">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#6C8EBF;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#3A6EA5;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];dashed=1;dashPattern=8 4;" vertex="1">
+            <mxGeometry height="100" width="330" x="480" y="310" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="MS-Locus" c4Type="SystemScopeBoundary" c4Application="Domínio do módulo" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="rem-be">
           <mxCell parent="1" style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fillColor=#F8CECC;" vertex="1">
-            <mxGeometry height="320" width="760" x="300" y="350" as="geometry" />
+            <mxGeometry height="180" width="345" x="295" y="480" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="Remoção" c4Type="Container" c4Technology="Django / DRF" c4Description="Calcula com os números do próprio Locus." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="p-ms">
+        <object placeholders="1" c4Name="Remoção" c4Type="Container" c4Technology="Django / DRF" c4Description="Calcula com os números do próprio Locus." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="rem-ms">
           <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];dashed=1;dashPattern=8 4;" vertex="1">
-            <mxGeometry height="170" width="560" x="410" y="420" as="geometry" />
+            <mxGeometry height="90" width="255" x="340" y="500" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="Persistência" c4Type="SystemScopeBoundary" c4Application="Dados do Locus" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="p-db">
+        <object placeholders="1" c4Name="Persistência" c4Type="SystemScopeBoundary" c4Application="Dados do Locus" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="rem-db">
           <mxCell parent="1" style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fillColor=#FFFF99;" vertex="1">
-            <mxGeometry height="320" width="900" x="1100" y="350" as="geometry" />
+            <mxGeometry height="190" width="340" x="680" y="470" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="Schema do Locus" c4Type="Container" c4Technology="PostgreSQL" c4Description="Afastados, equipe, congelado e vaga final." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="p-base">
-          <mxCell parent="1" style="shape=cylinder3;size=15;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;labelBackgroundColor=none;fillColor=#23A2D9;fontSize=12;fontColor=#ffffff;align=center;strokeColor=#0E7DAD;metaEdit=1;points=[[0.5,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.5,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];resizable=0;" vertex="1">
-            <mxGeometry height="190" width="360" x="1380" y="410" as="geometry" />
-          </mxCell>
-        </object>
-        <object placeholders="1" c4Name="ALVO" c4Type="SystemScopeBoundary" c4Application="Consulta" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="p-alvo">
+        <object placeholders="1" c4Name="ALVO" c4Type="SystemScopeBoundary" c4Application="Consulta" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="rem-alvo">
           <mxCell parent="1" style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fillColor=#EEEEEE;" vertex="1">
-            <mxGeometry height="310" width="1700" x="300" y="710" as="geometry" />
+            <mxGeometry height="190" width="725" x="295" y="720" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="MS-Escolha" c4Type="Container" c4Technology="Django" c4Description="Escola da unidade, pelo código EOL." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="p-s0">
-          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
-            <mxGeometry height="150" width="340" x="980" y="800" as="geometry" />
+        <object placeholders="1" c4Name="MS-Escolha" c4Type="Container" c4Technology="Django" c4Description="Escola da unidade, pelo código EOL." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="rem-s0">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];dashed=1;dashPattern=8 4;" vertex="1">
+            <mxGeometry height="140" width="240" x="510" y="740" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Type="Relationship" id="p-e1">
-          <mxCell edge="1" parent="1" source="p-user" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;metaEdit=1;endSize=14;startSize=14;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="p-front">
-            <mxGeometry relative="1" as="geometry" />
-          </mxCell>
-        </object>
-        <mxCell id="p-e1-lbl" connectable="0" parent="p-e1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" value="Opera" vertex="1">
+        <mxCell id="rem-e1" edge="1" parent="1" source="rem-user" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="rem-tela" value="Abre">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rem-e2" edge="1" parent="1" source="rem-tela" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="rem-bff" value="Requisição">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rem-e3" edge="1" parent="1" source="rem-bff" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="rem-ms" value="Consulta">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rem-e4" edge="1" parent="1" source="rem-ms" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;" target="60G0YIgQL35vEQ6W1OjZ-1" value="Lê o quadro">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint as="offset" />
+            <mxPoint x="740" y="549.8999999999999" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <object placeholders="1" c4Type="Relationship" id="p-e2">
-          <mxCell edge="1" parent="1" source="p-front" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;metaEdit=1;endSize=14;startSize=14;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="p-ms">
-            <mxGeometry relative="1" as="geometry" />
-          </mxCell>
-        </object>
-        <mxCell id="p-e2-lbl" connectable="0" parent="p-e2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" value="Tela" vertex="1">
+        <mxCell id="rem-e5" edge="1" parent="1" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;entryX=0.219;entryY=0;" value="Consulta o ALVO">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="463.23" y="630" />
+              <mxPoint x="450.23" y="630" />
+            </Array>
+            <mxPoint x="463.73" y="589.9999999999999" as="sourcePoint" />
+            <mxPoint x="450.0049999999999" y="720" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <object placeholders="1" c4Type="Relationship" id="p-e3">
-          <mxCell edge="1" parent="1" source="p-ms" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;metaEdit=1;endSize=14;startSize=14;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="p-base">
-            <mxGeometry relative="1" as="geometry" />
+        <object placeholders="1" c4Name="Schema Locus" c4Type="Container" c4Technology="PostgreSql" c4Description="Afastados, equipe, congelado e vaga final." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="60G0YIgQL35vEQ6W1OjZ-1">
+          <mxCell parent="1" style="shape=cylinder3;size=15;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;labelBackgroundColor=none;fillColor=#23A2D9;fontSize=12;fontColor=#ffffff;align=center;strokeColor=#0E7DAD;metaEdit=1;points=[[0.5,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.5,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];resizable=0;" vertex="1">
+            <mxGeometry height="120" width="240" x="740" y="485" as="geometry" />
           </mxCell>
         </object>
-        <mxCell id="p-e3-lbl" connectable="0" parent="p-e3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" value="Lê o quadro" vertex="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <object placeholders="1" c4Type="Relationship" id="p-e4">
-          <mxCell edge="1" parent="1" source="p-ms" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;metaEdit=1;endSize=14;startSize=14;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;entryX=0.229;entryY=0;" target="p-alvo">
-            <mxGeometry relative="1" as="geometry" />
-          </mxCell>
-        </object>
-        <mxCell id="p-e4-lbl" connectable="0" parent="p-e4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" value="Consulta o ALVO" vertex="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="rzimp" name="C2 - Reaproveitamento Importação EOL">
-    <mxGraphModel dx="905" dy="557" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1960" pageHeight="800" math="0" shadow="0">
+    <mxGraphModel dx="2166" dy="1026" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2100" pageHeight="820" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <object placeholders="1" c4Name="LOCUS" c4Type="SystemScopeBoundary" c4Application="Importação periódica" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="i-sys">
+        <object placeholders="1" c4Name="LOCUS" c4Type="SystemScopeBoundary" c4Application="Importação periódica do EOL" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="i-sys">
           <mxCell parent="1" style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fillColor=none;" vertex="1">
-            <mxGeometry height="700" width="1500" x="360" y="40" as="geometry" />
+            <mxGeometry height="760" width="2000" x="40" y="20" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="Importação" c4Type="SystemScopeBoundary" c4Application="Agenda" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="i-job">
+        <object placeholders="1" c4Name="Importação" c4Type="SystemScopeBoundary" c4Application="Airflow busca o EOL" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="i-etl">
           <mxCell parent="1" style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fillColor=#D5E8D4;" vertex="1">
-            <mxGeometry height="280" width="620" x="400" y="80" as="geometry" />
+            <mxGeometry height="520" width="860" x="80" y="60" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="Airflow" c4Type="Container" c4Technology="Agenda" c4Description="De tempos em tempos busca o EOL, compara e grava." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="i-air">
+        <object placeholders="1" c4Name="EOL" c4Type="Software System" c4Technology="Sistema externo" c4Description="Única origem desta busca." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="i-eol">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#8C8496;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#736782;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
+            <mxGeometry height="150" width="300" x="140" y="175" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Airflow" c4Type="Container" c4Technology="Agenda" c4Description="De tempos em tempos busca o EOL e grava o resultado." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="i-air">
           <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];dashed=1;dashPattern=8 4;" vertex="1">
-            <mxGeometry height="160" width="460" x="480" y="140" as="geometry" />
+            <mxGeometry height="180" width="360" x="520" y="160" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="Persistência" c4Type="SystemScopeBoundary" c4Application="Dados do Locus" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="i-db">
-          <mxCell parent="1" style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fillColor=#FFFF99;" vertex="1">
-            <mxGeometry height="280" width="720" x="1080" y="80" as="geometry" />
+        <object placeholders="1" c4Name="Locus" c4Type="SystemScopeBoundary" c4Application="Base que recebe a busca" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="i-loc">
+          <mxCell parent="1" style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;strokeColor=#666666;fontColor=#333333;labelBackgroundColor=none;align=left;verticalAlign=bottom;labelBorderColor=none;spacingTop=0;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];fillColor=#DAE8FC;" vertex="1">
+            <mxGeometry height="680" width="1020" x="980" y="60" as="geometry" />
           </mxCell>
         </object>
-        <object placeholders="1" c4Name="Schema do Locus" c4Type="Container" c4Technology="PostgreSQL" c4Description="Servidores comparados e resultado gravado." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="i-base">
+        <object placeholders="1" c4Name="Base do Locus" c4Type="Container" c4Technology="PostgreSQL" c4Description="Destino da busca periódica." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="i-base">
           <mxCell parent="1" style="shape=cylinder3;size=15;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;labelBackgroundColor=none;fillColor=#23A2D9;fontSize=12;fontColor=#ffffff;align=center;strokeColor=#0E7DAD;metaEdit=1;points=[[0.5,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.5,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];resizable=0;" vertex="1">
-            <mxGeometry height="180" width="400" x="1240" y="130" as="geometry" />
+            <mxGeometry height="180" width="380" x="1230" y="160" as="geometry" />
           </mxCell>
         </object>
-        <mxCell id="i-eol" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8C8496;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#736782;fontSize=10;" value="&lt;b&gt;&lt;font style=&quot;font-size: 13px&quot;&gt;EOL&lt;/font&gt;&lt;/b&gt;&lt;div&gt;[Software System]&lt;/div&gt;&lt;br&gt;&lt;font color=&quot;#cccccc&quot;&gt;Origem da busca periódica de servidores.&lt;/font&gt;" vertex="1">
-          <mxGeometry height="160" width="460" x="480" y="460" as="geometry" />
+        <object placeholders="1" c4Name="JSON" c4Type="Software System" c4Technology="Arquivo" c4Description="Arquivo gravado na base." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="i-json">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#8C8496;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#736782;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
+            <mxGeometry height="120" width="240" x="1000" y="460" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="PDF" c4Type="Software System" c4Technology="Arquivo" c4Description="Arquivo gravado na base." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="i-pdf">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#8C8496;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#736782;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
+            <mxGeometry height="120" width="240" x="1300" y="460" as="geometry" />
+          </mxCell>
+        </object>
+        <object placeholders="1" c4Name="Arquivo hash" c4Type="Software System" c4Technology="Arquivo" c4Description="Arquivo gravado na base." label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="i-hash">
+          <mxCell parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;labelBackgroundColor=none;fillColor=#8C8496;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#736782;metaEdit=1;points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];" vertex="1">
+            <mxGeometry height="120" width="240" x="1600" y="460" as="geometry" />
+          </mxCell>
+        </object>
+        <mxCell id="i-e1" edge="1" parent="1" source="i-eol" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="i-air" value="Busca no EOL">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <object placeholders="1" c4Type="Relationship" id="i-e1">
-          <mxCell edge="1" parent="1" source="i-air" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;metaEdit=1;endSize=14;startSize=14;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="i-eol">
-            <mxGeometry relative="1" as="geometry" />
-          </mxCell>
-        </object>
-        <mxCell id="i-e1-lbl" connectable="0" parent="i-e1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" value="Busca de tempos em tempos" vertex="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
+        <mxCell id="i-e2" edge="1" parent="1" source="i-air" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="i-base" value="Salva na base do Locus">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <object placeholders="1" c4Type="Relationship" id="i-e2">
-          <mxCell edge="1" parent="1" source="i-air" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;metaEdit=1;endSize=14;startSize=14;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="i-base">
-            <mxGeometry relative="1" as="geometry" />
-          </mxCell>
-        </object>
-        <mxCell id="i-e2-lbl" connectable="0" parent="i-e2" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" value="Lê e grava" vertex="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
+        <mxCell id="i-e3" edge="1" parent="1" source="i-base" style="endArrow=blockThin;html=1;fontSize=10;fontColor=#404040;strokeWidth=1;endFill=1;strokeColor=#828282;rounded=0;orthogonalLoop=1;jettySize=auto;orthogonal=1;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="i-pdf" value="JSON, PDF ou hash">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

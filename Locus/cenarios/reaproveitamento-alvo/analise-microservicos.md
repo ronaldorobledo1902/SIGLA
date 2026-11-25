@@ -89,7 +89,7 @@ Não grava a Data base DOC nem a checagem de módulo. Essas duas datas são oper
 
 ## MS-AdminUsuarios
 
-Login no CoreSSO, JWT, usuário, grupo e permissão. O front do Locus autentica aqui, como o ALVO. Não há dado de professor, unidade ou vaga.
+Login no CoreSSO, JWT, usuário, grupo e permissão. O BFF único consulta este serviço em nome do front do ALVO e do front do Locus. Não há dado de professor, unidade ou vaga.
 
 ## sigla-sdk
 
@@ -109,7 +109,7 @@ Gera ata, súmula, lauda de vagas, lauda de convocação, listagem e resultado d
 
 Nenhum tipo atual é banco de servidores, quadro da unidade, cargos do módulo, mensal ou auditoria do Cadastro. O motor (job, planilha, documento) pode ser reutilizado depois. Neste cenário os relatórios do módulo nascem no MS-Locus.
 
-A entrevista separou o total simples, que volta na tela, do relatório mensal completo (cargos, afastados e o motivo), que hoje é manual e passa a ser job. O worker consolida o quadro numa base de relatórios e a tela baixa o arquivo. O MS-Relatorios não passa a depender do quadro funcional. O desenho está em [Containers](containers.md), fluxo 2.
+O relatório de menor processamento volta na hora. O de grande processamento dispara uma DAG do Airflow, que grava na base do Locus. A tela mostra esse resultado quando a DAG termina. Não há base separada de relatório. O MS-Relatorios não passa a depender do quadro funcional. O desenho está em [Containers](containers.md), fluxo 2.
 
 ## Matriz por fluxo
 
@@ -127,8 +127,8 @@ A entrevista separou o total simples, que volta na tela, do relatório mensal co
 | Arquivo de vagas para o Sistema Escolha | Não há integração com o legado | Publica a vaga calculada no MS-Escolha do ALVO |
 | Nomeado que ainda não assumiu | Hoje lançado à mão no Access | Lê MS-Candidatos, MS-Agenda e MS-Escolha |
 | Carga inicial de servidores e unidades | Banco Access | Importa uma vez para o schema do Locus |
-| Relatório simples (totais) | em lugar nenhum | Síncrono, sobre a base de relatórios |
-| Relatório mensal completo | em lugar nenhum | Job no Worker MS-Locus e download do arquivo |
+| Relatório de menor processamento | em lugar nenhum | Síncrono, lendo a base do Locus |
+| Relatório de grande processamento | em lugar nenhum | DAG do Airflow grava na base do Locus. A tela mostra quando termina |
 | ATIVEOL, tabela MOU, confronto com EOL | em lugar nenhum | Fora deste cenário |
 | Precários do CI | em lugar nenhum | Fora deste cenário |
 | Login | MS-AdminUsuarios | Front autentica lá |

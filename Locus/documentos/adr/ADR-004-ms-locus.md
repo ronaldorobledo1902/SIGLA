@@ -41,8 +41,8 @@ Criar o **MS-Locus** (`SME-SIGLA-MS-Locus`, rota `api-sigla.sme.prefeitura.sp.go
    - `lotacao` — lotação definitiva ou precária, unidade de exercício e afastamento
    - `movimentacoes` — atualização com motivo, vacância e ato sem efeito
    - `conciliacao` — divergências do quadro frente a EOL/SIGPEC
-2. **APIs públicas** (JWT) espelhando os contratos do frontend. A API lê escola, DRE, cargo de concurso e candidato nos MS já existentes. **API interna** `/api/v1/integracao/` (`X-API-Key`) recebe lotes do MS-ImportaArquivos (ADR-005).
-3. **Worker Celery** (fila `locus`) para conciliação e relatórios assíncronos. Relatório do quadro funcional fica em aberto: reaproveitar o MS-Relatorios ou expor no MS-Locus (ADR-011).
+2. O contrato da tela fica no BFF ([ADR-015](ADR-015-bff-unico.md)). O MS-Locus expõe a consulta que o BFF agrega. A API lê escola, DRE, cargo de concurso e candidato nos MS já existentes. **API interna** `/api/v1/integracao/` (`X-API-Key`) recebe lotes do MS-ImportaArquivos (ADR-005).
+3. **Worker Celery** (fila `locus`) para a conciliação. O relatório de grande processamento dispara uma DAG do Airflow, que grava na base do Locus (ADR-011).
 4. Consultas e gravações do LOCUS na **Base de Dados SIGLA**, o mesmo PostgreSQL dos demais MS (ADR-006).
 
 ## Consequências

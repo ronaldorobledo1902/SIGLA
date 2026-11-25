@@ -27,6 +27,7 @@ ADR-011-relatorios-assincronos
 ADR-012-modulo-fundamental-ii
 ADR-013-calculo-vagas-confronto
 ADR-014-escolha-precarios
+ADR-015-bff-unico
 ```
 
 ---
@@ -49,6 +50,7 @@ ADR-014-escolha-precarios
 | [ADR-012](./ADR-012-modulo-fundamental-ii.md) | Fundamental II e Médio no MS-Locus | Proposed |
 | [ADR-013](./ADR-013-calculo-vagas-confronto.md) | Vagas e confronto com o EOL | Proposed |
 | [ADR-014](./ADR-014-escolha-precarios.md) | Acesso aos sistemas externos do Fundamental II | Proposed |
+| [ADR-015](./ADR-015-bff-unico.md) | BFF único para ALVO e LOCUS | Proposed |
 
 ---
 
@@ -65,14 +67,15 @@ ADR-001 (Django/DRF)
    └── ADR-007 (Celery/Redis)
 
 ADR-002 (CoreSSO + JWT)
-   └── ADR-003 (permissões/perfis LOCUS) [Proposed]
+   ├── ADR-003 (permissões/perfis LOCUS) [Proposed]
+   └── ADR-015 (BFF único) [Proposed]
 
 ADR-005 (integração via MS-ImportaArquivos) [Proposed]
    ├── ADR-007 (Celery/Redis)
    └── ADR-004 (entrega ao MS-Locus)
 
 ADR-006 (base única)
-   └── ADR-011 (total síncrono e relatório completo em base de leitura)
+   └── ADR-011 (relatório síncrono ou DAG do Airflow na base do Locus)
 
 ADR-009 (infra observada nos repositórios)
    └── ADR-010 (branches)
@@ -89,4 +92,4 @@ ADR-009 (infra observada nos repositórios)
 
 ---
 
-*Pacote inicial em 27/10/2026 (ADR-001 a ADR-011). ADR-012 a ADR-014, de 17/11/2026, registram o módulo Fundamental II e Médio. Em 24/11/2026 a entrevista tirou o Sistema Escolha da integração. EOL e CI seguem sem contrato.*
+*Pacote inicial em 27/10/2026 (ADR-001 a ADR-011). ADR-012 a ADR-014, de 17/11/2026, registram o módulo Fundamental II e Médio. Em 24/11/2026 a entrevista tirou o Sistema Escolha da integração. EOL e CI seguem sem contrato. No mesmo dia, o ADR-015 coloca um BFF único na frente do ALVO e do Locus.*
